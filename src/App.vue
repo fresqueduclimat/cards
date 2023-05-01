@@ -2,8 +2,8 @@
   <div v-co2-subscript id="app" class="reveal">
     <div class="slides">
       <CardThirteen />
-      <CardOne />
-      <CardTwo />
+      <!-- <CardOne /> -->
+      <!-- <CardTwo /> -->
     </div>
   </div>
 </template>
@@ -13,15 +13,15 @@ import Reveal from "reveal.js";
 import "reveal.js/dist/reveal.css";
 import "reveal.js/dist/theme/simple.css";
 
-import CardOne from "@/components/cards/CardOne.vue";
-import CardTwo from "@/components/cards/CardTwo.vue";
+// import CardOne from "@/components/cards/CardOne.vue";
+// import CardTwo from "@/components/cards/CardTwo.vue";
 import CardThirteen from "@/components/cards/CardThirteen.vue";
 
 export default {
   name: "App",
   components: {
-    CardOne,
-    CardTwo,
+    // CardOne,
+    // CardTwo,
     CardThirteen,
   },
   mounted() {
