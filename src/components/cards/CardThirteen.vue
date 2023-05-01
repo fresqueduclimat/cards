@@ -1,26 +1,28 @@
 <template>
     <section ref="picture" :data-background-image="backgroundImageUrl" data-background-size="cover">
         <div class="container">
-            <div class="custom-title">
-                <h1>{{ $t('V1C13L1') }}</h1>
+            <div id="titleDiv" class="custom-title">
+                <h1 id="title">{{ $t('V1C13L1') }}</h1>
             </div>
-            <div class="label orange label1">
-                <h4>{{ $t('V1C13L3') }}</h4>
+            <div id="label1" class="label orange label1">
+                <h4 id="text1">{{ $t('V1C13L3') }}</h4>
             </div>
-            <div class="label orange label2">
-                <h4>{{ $t('V1C13L4') }}</h4>
+            <div id="label2" class="label orange label2">
+                <h4 id="text2">{{ $t('V1C13L4') }}</h4>
             </div>
-            <div class="label red label3">
-                <h4>{{ $t('V1C13L5') }}</h4>
+            <div id="label3" class="label red label3">
+                <h4 id="text3">{{ $t('V1C13L5') }}</h4>
             </div>
-            <div class="label red label4">
-                <h4>{{ $t('V1C13L6') }}</h4>
+            <div id="label4" class="label red label4">
+                <h4 id="text4">{{ $t('V1C13L6') }}</h4>
             </div>
         </div>
     </section>
 </template>
 
 <script>
+import Reveal from "reveal.js";
+
 export default {
     name: "CardThirteen",
     computed: {
@@ -29,35 +31,62 @@ export default {
         },
     },
     mounted() {
-        console.log(this.$refs.picture.clientHeight)
+        this.adjustFontSize();
+        Reveal.addEventListener("ready", this.adjustFontSize);
+    },
+    beforeUnmount() {
+        Reveal.removeEventListener("ready", this.adjustFontSize);
+    },
+    methods: {
+        adjustFontSize() {
+            const labels = [
+                {
+                    containerID: "titleDiv",
+                    textID: "title",
+                    size: 287
+                },
+                {
+                    containerID: "label1",
+                    textID: "text1",
+                    size: 96
+                },
+                {
+                    containerID: "label2",
+                    textID: "text2",
+                    size: 96
+                },
+                {
+                    containerID: "label3",
+                    textID: "text3",
+                    size: 96
+                },
+                {
+                    containerID: "label4",
+                    textID: "text4",
+                    size: 96
+                }]
+            labels.forEach(function (label) {
+                console.log(label)
+                const container = document.getElementById(label.containerID);
+                const h4 = document.getElementById(label.textID);
+                const containerWidth = container.offsetWidth;
+                const containerHeight = container.offsetHeight;
+                let fontSize = label.size; // starting font size
+                while (
+                    h4.offsetWidth > containerWidth ||
+                    h4.offsetHeight > containerHeight
+                ) {
+                    console.log("ite")
+                    console.log(h4.offsetHeight);
+                    console.log(containerHeight);
+                    fontSize--;
+                    h4.style.fontSize = fontSize + "pt";
+                }
+            });
+        },
     },
 };
 </script>
-
-<!-- <script setup>
-import { ref, onMounted } from "vue";
-
-const picture = ref(0);
-
-onMounted(() => {
-    // const div = label3.value
-    // const text = div.querySelector("h4")
-    // console.log("hello")
-    // console.log(label3.value.clientHeight)
-    // console.log(div)
-    // console.log(text)
-    // console.log(text.clientHeight)
-    // console.log(text.fontSize)
-    // console.log(div.clientHeight)
-    // while (text.clientHeight > div.clientHeight) {
-    //     text.style.fontSize = parseInt(window.getComputedStyle(text).fontSize) - 1
-    //     console.log(parseInt(window.getComputedStyle(text).fontSize) - 1)
-    // }
-
-    const height = picture;
-    console.log(height)
-})
-</script> -->
 
 <style>
 .container {
@@ -65,15 +94,19 @@ onMounted(() => {
     height: 100%;
     display: flex;
     flex-direction: column;
-    padding-top: 3vh;
 }
 
 .custom-title {
-    width: 100%;
+    position: absolute;
+    top: 5vh;
+    left: 2vw;
+    width: calc(100% - 4vw);
+    height: 18vh;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.3);
-    padding-block: 3vh;
     z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .label {
@@ -83,23 +116,29 @@ onMounted(() => {
 .label1 {
     top: 37vh;
     left: 26vw;
+    width: 15vw;
+    height: 10vh;
 }
 
 .label2 {
     top: 57vh;
     left: 5vw;
+    width: 15vw;
+    height: 10vh;
 }
 
 .label3 {
     top: 23vh;
     left: 64vw;
-    width: 200px;
-    height: 200px;
+    width: 20vw;
+    height: 10vh;
 }
 
 .label4 {
     top: 54vh;
     left: 72vw;
+    width: 10vw;
+    height: 10vh;
 }
 
 .label h4 {
