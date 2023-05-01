@@ -1,6 +1,7 @@
 <template>
   <div v-co2-subscript id="app" class="reveal">
     <div class="slides">
+      <CardThirteen />
       <CardOne />
       <CardTwo />
     </div>
@@ -14,12 +15,14 @@ import "reveal.js/dist/theme/simple.css";
 
 import CardOne from "@/components/cards/CardOne.vue";
 import CardTwo from "@/components/cards/CardTwo.vue";
+import CardThirteen from "@/components/cards/CardThirteen.vue";
 
 export default {
   name: "App",
   components: {
     CardOne,
     CardTwo,
+    CardThirteen,
   },
   mounted() {
     Reveal.initialize({
@@ -40,7 +43,8 @@ export default {
   --r-main-font: Arial, sans-serif;
   --r-heading-font: var(--r-main-font);
   --r-heading-color: white;
-  --r-heading1-size: 80px;
+  --r-heading1-size: 287pt;
+  --r-heading4-size: 96pt;
   --r-block-margin: 0;
 }
 
