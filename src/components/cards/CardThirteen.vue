@@ -1,19 +1,19 @@
 <template>
     <section ref="picture" :data-background-image="backgroundImageUrl" data-background-size="cover">
         <div class="container">
-            <div id="titleDiv" class="custom-title">
+            <div id="titleDiv" class="content-centered custom-title">
                 <h1 id="title">{{ $t('V1C13L1') }}</h1>
             </div>
-            <div id="label1" class="label orange label1">
+            <div id="label1" class="content-centered label orange label1">
                 <h4 id="text1">{{ $t('V1C13L3') }}</h4>
             </div>
-            <div id="label2" class="label orange label2">
+            <div id="label2" class="content-centered label orange label2">
                 <h4 id="text2">{{ $t('V1C13L4') }}</h4>
             </div>
-            <div id="label3" class="label red label3">
+            <div id="label3" class="content-centered label red label3">
                 <h4 id="text3">{{ $t('V1C13L5') }}</h4>
             </div>
-            <div id="label4" class="label red label4">
+            <div id="label4" class="content-centered label red label4">
                 <h4 id="text4">{{ $t('V1C13L6') }}</h4>
             </div>
         </div>
@@ -96,6 +96,12 @@ export default {
     flex-direction: column;
 }
 
+.content-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .custom-title {
     position: absolute;
     top: 5vh;
@@ -104,9 +110,7 @@ export default {
     height: 18vh;
     text-align: center;
     z-index: 999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
 }
 
 .label {
@@ -121,7 +125,7 @@ export default {
 }
 
 .label2 {
-    top: 57vh;
+    top: 54vh;
     left: 5vw;
     width: 15vw;
     height: 10vh;
@@ -137,7 +141,7 @@ export default {
 .label4 {
     top: 54vh;
     left: 72vw;
-    width: 10vw;
+    width: 12vw;
     height: 10vh;
 }
 
