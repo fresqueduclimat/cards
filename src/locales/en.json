@@ -30,5 +30,11 @@
   "V1C8L2": "Agriculture is responsible for emitting a little CO2 and a lot of methane (cows, rice fields), and nitrous oxide (fertilizers). All in all, it represents 25% of GHG emissions if deforestation is included.",
   "V1C9L1": "Other GHGs",
   "V1C9L2": "CO2 is not the only greenhouse gas. There are also methane (CH4) and nitrous oxide (N2O) (which come mostly from agriculture), as well as a few others.",
-  "V1C999L90": "Source: GIEC"
+  "V1C999L90": "Source: GIEC",
+  "V1C13L1": "Additional greenhouse effect",
+    "V1C13L3": "Insolation",
+    "V1C13L4": "Reflection",
+    "V1C13L5": "Infrared radiation",
+    "V1C13L6": "Greenhouse effect"
+    
 }

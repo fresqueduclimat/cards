@@ -30,5 +30,10 @@
   "V1C8L2": "L'agriculture est responsable de l'émission d'un peu de CO2 et de beaucoup de méthane (bovins, rizières), et de protoxyde d'azote (engrais). En tout, c’est 25% des GES si on y inclutla déforestation induite.",
   "V1C9L1": "Autres GES",
   "V1C9L2": "Le CO2 n'est pas le seul Gaz à Effet de Serre. Il y a aussi le méthane (CH4) et le protoxyde d'azote (N2O) (qui viennent en très grande partie de l'agriculture), ainsi que quelques autres.",
-  "V1C999L90": "Source: GIEC"
+  "V1C999L90": "Source: GIEC",
+  "V1C13L1": "Effet de serre additionnel",
+  "V1C13L3": "Insolation",
+  "V1C13L4": "Réflexion",
+  "V1C13L5": "Rayonnement infrarouge",
+  "V1C13L6": "Effet de Serre"
 }

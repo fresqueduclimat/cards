@@ -5,6 +5,9 @@ import en from "@/locales/en.json";
 import fr from "@/locales/fr.json";
 import ar from "@/locales/ar.json";
 import br from "@/locales/br.json";
+import de from "@/locales/de.json";
+import jp from "@/locales/jp.json";
+import cn from "@/locales/cn.json";
 import co2SubscriptDirective from "@/directives/co2SubscriptDirective.js"; // Import the directive
 
 const messages = {
@@ -12,10 +15,13 @@ const messages = {
   fr: fr,
   ar: ar,
   br: br,
+  de: de,
+  jp: jp,
+  cn: cn,
 };
 
 const i18n = createI18n({
-  locale: "fr", // Set the initial locale, e.g., 'en'
+  locale: "cn", // Set the initial locale, e.g., 'en'
   fallbackLocale: "fr",
   messages,
 });
