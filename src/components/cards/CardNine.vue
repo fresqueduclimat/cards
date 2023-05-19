@@ -1,6 +1,6 @@
 <template>
-    <CardBase :title="$t('V1C6L1')" :content="$t('V1C6L2')" :card-number="6" :background-front-image="'C6.png'"
-        :background-back-image="'C6-back.png'" />
+    <CardBase :title="$t('V1C9L1')" :content="$t('V1C9L2')" :card-number="9" :background-front-image="'C9.png'"
+        :background-back-image="'C9-back.png'" />
 </template>
 
 <script>

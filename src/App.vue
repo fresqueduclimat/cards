@@ -6,9 +6,14 @@
       <CardThree />
       <CardFour />
       <CardFive />
-      <!-- <CardSix /> -->
-      <!-- <CardSeven /> -->
-      <!-- <CardThirteen /> -->
+      <CardSix />
+      <CardSeven />
+      <CardHeight />
+      <CardNine />
+      <CardTen />
+      <CardEleven />
+      <CardTwelve />
+      <CardThirteen />
     </div>
   </div>
 </template>
@@ -23,9 +28,14 @@ import CardTwo from "@/components/cards/CardTwo.vue";
 import CardThree from "@/components/cards/CardThree.vue";
 import CardFour from "@/components/cards/CardFour.vue";
 import CardFive from "@/components/cards/CardFive.vue";
-// import CardSix from "@/components/cards/CardSix.vue";
-// import CardSeven from "@/components/cards/CardSeven.vue";
-// import CardThirteen from "@/components/cards/CardThirteen.vue";
+import CardSix from "@/components/cards/CardSix.vue";
+import CardSeven from "@/components/cards/CardSeven.vue";
+import CardHeight from "@/components/cards/CardHeight.vue";
+import CardNine from "@/components/cards/CardNine.vue";
+import CardTen from "@/components/cards/CardTen.vue";
+import CardEleven from "@/components/cards/CardEleven.vue";
+import CardTwelve from "@/components/cards/CardTwelve.vue";
+import CardThirteen from "@/components/cards/CardThirteen.vue";
 
 export default {
   name: "App",
@@ -35,9 +45,14 @@ export default {
     CardThree,
     CardFour,
     CardFive,
-    // CardSix,
-    // CardSeven,
-    // CardThirteen,
+    CardSix,
+    CardSeven,
+    CardHeight,
+    CardNine,
+    CardTen,
+    CardEleven,
+    CardTwelve,
+    CardThirteen,
   },
   mounted() {
     Reveal.initialize({
@@ -58,7 +73,7 @@ export default {
   },
   methods: {
     adjustFontSize() {
-      const labels_max = [0, 0, 0, 0, 5]
+      const labels_max = [0, 0, 0, 0, 5, 0, 4, 0, 0, 0, 0, 0, 5]
       const labels = [];
       for (let card_id = 1; card_id <= labels_max.length; card_id++) {
         let titleValue = {
@@ -79,6 +94,8 @@ export default {
           labels.push(labelValues);
         }
       }
+
+      console.log(labels)
 
       labels.forEach(function (label) {
         const div = document.getElementById(label.container);
@@ -171,11 +188,11 @@ export default {
   font-weight: 700;
 }
 
-.orange h3 {
+.orange p {
   color: #FF6600;
 }
 
-.red h3 {
+.red p {
   color: #FD5050;
 }
 

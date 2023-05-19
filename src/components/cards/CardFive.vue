@@ -1,16 +1,3 @@
-<!-- <template>
-    <section ref="picture" :data-background-image="backgroundFrontImageUrl" data-background-size="cover">
-        <div class="container">
-            <div id="card5-label0" class="title card5-label0-position">
-                <h1 id="card5-text0" class="font-small">{{ $t('V1C5L1') }}</h1>
-            </div>
-            
-        </div>
-    </section>
-    <section ref="back" :data-background-image="backgroundBackImageUrl" data-background-size="cover">
-    </section>
-</template> -->
-
 <template>
     <CardBase :title="$t('V1C5L1')" :content="$t('V1C5L2')" :card-number="5" :background-front-image="'C5.png'"
         :background-back-image="'C5-back.png'">
