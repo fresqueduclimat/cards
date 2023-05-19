@@ -1,15 +1,15 @@
 <template>
-    <CardComplete :title="$t('V1C1L1')" :background-image="'card1.png'" :content="$t('V1C1L2')" :card-number="1"
-        :lot-number="1" />
+    <CardBase :title="$t('V1C1L1')" :content="$t('V1C1L2')" :card-number="1" :background-front-image="'C1.png'"
+        :background-back-image="'C1-back.png'" />
 </template>
 
 <script>
-import CardComplete from "@/components/base/CardComplete.vue";
+import CardBase from "@/components/base/CardBase.vue";
 
 export default {
     name: "CardOne",
     components: {
-        CardComplete,
+        CardBase,
     },
 };
 </script>
