@@ -1,4 +1,14 @@
 {
+  "V1C0L5": "How to play",
+  "V1C0L6": "You need one deck of cards per team (5 to 7 people), a paper roll or a 1 x 2 m piece of paper, pencils, rubbers, colour felt tip pens and some tape.\n\n", 
+  "V1C0L7": "The aim is for each team to place the cards in order on the table, find all the cause and effect relationships and draw arrows between the cards to illustrate what climate change is all about \n\n",
+  "V1C0L8": "Deal the cards set by set and wait until all cards are down on the table before dealing the next set. \n\n", 
+  "V1C0L9": "Time indications: one hour and a half to place the cards, half an hour to decoratethe Fresk and present the result then one hour to sit down together and discussthe solutions. \n\n",
+  "V1C0L10": "For a simpler (or quicker) version of the game, take out cards #10, #14, #15 and/or #41, #42.", 
+  "V1C0L11": "Reasoning",
+  "V1C0L12": "Creativity", 
+  "V1C0L13": "Review",
+  "V1C0L14": "Debrief", 
   "V1C1L1": "Human activities",
   "V1C1L2": "This is where it all begins...",
   "V1C2L1": "Industry",
@@ -32,9 +42,9 @@
   "V1C9L2": "CO2 is not the only greenhouse gas. There are also methane (CH4) and nitrous oxide (N2O) (which come mostly from agriculture), as well as a few others.",
   "V1C999L90": "Source: GIEC",
   "V1C13L1": "Additional greenhouse effect",
-    "V1C13L3": "Insolation",
-    "V1C13L4": "Reflection",
-    "V1C13L5": "Infrared radiation",
-    "V1C13L6": "Greenhouse effect"
+  "V1C13L3": "Insolation",
+  "V1C13L4": "Reflection",
+  "V1C13L5": "Infrared radiation",
+  "V1C13L6": "Greenhouse effect"
     
 }

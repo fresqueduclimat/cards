@@ -68,9 +68,9 @@ export default {
 
 .content {
     top: 805px;
-    left: 100px;
-    width: 4480px;
-    height: 1866px;
+    left: 350px;
+    width: 4000px;
+    height: 1800px;
     border: solid red;
 }
 
