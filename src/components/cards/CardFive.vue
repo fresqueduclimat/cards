@@ -8,11 +8,11 @@
             <p id="card5-text2" class="font-medium">{{ $t('V1C5L3') }}</p>
         </div>
         <div id="card5-label3"
-            class="horizontal-center vertical-center label black label5 vertical-text card5-label3-position">
+            class="horizontal-center vertical-center label black label5 card5-label3-position">
             <p id="card5-text3" class="font-small">{{ $t('V1C5L4') }}</p>
         </div>
         <div id="card5-label4"
-            class="horizontal-center vertical-center label black label5 vertical-text card5-label4-position">
+            class="horizontal-center vertical-center label black label5 card5-label4-position">
             <p id="card5-text4" class="font-small">{{ $t('V1C999L90') }}</p>
         </div>
     </CardBase>
@@ -47,26 +47,28 @@ export default {
 }
 
 .card5-label2-position {
-    top: 1526.4px;
-    left: 1731.6px;
-    width: 561.6px;
-    height: 127.2px;
+    top: 1500px;
+    left: 1690px;
+    width: 660px;
+    height: 150px;
     border: solid red;
 }
 
 .card5-label3-position {
-    top: 894.4px;
-    left: 514.8px;
-    width: 187.2px;
-    height: 1494.6px;
+    top: 1500px;
+    left: -200px;
+    width: 1650px;
+    height: 200px;
+    transform: rotate(-90deg);
     border: solid red;
 }
 
 .card5-label4-position {
-    top: 763.2px;
-    left: 3837.6px;
-    width: 327.6px;
-    height: 1844.4px;
+    top: 1650px;
+    left: 3000px;
+    width: 1950px;
+    height: 200px;
+    transform: rotate(-90deg);
     border: solid red;
 }
 </style>

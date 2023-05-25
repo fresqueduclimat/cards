@@ -2,6 +2,7 @@ import App from "./App.vue";
 import ar from "@/locales/ar.json";
 import br from "@/locales/br.json";
 import cn from "@/locales/cn.json";
+import cnt from "@/locales/cn-traditional.json";
 import co2SubscriptDirective from "@/directives/co2SubscriptDirective.js"; // Import the directive
 import lineBreakDirective from "@/directives/lineBreakDirective.js"; // Import the directive
 import { createApp } from "vue";
@@ -24,6 +25,7 @@ const messages = {
   de: de,
   jp: jp,
   cn: cn,
+  cnt : cnt,
   ru: ru,
   kh: kh,
   lao : lao,
@@ -32,7 +34,7 @@ const messages = {
 };
 
 const i18n = createI18n({
-  locale: "kh", // Set the initial locale, e.g., 'en'
+  locale: "en", // Set the initial locale, e.g., 'en'
   fallbackLocale: "fr",
   messages,
 });
