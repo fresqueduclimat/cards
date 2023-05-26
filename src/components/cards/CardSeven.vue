@@ -4,10 +4,10 @@
         <div id="card7-label1" class="horizontal-center vertical-center label black card7-label1-position">
             <p id="card7-text1">{{ $t('V1C7L5') }}</p>
         </div>
-        <div id="card7-label2" class="horizontal-center vertical-left label black card7-label2-position">
+        <div id="card7-label2" class="horizontal-center label black card7-label2-position">
             <p id="card7-text2" class="font-medium">{{ $t('V1C7L3') }}</p>
         </div>
-        <div id="card7-label3" class="horizontal-center vertical-left label black label3 card7-label3-position">
+        <div id="card7-label3" class="horizontal-center label black label3 card7-label3-position">
             <p id="card7-text3" class="font-medium">{{ $t('V1C7L4') }}</p>
         </div>
     </CardBase>
@@ -31,23 +31,25 @@ export default {
     left: 9vw;
     width: 87vw;
     height: 8vh;
-    border: solid red;
+    /* border: solid red; */
 }
 
 .card7-label2-position {
-    top: 64vh;
-    left: 36vw;  
-    width: 27vw;
-    height: 10vh; 
-    border: solid red;
+    top: 2055px;
+    left: 1700px;
+    width: 1000px;
+    height: 250px;
+    text-align: left;
+    /* border: solid red; */
 }
 
 .card7-label3-position {
-    top: 78vh;
-    left: 36vw;
-    width: 27vw;
-    height: 10vh;
-    border: solid red;
+    top: 2555px;
+    left: 1700px;
+    width: 1000px;
+    height: 250px;
+    text-align: left;
+    /* border: solid red; */
 }
 
 .card7-label2-position p {

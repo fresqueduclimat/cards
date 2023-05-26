@@ -1,7 +1,7 @@
 <template>
     <CardBase :title="$t('V1C13L1')" :content="$t('V1C13L2')" :card-number="13" :background-front-image="'C13.png'"
         :background-back-image="'C13-back.png'">
-        <div id="card13-label1" class="horizontal-center label orange card13-label1-position">
+        <div id="card13-label1" class="horizontal-center vertical-center label orange card13-label1-position">
             <p id="card13-text1" class="font-medium">{{ $t('V1C13L3') }}</p>
         </div>
         <div id="card13-label2" class="horizontal-center vertical-center label orange card13-label2-position">
@@ -29,30 +29,34 @@ export default {
 
 <style>
 .card13-label1-position {
-    top: 37vh;
-    left: 26vw;
-    width: 15vw;
-    height: 10vh;
+    top: 1100px;
+    left: 1200px;
+    width: 700px;
+    height: 300px;
+    /* border: solid red; */
 }
 
 .card13-label2-position {
-    top: 54vh;
-    left: 5vw;
-    width: 15vw;
-    height: 10vh;
+    top: 1700px;
+    left: 200px;
+    width: 700px;
+    height: 300px;
+    /* border: solid red; */
 }
 
 .card13-label3-position {
-    top: 23vh;
-    left: 64vw;
-    width: 20vw;
-    height: 10vh;
+    top: 800px;
+    left: 3000px;
+    width: 1000px;
+    height: 300px;
+    /* border: solid red; */
 }
 
 .card13-label4-position {
-    top: 54vh;
-    left: 72vw;
-    width: 12vw;
-    height: 10vh;
+    top: 1700px;
+    left: 3300px;
+    width: 800px;
+    height: 300px;
+    /* border: solid red; */
 }
 </style>

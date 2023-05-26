@@ -1,19 +1,50 @@
 <template>
-  <div v-co2-subscript id="app" class="reveal">
+  <div v-linebreak v-text-direction v-co2-subscript id="app" class="reveal">
     <div class="slides">
+      <CardZero />
       <CardOne />
+      <CardFive />
+      <CardSeven />
+      <CardThirteen />
+      <CardTwentyOne />
+      <CardEighteen />
+      <CardTwentyTwo />
       <CardTwo />
       <CardThree />
       <CardFour />
-      <CardFive />
       <CardSix />
-      <CardSeven />
       <CardHeight />
       <CardNine />
-      <CardTen />
       <CardEleven />
       <CardTwelve />
-      <CardThirteen />
+      <CardTwentyFour />
+      <CardTen />
+      <CardFourteen />
+      <CardFifteen />
+      <CardSixteen />
+      <CardSeventeen />
+      <CardNineteen />
+      <CardTwenty />
+      <CardTwentyThree />
+      <CardTwentyFive />
+      <CardTwentySix />
+      <CardTwentySeven />
+      <CardThirtyFour />
+      <CardTwentyNine />
+      <CardThirty />
+      <CardThirtyThree />
+      <CardTwentyEight />
+      <CardThirtyOne />
+      <CardThirtyTwo /> 
+      <CardThirtyFive />
+      <CardThirtySix />
+      <CardThirtySeven />
+      <CardThirtyEight />
+      <CardThirtyNine />
+      <CardFourty />
+      <CardFourtyOne />
+      <CardFourtyTwo />
+      <CardFourtyThree />
     </div>
   </div>
 </template>
@@ -23,6 +54,7 @@ import Reveal from "reveal.js";
 import "reveal.js/dist/reveal.css";
 import "reveal.js/dist/theme/simple.css";
 
+import CardZero from "@/components/cards/CardZero.vue";
 import CardOne from "@/components/cards/CardOne.vue";
 import CardTwo from "@/components/cards/CardTwo.vue";
 import CardThree from "@/components/cards/CardThree.vue";
@@ -36,10 +68,41 @@ import CardTen from "@/components/cards/CardTen.vue";
 import CardEleven from "@/components/cards/CardEleven.vue";
 import CardTwelve from "@/components/cards/CardTwelve.vue";
 import CardThirteen from "@/components/cards/CardThirteen.vue";
+import CardFourteen from "@/components/cards/CardFourteen.vue";
+import CardFifteen from "@/components/cards/CardFifteen.vue";
+import CardSixteen from "@/components/cards/CardSixteen.vue";
+import CardSeventeen from "@/components/cards/CardSeventeen.vue";
+import CardEighteen from "@/components/cards/CardEighteen.vue";
+import CardNineteen from "@/components/cards/CardNineteen.vue";
+import CardTwenty from "@/components/cards/CardTwenty.vue";
+import CardTwentyOne from "@/components/cards/CardTwentyOne.vue";
+import CardTwentyTwo from "@/components/cards/CardTwentyTwo.vue";
+import CardTwentyThree from "@/components/cards/CardTwentyThree.vue";
+import CardTwentyFour from "@/components/cards/CardTwentyFour.vue";
+import CardTwentyFive from "@/components/cards/CardTwentyFive.vue";
+import CardTwentySix from "@/components/cards/CardTwentySix.vue";
+import CardTwentySeven from "@/components/cards/CardTwentySeven.vue";
+import CardTwentyEight from "@/components/cards/CardTwentyEight.vue";
+import CardTwentyNine from "@/components/cards/CardTwentyNine.vue";
+import CardThirty from "@/components/cards/CardThirty.vue";
+import CardThirtyOne from "@/components/cards/CardThirtyOne.vue";
+import CardThirtyTwo from "@/components/cards/CardThirtyTwo.vue";
+import CardThirtyThree from "@/components/cards/CardThirtyThree.vue";
+import CardThirtyFour from "@/components/cards/CardThirtyFour.vue";
+import CardThirtyFive from "@/components/cards/CardThirtyFive.vue";
+import CardThirtySix from "@/components/cards/CardThirtySix.vue";
+import CardThirtySeven from "@/components/cards/CardThirtySeven.vue";
+import CardThirtyEight from "@/components/cards/CardThirtyEight.vue";
+import CardThirtyNine from "@/components/cards/CardThirtyNine.vue";
+import CardFourty from "@/components/cards/CardFourty.vue";
+import CardFourtyOne from "@/components/cards/CardFourtyOne.vue";
+import CardFourtyTwo from "@/components/cards/CardFourtyTwo.vue";
+import CardFourtyThree from "@/components/cards/CardFourtyThree.vue";
 
 export default {
   name: "App",
   components: {
+    CardZero,
     CardOne,
     CardTwo,
     CardThree,
@@ -53,6 +116,36 @@ export default {
     CardEleven,
     CardTwelve,
     CardThirteen,
+    CardFourteen,
+    CardFifteen,
+    CardSixteen,
+    CardSeventeen,
+    CardEighteen,
+    CardNineteen,
+    CardTwenty,
+    CardTwentyOne,
+    CardTwentyTwo,
+    CardTwentyThree,
+    CardTwentyFour,
+    CardTwentyFive,
+    CardTwentySix,
+    CardTwentySeven,
+    CardTwentyEight,
+    CardTwentyNine,
+    CardThirty,
+    CardThirtyOne,
+    CardThirtyTwo,
+    CardThirtyThree,
+    CardThirtyFour,
+    CardThirtyFive,
+    CardThirtySix,
+    CardThirtySeven,
+    CardThirtyEight,
+    CardThirtyNine,
+    CardFourty,
+    CardFourtyOne,
+    CardFourtyTwo,
+    CardFourtyThree
   },
   mounted() {
     Reveal.initialize({
@@ -73,20 +166,22 @@ export default {
   },
   methods: {
     adjustFontSize() {
-      const labels_max = [0, 0, 0, 0, 5, 0, 4, 0, 0, 0, 0, 0, 5]
+      const labels_max = [7, 0, 0, 0, 0, 5, 0, 4, 0, 0, 0, 0, 6, 5, 6, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7]
       const labels = [];
-      for (let card_id = 1; card_id <= labels_max.length; card_id++) {
+      for (let card_id = 0; card_id <= labels_max.length-1; card_id++) {
         let titleValue = {
           container: "card" + card_id + "-label0",
           text: "card" + card_id + "-text0",
         }
         labels.push(titleValue);
-        let titleBackValue = {
-          container: "card" + card_id + "-back-label0",
-          text: "card" + card_id + "-back-text0",
+        if (card_id != 0 && card_id != 43) {
+          let titleBackValue = {
+            container: "card" + card_id + "-back-label0",
+            text: "card" + card_id + "-back-text0",
+          }
+          labels.push(titleBackValue);
         }
-        labels.push(titleBackValue);
-        for (let label_id = 1; label_id < labels_max[card_id - 1]; label_id++) {
+        for (let label_id = 1; label_id < labels_max[card_id]; label_id++) {
           let labelValues = {
             container: "card" + card_id + "-label" + label_id,
             text: "card" + card_id + "-text" + label_id,
@@ -94,8 +189,6 @@ export default {
           labels.push(labelValues);
         }
       }
-
-      console.log(labels)
 
       labels.forEach(function (label) {
         const div = document.getElementById(label.container);

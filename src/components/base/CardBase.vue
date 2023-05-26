@@ -60,18 +60,18 @@ export default {
     left: 50px;
     width: 4580px;
     height: 570px;
-    border: solid red;
+    /* border: solid red; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .content {
-    top: 805px;
-    left: 100px;
-    width: 4480px;
-    height: 1866px;
-    border: solid red;
+    top: 900px;
+    left: 350px;
+    width: 4000px;
+    height: 1500px;
+    /* border: solid red; */
 }
 
 .content p {

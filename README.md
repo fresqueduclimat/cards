@@ -25,7 +25,7 @@ npm run serve
 Export cards in pdf file
 
 ```
-npm run export
+EXPORT_LANG=FR_FR npm run export
 ```
 ## Project details
 
