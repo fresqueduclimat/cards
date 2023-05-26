@@ -1,41 +1,41 @@
 <template>
-  <div v-linebreak v-co2-subscript id="app" class="reveal">
+  <div v-linebreak v-text-direction v-co2-subscript id="app" class="reveal">
     <div class="slides">
       <CardZero />
       <CardOne />
+      <CardFive />
+      <CardSeven />
+      <CardThirteen />
+      <CardTwentyOne />
+      <CardEighteen />
+      <CardTwentyTwo />
       <CardTwo />
       <CardThree />
       <CardFour />
-      <CardFive />
       <CardSix />
-      <CardSeven />
       <CardHeight />
       <CardNine />
-      <CardTen />
       <CardEleven />
       <CardTwelve />
-      <CardThirteen />
+      <CardTwentyFour />
+      <CardTen />
       <CardFourteen />
       <CardFifteen />
       <CardSixteen />
       <CardSeventeen />
-      <CardEighteen />
       <CardNineteen />
       <CardTwenty />
-      <CardTwentyOne />
-      <CardTwentyTwo />
       <CardTwentyThree />
-      <CardTwentyFour />
       <CardTwentyFive />
       <CardTwentySix />
       <CardTwentySeven />
-      <CardTwentyEight />
+      <CardThirtyFour />
       <CardTwentyNine />
       <CardThirty />
-      <CardThirtyOne />
-      <CardThirtyTwo />
       <CardThirtyThree />
-      <CardThirtyFour />
+      <CardTwentyEight />
+      <CardThirtyOne />
+      <CardThirtyTwo /> 
       <CardThirtyFive />
       <CardThirtySix />
       <CardThirtySeven />
@@ -166,7 +166,7 @@ export default {
   },
   methods: {
     adjustFontSize() {
-      const labels_max = [7, 0, 0, 0, 0, 5, 0, 4, 0, 0, 0, 0, 6, 5, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7]
+      const labels_max = [7, 0, 0, 0, 0, 5, 0, 4, 0, 0, 0, 0, 6, 5, 6, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7]
       const labels = [];
       for (let card_id = 0; card_id <= labels_max.length-1; card_id++) {
         let titleValue = {
@@ -189,8 +189,6 @@ export default {
           labels.push(labelValues);
         }
       }
-
-      console.log(labels)
 
       labels.forEach(function (label) {
         const div = document.getElementById(label.container);

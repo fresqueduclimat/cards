@@ -31,25 +31,25 @@ export default {
     left: 9vw;
     width: 87vw;
     height: 8vh;
-    border: solid red;
+    /* border: solid red; */
 }
 
 .card7-label2-position {
     top: 2055px;
     left: 1700px;
-    width: 1300px;
+    width: 1000px;
     height: 250px;
     text-align: left;
-    border: solid red;
+    /* border: solid red; */
 }
 
 .card7-label3-position {
     top: 2555px;
     left: 1700px;
-    width: 1300px;
+    width: 1000px;
     height: 250px;
     text-align: left;
-    border: solid red;
+    /* border: solid red; */
 }
 
 .card7-label2-position p {

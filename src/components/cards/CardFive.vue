@@ -43,7 +43,7 @@ export default {
     left: 1216.8px;
     width: 1357.2px;
     height: 254.4px;
-    border: solid red;
+    /* border: solid red; */
 }
 
 .card5-label2-position {
@@ -51,7 +51,7 @@ export default {
     left: 1690px;
     width: 660px;
     height: 150px;
-    border: solid red;
+    /* border: solid red; */
 }
 
 .card5-label3-position {
@@ -60,7 +60,7 @@ export default {
     width: 1650px;
     height: 200px;
     transform: rotate(-90deg);
-    border: solid red;
+    /* border: solid red; */
 }
 
 .card5-label4-position {
@@ -69,6 +69,6 @@ export default {
     width: 1950px;
     height: 200px;
     transform: rotate(-90deg);
-    border: solid red;
+    /* border: solid red; */
 }
 </style>

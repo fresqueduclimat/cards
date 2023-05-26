@@ -33,7 +33,7 @@ export default {
     left: 1200px;
     width: 700px;
     height: 300px;
-    border : red solid;
+    /* border: solid red; */
 }
 
 .card13-label2-position {
@@ -41,7 +41,7 @@ export default {
     left: 200px;
     width: 700px;
     height: 300px;
-    border : red solid;
+    /* border: solid red; */
 }
 
 .card13-label3-position {
@@ -49,7 +49,7 @@ export default {
     left: 3000px;
     width: 1000px;
     height: 300px;
-    border : red solid;
+    /* border: solid red; */
 }
 
 .card13-label4-position {
@@ -57,6 +57,6 @@ export default {
     left: 3300px;
     width: 800px;
     height: 300px;
-    border : red solid;
+    /* border: solid red; */
 }
 </style>

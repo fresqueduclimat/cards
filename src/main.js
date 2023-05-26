@@ -3,6 +3,8 @@ import ar from "@/locales/ar.json";
 import br from "@/locales/br.json";
 import cn from "@/locales/cn.json";
 import cnt from "@/locales/cn-traditional.json";
+import textDirectionDirective from "@/directives/textDirectionDirective.js";
+import textAlignDirective from "@/directives/textAlignDirective.js"; 
 import co2SubscriptDirective from "@/directives/co2SubscriptDirective.js"; // Import the directive
 import lineBreakDirective from "@/directives/lineBreakDirective.js"; // Import the directive
 import { createApp } from "vue";
@@ -16,6 +18,7 @@ import kh from "@/locales/kh.json";
 import lao from "@/locales/lao.json";
 import vt from "@/locales/vt.json";
 import my from "@/locales/my.json";
+import he from "@/locales/he.json";
 
 const messages = {
   en: en,
@@ -31,15 +34,24 @@ const messages = {
   lao : lao,
   vt : vt,
   my : my,
+  he : he,
 };
 
+// if we want to have the language as a param when executing the command
+// execute VUE_APP_LOCALE=fr npm run serve
+// const locale = process.env.VUE_APP_LOCALE || "en";
+
 const i18n = createI18n({
-  locale: "en", // Set the initial locale, e.g., 'en'
+  locale: "fr", // Remplacer par locale si passée en parametre
   fallbackLocale: "fr",
   messages,
 });
 
-const app = createApp(App).use(i18n);
+
+const app = createApp(App)
+app.use(i18n);
 app.directive('co2-subscript', co2SubscriptDirective);
+app.directive('text-direction', textDirectionDirective);
+app.directive('text-align', textAlignDirective);
 app.directive('linebreak', lineBreakDirective); // Register the directive
 app.mount("#app");
