@@ -166,7 +166,7 @@ export default {
   },
   methods: {
     adjustFontSize() {
-      const labels_max = [7, 0, 0, 0, 0, 5, 0, 4, 0, 0, 0, 0, 6, 5, 6, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7]
+      const labels_max = [7, 0, 0, 0, 0, 5, 0, 4, 0, 0, 0, 2, 6, 5, 7, 18, 0, 0, 0, 0, 7, 2, 3, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7]
       const labels = [];
       for (let card_id = 0; card_id <= labels_max.length-1; card_id++) {
         let titleValue = {
@@ -189,6 +189,8 @@ export default {
           labels.push(labelValues);
         }
       }
+
+      // console.log(labels);
 
       labels.forEach(function (label) {
         const div = document.getElementById(label.container);
@@ -259,16 +261,6 @@ export default {
   justify-content: center;
 }
 
-.vertical-left {
-  display: flex;
-  justify-content: left;
-}
-
-.vertical-text {
-  writing-mode: vertical-lr;
-  transform: rotate(-180deg);
-}
-
 .label {
   position: absolute;
 }
@@ -289,15 +281,21 @@ export default {
   color: #FD5050;
 }
 
-.black h2 {
+.black {
   color: black;
 }
 
-.black h3 {
-  color: black;
+.font-big {
+    font-weight: 900;
 }
 
-.black h4 {
-  color: black;
+.font-medium {
+    font-weight: 700;
 }
+
+.font-small {
+    font-weight: 500;
+}
+
+
 </style>

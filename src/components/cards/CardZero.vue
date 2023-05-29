@@ -1,7 +1,7 @@
 <template>
     <section :data-background-image="backgroundFrontImageUrl" data-background-size="cover">
         <div class="container">
-            <div id="card0-label0" v-text-align class="horizontal-center label black card0-label0-position">
+            <div id="card0-label0" v-text-align class="horizontal-center label card0-label0-position">
                 <p id="card0-text0">{{ $t('V1C0L5') }}</p>
             </div>
             <div id="card0-label1" v-text-align class="label black card0-label1-position">
@@ -10,16 +10,16 @@
             <div id="card0-label2" class="label black card0-label2-position">
                 <p id="card0-text2">{{ $t('V1C0L10') }}</p>
             </div>
-            <div id="card0-label3" class="label black card0-label3-position">
+            <div id="card0-label3" class="label card0-label3-position">
                 <p id="card0-text3">{{ $t('V1C0L11') }}</p>
             </div>
-            <div id="card0-label4" class="label black card0-label4-position">
+            <div id="card0-label4" class="label card0-label4-position">
                 <p id="card0-text4">{{ $t('V1C0L12') }}</p>
             </div>
-            <div id="card0-label5" class="label black card0-label5-position">
+            <div id="card0-label5" class="label card0-label5-position">
                 <p id="card0-text5">{{ $t('V1C0L13') }}</p>
             </div>
-            <div id="card0-label6" class="label black card0-label6-position">
+            <div id="card0-label6" class="label card0-label6-position">
                 <p id="card0-text6">{{ $t('V1C0L14') }}</p>
             </div>
         </div>

@@ -30,14 +30,6 @@ export default {
 </script>
 
 <style>
-.font-medium {
-    font-weight: 700;
-}
-
-.font-small {
-    font-weight: 500;
-}
-
 .card5-label1-position {
     top: 954px;
     left: 1216.8px;
