@@ -24,8 +24,8 @@ export default {
 <style>
 .card22-label1-position {
     top: 800px;
-    left: 400px;
-    width: 4000px;
+    left: 300px;
+    width: 4070px;
     height: 300px;
     /* border: solid red; */
 }
