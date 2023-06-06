@@ -27,11 +27,14 @@ Export cards in pdf file
 ```
 EXPORT_LANG=FR_FR npm run export
 ```
+Le paramètre "EXPORT_LANG" permet de nommer automatiquement le fichier (par exemple, avec la commande ci-dessous le fichier exporté sera `Adults-FR_FR-v8.4.pdf`). Attention cependant, la langue du pdf exporté dépend de la locale choisie dans le fichier `main.js` (cf. Choix de la langue ci-dessous)
+
 ## Project details
 
 ### Fonctionnement global
 
 Le fond des cartes est importé à partir de fichiers png.
+
 Sur chaque fond de carte sont positionnées des `div` contenant dans des paragraphes `p` les textes à traduire.
 Une fonction d'ajustement automatique garantit que le texte contenu dans le `p` ne dépasse pas la taille prévue de la `div`.
 
