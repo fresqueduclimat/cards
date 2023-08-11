@@ -7,6 +7,8 @@ import textDirectionDirective from "@/directives/textDirectionDirective.js";
 import textAlignDirective from "@/directives/textAlignDirective.js"; 
 import co2SubscriptDirective from "@/directives/co2SubscriptDirective.js"; // Import the directive
 import lineBreakDirective from "@/directives/lineBreakDirective.js"; // Import the directive
+import lineSpacingDirective from "@/directives/lineSpacingDirective.js"; // Import the directive
+import customTitleDiv from "./directives/customTitleDiv.js";
 import { createApp } from "vue";
 import { createI18n } from "vue-i18n";
 import de from "@/locales/de.json";
@@ -42,7 +44,7 @@ const messages = {
 // const locale = process.env.VUE_APP_LOCALE || "en";
 
 const i18n = createI18n({
-  locale: "ru", // Remplacer par locale si passée en parametre
+  locale: "my", // Remplacer par locale si passée en parametre
   fallbackLocale: "en",
   messages,
 });
@@ -53,5 +55,7 @@ app.use(i18n);
 app.directive('co2-subscript', co2SubscriptDirective);
 app.directive('text-direction', textDirectionDirective);
 app.directive('text-align', textAlignDirective);
-app.directive('linebreak', lineBreakDirective); // Register the directive
+app.directive('linebreak', lineBreakDirective);
+app.directive('linespacing', lineSpacingDirective); 
+app.directive('customtitlediv', customTitleDiv); 
 app.mount("#app");
