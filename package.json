@@ -13,7 +13,8 @@
     "decktape": "^3.7.0",
     "reveal.js": "^4.4.0",
     "vue": "^3.2.13",
-    "vue-i18n": "^9.2.2"
+    "vue-i18n": "^9.2.2",
+    "vue-router": "^4.2.4"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

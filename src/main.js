@@ -1,16 +1,9 @@
 import App from "./App.vue";
+import router from './router.js'
 import ar from "@/locales/ar.json";
 import br from "@/locales/br.json";
 import cn from "@/locales/cn.json";
 import cnt from "@/locales/cn-traditional.json";
-import textDirectionDirective from "@/directives/textDirectionDirective.js";
-import textAlignDirective from "@/directives/textAlignDirective.js"; 
-import co2SubscriptDirective from "@/directives/co2SubscriptDirective.js"; // Import the directive
-import lineBreakDirective from "@/directives/lineBreakDirective.js"; // Import the directive
-import lineSpacingDirective from "@/directives/lineSpacingDirective.js"; // Import the directive
-import customTitleDiv from "./directives/customTitleDiv.js";
-import { createApp } from "vue";
-import { createI18n } from "vue-i18n";
 import de from "@/locales/de.json";
 import en from "@/locales/en.json";
 import fr from "@/locales/fr.json";
@@ -21,6 +14,13 @@ import lao from "@/locales/lao.json";
 import vt from "@/locales/vt.json";
 import my from "@/locales/my.json";
 import he from "@/locales/he.json";
+import textDirectionDirective from "@/directives/textDirectionDirective.js";
+import textAlignDirective from "@/directives/textAlignDirective.js"; 
+import co2SubscriptDirective from "@/directives/co2SubscriptDirective.js"; // Import the directive
+import lineBreakDirective from "@/directives/lineBreakDirective.js"; // Import the directive
+import { createApp } from "vue";
+import { createI18n } from "vue-i18n";
+
 
 const messages = {
   en: en,
@@ -44,7 +44,7 @@ const messages = {
 // const locale = process.env.VUE_APP_LOCALE || "en";
 
 const i18n = createI18n({
-  locale: "my", // Remplacer par locale si passée en parametre
+  locale: "ru", // Remplacer par locale si passée en parametre
   fallbackLocale: "en",
   messages,
 });
@@ -52,10 +52,9 @@ const i18n = createI18n({
 
 const app = createApp(App)
 app.use(i18n);
+app.use(router)
 app.directive('co2-subscript', co2SubscriptDirective);
 app.directive('text-direction', textDirectionDirective);
 app.directive('text-align', textAlignDirective);
-app.directive('linebreak', lineBreakDirective);
-app.directive('linespacing', lineSpacingDirective); 
-app.directive('customtitlediv', customTitleDiv); 
+app.directive('linebreak', lineBreakDirective); // Register the directive
 app.mount("#app");
