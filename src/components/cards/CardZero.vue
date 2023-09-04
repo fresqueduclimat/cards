@@ -13,14 +13,14 @@
             <div id="card0-label3" class="label card0-label3-position">
                 <p id="card0-text3">{{ $t('V1C0L11') }}</p>
             </div>
-            <div id="card0-label4" class="label card0-label4-position">
-                <p id="card0-text4">{{ $t('V1C0L12') }}</p>
+            <div id="card0-label3" class="label card0-label4-position">
+                <p id="card0-text3">{{ $t('V1C0L12') }}</p>
             </div>
-            <div id="card0-label5" class="label card0-label5-position">
-                <p id="card0-text5">{{ $t('V1C0L13') }}</p>
+            <div id="card0-label3" class="label card0-label5-position">
+                <p id="card0-text3">{{ $t('V1C0L13') }}</p>
             </div>
-            <div id="card0-label6" class="label card0-label6-position">
-                <p id="card0-text6">{{ $t('V1C0L14') }}</p>
+            <div id="card0-label3" class="label card0-label6-position">
+                <p id="card0-text3">{{ $t('V1C0L14') }}</p>
             </div>
         </div>
     </section>
@@ -37,7 +37,7 @@ export default {
     },
     computed: {
         backgroundFrontImageUrl() {
-            return require("@/assets/C0-back.png");
+            return require("@/assets/C0-back.svg");
         },
     },
 };
@@ -45,8 +45,8 @@ export default {
 
 <style>
 .card0-label0-position {
-    top: 350px;
-    left: 450px;
+    top: 300px;
+    left: 400px;
     width: 3800px;
     height: 350px;
     color : red;
@@ -56,10 +56,10 @@ export default {
 }
 
 .card0-label1-position {
-    top: 750px;
-    left: 450px;
+    top: 660px;
+    left: 400px;
     width: 3800px;
-    height: 1150px;
+    height: 1250px;
     text-align: left;
     font-size: 200px;
     /* border : red solid; */
@@ -93,6 +93,7 @@ export default {
     color : red;
     font-weight: 900;
     /* border : red solid; */
+    font-size: 100px;
 }
 
 .card0-label5-position {
@@ -103,6 +104,7 @@ export default {
     color : red;
     font-weight: 900;
     /* border : red solid; */
+    font-size:100px;
 }
 
 .card0-label6-position {
@@ -113,6 +115,7 @@ export default {
     color : red;
     font-weight: 900;
     /* border : red solid; */
+    font-size:100px;
 }
 
 </style>

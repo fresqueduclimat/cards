@@ -39,10 +39,10 @@ export default {
 }
 
 .card5-label2-position {
-    top: 1500px;
+    top: 1517px;
     left: 1690px;
     width: 660px;
-    height: 150px;
+    height: 125px;
     /* border: solid red; */
 }
 

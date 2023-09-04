@@ -57,8 +57,8 @@ export default {
 .title {
     position: absolute;
     top: 178px;
-    left: 50px;
-    width: 4580px;
+    left: 240px;
+    width: 4200px;
     height: 570px;
     /* border: solid red; */
     display: flex;
@@ -71,7 +71,7 @@ export default {
     top: 900px;
     left: 350px;
     width: 4000px;
-    height: 1500px;
+    height: 1600px;
     /* border: solid red; */
 }
 

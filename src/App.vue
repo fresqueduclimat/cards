@@ -1,6 +1,7 @@
 <template>
   <div v-customtitlediv v-linespacing v-linebreak v-text-direction v-co2-subscript id="app" class="reveal">
     <div class="slides">
+      <FrontCard />
       <CardZero />
       <CardOne />
       <CardFive />
@@ -45,6 +46,7 @@
       <CardFourtyOne />
       <CardFourtyTwo />
       <CardFourtyThree />
+      <CardFourtyFour />
     </div>
   </div>
 </template>
@@ -98,6 +100,8 @@ import CardFourty from "@/components/cards/CardFourty.vue";
 import CardFourtyOne from "@/components/cards/CardFourtyOne.vue";
 import CardFourtyTwo from "@/components/cards/CardFourtyTwo.vue";
 import CardFourtyThree from "@/components/cards/CardFourtyThree.vue";
+import CardFourtyFour from "@/components/cards/CardFourtyFour.vue";
+import FrontCard from "@/components/cards/FrontCard.vue";
 
 export default {
   name: "App",
@@ -145,7 +149,9 @@ export default {
     CardFourty,
     CardFourtyOne,
     CardFourtyTwo,
-    CardFourtyThree
+    CardFourtyThree,
+    FrontCard,
+    CardFourtyFour
   },
   mounted() {
     Reveal.initialize({
@@ -166,7 +172,7 @@ export default {
   },
   methods: {
     adjustFontSize() {
-      const labels_max = [7, 0, 0, 0, 0, 5, 0, 4, 0, 0, 0, 2, 6, 5, 7, 18, 0, 0, 0, 0, 7, 2, 3, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7]
+      const labels_max = [4, 0, 0, 0, 0, 5, 0, 4, 0, 0, 0, 2, 6, 5, 7, 18, 0, 0, 0, 0, 7, 2, 3, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 7]
       const labels = [];
       for (let card_id = 0; card_id <= labels_max.length-1; card_id++) {
         let titleValue = {
@@ -174,7 +180,7 @@ export default {
           text: "card" + card_id + "-text0",
         }
         labels.push(titleValue);
-        if (card_id != 0 && card_id != 43) {
+        if (card_id != 0 && card_id != 43 && card_id != 44) {
           let titleBackValue = {
             container: "card" + card_id + "-back-label0",
             text: "card" + card_id + "-back-text0",
@@ -235,7 +241,6 @@ export default {
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   height: 100vh;
 }
 
@@ -296,6 +301,4 @@ export default {
 .font-small {
     font-weight: 500;
 }
-
-
 </style>

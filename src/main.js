@@ -1,6 +1,6 @@
 import App from "./App.vue";
 import ar from "@/locales/ar.json";
-import br from "@/locales/br.json";
+import bg from "@/locales/bg.json";
 import cn from "@/locales/cn.json";
 import cnt from "@/locales/cn-traditional.json";
 import textDirectionDirective from "@/directives/textDirectionDirective.js";
@@ -18,7 +18,7 @@ import jp from "@/locales/jp.json";
 import ru from "@/locales/ru.json";
 import kh from "@/locales/kh.json";
 import lao from "@/locales/lao.json";
-import vt from "@/locales/vt.json";
+import vi from "@/locales/vi.json";
 import my from "@/locales/my.json";
 import he from "@/locales/he.json";
 
@@ -26,7 +26,7 @@ const messages = {
   en: en,
   fr: fr,
   ar: ar,
-  br : br,
+  bg : bg,
   de: de,
   jp: jp,
   cn: cn,
@@ -34,7 +34,7 @@ const messages = {
   ru: ru,
   kh: kh,
   lao : lao,
-  vt : vt,
+  vi : vi,
   my : my,
   he : he,
 };
@@ -44,7 +44,7 @@ const messages = {
 // const locale = process.env.VUE_APP_LOCALE || "en";
 
 const i18n = createI18n({
-  locale: "my", // Remplacer par locale si passée en parametre
+  locale: "vi", // Remplacer par locale si passée en parametre
   fallbackLocale: "en",
   messages,
 });
