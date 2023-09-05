@@ -21,6 +21,7 @@ import lao from "@/locales/lao.json";
 import vi from "@/locales/vi.json";
 import my from "@/locales/my.json";
 import he from "@/locales/he.json";
+import pt from "@/locales/pt.json";
 
 const messages = {
   en: en,
@@ -37,6 +38,7 @@ const messages = {
   vi : vi,
   my : my,
   he : he,
+  pt : pt,
 };
 
 // if we want to have the language as a param when executing the command
@@ -44,7 +46,7 @@ const messages = {
 // const locale = process.env.VUE_APP_LOCALE || "en";
 
 const i18n = createI18n({
-  locale: "vi", // Remplacer par locale si passée en parametre
+  locale: "pt", // Remplacer par locale si passée en parametre
   fallbackLocale: "en",
   messages,
 });

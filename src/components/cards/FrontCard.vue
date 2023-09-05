@@ -22,7 +22,7 @@ export default {
     },
     computed: {
         backgroundFrontImageUrl() {
-            return require("@/assets/C0.svg");
+            return require("@/assets/svg/C0.svg");
         },
     },
 };
@@ -40,8 +40,8 @@ export default {
 
 .front-card-label1-position {
     top: 550px;
-    left: 2900px;
-    width: 1300px;
+    left: 2200px;
+    width: 2000px;
     height: 350px;
     font-size: 200px;
     text-align: right;
