@@ -15,6 +15,11 @@
             class="horizontal-center vertical-center label black label5 card5-label4-position">
             <p id="card5-text4" class="font-small">{{ $t('V1C999L90') }}</p>
         </div>
+        <template v-slot:back-content>
+            <div id="card5-back-label5" class="label white set-one">
+                <p id="card5-back-text5">{{ $t('V0C0L0') }}</p>
+            </div>
+        </template>
     </CardBase>
 </template>
 

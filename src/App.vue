@@ -290,6 +290,10 @@ export default {
   color: black;
 }
 
+.white {
+  color: white;
+}
+
 .font-big {
     font-weight: 900;
 }
