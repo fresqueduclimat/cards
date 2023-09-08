@@ -22,7 +22,7 @@ export default {
     },
     computed: {
         backgroundFrontImageUrl() {
-            return require("@/assets/C43.svg");
+            return require("@/assets/png/C99.png");
         },
     },
 };
@@ -42,8 +42,8 @@ export default {
     font-size: 256px;
 }
 .card43-label1-position {
-    top: 2750px;
-    left: 335px;
+    top: 2770px;
+    left: 555px;
     width: 1000px;
     height: 250px;
     font-size: 200px;

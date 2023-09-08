@@ -37,7 +37,7 @@ export default {
     },
     computed: {
         backgroundFrontImageUrl() {
-            return require("@/assets/C99-back.svg");
+            return require("@/assets/png/C99-back.png");
         },
     },
 };

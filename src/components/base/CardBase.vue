@@ -44,13 +44,14 @@ export default {
     },
     computed: {
         backgroundFrontImageUrl() {
-            return require("@/assets/" + this.backgroundFrontImage);
+            return require("@/assets/png/" + this.backgroundFrontImage);
         },
         backgroundBackImageUrl() {
-            return require("@/assets/" + this.backgroundBackImage);
+            return require("@/assets/png/" + this.backgroundBackImage);
         },
     },
 };
+
 </script>
 
 <style>

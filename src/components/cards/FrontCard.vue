@@ -22,7 +22,7 @@ export default {
     },
     computed: {
         backgroundFrontImageUrl() {
-            return require("@/assets/svg/C0.svg");
+            return require("@/assets/png/C0.png");
         },
     },
 };

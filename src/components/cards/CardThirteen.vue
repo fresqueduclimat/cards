@@ -1,6 +1,6 @@
 <template>
-    <CardBase :title="$t('V1C13L1')" :content="$t('V1C13L2')" :card-number="13" :background-front-image="'C13.webp'"
-        :background-back-image="'C13-back.webp'">
+    <CardBase :title="$t('V1C13L1')" :content="$t('V1C13L2')" :card-number="13" :background-front-image="'C13.png'"
+        :background-back-image="'C13-back.png'">
         <div id="card13-label1" class="horizontal-center vertical-center label orange card13-label1-position">
             <p id="card13-text1" class="font-medium">{{ $t('V1C13L3') }}</p>
         </div>
