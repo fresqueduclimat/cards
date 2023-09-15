@@ -1,6 +1,5 @@
 <template>
-    <CardBase :title="$t('V1C15L1')" :content="$t('V1C15L2')" :card-number="15" :background-front-image="'C15.png'"
-        :background-back-image="'C15-back.png'" >
+    <CardBase :title="$t('V1C15L1')" :content="$t('V1C15L2')" :card-number="15" :background-front-image="'C15.png'" >
         <div id="card15-label1" class="horizontal-center label card15-label1-position">
             <p id="card15-text1" class="font-small">{{ $t('V1C15L10') }}</p>
         </div>
@@ -52,7 +51,14 @@
         <div id="card15-label17" class="horizontal-center vertical-center label black label5 card15-label17-position">
             <p id="card15-text17" class="font-big">{{ $t('V1C15L4') }}</p>
         </div>
-        
+        <div id="card15-fixed-label1" class="horizontal-center vertical-center label black card15-fixed-label1-position">
+            <p id="card15-fixed-text1" class="font-small">2,8 W/m<sup>2</sup></p>
+        </div>
+        <template v-slot:back-content>
+            <div id="card15-back-label8" class="label white set-three">
+                <p id="card15-back-text8">{{ $t('V1C0L4') + ' ' + "3"}}</p>
+            </div>
+        </template>  
     </CardBase>
 </template>
 
@@ -222,6 +228,15 @@ export default {
     left: 1950px;
     width: 1150px;
     height: 350px;
+    /* border: solid red; */
+}
+
+.card15-fixed-label1-position {
+    top: 1250px;
+    left: 3485px;
+    width: 770px;
+    height: 250px;
+    font-size: 150px;
     /* border: solid red; */
 }
 </style>

@@ -10,17 +10,17 @@
             <div id="card0-label2" class="label black card0-label2-position">
                 <p id="card0-text2">{{ $t('V1C0L10') }}</p>
             </div>
-            <div id="card0-label3" class="label card0-label3-position">
+            <div id="card0-label3" class="label vertical-center card0-label3-position">
                 <p id="card0-text3">{{ $t('V1C0L11') }}</p>
             </div>
-            <div id="card0-label3" class="label card0-label4-position">
-                <p id="card0-text3">{{ $t('V1C0L12') }}</p>
+            <div id="card0-label4" class="label vertical-center card0-label4-position">
+                <p id="card0-text4">{{ $t('V1C0L12') }}</p>
             </div>
-            <div id="card0-label3" class="label card0-label5-position">
-                <p id="card0-text3">{{ $t('V1C0L13') }}</p>
+            <div id="card0-label5" class="label vertical-center card0-label5-position">
+                <p id="card0-text5">{{ $t('V1C0L13') }}</p>
             </div>
-            <div id="card0-label3" class="label card0-label6-position">
-                <p id="card0-text3">{{ $t('V1C0L14') }}</p>
+            <div id="card0-label6" class="label vertical-center card0-label6-position">
+                <p id="card0-text6">{{ $t('V1C0L14') }}</p>
             </div>
         </div>
     </section>
@@ -52,7 +52,8 @@ export default {
     color : red;
     font-weight: 900;
     /* border : red solid; */
-    font-size: 200px;
+    /* font-size: 200px; */
+    font-size:2000px;
 }
 
 .card0-label1-position {
@@ -87,7 +88,7 @@ export default {
 
 .card0-label4-position {
     top: 2700px;
-    left: 1100px;
+    left: 1120px;
     width: 650px;
     height: 150px;
     color : red;
@@ -98,18 +99,18 @@ export default {
 
 .card0-label5-position {
     top: 2700px;
-    left: 1780px;
+    left: 1810px;
     width: 650px;
     height: 150px;
     color : red;
     font-weight: 900;
     /* border : red solid; */
-    font-size:100px;
+    font-size: 100px;
 }
 
 .card0-label6-position {
     top: 2700px;
-    left: 2480px;
+    left: 2510px;
     width: 650px;
     height: 150px;
     color : red;

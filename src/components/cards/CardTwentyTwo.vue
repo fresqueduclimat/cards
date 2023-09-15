@@ -1,12 +1,25 @@
 <template>
-    <CardBase :title="$t('V1C22L1')" :content="$t('V1C22L2')" :card-number="22" :background-front-image="'C22.png'"
-        :background-back-image="'C22-back.png'">
+    <CardBase :title="$t('V1C22L1')" :content="$t('V1C22L2')" :card-number="22" :background-front-image="'C22.png'">
         <div id="card22-label1" class="horizontal-center vertical-center label black card22-label1-position">
             <p id="card22-text1" class="font-small">{{ $t('V1C22L3') }}</p>
         </div>
         <div id="card22-label2" class="horizontal-center vertical-center label black card22-label2-position">
             <p id="card22-text2" class="font-small">{{ $t('V1C22L7') }}</p>
         </div>
+        <div id="card22-fixed-label1" class="horizontal-center vertical-center label black card22-fixed-label1-position">
+            <p id="card22-fixed-text1" class="font-small">20 cm</p>
+        </div>
+        <div id="card22-fixed-label2" class="horizontal-center vertical-center label black card22-fixed-label2-position">
+            <p id="card22-fixed-text2" class="font-small">80 cm</p>
+        </div>
+        <div id="card22-fixed-label3" class="horizontal-center vertical-center label black card22-fixed-label3-position">
+            <p id="card22-fixed-text3" class="font-small">50 cm</p>
+        </div>
+        <template v-slot:back-content>
+            <div id="card22-back-label3" class="label white set-one">
+                <p id="card22-back-text3">{{ $t('V1C0L4') + ' ' + "1"}}</p>
+            </div>
+        </template>
     </CardBase>
 </template>
 
@@ -35,5 +48,32 @@ export default {
     width: 1357.2px;
     height: 500px;
     /* border: solid red; */
+}
+
+.card22-fixed-label1-position {
+    top: 2070px;
+    left: 895px;
+    width: 736px;
+    height: 300px;
+    /* border: solid red; */
+    font-size : 200px;
+}
+
+.card22-fixed-label2-position {
+    top: 1530px;
+    left: 3560px;
+    width: 735px;
+    height: 290px;
+    /* border: solid red; */
+    font-size : 200px;
+}
+
+.card22-fixed-label3-position {
+    top: 2380px;
+    left: 3560px;
+    width: 735px;
+    height: 290px;
+    /* border: solid red; */
+    font-size: 200px;
 }
 </style>

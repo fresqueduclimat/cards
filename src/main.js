@@ -1,20 +1,21 @@
 import App from "./App.vue";
-import ar from "@/locales/ar.json";
+import ar from "@/locales/ar-AR.json";
 import bg from "@/locales/bg-BG.json";
-import cn from "@/locales/cn.json";
-import cnt from "@/locales/cn-traditional.json";
+import zh from "@/locales/zh-CN.json";
 import textDirectionDirective from "@/directives/textDirectionDirective.js";
 import textAlignDirective from "@/directives/textAlignDirective.js"; 
-import co2SubscriptDirective from "@/directives/co2SubscriptDirective.js"; // Import the directive
-import lineBreakDirective from "@/directives/lineBreakDirective.js"; // Import the directive
-import lineSpacingDirective from "@/directives/lineSpacingDirective.js"; // Import the directive
-import customTitleDiv from "./directives/customTitleDiv.js";
+import co2SubscriptDirective from "@/directives/co2SubscriptDirective.js"; 
+import lineBreakDirective from "@/directives/lineBreakDirective.js";
+import lineSpacingDirective from "@/directives/lineSpacingDirective.js"; 
+import customTitleDivDirective from "./directives/customTitleDivDirective.js";
+import logoDirective from "./directives/logoDirective.js";
+import noBreakDirective from "./directives/noBreakDirective.js"
 import { createApp } from "vue";
 import { createI18n } from "vue-i18n";
-import de from "@/locales/de.json";
+import de from "@/locales/de-DE.json";
 import en from "@/locales/en.json";
-import fr from "@/locales/fr.json";
-import jp from "@/locales/jp.json";
+import fr from "@/locales/fr-FR.json";
+import ja from "@/locales/ja-JP.json";
 import ru from "@/locales/ru.json";
 import kh from "@/locales/kh.json";
 import lao from "@/locales/lao.json";
@@ -22,6 +23,9 @@ import vi from "@/locales/vi-VN.json";
 import my from "@/locales/my-MM.json";
 import he from "@/locales/he.json";
 import pt from "@/locales/pt-PT.json";
+import ro from "@/locales/ro-RO.json";
+import sv from "@/locales/sv-SE.json";
+import fi from "@/locales/fi-FI.json";
 
 const messages = {
   en: en,
@@ -29,9 +33,8 @@ const messages = {
   ar: ar,
   bg : bg,
   de: de,
-  jp: jp,
-  cn: cn,
-  cnt : cnt,
+  ja: ja,
+  zh : zh,
   ru: ru,
   kh: kh,
   lao : lao,
@@ -39,6 +42,9 @@ const messages = {
   my : my,
   he : he,
   pt : pt,
+  ro : ro,
+  sv : sv,
+  fi : fi,
 };
 
 // if we want to have the language as a param when executing the command
@@ -46,7 +52,7 @@ const messages = {
 // const locale = process.env.VUE_APP_LOCALE || "en";
 
 const i18n = createI18n({
-  locale: "vi", // Remplacer par locale si passée en parametre
+  locale: "zh", // Remplacer par locale si passée en parametre
   fallbackLocale: "en",
   messages,
 });
@@ -59,5 +65,7 @@ app.directive('text-direction', textDirectionDirective);
 app.directive('text-align', textAlignDirective);
 app.directive('linebreak', lineBreakDirective);
 app.directive('linespacing', lineSpacingDirective); 
-app.directive('customtitlediv', customTitleDiv); 
+app.directive('customtitlediv', customTitleDivDirective); 
+app.directive('logo', logoDirective); 
+app.directive('no-break', noBreakDirective); 
 app.mount("#app");

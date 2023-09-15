@@ -22,8 +22,12 @@
             <div id="card44-label6" class="label black card44-label6-position">
                 <p id="card44-text6">{{ $t('V1C999L9') }}</p>
             </div>
+            <div class="label logo-container-big">
+                <div class="logo"></div>
+            </div>
         </div>
     </section>
+    
 </template>
 
 <script>
@@ -44,6 +48,20 @@ export default {
 </script>
 
 <style>
+.logo-container-big {
+    top: 2050px;
+    left: 615px;
+    width: 2000px;
+    height: 750px;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    background-image: url('@/assets/logo-en.png');
+    background-size: contain;
+}
+
 .card44-label0-position {
     top: 400px;
     left: 350px;

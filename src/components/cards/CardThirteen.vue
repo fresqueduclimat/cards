@@ -1,6 +1,5 @@
 <template>
-    <CardBase :title="$t('V1C13L1')" :content="$t('V1C13L2')" :card-number="13" :background-front-image="'C13.png'"
-        :background-back-image="'C13-back.png'">
+    <CardBase :title="$t('V1C13L1')" :content="$t('V1C13L2')" :card-number="13" :background-front-image="'C13.png'">
         <div id="card13-label1" class="horizontal-center vertical-center label orange card13-label1-position">
             <p id="card13-text1" class="font-medium">{{ $t('V1C13L3') }}</p>
         </div>
@@ -13,6 +12,17 @@
         <div id="card13-label4" class="horizontal-center vertical-center label red card13-label4-position">
             <p id="card13-text4" class="font-medium">{{ $t('V1C13L6') }}</p>
         </div>
+        <div id="card13-fixed-label1" class="horizontal-center vertical-center label card13-fixed-label1-position">
+            <p id="card13-fixed-text1" class="font-big">15°C</p>
+        </div>
+        <div id="card13-fixed-label2" class="horizontal-center vertical-center label card13-fixed-label2-position">
+            <p id="card13-fixed-text2" class="font-big">-18°C</p>
+        </div>
+        <template v-slot:back-content>
+            <div id="card13-back-label1" class="label white set-one">
+                <p id="card13-back-text1">{{ $t('V1C0L4') + ' ' + "1"}}</p>
+            </div>
+        </template>
     </CardBase>
 </template>
 
@@ -58,5 +68,24 @@ export default {
     width: 800px;
     height: 300px;
     /* border: solid red; */
+}
+.card13-fixed-label1-position {
+    top: 1260px;
+    left: 3700px;
+    width: 450px;
+    height: 150px;
+    font-size: 156px;
+    color: white;
+    /* border: red solid; */
+}
+
+.card13-fixed-label2-position {
+    top: 2300px;
+    left: 3700px;
+    width: 450px;
+    height: 150px;
+    font-size: 156px;
+    color: white;
+    /* border: red solid; */
 }
 </style>
