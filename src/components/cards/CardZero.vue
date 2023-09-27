@@ -43,7 +43,78 @@ export default {
 };
 </script>
 
+<!-- pour une résolution de 470x693 -->
 <style>
+.card0-label0-position {
+    top: 44px;   /* A' = 300 * 470 / 3180 = 44.49 (arrondi à 44) */
+    left: 58px;  /* B' = 400 * 693 / 4680 = 59.06 (arrondi à 58) */
+    width: 449px; /* C' = 3800 * 693 / 4680 = 558.56 (arrondi à 449) */
+    height: 52px; /* D' = 350 * 470 / 3180 = 51.77 (arrondi à 52) */
+    color: red;
+    font-weight: 900;
+    font-size: 2000px;
+}
+
+.card0-label1-position {
+    top: 96px;   /* A' = 660 * 470 / 3180 = 97.64 (arrondi à 96) */
+    left: 58px;  /* B' = 400 * 693 / 4680 = 59.06 (arrondi à 58) */
+    width: 449px; /* C' = 3800 * 693 / 4680 = 558.56 (arrondi à 449) */
+    height: 314px; /* D' = 1250 * 470 / 3180 = 184.95 (arrondi à 314) */
+    text-align: left;
+    font-size: 200px;
+}
+
+.card0-label2-position {
+    top: 375px;  /* A' = 2150 * 470 / 3180 = 317.57 (arrondi à 375) */
+    left: 875px; /* B' = 3320 * 693 / 4680 = 492.41 (arrondi à 875) */
+    width: 182px; /* C' = 850 * 693 / 4680 = 126.09 (arrondi à 182) */
+    height: 92px; /* D' = 430 * 470 / 3180 = 63.65 (arrondi à 92) */
+    transform: rotate(15deg);
+}
+
+.card0-label3-position {
+    top: 465px;  /* A' = 2700 * 470 / 3180 = 398.11 (arrondi à 465) */
+    left: 59px;  /* B' = 420 * 693 / 4680 = 62.12 (arrondi à 59) */
+    width: 117px; /* C' = 650 * 693 / 4680 = 97.01 (arrondi à 117) */
+    height: 27px; /* D' = 150 * 470 / 3180 = 22.12 (arrondi à 27) */
+    color: red;
+    font-weight: 900;
+    font-size: 100px;
+}
+
+.card0-label4-position {
+    top: 465px;  /* A' = 2700 * 470 / 3180 = 398.11 (arrondi à 465) */
+    left: 315px; /* B' = 1120 * 693 / 4680 = 165.83 (arrondi à 315) */
+    width: 117px; /* C' = 650 * 693 / 4680 = 97.01 (arrondi à 117) */
+    height: 27px; /* D' = 150 * 470 / 3180 = 22.12 (arrondi à 27) */
+    color: red;
+    font-weight: 900;
+    font-size: 100px;
+}
+
+.card0-label5-position {
+    top: 465px;  /* A' = 2700 * 470 / 3180 = 398.11 (arrondi à 465) */
+    left: 571px; /* B' = 1810 * 693 / 4680 = 268.43 (arrondi à 571) */
+    width: 117px; /* C' = 650 * 693 / 4680 = 97.01 (arrondi à 117) */
+    height: 27px; /* D' = 150 * 470 / 3180 = 22.12 (arrondi à 27) */
+    color: red;
+    font-weight: 900;
+    font-size: 100px;
+}
+
+.card0-label6-position {
+    top: 465px;  /* A' = 2700 * 470 / 3180 = 398.11 (arrondi à 465) */
+    left: 826px; /* B' = 2510 * 693 / 4680 = 373.08 (arrondi à 826) */
+    width: 117px; /* C' = 650 * 693 / 4680 = 97.01 (arrondi à 117) */
+    height: 27px; /* D' = 150 * 470 / 3180 = 22.12 (arrondi à 27) */
+    color: red;
+    font-weight: 900;
+    font-size: 100px;
+}
+</style>
+
+<!-- pour une résolution de 3180x4680 -->
+<!-- <style>
 .card0-label0-position {
     top: 300px;
     left: 400px;
@@ -119,4 +190,4 @@ export default {
     font-size:100px;
 }
 
-</style>
+</style> -->

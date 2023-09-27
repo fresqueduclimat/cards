@@ -36,6 +36,50 @@ export default {
 
 <style>
 .card22-label1-position {
+    top: 118px;
+    left: 44px;
+    width: 603px;
+    height: 44px;
+    /* border: solid red; */
+}
+.card22-label2-position {
+    top: 173px;
+    left: 192px;
+    width: 200.8px;
+    height: 74px;
+    /* border: solid red; */
+}
+
+.card22-fixed-label1-position {
+    top: 306px;
+    left: 132px;
+    width: 109px;
+    height: 44px;
+    /* border: solid red; */
+    font-size : 27px;
+}
+
+.card22-fixed-label2-position {
+    top: 226px;
+    left: 527px;
+    width: 109px;
+    height: 43px;
+    /* border: solid red; */
+    font-size : 27px;
+}
+
+.card22-fixed-label3-position {
+    top: 352px;
+    left: 527px;
+    width: 109px;
+    height: 43px;
+    /* border: solid red; */
+    font-size: 27px;
+}
+</style>
+
+<!-- <style>
+.card22-label1-position {
     top: 800px;
     left: 300px;
     width: 4070px;
@@ -76,4 +120,4 @@ export default {
     /* border: solid red; */
     font-size: 200px;
 }
-</style>
+</style> -->

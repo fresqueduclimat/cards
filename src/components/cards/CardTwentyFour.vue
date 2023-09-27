@@ -27,6 +27,26 @@ export default {
 
 <style>
 .card24-label1-position {
+    top: 212px;
+    left: -37px;
+    width: 244px;
+    height: 52px;
+    transform: rotate(-90deg);
+    /* border: solid red; */
+}
+
+.card24-label2-position {
+    top: 126px;
+    left: 414px;
+    width: 222px;
+    height: 22px;
+    color: grey;
+    /* border: solid red; */
+}
+</style>
+
+<!-- <style>
+.card24-label1-position {
     top: 1430px;
     left: -250px;
     width: 1650px;
@@ -43,4 +63,4 @@ export default {
     color: grey;
     /* border: solid red; */
 }
-</style>
+</style> -->

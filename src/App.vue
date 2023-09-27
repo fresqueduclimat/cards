@@ -234,8 +234,12 @@ export default {
   --r-heading2-size: 300px;
   --r-heading3-size: 250px;
   --r-heading4-size: 240px;
-  --r-main-font-size: 120px;
+  --r-main-font-size: 20px;
   --r-block-margin: 0;
+  --original-height : 3180;
+  --original-width : 4680;
+  --new-height : 470;
+  --original-width : 693;
 }
 
 #app {
