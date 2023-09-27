@@ -1,6 +1,5 @@
 <template>
-    <CardBase :title="$t('V1C14L1')" :content="$t('V1C14L2')" :card-number="14" :background-front-image="'C14.png'"
-        :background-back-image="'C14-back.png'" >
+    <CardBase :title="$t('V1C14L1')" :content="$t('V1C14L2')" :card-number="14" :background-front-image="'C14.png'" >
         <div id="card14-label1" v-text-align class="horizontal-center label black card14-label1-position">
             <p id="card14-text1" class="font-big">{{ $t('V1C14L3') }}</p>
         </div>
@@ -21,7 +20,26 @@
             class="horizontal-center vertical-center label black label5 card14-label6-position">
             <p id="card14-text6" class="font-small">{{ $t('V1C999L90') }}</p>
         </div>
-        
+        <div id="card14-label5" class="horizontal-center vertical-center label black card14-label5-position">
+            <p id="card14-text5" class="font-small">{{ $t('V1C999L90') }}</p>
+        </div>
+        <div id="card14-fixed-label1" class="horizontal-center vertical-center label white card14-fixed-label1-position">
+            <p id="card14-fixed-text1" class="font-small">91%</p>
+        </div>
+        <div id="card14-fixed-label2" class="horizontal-center vertical-center label black card14-fixed-label2-position">
+            <p id="card14-fixed-text2" class="font-small">3%</p>
+        </div>
+        <div id="card14-fixed-label3" class="horizontal-center vertical-center label black card14-fixed-label3-position">
+            <p id="card14-fixed-text3" class="font-small">5%</p>
+        </div>
+        <div id="card14-fixed-label4" class="horizontal-center vertical-center label black card14-fixed-label4-position">
+            <p id="card14-fixed-text4" class="font-small">1%</p>
+        </div>
+        <template v-slot:back-content>
+            <div id="card14-back-label7" class="label white set-three">
+                <p id="card14-back-text7">{{ $t('V1C0L4') + ' ' + "3"}}</p>
+            </div>
+        </template>
         
     </CardBase>
 </template>
@@ -38,6 +56,101 @@ export default {
 </script>
 
 <style>
+.card14-label1-position {
+    top: 177px; /* A' = 950 * 470 / 3180 = 139.92px */
+    left: 625px; /* B' = 3350 * 693 / 4680 = 498.73px */
+    width: 148px; /* C' = 800 * 693 / 4680 = 118.51px */
+    height: 65px; /* D' = 350 * 470 / 3180 = 51.82px */
+    text-align : left;
+    font-size : 150px;
+    /* border: solid red; */
+}
+
+.card14-label2-position {
+    top: 261px; /* A' = 1400 * 470 / 3180 = 205.97px */
+    left: 625px; /* B' = 3350 * 693 / 4680 = 498.73px */
+    width: 148px; /* C' = 800 * 693 / 4680 = 118.51px */
+    height: 65px; /* D' = 350 * 470 / 3180 = 51.82px */
+    text-align : left;
+    font-size : 150px;
+    /* border: solid red; */
+}
+
+.card14-label3-position {
+    top: 346px; /* A' = 1850 * 470 / 3180 = 272.90px */
+    left: 625px; /* B' = 3350 * 693 / 4680 = 498.73px */
+    width: 148px; /* C' = 800 * 693 / 4680 = 118.51px */
+    height: 65px; /* D' = 350 * 470 / 3180 = 51.82px */
+    text-align : left;
+    font-size : 150px;
+    /* border: solid red; */
+}
+
+.card14-label4-position {
+    top: 421px; /* A' = 2270 * 470 / 3180 = 333.21px */
+    left: 625px; /* B' = 3350 * 693 / 4680 = 498.73px */
+    width: 148px; /* C' = 800 * 693 / 4680 = 118.51px */
+    height: 65px; /* D' = 350 * 470 / 3180 = 51.82px */
+    text-align : left;
+    font-size : 150px;
+    /* border: solid red; */
+}
+
+.card14-label5-position {
+    top: 250px; /* A' = 1500 * 470 / 3180 = 221.70px */
+    left: -33px; /* B' = -350 * 693 / 4680 = -51.86px */
+    width: 124px; /* C' = 1600 * 693 / 4680 = 237.02px */
+    height: 16px; /* D' = 200 * 470 / 3180 = 29.63px */
+    transform: rotate(-90deg);
+    /* border: solid red; */
+}
+
+.card14-label6-position {
+    top: 272px; /* A' = 1650 * 470 / 3180 = 243.09px */
+    left: 624px; /* B' = 3320 * 693 / 4680 = 491.58px */
+    width: 148px; /* C' = 1950 * 693 / 4680 = 290.61px */
+    height: 16px; /* D' = 200 * 470 / 3180 = 29.63px */
+    transform: rotate(-90deg);
+    /* border: solid red; */
+}
+
+.card14-fixed-label1-position {
+    top: 177px; /* A' = 950 * 470 / 3180 = 139.92px */
+    left: 470px; /* B' = 2550 * 693 / 4680 = 377.36px */
+    width: 139px; /* C' = 736 * 693 / 4680 = 103.43px */
+    height: 62px; /* D' = 330 * 470 / 3180 = 48.82px */
+    font-size: 20px;
+}
+
+.card14-fixed-label2-position {
+    top: 261px; /* A' = 1400 * 470 / 3180 = 205.97px */
+    left: 470px; /* B' = 2550 * 693 / 4680 = 377.36px */
+    width: 139px; /* C' = 736 * 693 / 4680 = 103.43px */
+    height: 62px; /* D' = 330 * 470 / 3180 = 48.82px */
+    font-size: 20px;
+    /* border: red solid; */
+}
+
+.card14-fixed-label3-position {
+    top: 346px; /* A' = 1850 * 470 / 3180 = 272.90px */
+    left: 470px; /* B' = 2550 * 693 / 4680 = 377.36px */
+    width: 139px; /* C' = 736 * 693 / 4680 = 103.43px */
+    height: 62px; /* D' = 330 * 470 / 3180 = 48.82px */
+    font-size: 20px;
+    /* border: red solid; */
+}
+
+.card14-fixed-label4-position {
+    top: 421px; /* A' = 2270 * 470 / 3180 = 333.21px */
+    left: 470px; /* B' = 2550 * 693 / 4680 = 377.36px */
+    width: 139px; /* C' = 736 * 693 / 4680 = 103.43px */
+    height: 68px; /* D' = 350 * 470 / 3180 = 51.82px */
+    font-size: 20px;
+    /* border: red solid; */
+}
+</style>
+
+<!-- <style>
 .card14-label1-position {
     top: 950px;
     left: 3350px;
@@ -95,4 +208,38 @@ export default {
     transform: rotate(-90deg);
     /* border: solid red; */
 }
-</style>
+.card14-fixed-label1-position {
+    top: 950px;
+    left: 2550px;
+    width: 736px;
+    height: 330px;
+    font-size: 20px;
+}
+
+.card14-fixed-label2-position {
+    top: 1390px;
+    left: 2550px;
+    width: 736px;
+    height: 330px;
+    font-size: 20px;
+    /* border: red solid; */
+}
+
+.card14-fixed-label3-position {
+    top: 1830px;
+    left: 2550px;
+    width: 736px;
+    height: 330px;
+    font-size: 20px;
+    /* border: red solid; */
+}
+
+.card14-fixed-label4-position {
+    top: 2280px;
+    left: 2550px;
+    width: 736px;
+    height: 350px;
+    font-size: 20px;
+    /* border: red solid; */
+}
+</style> -->

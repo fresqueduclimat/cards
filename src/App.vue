@@ -1,5 +1,5 @@
 <template>
-  <div v-customtitlediv v-linespacing v-linebreak v-text-direction v-co2-subscript id="app" class="reveal">
+  <div v-no-break v-logo v-customtitlediv v-linespacing v-linebreak v-text-direction v-co2-subscript id="app" class="reveal">
     <div class="slides">
       <FrontCard />
       <CardZero />
@@ -172,7 +172,7 @@ export default {
   },
   methods: {
     adjustFontSize() {
-      const labels_max = [4, 0, 0, 0, 0, 5, 0, 4, 0, 0, 0, 2, 6, 5, 7, 18, 0, 0, 0, 0, 7, 2, 3, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 7]
+      const labels_max = [7, 0, 0, 0, 0, 5, 0, 4, 0, 0, 0, 2, 6, 5, 7, 18, 0, 0, 0, 0, 7, 2, 3, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 7]
       const labels = [];
       for (let card_id = 0; card_id <= labels_max.length-1; card_id++) {
         let titleValue = {
@@ -207,8 +207,8 @@ export default {
         let fontSizeWithPx = style.getPropertyValue('font-size');
         let fontSize = parseFloat(fontSizeWithPx);
         while (
-          string.offsetWidth > divWidth ||
-          string.offsetHeight > divHeight
+          string.scrollWidth > divWidth ||
+          string.scrollHeight > divHeight
         ) {
           if (fontSize === 1) {
             break;
@@ -224,7 +224,7 @@ export default {
 
 <style>
 :root {
-  --r-main-font: Arial, sans-serif;
+  --r-main-font: "Arial", sans-serif;
   --r-heading-font: var(--r-main-font);
   --r-heading-color: white;
   --r-heading-margin: 0 0 0 0;
@@ -234,8 +234,12 @@ export default {
   --r-heading2-size: 300px;
   --r-heading3-size: 250px;
   --r-heading4-size: 240px;
-  --r-main-font-size: 120px;
+  --r-main-font-size: 20px;
   --r-block-margin: 0;
+  --original-height : 3180;
+  --original-width : 4680;
+  --new-height : 470;
+  --original-width : 693;
 }
 
 #app {
@@ -243,6 +247,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
 }
+
 
 .slides>section {
   width: 100%;
@@ -288,6 +293,10 @@ export default {
 
 .black {
   color: black;
+}
+
+.white {
+  color: white;
 }
 
 .font-big {

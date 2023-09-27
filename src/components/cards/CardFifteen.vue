@@ -1,6 +1,5 @@
 <template>
-    <CardBase :title="$t('V1C15L1')" :content="$t('V1C15L2')" :card-number="15" :background-front-image="'C15.png'"
-        :background-back-image="'C15-back.png'" >
+    <CardBase :title="$t('V1C15L1')" :content="$t('V1C15L2')" :card-number="15" :background-front-image="'C15.png'" >
         <div id="card15-label1" class="horizontal-center label card15-label1-position">
             <p id="card15-text1" class="font-small">{{ $t('V1C15L10') }}</p>
         </div>
@@ -52,7 +51,14 @@
         <div id="card15-label17" class="horizontal-center vertical-center label black label5 card15-label17-position">
             <p id="card15-text17" class="font-big">{{ $t('V1C15L4') }}</p>
         </div>
-        
+        <div id="card15-fixed-label1" class="horizontal-center vertical-center label black card15-fixed-label1-position">
+            <p id="card15-fixed-text1" class="font-small">2,8 W/m<sup>2</sup></p>
+        </div>
+        <template v-slot:back-content>
+            <div id="card15-back-label8" class="label white set-three">
+                <p id="card15-back-text8">{{ $t('V1C0L4') + ' ' + "3"}}</p>
+            </div>
+        </template>  
     </CardBase>
 </template>
 
@@ -67,7 +73,183 @@ export default {
 };
 </script>
 
+<!-- pour une résolution de 470x693 -->
 <style>
+.card15-label1-position {
+    top: 118px; /* A' = 790 * 470 / 3180 = 138.35px */
+    left: 59px; /* B' = 400 * 693 / 4680 = 59.48px */
+    width: 163px; /* C' = 1100 * 693 / 4680 = 162.79px */
+    height: 15px; /* D' = 100 * 470 / 3180 = 14.81px */
+    justify-content: right;
+    color: lightsalmon;
+    /* border: solid red; */
+}
+
+.card15-label2-position {
+    top: 141px; /* A' = 920 * 470 / 3180 = 160.92px */
+    left: 59px; /* B' = 400 * 693 / 4680 = 59.48px */
+    width: 163px; /* C' = 1100 * 693 / 4680 = 162.79px */
+    height: 15px; /* D' = 100 * 470 / 3180 = 14.81px */
+    justify-content: right;
+    /* border: solid red; */
+}
+
+.card15-label3-position {
+    top: 164px; /* A' = 1040 * 470 / 3180 = 183.91px */
+    left: 59px; /* B' = 400 * 693 / 4680 = 59.48px */
+    width: 163px; /* C' = 1100 * 693 / 4680 = 162.79px */
+    height: 15px; /* D' = 100 * 470 / 3180 = 14.81px */
+    justify-content: right;
+    color: grey;
+    /* border: solid red; */
+}
+
+.card15-label4-position {
+    top: 186px; /* A' = 1160 * 470 / 3180 = 205.87px */
+    left: 59px; /* B' = 400 * 693 / 4680 = 59.48px */
+    width: 163px; /* C' = 1100 * 693 / 4680 = 162.79px */
+    height: 15px; /* D' = 100 * 470 / 3180 = 14.81px */
+    justify-content: right;
+    color: cyan;
+    /* border: solid red; */
+}
+
+.card15-label5-position {
+    top: 229px; /* A' = 1280 * 470 / 3180 = 228.83px */
+    left: 59px; /* B' = 400 * 693 / 4680 = 59.48px */
+    width: 163px; /* C' = 1100 * 693 / 4680 = 162.79px */
+    height: 15px; /* D' = 100 * 470 / 3180 = 14.81px */
+    justify-content: right;
+    color: darkgreen;
+    /* border: solid red; */
+}
+
+.card15-label6-position {
+    top: 252px; /* A' = 1400 * 470 / 3180 = 251.80px */
+    left: 59px; /* B' = 400 * 693 / 4680 = 59.48px */
+    width: 163px; /* C' = 1100 * 693 / 4680 = 162.79px */
+    height: 15px; /* D' = 100 * 470 / 3180 = 14.81px */
+    justify-content: right;
+    color: lightblue;
+    /* border: solid red; */
+}
+
+.card15-label7-position {
+    top: 275px; /* A' = 1520 * 470 / 3180 = 274.77px */
+    left: 59px; /* B' = 400 * 693 / 4680 = 59.48px */
+    width: 163px; /* C' = 1100 * 693 / 4680 = 162.79px */
+    height: 15px; /* D' = 100 * 470 / 3180 = 14.81px */
+    justify-content: right;
+    color: lightgreen;
+    /* border: solid red; */
+}
+
+.card15-label8-position {
+    top: 297px; /* A' = 1640 * 470 / 3180 = 297.73px */
+    left: 59px; /* B' = 400 * 693 / 4680 = 59.48px */
+    width: 163px; /* C' = 1100 * 693 / 4680 = 162.79px */
+    height: 15px; /* D' = 100 * 470 / 3180 = 14.81px */
+    justify-content: right;
+    color: green;
+    /* border: solid red; */
+}
+
+.card15-label9-position {
+    top: 320px; /* A' = 1760 * 470 / 3180 = 319.69px */
+    left: 59px; /* B' = 400 * 693 / 4680 = 59.48px */
+    width: 163px; /* C' = 1100 * 693 / 4680 = 162.79px */
+    height: 17px; /* D' = 110 * 470 / 3180 = 16.18px */
+    justify-content: right;
+    color: darkgrey;
+    /* border: solid red; */
+}
+
+.card15-label10-position {
+    top: 501px; /* A' = 2220 * 470 / 3180 = 328.23px */
+    left: 93px; /* B' = 630 * 693 / 4680 = 93.43px */
+    width: 135px; /* C' = 900 * 693 / 4680 = 134.79px */
+    height: 18px; /* D' = 120 * 470 / 3180 = 17.65px */
+    justify-content: right;
+    color: green;
+    /* border: solid red; */
+}
+
+.card15-label11-position {
+    top: 543px; /* A' = 2360 * 470 / 3180 = 349.41px */
+    left: 93px; /* B' = 630 * 693 / 4680 = 93.43px */
+    width: 135px; /* C' = 900 * 693 / 4680 = 134.79px */
+    height: 18px; /* D' = 120 * 470 / 3180 = 17.65px */
+    justify-content: right;
+    color: red;
+    /* border: solid red; */
+}
+
+.card15-label12-position {
+    top: 586px; /* A' = 2500 * 470 / 3180 = 368.59px */
+    left: 93px; /* B' = 630 * 693 / 4680 = 93.43px */
+    width: 135px; /* C' = 900 * 693 / 4680 = 134.79px */
+    height: 27px; /* D' = 150 * 470 / 3180 = 22.12px */
+    justify-content: right;
+    color: orange;
+    /* border: solid red; */
+}
+
+.card15-label13-position {
+    top: 629px; /* A' = 2650 * 470 / 3180 = 387.76px */
+    left: 93px; /* B' = 630 * 693 / 4680 = 93.43px */
+    width: 135px; /* C' = 900 * 693 / 4680 = 134.79px */
+    height: 24px; /* D' = 130 * 470 / 3180 = 19.18px */
+    justify-content: right;
+    color: grey;
+    /* border: solid red; */
+}
+
+.card15-label14-position {
+    top: 128px; /* A' = 870 * 470 / 3180 = 128.23px */
+    left: 512px; /* B' = 3450 * 693 / 4680 = 512.04px */
+    width: 163px; /* C' = 1100 * 693 / 4680 = 162.79px */
+    height: 27px; /* D' = 150 * 470 / 3180 = 22.12px */
+    /* border: solid red; */
+}
+
+.card15-label15-position {
+    top: 154px; /* A' = 1040 * 470 / 3180 = 153.91px */
+    left: 512px; /* B' = 3450 * 693 / 4680 = 512.04px */
+    width: 163px; /* C' = 1100 * 693 / 4680 = 162.79px */
+    height: 27px; /* D' = 150 * 470 / 3180 = 22.12px */
+    /* border: solid red; */
+}
+
+.card15-label16-position {
+    top: 118px; /* A' = 800 * 470 / 3180 = 117.65px */
+    left: 289px; /* B' = 1950 * 693 / 4680 = 289.29px */
+    width: 170px; /* C' = 1150 * 693 / 4680 = 169.63px */
+    height: 52px; /* D' = 350 * 470 / 3180 = 51.94px */
+    color: white;
+    /* border: solid red; */
+}
+
+.card15-label17-position {
+    top: 369px; /* A' = 2500 * 470 / 3180 = 368.59px */
+    left: 289px; /* B' = 1950 * 693 / 4680 = 289.29px */
+    width: 170px; /* C' = 1150 * 693 / 4680 = 169.63px */
+    height: 52px; /* D' = 350 * 470 / 3180 = 51.94px */
+    /* border: solid red; */
+}
+
+.card15-fixed-label1-position {
+    top: 184px;
+    left: 515px;
+    width: 112px;
+    height: 36px;
+    font-size: 22px;
+    /* border: solid red; */
+}
+
+</style>
+
+<!-- pour une résolution de 3180x4680 -->
+<!-- <style>
 .card15-label1-position {
     top: 790px;
     left: 400px;
@@ -224,4 +406,13 @@ export default {
     height: 350px;
     /* border: solid red; */
 }
-</style>
+
+.card15-fixed-label1-position {
+    top: 1250px;
+    left: 3485px;
+    width: 770px;
+    height: 250px;
+    font-size: 150px;
+    /* border: solid red; */
+}
+</style> -->
