@@ -25,6 +25,7 @@ export default {
 };
 </script>
 
+<!-- pour une résolution de 470x693 -->
 <style>
 .card24-label1-position {
     top: 212px;
@@ -45,6 +46,7 @@ export default {
 }
 </style>
 
+<!-- pour une résolution de 3180x4680 -->
 <!-- <style>
 .card24-label1-position {
     top: 1430px;

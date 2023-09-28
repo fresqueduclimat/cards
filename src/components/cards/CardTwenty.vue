@@ -44,46 +44,52 @@ export default {
 <!-- pour une résolution de 470x693 -->
 <style>
 .card20-label1-position {
-    top: 200px;  /* A' = 1350 * 470 / 3180 = 199.70 (arrondi à 200) */
-    left: 138px; /* B' = 750 * 693 / 4680 = 111.17 (arrondi à 138) */
-    width: 152px; /* C' = 800 * 693 / 4680 = 118.40 (arrondi à 152) */
-    height: 36px; /* D' = 250 * 470 / 3180 = 36.92 (arrondi à 36) */
+    top: 200px;
+    left: 111px;
+    width: 119px;
+    height: 37px;
+    /* border: solid red; */
 }
 
 .card20-label2-position {
-    top: 177px;  /* A' = 1200 * 470 / 3180 = 176.84 (arrondi à 177) */
-    left: 257px; /* B' = 1600 * 693 / 4680 = 237.78 (arrondi à 257) */
-    width: 152px; /* C' = 800 * 693 / 4680 = 118.40 (arrondi à 152) */
-    height: 36px; /* D' = 250 * 470 / 3180 = 36.92 (arrondi à 36) */
+    top: 178px;
+    left: 237px;
+    width: 119px;
+    height: 37px;
+    /* border: solid red; */
 }
 
 .card20-label3-position {
-    top: 164px;  /* A' = 1100 * 470 / 3180 = 163.81 (arrondi à 164) */
-    left: 478px; /* B' = 2900 * 693 / 4680 = 429.88 (arrondi à 478) */
-    width: 152px; /* C' = 800 * 693 / 4680 = 118.40 (arrondi à 152) */
-    height: 29px; /* D' = 200 * 470 / 3180 = 29.57 (arrondi à 29) */
+    top: 163px;
+    left: 429px;
+    width: 119px;
+    height: 30px;
+    /* border: solid red; */
 }
 
 .card20-label4-position {
-    top: 123px;  /* A' = 800 * 470 / 3180 = 118.40 (arrondi à 123) */
-    left: 562px; /* B' = 3600 * 693 / 4680 = 532.42 (arrondi à 562) */
-    width: 152px; /* C' = 800 * 693 / 4680 = 118.40 (arrondi à 152) */
-    height: 29px; /* D' = 200 * 470 / 3180 = 29.57 (arrondi à 29) */
+    top: 118px;
+    left: 535px;
+    width: 119px;
+    height: 30px;
+    /* border: solid red; */
 }
 
 .card20-label5-position {
-    top: 347px;  /* A' = 2070 * 470 / 3180 = 306.70 (arrondi à 347) */
-    left: 257px; /* B' = 1600 * 693 / 4680 = 237.78 (arrondi à 257) */
-    width: 152px; /* C' = 800 * 693 / 4680 = 118.40 (arrondi à 152) */
-    height: 29px; /* D' = 200 * 470 / 3180 = 29.57 (arrondi à 29) */
+    top: 306px;
+    left: 237px;
+    width: 119px;
+    height: 30px;
     transform: rotate(-24deg);
+    /* border: solid red; */
 }
 
 .card20-label6-position {
-    top: 388px;  /* A' = 2300 * 470 / 3180 = 339.53 (arrondi à 388) */
-    left: 562px; /* B' = 3600 * 693 / 4680 = 532.42 (arrondi à 562) */
-    width: 152px; /* C' = 800 * 693 / 4680 = 118.40 (arrondi à 152) */
-    height: 29px; /* D' = 200 * 470 / 3180 = 29.57 (arrondi à 29) */
+    top: 341px;
+    left: 535px;
+    width: 119px;
+    height: 30px;
+    /* border: solid red; */
 }
 </style>
 

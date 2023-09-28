@@ -43,10 +43,10 @@ export default {
     /* border: solid red; */
 }
 .card22-label2-position {
-    top: 173px;
-    left: 192px;
-    width: 200.8px;
-    height: 74px;
+    top: 175px;
+    left: 200px;
+    width: 185px;
+    height: 70px;
     /* border: solid red; */
 }
 

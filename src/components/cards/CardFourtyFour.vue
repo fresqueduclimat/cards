@@ -25,6 +25,12 @@
             <div class="label logo-container-big">
                 <div class="logo"></div>
             </div>
+            <div class="label white front-card-label2-position">
+                <p>{{ "Climate Fresk - " + $t('V0C0L0') + " - Adults - V8.4- 09/09/2024"}}</p>
+            </div>
+            <div class="label outline-container-back">
+                <div class="outline">All the cards are in your hands!</div>
+            </div>
         </div>
     </section>
     
@@ -50,105 +56,120 @@ export default {
 <!-- pour une résolution de 470x693 -->
 <style>
 .logo-container-big {
-    top: 302px; /* A' = 2050 * 470 / 3180 = 302.47px */
-    left: 91px; /* B' = 615 * 693 / 4680 = 91.01px */
-    width: 295px; /* C' = 2000 * 693 / 4680 = 295.11px */
-    height: 110px; /* D' = 750 * 470 / 3180 = 110.35px */
+    top: 304px;
+    left: 91px;
+    width: 296px;
+    height: 111px;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    background-image: url('@/assets/logo-en.png');
+    background-size: contain;
 }
 
 .card44-label0-position {
-    top: 59px; /* A' = 400 * 470 / 3180 = 58.85px */
-    left: 52px; /* B' = 350 * 693 / 4680 = 52.03px */
-    width: 431px; /* C' = 2900 * 693 / 4680 = 431.19px */
-    height: 44px; /* D' = 300 * 470 / 3180 = 44.23px */
+    top: 59px;
+    left: 52px;
+    width: 430px;
+    height: 44px;
     font-weight: 900;
-    text-align : left;
-    /* border : red solid; */
+    text-align: left;
+    /* border: red solid; */
 }
 
 .card44-label1-position {
-    top: 109px; /* A' = 740 * 470 / 3180 = 109.08px */
-    left: 52px; /* B' = 350 * 693 / 4680 = 52.03px */
-    width: 443px; /* C' = 2970 * 693 / 4680 = 443.06px */
-    height: 134px; /* D' = 910 * 470 / 3180 = 134.12px */
+    top: 103px;
+    left: 52px;
+    width: 440px;
+    height: 146px;
     text-align: left;
-    font-size: 100px;
-    /* border : red solid; */
+    font-size: 15px;
+    /* border: red solid 0.2px; */
 }
 
 .card44-label2-position {
-    top: 247px; /* A' = 1670 * 470 / 3180 = 246.70px */
-    left: 52px; /* B' = 350 * 693 / 4680 = 52.03px */
-    width: 292px; /* C' = 1300 * 693 / 4680 = 291.90px */
-    height: 50px; /* D' = 340 * 470 / 3180 = 50.00px */
+    top: 260px;
+    left: 52px;
+    width: 192px;
+    height: 50px;
     text-align: left;
-    font-size: 100px;
-    /* border : red solid; */
+    font-size: 12px;
+    /* border: red solid 0.2px; */
 }
 
 .card44-label3-position {
-    top: 247px; /* A' = 1670 * 470 / 3180 = 246.70px */
-    left: 282px; /* B' = 1900 * 693 / 4680 = 281.78px */
-    width: 292px; /* C' = 1300 * 693 / 4680 = 291.90px */
-    height: 37px; /* D' = 250 * 470 / 3180 = 36.98px */
+    top: 260px;
+    left: 259px;
+    width: 200px;
+    height: 50px;
     text-align: left;
-    font-size: 100px;
-    /* border : red solid; */
+    font-size: 12px;
+    /* border: red solid 0.2px; */
 }
 
 .card44-label4-position {
-    top: 375px; /* A' = 2550 * 470 / 3180 = 375.00px */
-    left: 496px; /* B' = 3320 * 693 / 4680 = 496.06px */
-    width: 147px; /* C' = 950 * 693 / 4680 = 146.62px */
-    height: 44px; /* D' = 300 * 470 / 3180 = 44.23px */
-    font-size: 100px;
-    /* border : red solid; */
+    top: 378px;
+    left: 493px;
+    width: 141px;
+    height: 44px;
+    font-size: 15px;
+    /* border: red solid; */
 }
 
 .card44-label5-position {
-    top: 126px; /* A' = 850 * 470 / 3180 = 125.56px */
-    left: 507px; /* B' = 3420 * 693 / 4680 = 506.74px */
-    width: 126px; /* C' = 850 * 693 / 4680 = 126.17px */
-    height: 34px; /* D' = 230 * 470 / 3180 = 33.97px */
-    /* border : red solid; */
+    top: 126px;
+    left: 507px;
+    width: 126px;
+    height: 34px;
+    /* border: red solid; */
 }
 
 .card44-label6-position {
-    top: 185px; /* A' = 1250 * 470 / 3180 = 184.85px */
-    left: 507px; /* B' = 3420 * 693 / 4680 = 506.74px */
-    width: 126px; /* C' = 850 * 693 / 4680 = 126.17px */
-    height: 34px; /* D' = 230 * 470 / 3180 = 33.97px */
-    /* border : red solid; */
+    top: 186px;
+    left: 507px;
+    width: 126px;
+    height: 34px;
+    /* border: red solid; */
 }
 
 .card44-label7-position {
-    top: 399px; /* A' = 2700 * 470 / 3180 = 398.93px */
-    left: 178px; /* B' = 1200 * 693 / 4680 = 178.72px */
-    width: 73px; /* C' = 500 * 693 / 4680 = 73.43px */
-    height: 30px; /* D' = 200 * 470 / 3180 = 29.63px */
-    color : red;
+    top: 399px;
+    left: 178px;
+    width: 74px;
+    height: 30px;
+    color: red;
     font-weight: 900;
-    /* border : red solid; */
+    /* border: red solid; */
 }
 
 .card44-label8-position {
-    top: 399px; /* A' = 2700 * 470 / 3180 = 398.93px */
-    left: 277px; /* B' = 1850 * 693 / 4680 = 276.58px */
-    width: 73px; /* C' = 500 * 693 / 4680 = 73.43px */
-    height: 30px; /* D' = 200 * 470 / 3180 = 29.63px */
-    color : red;
+    top: 399px;
+    left: 275px;
+    width: 74px;
+    height: 30px;
+    color: red;
     font-weight: 900;
-    /* border : red solid; */
+    /* border: red solid; */
 }
 
 .card44-label9-position {
-    top: 399px; /* A' = 2700 * 470 / 3180 = 398.93px */
-    left: 388px; /* B' = 2600 * 693 / 4680 = 387.24px */
-    width: 73px; /* C' = 500 * 693 / 4680 = 73.43px */
-    height: 30px; /* D' = 200 * 470 / 3180 = 29.63px */
-    color : red;
+    top: 399px;
+    left: 385px;
+    width: 74px;
+    height: 30px;
+    color: red;
     font-weight: 900;
-    /* border : red solid; */
+    /* border: red solid; */
+}
+.outline-container-back {
+    top: 404px;
+    left: 157px;
+    width: 240px;
+    height: 20px;
+    font-size: 14px;
+    /* border: red solid 0.5px; */
 }
 
 </style>

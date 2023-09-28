@@ -105,15 +105,15 @@ export default {
     width: 4000px;
     height: 1600px; */
     /* border: solid red; */
-    top: 133px;
-    left: 52px;
-    width: 592px;
-    height: 236px;
+    top: 123px;
+    left: 40px;
+    width: 620px;
+    height: 265px;
 }
 
 .content p {
     /* font-size: 256px; */
-    font-size: 156px;
+    font-size: 38px;
 }
 
 .logo-container {
@@ -158,7 +158,7 @@ export default {
     /* border: solid red; */
     top: 350px;
     left: 27px;
-    width: 89px;
+    width: 85px;
     height: 92px;
 }
 
@@ -223,7 +223,7 @@ export default {
     width: 114px;
     height: 82px;
     background-color: red;
-    padding-top: 100px;
+    padding-top: 15px;
 }
 
 .set-two {
@@ -236,7 +236,7 @@ export default {
     width: 114px;
     height: 82px;
     background-color: red;
-    padding-top: 100px;
+    padding-top: 15px;
 }
 
 .set-three {
@@ -249,7 +249,7 @@ export default {
     width: 114px;
     height: 82px;
     background-color: red;
-    padding-top: 100px;
+    padding-top: 15px;
 }
 
 .set-four {
@@ -262,7 +262,7 @@ export default {
     width: 114px;
     height: 82px;
     background-color: red;
-    padding-top: 100px;
+    padding-top: 15px;
 }
 
 .set-five {
@@ -275,7 +275,7 @@ export default {
     width: 114px;
     height: 82px;
     background-color: red;
-    padding-top: 100px;
+    padding-top: 15px;
 }
 
 .set p {
@@ -296,7 +296,7 @@ export default {
     top: -100px;
     left: 95px; */
     height : 13px;
-    top: -60px;
+    top: -15px;
     left: 14px;
 }
 .top-left-horizontal {
@@ -304,7 +304,7 @@ export default {
     top: 35px;
     left: -35px; */
     width : 13px;
-    top: -40px;
+    top: 5px;
     left: -5px;
 }
 .top-right-vertical {
@@ -312,16 +312,16 @@ export default {
     top: -100px;
     left: 4580px; */
     height : 13px;
-    top: -60px;
-    left: 674px;
+    top: -15px;
+    left: 679px;
 }
 .top-right-horizontal {
     /* width : 90px;
     top: 35px;
     left: 4620px; */
     width : 13px;
-    top: -40px;
-    left: 684px;
+    top: 5px;
+    left: 683px;
 }
 .bottom-left-vertical {
     /* height : 90px;
@@ -336,23 +336,23 @@ export default {
     top: 3025px;
     left: -35px; */
     width : 13px;
-    top: 447px;
-    left: 5px;
+    top: 446px;
+    left: -5px;
 }
 .bottom-right-vertical {
     /* height : 90px;
     top: 3060px;
     left: 4580px; */
     height : 13px;
-    top: 451px;
-    left: 674px;
+    top: 453px;
+    left: 678px;
 }
 .bottom-right-horizontal {
     /* width : 90px;
     top: 3025px;
     left: 4620px; */
-    height : 13px;
-    top: 447px;
+    width : 13px;
+    top: 446px;
     left: 684px;
 }
 </style>

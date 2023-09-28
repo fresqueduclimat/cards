@@ -40,48 +40,52 @@ export default {
 <!-- pour une résolution de 470x693 -->
 <style>
 .card13-label1-position {
-    top: 164px;   /* A' = 1100 * 470 / 3180 = 163.81 (arrondi à 164) */
-    left: 177px;  /* B' = 1200 * 693 / 4680 = 177.38 (arrondi à 177) */
-    width: 103px; /* C' = 700 * 693 / 4680 = 102.64 (arrondi à 103) */
-    height: 44px; /* D' = 300 * 470 / 3180 = 44.17 (arrondi à 44) */
+    top: 164px;
+    left: 166px;
+    width: 132px;
+    height: 44px;
+    /* border : solid red 0.5px; */
 }
 
 .card13-label2-position {
-    top: 252px;  /* A' = 1700 * 470 / 3180 = 251.97 (arrondi à 252) */
-    left: 26px;  /* B' = 200 * 693 / 4680 = 26.32 (arrondi à 26) */
-    width: 103px; /* C' = 700 * 693 / 4680 = 102.64 (arrondi à 103) */
-    height: 44px; /* D' = 300 * 470 / 3180 = 44.17 (arrondi à 44) */
+    top: 251px;
+    left: 35px;
+    width: 102px;
+    height: 44px;
+    /* border : solid red 0.5px; */
 }
 
 .card13-label3-position {
-    top: 97px;   /* A' = 800 * 470 / 3180 = 96.97 (arrondi à 97) */
-    left: 456px; /* B' = 3000 * 693 / 4680 = 455.81 (arrondi à 456) */
-    width: 151px; /* C' = 1000 * 693 / 4680 = 150.94 (arrondi à 151) */
-    height: 44px; /* D' = 300 * 470 / 3180 = 44.17 (arrondi à 44) */
+    top: 118px;
+    left: 430px;
+    width: 170px;
+    height: 50px;
+    /* border : solid red 0.5px; */
 }
 
 .card13-label4-position {
-    top: 252px;  /* A' = 1700 * 470 / 3180 = 251.97 (arrondi à 252) */
-    left: 472px; /* B' = 3300 * 693 / 4680 = 471.78 (arrondi à 472) */
-    width: 123px; /* C' = 800 * 693 / 4680 = 122.75 (arrondi à 123) */
-    height: 44px; /* D' = 300 * 470 / 3180 = 44.17 (arrondi à 44) */
+    top: 251px;
+    left: 500px;
+    width: 100px;
+    height: 50px;
+    /* border : solid red 0.5px; */
 }
 
 .card13-fixed-label1-position {
-    top: 142px;  /* A' = 1260 * 470 / 3180 = 141.81 (arrondi à 142) */
-    left: 176px; /* B' = 3700 * 693 / 4680 = 175.65 (arrondi à 176) */
-    width: 56px; /* C' = 450 * 693 / 4680 = 66.42 (arrondi à 56) */
-    height: 16px; /* D' = 150 * 470 / 3180 = 22.12 (arrondi à 16) */
-    font-size: 156px;
+    top: 183px;
+    left: 548px;
+    width: 67px;
+    height: 22px;
+    font-size: 20px;
     color: white;
 }
 
 .card13-fixed-label2-position {
-    top: 262px;  /* A' = 2300 * 470 / 3180 = 261.69 (arrondi à 262) */
-    left: 176px; /* B' = 3700 * 693 / 4680 = 175.65 (arrondi à 176) */
-    width: 56px; /* C' = 450 * 693 / 4680 = 66.42 (arrondi à 56) */
-    height: 16px; /* D' = 150 * 470 / 3180 = 22.12 (arrondi à 16) */
-    font-size: 156px;
+    top: 337px;
+    left: 548px;
+    width: 67px;
+    height: 22px;
+    font-size: 20px;
     color: white;
 }
 </style>

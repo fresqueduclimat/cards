@@ -79,19 +79,19 @@ export default {
 }
 
 .card5-label3-position {
-    top: 222px; /* A' = 1500 * 470 / 3180 = 221.70px */
-    left: -30px; /* B' = -200 * 693 / 4680 = -29.73px */
-    width: 246px; /* C' = 1650 * 693 / 4680 = 247.05px */
+    top: 218px; /* A' = 1500 * 470 / 3180 = 221.70px */
+    left: -20px; /* B' = -200 * 693 / 4680 = -29.73px */
+    width: 227px; /* C' = 1650 * 693 / 4680 = 247.05px */
     height: 29px; /* D' = 200 * 470 / 3180 = 29.63px */
     transform: rotate(-90deg);
     /* border: solid red; */
 }
 
 .card5-label4-position {
-    top: 243px; /* A' = 1650 * 470 / 3180 = 243.09px */
-    left: 445px; /* B' = 3000 * 693 / 4680 = 444.64px */
-    width: 290px; /* C' = 1950 * 693 / 4680 = 290.61px */
-    height: 29px; /* D' = 200 * 470 / 3180 = 29.63px */
+    top: 243px;
+    left: 455px;
+    width: 270px;
+    height: 20px;
     transform: rotate(-90deg);
     /* border: solid red; */
 }
