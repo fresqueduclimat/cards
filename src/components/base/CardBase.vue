@@ -97,6 +97,7 @@ export default {
     justify-content: center;
     align-items: center;
     white-space: nowrap;
+    font-family: "Julius Sans One";
 }
 
 .content {

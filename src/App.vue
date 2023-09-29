@@ -172,7 +172,7 @@ export default {
   },
   methods: {
     adjustFontSize() {
-      const labels_max = [7, 0, 0, 0, 0, 5, 0, 4, 0, 0, 0, 2, 6, 5, 7, 18, 0, 0, 0, 0, 7, 2, 3, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
+      const labels_max = [7, 0, 0, 0, 0, 5, 0, 4, 0, 0, 0, 2, 6, 5, 7, 18, 0, 0, 0, 2, 7, 3, 3, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
       const labels = [];
       for (let card_id = 0; card_id <= labels_max.length-1; card_id++) {
         let titleValue = {
@@ -223,9 +223,11 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Poppins&family=Quicksand&family=Urbanist&display=swap');
+
 :root {
   --r-main-font: "Arial", sans-serif;
-  --r-heading-font: var(--r-main-font);
+  --r-heading-font: "Arial", sans-serif;
   --r-heading-color: white;
   --r-heading-margin: 0 0 0 0;
   --r-heading3-color: black;

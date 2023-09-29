@@ -1,6 +1,6 @@
 <template>
     <CardBase :title="$t('V1C19L1')" :content="$t('V1C19L2')" :card-number="19" :background-front-image="'C19.png'">
-        <div id="card19-label1" class="horizontal-center vertical-center label card19-label1-position">
+        <div id="card19-label1" class="horizontal-center label card19-label1-position">
             <p id="card19-text1" class="font-small">{{ $t('V1C999L90') }}</p>
         </div>
         <div id="card19-fixed-label1" class="horizontal-center vertical-center label card19-fixed-label1-position">
@@ -32,10 +32,10 @@ export default {
 <!-- pour une résolution de 470x693 -->
 <style>
 .card19-label1-position {
-    top: 414px;
-    left: 67px;
-    width: 252px;
-    height: 30px;
+    top: 442px;
+    left: 28px;
+    width: 652px;
+    height: 17px;
     color : grey;
     /* border: solid red; */
 }
