@@ -28,8 +28,39 @@ export default {
 };
 </script>
 
-
+<!-- pour une résolution de 470x693 -->
 <style>
+.card7-label1-position {
+    top: 24vh;
+    left: 9vw;
+    width: 87vw;
+    height: 8vh;
+    /* border: solid red; */
+}
+
+.card7-label2-position {
+    top: 304px;
+    left: 252px;
+    width: 218px;
+    height: 37px;
+    text-align: left;
+    font-size: 20px;
+    /* border: solid red; */
+}
+
+.card7-label3-position {
+    top: 378px;
+    left: 251px;
+    width: 148px;
+    height: 37px;
+    text-align: left;
+    font-size: 20px;
+    /* border: solid red; */
+}
+</style>
+
+<!-- pour une résolution de 3180x4680 -->
+<!-- <style>
 .card7-label1-position {
     top: 24vh;
     left: 9vw;
@@ -63,4 +94,4 @@ export default {
 .card7-label3-position p {
     font-size: 135px;
 }
-</style>
+</style> -->

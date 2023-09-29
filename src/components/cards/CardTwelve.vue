@@ -18,7 +18,7 @@
             class="horizontal-center vertical-center label black card12-label5-position">
             <p id="card12-text5" class="font-small">{{ $t('V1C999L90') }}</p>
         </div>
-        <div id="card12-fixed-label1" class="horizontal-center vertical-center label black card12-fixed-label1-position">
+        <div id="card12-fixed-label1" class="horizontal-center vertical-center label white card12-fixed-label1-position">
             <p id="card12-fixed-text1" class="font-small">1/4</p>
         </div>
         <div id="card12-fixed-label2" class="horizontal-center vertical-center label black card12-fixed-label2-position">
@@ -49,71 +49,71 @@ export default {
 <!-- pour une résolution de 470x693 -->
 <style>
 .card12-label1-position {
-    top: 277px;   /* A' = 1500 * 470 / 3180 = 221.70 (arrondi à 277) */
-    left: 188px;  /* B' = 1600 * 693 / 4680 = 237.78 (arrondi à 188) */
-    width: 194px; /* C' = 1300 * 693 / 4680 = 193.00 (arrondi à 194) */
-    height: 36px; /* D' = 250 * 470 / 3180 = 36.92 (arrondi à 36) */
-    font-size: 150px;
+    top: 222px;
+    left: 236px;
+    width: 192px;
+    height: 37px;
+    font-size: 21px;
     text-align: right;
 }
 
 .card12-label2-position {
-    top: 360px;   /* A' = 1950 * 470 / 3180 = 289.47 (arrondi à 360) */
-    left: 188px;  /* B' = 1600 * 693 / 4680 = 237.78 (arrondi à 188) */
-    width: 194px; /* C' = 1300 * 693 / 4680 = 193.00 (arrondi à 194) */
-    height: 36px; /* D' = 250 * 470 / 3180 = 36.92 (arrondi à 36) */
-    font-size: 150px;
+    top: 290px;
+    left: 238px;
+    width: 182px;
+    height: 35px;
+    font-size: 21px;
     text-align: right;
 }
 
 .card12-label3-position {
-    top: 444px;   /* A' = 2400 * 470 / 3180 = 354.47 (arrondi à 444) */
-    left: 188px;  /* B' = 1600 * 693 / 4680 = 237.78 (arrondi à 188) */
-    width: 194px; /* C' = 1300 * 693 / 4680 = 193.00 (arrondi à 194) */
-    height: 36px; /* D' = 250 * 470 / 3180 = 36.92 (arrondi à 36) */
-    font-size: 150px;
+    top: 359px;
+    left: 238px;
+    width: 182px;
+    height: 35px;
+    font-size: 21px;
     text-align: right;
 }
 
 .card12-label4-position {
-    top: 163px;  /* A' = 1100 * 470 / 3180 = 163.81 (arrondi à 163) */
-    left: 288px; /* B' = 600 * 693 / 4680 = 88.96 (arrondi à 88) */
-    width: 516px; /* C' = 3500 * 693 / 4680 = 514.87 (arrondi à 516) */
-    height: 36px; /* D' = 250 * 470 / 3180 = 36.92 (arrondi à 36) */
+    top: 166px;
+    left: 90px;
+    width: 510px;
+    height: 35px;
     transform: rotate(-180deg);
 }
 
 .card12-label5-position {
-    top: 401px;  /* A' = 2780 * 470 / 3180 = 409.89 (arrondi à 401) */
-    left: 657px; /* B' = 2000 * 693 / 4680 = 296.25 (arrondi à 657) */
-    width: 256px; /* C' = 1700 * 693 / 4680 = 253.06 (arrondi à 256) */
-    height: 27px; /* D' = 200 * 470 / 3180 = 29.57 (arrondi à 27) */
+    top: 407px;
+    left: 272px;
+    width: 200px;
+    height: 20px;
     transform: rotate(7deg);
     color: grey;
 }
 
 .card12-fixed-label1-position {
-    top: 233px;   /* A' = 1440 * 470 / 3180 = 212.98 (arrondi à 233) */
-    left: 434px;  /* B' = 3033 * 693 / 4680 = 451.03 (arrondi à 434) */
-    width: 110px; /* C' = 736 * 693 / 4680 = 109.31 (arrondi à 110) */
-    height: 52px; /* D' = 350 * 470 / 3180 = 51.77 (arrondi à 52) */
-    font-size: 200px;
+    top: 213px;
+    left: 450px;
+    width: 109px;
+    height: 52px;
+    font-size: 30px;
 }
 
 .card12-fixed-label2-position {
-    top: 305px;   /* A' = 1890 * 470 / 3180 = 279.43 (arrondi à 305) */
-    left: 434px;  /* B' = 3033 * 693 / 4680 = 451.03 (arrondi à 434) */
-    width: 110px; /* C' = 736 * 693 / 4680 = 109.31 (arrondi à 110) */
-    height: 52px; /* D' = 350 * 470 / 3180 = 51.77 (arrondi à 52) */
-    font-size: 200px;
+    top: 280px;
+    left: 450px;
+    width: 109px;
+    height: 52px;
+    font-size: 30px;
 }
 
 .card12-fixed-label3-position {
-    top: 377px;   /* A' = 2330 * 470 / 3180 = 345.95 (arrondi à 377) */
-    left: 434px;  /* B' = 3033 * 693 / 4680 = 451.03 (arrondi à 434) */
-    width: 110px; /* C' = 736 * 693 / 4680 = 109.31 (arrondi à 110) */
-    height: 52px; /* D' = 350 * 470 / 3180 = 51.77 (arrondi à 52) */
-    font-size: 200px;
+    top: 345px;
+    left: 450px;
+    width: 109px;
+    height: 52px;
+    font-size: 30px;
 }
 </style>
 

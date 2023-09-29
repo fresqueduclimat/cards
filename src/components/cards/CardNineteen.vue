@@ -4,7 +4,10 @@
             <p id="card19-text1" class="font-small">{{ $t('V1C999L90') }}</p>
         </div>
         <div id="card19-fixed-label1" class="horizontal-center vertical-center label card19-fixed-label1-position">
-            <p id="card19-fixed-text1" class="font-small">il manque un truc ici</p>
+            <p id="card19-fixed-text1" class="font-small">+7m</p>
+        </div>
+        <div id="card19-fixed-label2" class="horizontal-center vertical-center label card19-fixed-label2-position">
+            <p id="card19-fixed-text2" class="font-small">+54m</p>
         </div>
         <template v-slot:back-content>
             <div id="card19-back-label1" class="label white set-three">
@@ -38,14 +41,25 @@ export default {
 }
 
 .card19-fixed-label1-position {
-    top: 214px;
-    left: 87px;
-    width: 252px;
-    height: 30px;
+    top: 265px;
+    left: 174px;
+    width: 100px;
+    height: 50px;
+    font-size: 40px;
+    /* border: solid red; */
+}
+
+.card19-fixed-label2-position {
+    top: 357px;
+    left: 277px;
+    width: 100px;
+    height: 50px;
+    font-size: 40px;
     /* border: solid red; */
 }
 </style>
 
+<!-- pour une résolution de 3180x4680 -->
 <!-- <style>
 .card19-label1-position {
     top: 2800px;

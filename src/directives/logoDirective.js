@@ -8,24 +8,29 @@ export default {
             });
             const logoContainerElements = el.querySelectorAll('.logo-container');
             logoContainerElements.forEach(logo => {
-                logo.style.top = '200px';
-                logo.style.left = '3415px';
-                logo.style.width = '1000px';
-                logo.style.height = '285px';
+                logo.style.top = '30px';
+                logo.style.left = '505px';
+                logo.style.width = '148px';
+                logo.style.height = '42px';
             });
             const logoBigContainerElements = el.querySelectorAll('.logo-container-big');
             logoBigContainerElements.forEach(logo => {
-                logo.style.top = '2150px';
-                logo.style.left = '615px';
-                logo.style.width = '2000px';
-                logo.style.height = '550px';
+                logo.style.top = '329px';
+                logo.style.left = '91px';
+                logo.style.width = '296px';
+                logo.style.height = '82px';
             });
             const logoFrontContainerElements = el.querySelectorAll('.logo-container-front');
             logoFrontContainerElements.forEach(logo => {
-                logo.style.top = '1230px';
-                logo.style.left = '450px';
-                logo.style.width = '3790px';
-                logo.style.height = '1050px';
+                logo.style.top = '187px';
+                logo.style.left = '96px';
+                logo.style.width = '519px';
+                logo.style.height = '149px'; 
+            });
+            const urlElements = el.querySelectorAll('.url');
+            urlElements.forEach(url => {
+                url.textContent = "fresqueduclimat.org";
+                url.style.fontSize = '17px';
             });
             const outlineElements = el.querySelectorAll('.outline');
             outlineElements.forEach(outline => {
@@ -33,15 +38,16 @@ export default {
             });
             const outlineContainerElements = el.querySelectorAll('.outline-container');
             outlineContainerElements.forEach(logo => {
-                logo.style.top = '2140px';
-                logo.style.left = '1300px';
-                logo.style.fontSize='170px';
+                logo.style.top = '317px';
+                logo.style.left = '192px';
+                logo.style.fontSize='25px';
+            });
+            const outlineBackContainerElements = el.querySelectorAll('.outline-container-back');
+            outlineBackContainerElements.forEach(outline => {
+                outline.style.top = '400px';
+                outline.style.left = '148px';
+                outline.style.fontSize='14px';
             });
         }
     },
 };
-
-// logo.style.top = '2150px';
-//                 logo.style.left = '615px';
-//                 logo.style.width = '2000px';
-//                 logo.style.height = '550px';

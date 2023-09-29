@@ -49,7 +49,7 @@ export default {
     width: 98px; /* C' = 660 * 693 / 4680 = 97.93px, arrondi à 98px */
     height: 33px; /* D' = 225 * 470 / 3180 = 33.21px, arrondi à 33px */
     /* border: solid red; */
-    font-size: 10px;
+    font-size: 20px;
 }
 
 .card11-fixed-label2-position {
@@ -58,7 +58,7 @@ export default {
     width: 112px; /* C' = 750 * 693 / 4680 = 111.18px, arrondi à 112px */
     height: 33px; /* D' = 225 * 470 / 3180 = 33.21px, arrondi à 33px */
     /* border: solid red; */
-    font-size: 10px;
+    font-size: 20px;
 }
 
 .card11-fixed-label3-position {
@@ -67,7 +67,7 @@ export default {
     width: 113px; /* C' = 760 * 693 / 4680 = 112.71px, arrondi à 113px */
     height: 33px; /* D' = 225 * 470 / 3180 = 33.21px, arrondi à 33px */
     /* border: solid red; */
-    font-size: 10px;
+    font-size: 20px;
 }
 
 .card11-fixed-label4-position {
@@ -76,7 +76,7 @@ export default {
     width: 98px; /* C' = 660 * 693 / 4680 = 97.93px, arrondi à 98px */
     height: 33px; /* D' = 225 * 470 / 3180 = 33.21px, arrondi à 33px */
     /* border: solid red; */
-    font-size: 10px;
+    font-size: 20px;
 }
 </style>
 

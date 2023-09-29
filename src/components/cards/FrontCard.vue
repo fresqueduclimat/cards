@@ -55,39 +55,45 @@ export default {
     left: 96px;  /* B' = 580 * 693 / 4680 = 86.03 (arrondi à 96) */
     width: 153px; /* C' = 1300 * 693 / 4680 = 192.64 (arrondi à 153) */
     height: 52px; /* D' = 350 * 470 / 3180 = 51.77 (arrondi à 52) */
-    font-size: 270px;
+    font-size: 40px;
     text-align: left;
+    /* border : solid red 0.5px; */
 }
 
 .front-card-label1-position {
-    top: 81px;   /* A' = 550 * 470 / 3180 = 80.92 (arrondi à 81) */
-    left: 176px; /* B' = 1200 * 693 / 4680 = 177.86 (arrondi à 176) */
-    width: 357px; /* C' = 3000 * 693 / 4680 = 529.82 (arrondi à 357) */
-    height: 52px; /* D' = 350 * 470 / 3180 = 51.77 (arrondi à 52) */
-    font-size: 270px;
+    top: 81px;
+    left: 250px;
+    width: 350px;
+    height: 52px;
+    font-size: 40px;
     text-align: right;
+    /* border : solid red 0.5px; */
 }
 
 .front-card-label2-position {
-    top: 389px;  /* A' = 1515 * 470 / 3180 = 223.11 (arrondi à 389) */
-    left: 784px; /* B' = 3170 * 693 / 4680 = 468.99 (arrondi à 784) */
-    width: 180px; /* C' = 2580 * 693 / 4680 = 382.24 (arrondi à 180) */
-    height: 27px; /* D' = 150 * 470 / 3180 = 22.12 (arrondi à 27) */
-    font-size: 95px;
+    top: 225px;
+    left: 470px;
+    width: 380px;
+    height: 20px;
+    font-size: 14px;
     transform: rotate(-90deg);
+    /* border : solid red 0.5px; */
 }
 
 .logo-container-front {
-    top: 244px;  /* A' = 955 * 470 / 3180 = 140.92 (arrondi à 244) */
-    left: 232px; /* B' = 300 * 693 / 4680 = 44.48 (arrondi à 232) */
-    width: 537px; /* C' = 3650 * 693 / 4680 = 543.66 (arrondi à 537) */
-    height: 230px; /* D' = 1550 * 470 / 3180 = 228.65 (arrondi à 230) */
+    top: 160px;
+    left: 72px;
+    width: 529px;
+    height: 210px;
+    /* border : solid red 0.5px; */
 }
 
 .outline-container {
-    top: 465px;  /* A' = 2290 * 470 / 3180 = 338.82 (arrondi à 465) */
-    left: 363px; /* B' = 1400 * 693 / 4680 = 206.73 (arrondi à 363) */
-    font-size: 200px;
+    top: 347px;
+    left: 202px;
+    width: 429px;
+    font-size: 30px;
+    /* border : solid red 0.5px; */
 }
 </style>
 
