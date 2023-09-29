@@ -22,10 +22,15 @@ export default {
             });
             const logoFrontContainerElements = el.querySelectorAll('.logo-container-front');
             logoFrontContainerElements.forEach(logo => {
-                logo.style.top = '200px';
+                logo.style.top = '187px';
                 logo.style.left = '96px';
-                logo.style.width = '490px';
-                logo.style.height = '130px'; 
+                logo.style.width = '519px';
+                logo.style.height = '149px'; 
+            });
+            const urlElements = el.querySelectorAll('.url');
+            urlElements.forEach(url => {
+                url.textContent = "fresqueduclimat.org";
+                url.style.fontSize = '17px';
             });
             const outlineElements = el.querySelectorAll('.outline');
             outlineElements.forEach(outline => {
@@ -38,10 +43,10 @@ export default {
                 logo.style.fontSize='25px';
             });
             const outlineBackContainerElements = el.querySelectorAll('.outline-container-back');
-            outlineBackContainerElements.forEach(logo => {
-                logo.style.top = '400px';
-                logo.style.left = '148px';
-                logo.style.fontSize='14px';
+            outlineBackContainerElements.forEach(outline => {
+                outline.style.top = '400px';
+                outline.style.left = '148px';
+                outline.style.fontSize='14px';
             });
         }
     },

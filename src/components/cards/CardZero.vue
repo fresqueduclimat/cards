@@ -61,7 +61,7 @@ export default {
     top: 98px;
     left: 59px;
     width: 563px;
-    height: 185px;
+    height: 190px;
     text-align: left;
     font-size: 30px;
     /* border: red solid; */
