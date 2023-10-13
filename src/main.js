@@ -16,7 +16,7 @@ import de from "@/locales/de-DE.json";
 import en from "@/locales/en.json";
 import fr from "@/locales/fr-FR.json";
 import ja from "@/locales/ja-JP.json";
-import ru from "@/locales/ru.json";
+import ru from "@/locales/ru-RU.json";
 import kh from "@/locales/kh.json";
 import lao from "@/locales/lao.json";
 import vi from "@/locales/vi-VN.json";
@@ -52,7 +52,7 @@ const messages = {
 // const locale = process.env.VUE_APP_LOCALE || "en";
 
 const i18n = createI18n({
-  locale: "fr", // Remplacer par locale si passée en parametre
+  locale: "bg", // Remplacer par locale si passée en parametre
   fallbackLocale: "en",
   messages,
 });
