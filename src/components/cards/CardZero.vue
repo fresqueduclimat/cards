@@ -87,10 +87,10 @@ export default {
 }
 
 .card0-label4-position {
-    top: 399px;
+    top: 393px;
     left: 166px;
     width: 96px;
-    height: 22px;
+    height: 35px;
     color: red;
     font-weight: 900;
     /* border: red solid; */

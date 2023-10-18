@@ -89,7 +89,7 @@ export default {
     width: 4200px;
     height: 570px; */
     /* border: solid red; */
-    top: 26px;
+    top: 29px;
     left: 35px;
     width: 622px;
     height: 84px;
@@ -156,7 +156,7 @@ export default {
     width: 600px;
     height: 620px; */
     /* border: solid red; */
-    top: 350px;
+    top: 356px;
     left: 27px;
     width: 85px;
     height: 92px;
@@ -224,6 +224,7 @@ export default {
     height: 82px;
     background-color: red;
     padding-top: 15px;
+    font-weight: 500;
 }
 
 .set-two {
@@ -237,6 +238,7 @@ export default {
     height: 82px;
     background-color: red;
     padding-top: 15px;
+    font-weight: 500;
 }
 
 .set-three {
@@ -250,6 +252,7 @@ export default {
     height: 82px;
     background-color: red;
     padding-top: 15px;
+    font-weight: 500;
 }
 
 .set-four {
@@ -263,6 +266,7 @@ export default {
     height: 82px;
     background-color: red;
     padding-top: 15px;
+    font-weight: 500;
 }
 
 .set-five {
@@ -276,6 +280,7 @@ export default {
     height: 82px;
     background-color: red;
     padding-top: 15px;
+    font-weight: 500;
 }
 
 .set p {

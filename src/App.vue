@@ -223,8 +223,10 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;400;500;700&display=swap');
+
 :root {
-  --r-main-font: "Arial", sans-serif;
+  --r-main-font: "Urbanist", sans-serif;
   --r-heading-font: var(--r-main-font);
   --r-heading-color: white;
   --r-heading-margin: 0 0 0 0;
@@ -259,6 +261,11 @@ export default {
   height: 100%;
   display: flex;
   flex-direction: column;
+  font-weight : 200;
+}
+
+.container h1 {
+  font-weight : 700;
 }
 
 .horizontal-center {
