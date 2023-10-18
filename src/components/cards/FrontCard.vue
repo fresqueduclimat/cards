@@ -77,6 +77,7 @@ export default {
     height: 20px;
     font-size: 14px;
     transform: rotate(-90deg);
+    font-weight: 500;
     /* border : solid red 0.5px; */
 }
 
