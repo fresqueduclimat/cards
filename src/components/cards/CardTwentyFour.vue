@@ -28,9 +28,9 @@ export default {
 <!-- pour une résolution de 470x693 -->
 <style>
 .card24-label1-position {
-    top: 212px;
+    top: 208px;
     left: -37px;
-    width: 244px;
+    width: 242px;
     height: 52px;
     transform: rotate(-90deg);
     /* border: solid red; */

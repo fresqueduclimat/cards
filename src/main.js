@@ -52,7 +52,7 @@ const messages = {
 // const locale = process.env.VUE_APP_LOCALE || "en";
 
 const i18n = createI18n({
-  locale: "bg", // Remplacer par locale si passée en parametre
+  locale: "pt", // Remplacer par locale si passée en parametre
   fallbackLocale: "en",
   messages,
 });
