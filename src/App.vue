@@ -1,5 +1,5 @@
 <template>
-  <div v-no-break v-logo v-customtitlediv v-linespacing v-linebreak v-text-direction v-co2-subscript id="app" class="reveal">
+  <div v-card-zero v-no-break v-logo v-customtitlediv v-linespacing v-linebreak v-text-direction v-co2-subscript id="app" class="reveal">
     <div class="slides">
       <FrontCard />
       <CardZero />
