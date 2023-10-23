@@ -88,8 +88,8 @@ export default {
     left: 240px;
     width: 4200px;
     height: 570px; */
-    /* border: solid red; */
-    top: 29px;
+    /* border: solid red 0.5px; */
+    top: 25px;
     left: 35px;
     width: 622px;
     height: 84px;
@@ -104,7 +104,7 @@ export default {
     left: 350px;
     width: 4000px;
     height: 1600px; */
-    /* border: solid red; */
+    /* border: solid red 0.5px; */
     top: 123px;
     left: 40px;
     width: 620px;

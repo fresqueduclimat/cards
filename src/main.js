@@ -10,10 +10,11 @@ import lineSpacingDirective from "@/directives/lineSpacingDirective.js";
 import customTitleDivDirective from "./directives/customTitleDivDirective.js";
 import logoDirective from "./directives/logoDirective.js";
 import noBreakDirective from "./directives/noBreakDirective.js"
+import customCardZeroDirective from "./directives/customCardZeroDirective.js"
 import { createApp } from "vue";
 import { createI18n } from "vue-i18n";
 import de from "@/locales/de-DE.json";
-import en from "@/locales/en.json";
+import en from "@/locales/en-GB.json";
 import fr from "@/locales/fr-FR.json";
 import ja from "@/locales/ja-JP.json";
 import ru from "@/locales/ru.json";
@@ -52,7 +53,7 @@ const messages = {
 // const locale = process.env.VUE_APP_LOCALE || "en";
 
 const i18n = createI18n({
-  locale: "fr", // Remplacer par locale si passée en parametre
+  locale: "en", // Remplacer par locale si passée en parametre
   fallbackLocale: "en",
   messages,
 });
@@ -68,4 +69,5 @@ app.directive('linespacing', lineSpacingDirective);
 app.directive('customtitlediv', customTitleDivDirective); 
 app.directive('logo', logoDirective); 
 app.directive('no-break', noBreakDirective); 
+app.directive('card-zero', customCardZeroDirective)
 app.mount("#app");

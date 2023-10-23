@@ -4,10 +4,10 @@ export default {
         if (currentLocale === 'my') {
             const titleElements = el.querySelectorAll('.title');
             titleElements.forEach(title => {
-                title.style.top = '333px';    // Modifier la valeur de 'top'
-                title.style.left = '140px';   // Modifier la valeur de 'left'
-                title.style.width = '4400px'; // Modifier la valeur de 'width'
-                title.style.height = '300px'; // Modifier la valeur de 'height'
+                title.style.top = '49px';    // Modifier la valeur de 'top'
+                title.style.left = '21px';   // Modifier la valeur de 'left'
+                title.style.width = '651px'; // Modifier la valeur de 'width'
+                title.style.height = '44px'; // Modifier la valeur de 'height'
             });
         }
     },
