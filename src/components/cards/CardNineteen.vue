@@ -3,6 +3,9 @@
         <div id="card19-label1" class="horizontal-center vertical-center label card19-label1-position">
             <p id="card19-text1" class="font-small">{{ $t('V1C999L90') }}</p>
         </div>
+        <div id="card21-label2" class="horizontal-center label black card21-label2-position">
+            <p id="card21-text2">{{ $t('V1C999L90') }}</p>
+        </div>
         <div id="card19-fixed-label1" class="horizontal-center vertical-center label card19-fixed-label1-position">
             <p id="card19-fixed-text1" class="font-small">+7m</p>
         </div>
@@ -33,7 +36,16 @@ export default {
 <style>
 .card19-label1-position {
     top: 414px;
-    left: 67px;
+    left: 104px;
+    width: 252px;
+    height: 30px;
+    color : grey;
+    /* border: solid red; */
+}
+
+.card19-label2-position {
+    top: 414px;
+    left: 104px;
     width: 252px;
     height: 30px;
     color : grey;

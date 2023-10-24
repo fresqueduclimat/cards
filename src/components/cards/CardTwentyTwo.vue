@@ -6,6 +6,9 @@
         <div id="card22-label2" class="horizontal-center vertical-center label black card22-label2-position">
             <p id="card22-text2" class="font-small">{{ $t('V1C22L7') }}</p>
         </div>
+        <div id="card22-label3" class="horizontal-center vertical-center label black card22-label3-position">
+            <p id="card22-text3" class="font-small">{{ $t('V1C999L90') }}</p>
+        </div>
         <div id="card22-fixed-label1" class="horizontal-center vertical-center label black card22-fixed-label1-position">
             <p id="card22-fixed-text1" class="font-small">20 cm</p>
         </div>
@@ -48,6 +51,15 @@ export default {
     width: 185px;
     height: 70px;
     /* border: solid red; */
+}
+.card22-label3-position {
+    top: 420px;
+    left: 300px;
+    width: 345px;
+    height: 30px;
+    text-align: right;
+    color:grey;
+    /* border: solid red 0.5px; */
 }
 
 .card22-fixed-label1-position {
