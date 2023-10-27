@@ -4,13 +4,13 @@
             <p id="card21-text1" class="font-medium">{{ $t('V1C21L6') }}</p>
         </div>
         <div id="card21-fixed-label1" class="horizontal-center vertical-center label black card21-fixed-label1-position">
-            <p id="card21-fixed-text1" class="font-small">+ 1,2°C</p>
+            <p id="card21-fixed-text1" class="font-small">+ 1.2°C</p>
         </div>
         <div id="card21-fixed-label2" class="horizontal-center vertical-center label black card21-fixed-label2-position">
             <p id="card21-fixed-text2" class="font-small">+ 5°C</p>
         </div>
         <div id="card21-fixed-label3" class="horizontal-center vertical-center label black card21-fixed-label3-position">
-            <p id="card21-fixed-text3" class="font-small">+ 1,5°C</p>
+            <p id="card21-fixed-text3" class="font-small">+ 1.5°C</p>
         </div>
         <template v-slot:back-content>
             <div id="card21-back-label2" class="label white set-one">

@@ -67,7 +67,7 @@
             <p id="card15-fixed-text5" class="font-big">SSP1-1.9</p>
         </div>
         <div id="card15-fixed-label6" class="horizontal-center vertical-center label black card15-fixed-label6-position">
-            <p id="card15-fixed-text6" class="font-small">2,8 W/m<sup>2</sup></p>
+            <p id="card15-fixed-text6" class="font-small">2.8 W/m<sup>2</sup></p>
         </div>
         <template v-slot:back-content>
             <div id="card15-back-label8" class="label white set-three">

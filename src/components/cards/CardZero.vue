@@ -80,11 +80,12 @@ export default {
 }
 
 .card0-label2-position {
-    top: 321px;
-    left: 494px;
-    width: 126px;
-    height: 64px;
+    top: 317px;
+    left: 489px;
+    width: 135px;
+    height: 68px;
     transform: rotate(15deg);
+    /* border: red solid 0.5px; */
 }
 .card0-label3-position {
     top: 148px;

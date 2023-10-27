@@ -11,6 +11,7 @@ import customTitleDivDirective from "./directives/customTitleDivDirective.js";
 import logoDirective from "./directives/logoDirective.js";
 import noBreakDirective from "./directives/noBreakDirective.js"
 import customCardZeroDirective from "./directives/customCardZeroDirective.js"
+import fontFamilyDirective from "./directives/fontFamilyDirective.js"
 import { createApp } from "vue";
 import { createI18n } from "vue-i18n";
 import de from "@/locales/de-DE.json";
@@ -70,4 +71,5 @@ app.directive('customtitlediv', customTitleDivDirective);
 app.directive('logo', logoDirective); 
 app.directive('no-break', noBreakDirective); 
 app.directive('card-zero', customCardZeroDirective)
+app.directive('font-family', fontFamilyDirective)
 app.mount("#app");
