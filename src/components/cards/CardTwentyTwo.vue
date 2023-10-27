@@ -61,7 +61,6 @@ export default {
     color:grey;
     /* border: solid red 0.5px; */
 }
-
 .card22-fixed-label1-position {
     top: 306px;
     left: 132px;

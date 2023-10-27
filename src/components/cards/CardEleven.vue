@@ -13,7 +13,7 @@
             <p id="card11-fixed-text3" class="font-small">400 ppm</p>
         </div> 
         <div id="card11-fixed-label4" class="horizontal-center vertical-center label black card11-fixed-label4-position">
-            <p id="card11-fixed-text4" class="font-small">415 ppm</p>
+            <p id="card11-fixed-text4" class="font-small">420 ppm</p>
         </div> 
         <template v-slot:back-content>
             <div id="card11-back-label2" class="label white set-two">
