@@ -70,27 +70,27 @@ export default {
 }
 
 .card44-label0-position {
-    top: 59px;
+    top: 54px;
     left: 52px;
-    width: 430px;
-    height: 44px;
+    width: 440px;
+    height: 52px;
     font-weight: 900;
     text-align: left;
     /* border: red solid; */
 }
 
 .card44-label1-position {
-    top: 103px;
+    top: 112px;
     left: 52px;
     width: 440px;
-    height: 146px;
+    height: 157px;
     text-align: left;
-    font-size: 15px;
+    font-size: 14px;
     /* border: red solid 0.2px; */
 }
 
 .card44-label2-position {
-    top: 260px;
+    top: 266px;
     left: 52px;
     width: 192px;
     height: 50px;
@@ -100,7 +100,7 @@ export default {
 }
 
 .card44-label3-position {
-    top: 260px;
+    top: 266px;
     left: 259px;
     width: 200px;
     height: 50px;

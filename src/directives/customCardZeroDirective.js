@@ -8,6 +8,11 @@ export default {
                 text.style.height = '34px'; // Modifier la valeur de 'height'
                 text.style.fontSize = '13px';
             });
+            const labeltwoElements = el.querySelectorAll('#card0-label2');
+            labeltwoElements.forEach(text => {
+                text.style.top = '322px';    // Modifier la valeur de 'top'
+                text.style.height = '59px'; // Modifier la valeur de 'height'
+            });
             const labelthreeElements = el.querySelectorAll('#card0-label3');
             labelthreeElements.forEach(text => {
                 text.style.top = '138px';    // Modifier la valeur de 'top'
@@ -28,7 +33,7 @@ export default {
             });
             const labelsevenElements = el.querySelectorAll('#card0-label7');
             labelsevenElements.forEach(text => {
-                text.style.top = '392px';    // Modifier la valeur de 'top'
+                text.style.top = '394px';    // Modifier la valeur de 'top'
                 text.style.height = '32px'; // Modifier la valeur de 'height'
                 text.style.fontSize = '14px';
             });
