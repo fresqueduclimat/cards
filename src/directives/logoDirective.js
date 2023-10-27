@@ -11,7 +11,7 @@ export default {
                 logo.style.top = '30px';
                 logo.style.left = '505px';
                 logo.style.width = '148px';
-                logo.style.height = '42px';
+                logo.style.height = '40px';
             });
             const logoBigContainerElements = el.querySelectorAll('.logo-container-big');
             logoBigContainerElements.forEach(logo => {

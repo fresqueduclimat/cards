@@ -129,14 +129,14 @@ export default {
 }
 
 .card0-label7-position {
-    top: 399px;
+    top: 394px;
     left: 166px;
     width: 96px;
-    height: 22px;
+    height: 32px;
     color: red;
     font-weight: 900;
     /* border: red solid; */
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .card0-label8-position {

@@ -96,7 +96,7 @@ export default {
     width: 163px;
     height: 15px;
     justify-content: right;
-    color: lightsalmon;
+    color: #FF9B00;
     /* border: solid red; */
 }
 
@@ -115,7 +115,7 @@ export default {
     width: 163px;
     height: 15px;
     justify-content: right;
-    color: grey;
+    color: #969595;
     /* border: solid red; */
 }
 
@@ -125,7 +125,7 @@ export default {
     width: 163px;
     height: 15px;
     justify-content: right;
-    color: cyan;
+    color: #62F0F3;
     /* border: solid red; */
 }
 
@@ -135,7 +135,7 @@ export default {
     width: 163px;
     height: 15px;
     justify-content: right;
-    color: darkgreen;
+    color: #1D5707;
     /* border: solid red; */
 }
 
@@ -145,7 +145,7 @@ export default {
     width: 163px;
     height: 15px;
     justify-content: right;
-    color: lightblue;
+    color: #CADBC3;
     /* border: solid red; */
 }
 
@@ -155,7 +155,7 @@ export default {
     width: 163px;
     height: 15px;
     justify-content: right;
-    color: lightgreen;
+    color: #7AB191;
     /* border: solid red; */
 }
 
@@ -165,7 +165,7 @@ export default {
     width: 163px;
     height: 15px;
     justify-content: right;
-    color: green;
+    color: #498DA5;
     /* border: solid red; */
 }
 
@@ -175,7 +175,7 @@ export default {
     width: 163px;
     height: 16px;
     justify-content: right;
-    color: darkgrey;
+    color: #A6A6A6;
     /* border: solid red; */
 }
 
@@ -185,7 +185,7 @@ export default {
     width: 133px;
     height: 18px;
     justify-content: right;
-    color: green;
+    color: #58E60F;
     /* border: solid red; */
 }
 
@@ -195,7 +195,7 @@ export default {
     width: 133px;
     height: 18px;
     justify-content: right;
-    color: red;
+    color: #EE350B;
     z-index: 3; /* devant */
     /* border: solid red; */
 }
@@ -206,7 +206,7 @@ export default {
     width: 134px;
     height: 22px;
     justify-content: right;
-    color: orange;
+    color: #FE9D07;
     z-index: 3; /* devant */
     /* border: solid red; */
 }
@@ -217,7 +217,7 @@ export default {
     width: 133px;
     height: 19px;
     justify-content: right;
-    color: grey;
+    color: #595959;
     /* border: solid red; */
 }
 
