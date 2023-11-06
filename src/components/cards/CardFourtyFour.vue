@@ -26,7 +26,7 @@
                 <div class="logo"></div>
             </div>
             <div class="label white front-card-label2-position">
-                <p>{{ "Climate Fresk - " + $t('V0C0L0') + " - Adults - V9.0- 09/09/2024"}}</p>
+                <p>{{ "Climate Fresk - " + $t('V0C0L0') + " - Adults - V9.0- 30/10/2024"}}</p>
             </div>
             <div class="label outline-container-back">
                 <div class="outline">All the cards are in your hands!</div>
