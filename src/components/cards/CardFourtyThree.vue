@@ -1,7 +1,7 @@
 <template>
     <section :data-background-image="backgroundFrontImageUrl" data-background-size="cover">
         <div class="container">
-            <div id="card43-label0" class="label black card43-label0-position">
+            <div id="card43-label0" class="label card43-label0-position">
                 <p id="card43-text0">{{ $t('V1C99L1') }}</p>
             </div>
         </div>
@@ -37,6 +37,8 @@ export default {
     align-items: center;
     white-space: nowrap;
     font-size: 38px;
+    font-weight: 700;
+    color: white;
 }
 
 </style>

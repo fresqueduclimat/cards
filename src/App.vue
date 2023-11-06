@@ -262,7 +262,7 @@ export default {
   height: 100%;
   display: flex;
   flex-direction: column;
-  font-weight : 200;
+  font-weight : 500;
 }
 
 .container h1 {
