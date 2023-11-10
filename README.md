@@ -29,6 +29,14 @@ EXPORT_LANG=FR_FR npm run export
 ```
 Le paramètre "EXPORT_LANG" permet de nommer automatiquement le fichier (par exemple, avec la commande ci-dessous le fichier exporté sera `Adults-FR_FR-v8.4.pdf`). Attention cependant, la langue du pdf exporté dépend de la locale choisie dans le fichier `main.js` (cf. Choix de la langue ci-dessous)
 
+Export cards in png (for online mural facilitation)
+
+```
+npm run capture
+```
+La commande est configurée pour exporter en png uniquement les recto de chaque carte. Ceci peut être adapté via package.json pour adapter la commande au besoin, ou en créer une nouvelle.
+Il faut qu'un dossier /screenshots existe à la racine, les pngs sont directement téléchargés dans le dossier.
+
 ## Project details
 
 ### Fonctionnement global
