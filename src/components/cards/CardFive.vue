@@ -11,7 +11,7 @@
             <p id="card5-text3" class="font-small">{{ $t('V1C5L4') }}</p>
         </div>
         <div id="card5-label4"
-            class="horizontal-center vertical-center label black label5 card5-label4-position">
+            class="horizontal-center vertical-center label label5 card5-label4-position">
             <p id="card5-text4" class="font-small">{{ $t('V1C999L90') }}</p>
         </div>
         <div id="card5-fixed-label1" class="horizontal-center vertical-center label card5-fixed-label1-position">
@@ -93,6 +93,7 @@ export default {
     width: 270px;
     height: 20px;
     transform: rotate(-90deg);
+    color : grey;
     /* border: solid red; */
 }
 
