@@ -172,7 +172,7 @@ export default {
   },
   methods: {
     adjustFontSize() {
-      const labels_max = [10, 0, 0, 0, 0, 5, 0, 4, 0, 0, 0, 2, 6, 5, 7, 18, 0, 0, 0, 0, 7, 2, 3, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
+      const labels_max = [10, 0, 0, 0, 0, 5, 0, 4, 0, 0, 0, 2, 6, 5, 7, 18, 0, 0, 0, 0, 7, 3, 3, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
       const labels = [];
       for (let card_id = 0; card_id <= labels_max.length-1; card_id++) {
         let titleValue = {

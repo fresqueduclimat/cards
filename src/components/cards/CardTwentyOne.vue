@@ -6,6 +6,9 @@
         <div id="card21-fixed-label1" class="horizontal-center vertical-center label black card21-fixed-label1-position">
             <p id="card21-fixed-text1" class="font-small">+ 1.2°C</p>
         </div>
+        <div id="card21-label2" class="label card21-label2-position">
+            <p id="card21-text2" class="font-small">{{ $t('V1C999L90') }}</p>
+        </div>
         <div id="card21-fixed-label2" class="horizontal-center vertical-center label black card21-fixed-label2-position">
             <p id="card21-fixed-text2" class="font-small">+ 5°C</p>
         </div>
@@ -40,6 +43,17 @@ export default {
     height: 35px;
     text-align: right;
     justify-content: right;
+}
+
+.card21-label2-position {
+    top: 386px;
+    left: 577px;
+    width: 99px;
+    height: 42px;
+    transform: rotate(-90deg);
+    /* border: solid red 0.2px; */
+    color:grey;
+    font-size:14px;
 }
 
 .card21-fixed-label1-position {

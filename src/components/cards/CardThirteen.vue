@@ -18,6 +18,9 @@
         <div id="card13-fixed-label2" class="horizontal-center vertical-center label card13-fixed-label2-position">
             <p id="card13-fixed-text2" class="font-big">-18°C</p>
         </div>
+        <div id="card13-fixed-label3" class="horizontal-center vertical-center label card13-fixed-label3-position">
+            <p id="card13-fixed-text3" class="font-big">°C</p>
+        </div>
         <template v-slot:back-content>
             <div id="card13-back-label1" class="label white set-one">
                 <p id="card13-back-text1">{{ $t('V1C0L4') + ' ' + "1"}}</p>
@@ -86,6 +89,15 @@ export default {
     width: 67px;
     height: 22px;
     font-size: 20px;
+    color: white;
+}
+
+.card13-fixed-label3-position {
+    top: 393px;
+    left: 597px;
+    width: 67px;
+    height: 22px;
+    font-size: 24px;
     color: white;
 }
 </style>

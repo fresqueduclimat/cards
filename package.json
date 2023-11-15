@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "export": "decktape http://localhost:8080 build/Adults-$EXPORT_LANG-v9.pdf -s '693x470' --slides 1-88"
+    "export": "decktape http://localhost:8080 build/Adults-$EXPORT_LANG-v9.pdf -s '693x470' --slides 1-88",
+    "capture": "decktape http://localhost:8080 output.pdf --screenshots --screenshots-size=693x470 --screenshots-format=jpg --slides 1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41,43,45,47,49,51,53,55,57,59,61,63,65,67,69,71,73,75,77,79,81,83,85"
   },
   "dependencies": {
     "core-js": "^3.8.3",

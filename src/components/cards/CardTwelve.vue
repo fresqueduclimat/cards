@@ -15,7 +15,7 @@
             <p id="card12-text4" class="font-small">{{ $t('V1C12L9') }}</p>
         </div>
         <div id="card12-label5"
-            class="horizontal-center vertical-center label black card12-label5-position">
+            class="horizontal-center vertical-center label card12-label5-position">
             <p id="card12-text5" class="font-small">{{ $t('V1C999L90') }}</p>
         </div>
         <div id="card12-fixed-label1" class="horizontal-center vertical-center label white card12-fixed-label1-position">
