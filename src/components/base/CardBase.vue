@@ -223,6 +223,7 @@ export default {
     height: 65px;
     background-color: red;
     padding-top: 11px;
+    font-weight: 500;
     font-size : 22px;
 }
 
@@ -237,6 +238,7 @@ export default {
     height: 65px;
     background-color: red;
     padding-top: 11px;
+    font-weight: 500;
     font-size : 22px;
 }
 
@@ -251,6 +253,7 @@ export default {
     height: 65px;
     background-color: red;
     padding-top: 11px;
+    font-weight: 500;
     font-size : 22px;
 }
 
@@ -264,7 +267,8 @@ export default {
     width: 115px;
     height: 65px;
     background-color: red;
-    padding-top: 11px;
+    padding-top: 15px;
+    font-weight: 500;
     font-size : 22px;
 }
 
@@ -273,12 +277,13 @@ export default {
     left: 3090px;
     width: 772px;
     height: 560px; */
-    top: 396px;
+    top: 394px;
     left: 545px;
     width: 115px;
     height: 65px;
     background-color: red;
     padding-top: 11px;
+    font-weight: 500;
     font-size : 22px;
 }
 
