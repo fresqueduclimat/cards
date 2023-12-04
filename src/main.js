@@ -11,6 +11,7 @@ import customTitleDivDirective from "./directives/customTitleDivDirective.js";
 import logoDirective from "./directives/logoDirective.js";
 import noBreakDirective from "./directives/noBreakDirective.js"
 import customCardZeroDirective from "./directives/customCardZeroDirective.js"
+import customCardFourtyFourDirective from "./directives/customCardFourtyFourDirective.js"
 import fontFamilyDirective from "./directives/fontFamilyDirective.js"
 import { createApp } from "vue";
 import { createI18n } from "vue-i18n";
@@ -28,6 +29,8 @@ import pt from "@/locales/pt-PT.json";
 import ro from "@/locales/ro-RO.json";
 import sv from "@/locales/sv-SE.json";
 import fi from "@/locales/fi-FI.json";
+import nl from "@/locales/nl-NL.json";
+import es from "@/locales/es-ES.json";
 
 const messages = {
   en: en,
@@ -47,6 +50,8 @@ const messages = {
   ro : ro,
   sv : sv,
   fi : fi,
+  nl : nl,
+  es : es,
 };
 
 // if we want to have the language as a param when executing the command
@@ -54,7 +59,7 @@ const messages = {
 // const locale = process.env.VUE_APP_LOCALE || "en";
 
 const i18n = createI18n({
-  locale: "fr", // Remplacer par locale si passée en parametre
+  locale: "es", // Remplacer par locale si passée en parametre
   fallbackLocale: "en",
   messages,
 });
@@ -71,5 +76,6 @@ app.directive('customtitlediv', customTitleDivDirective);
 app.directive('logo', logoDirective); 
 app.directive('no-break', noBreakDirective); 
 app.directive('card-zero', customCardZeroDirective)
+app.directive('card-fourtyfour', customCardFourtyFourDirective)
 app.directive('font-family', fontFamilyDirective)
 app.mount("#app");

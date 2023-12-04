@@ -218,13 +218,14 @@ export default {
     left: 225px;
     width: 772px;
     height: 560px; */
-    top: 394px;
+    top: 395px;
     left: 33px;
-    width: 114px;
-    height: 82px;
+    width: 115px;
+    height: 65px;
     background-color: red;
-    padding-top: 15px;
+    padding-top: 11px;
     font-weight: 500;
+    font-size : 22px;
 }
 
 .set-two {
@@ -232,13 +233,14 @@ export default {
     left: 1090px;
     width: 772px;
     height: 560px; */
-    top: 394px;
+    top: 395px;
     left: 161px;
-    width: 114px;
-    height: 82px;
+    width: 115px;
+    height: 65px;
     background-color: red;
-    padding-top: 15px;
+    padding-top: 11px;
     font-weight: 500;
+    font-size : 22px;
 }
 
 .set-three {
@@ -246,13 +248,14 @@ export default {
     left: 1690px;
     width: 772px;
     height: 560px; */
-    top: 394px;
-    left: 250px;
-    width: 114px;
-    height: 82px;
+    top: 396px;
+    left: 289px;
+    width: 115px;
+    height: 65px;
     background-color: red;
-    padding-top: 15px;
+    padding-top: 11px;
     font-weight: 500;
+    font-size : 22px;
 }
 
 .set-four {
@@ -260,13 +263,14 @@ export default {
     left: 2490px;
     width: 772px;
     height: 560px; */
-    top: 394px;
-    left: 369px;
-    width: 114px;
-    height: 82px;
+    top: 396px;
+    left: 417px;
+    width: 115px;
+    height: 65px;
     background-color: red;
     padding-top: 15px;
     font-weight: 500;
+    font-size : 22px;
 }
 
 .set-five {
@@ -275,12 +279,13 @@ export default {
     width: 772px;
     height: 560px; */
     top: 394px;
-    left: 459px;
-    width: 114px;
-    height: 82px;
+    left: 545px;
+    width: 115px;
+    height: 65px;
     background-color: red;
-    padding-top: 15px;
+    padding-top: 11px;
     font-weight: 500;
+    font-size : 22px;
 }
 
 .set p {
