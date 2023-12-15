@@ -16,7 +16,7 @@ export default {
             const logoBigContainerElements = el.querySelectorAll('.logo-container-big');
             logoBigContainerElements.forEach(logo => {
                 logo.style.top = '329px';
-                logo.style.left = '91px';
+                logo.style.left = '152px';
                 logo.style.width = '296px';
                 logo.style.height = '82px';
             });
@@ -45,7 +45,7 @@ export default {
             const outlineBackContainerElements = el.querySelectorAll('.outline-container-back');
             outlineBackContainerElements.forEach(outline => {
                 outline.style.top = '400px';
-                outline.style.left = '148px';
+                outline.style.left = '209px';
                 outline.style.fontSize='14px';
             });
         }

@@ -10,14 +10,14 @@
                 <div class="label third-rectangle"></div>
                 <p class="label font-medium card-number white">{{ cardNumber }}</p>
             </div>
-            <hr class="label border-white top-left-vertical">
+            <!-- <hr class="label border-white top-left-vertical">
             <hr class="label border-white top-left-horizontal">
             <hr class="label border-white top-right-vertical">
             <hr class="label border-white top-right-horizontal">
             <hr class="label border-white bottom-left-vertical">
             <hr class="label border-white bottom-left-horizontal">
             <hr class="label border-white bottom-right-vertical">
-            <hr class="label border-white bottom-right-horizontal">
+            <hr class="label border-white bottom-right-horizontal"> -->
             <slot></slot>
         </div>
     </section>
@@ -36,14 +36,14 @@
                 <div class="label third-rectangle"></div>
                 <p class="label font-medium card-number white">{{ cardNumber }}</p>
             </div>
-            <hr class="label border-black top-left-vertical">
+            <!-- <hr class="label border-black top-left-vertical">
             <hr class="label border-black top-left-horizontal">
             <hr class="label border-black top-right-vertical">
             <hr class="label border-black top-right-horizontal">
             <hr class="label border-black bottom-left-vertical">
             <hr class="label border-black bottom-left-horizontal">
             <hr class="label border-black bottom-right-vertical">
-            <hr class="label border-black bottom-right-horizontal">
+            <hr class="label border-black bottom-right-horizontal"> -->
             <slot name="back-content"></slot>
         </div>
     </section>
@@ -304,7 +304,7 @@ export default {
     /* height : 90px;
     top: -100px;
     left: 95px; */
-    height : 13px;
+    height : 10px;
     top: -15px;
     left: 14px;
 }
@@ -312,7 +312,7 @@ export default {
     /* width : 90px;
     top: 35px;
     left: -35px; */
-    width : 13px;
+    width : 10px;
     top: 5px;
     left: -5px;
 }
@@ -320,7 +320,7 @@ export default {
     /* height : 90px;
     top: -100px;
     left: 4580px; */
-    height : 13px;
+    height : 10px;
     top: -15px;
     left: 679px;
 }
@@ -328,7 +328,7 @@ export default {
     /* width : 90px;
     top: 35px;
     left: 4620px; */
-    width : 13px;
+    width : 10px;
     top: 5px;
     left: 683px;
 }
@@ -336,7 +336,7 @@ export default {
     /* height : 90px;
     top: 3060px;
     left: 95px; */
-    height : 13px;
+    height : 10px;
     top: 452px;
     left: 14px;
 }
@@ -344,7 +344,7 @@ export default {
     /* width : 90px;
     top: 3025px;
     left: -35px; */
-    width : 13px;
+    width : 10px;
     top: 446px;
     left: -5px;
 }
@@ -352,7 +352,7 @@ export default {
     /* height : 90px;
     top: 3060px;
     left: 4580px; */
-    height : 13px;
+    height : 10px;
     top: 453px;
     left: 678px;
 }
@@ -360,7 +360,7 @@ export default {
     /* width : 90px;
     top: 3025px;
     left: 4620px; */
-    width : 13px;
+    width : 10px;
     top: 446px;
     left: 684px;
 }
