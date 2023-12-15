@@ -22,8 +22,20 @@
             <div id="card44-label6" class="label black card44-label6-position">
                 <p id="card44-text6">{{ $t('V1C999L9') }}</p>
             </div>
+            <div id="card44-label7" class="label white card44-label7-position">
+                <p id="card44-label7">{{ $t('V1C999L91') }}</p>
+            </div>
             <div class="label logo-container-big">
                 <div class="logo"></div>
+            </div>
+            <div class="label qr-code-siteweb-container">
+                <div class="qr-code-siteweb"></div>
+            </div>
+            <div class="label barcode-container">
+                <div class="barcode"></div>
+            </div>
+            <div class="label cc-container">
+                <div class="cc"></div>
             </div>
             <div class="label white front-card-label2-position">
                 <p>{{ "Climate Fresk - " + $t('V0C0L0') + " - Adults - V9.0- 04/12/2024"}}</p>
@@ -47,7 +59,7 @@ export default {
     },
     computed: {
         backgroundFrontImageUrl() {
-            return require("@/assets/png/C99-back.png");
+            return require("@/assets/png/C0.png");
         },
     },
 };
@@ -57,7 +69,7 @@ export default {
 <style>
 .logo-container-big {
     top: 304px;
-    left: 91px;
+    left: 141px;
     width: 296px;
     height: 111px;
 }
@@ -67,6 +79,49 @@ export default {
     height: 100%;
     background-image: url('@/assets/logo-en.png');
     background-size: contain;
+}
+
+.qr-code-siteweb {
+    width: 100%;
+    height: 100%;
+    background-image: url('@/assets/qr-code/qr-siteweb-en.png');
+    background-size: contain;
+}
+
+.qr-code-siteweb-container {
+    top: 243px;
+    left: 500px;
+    width: 130px;
+    height: 130px;
+}
+
+/* .barcode {
+    width: 100%;
+    height: 100%;
+    background-image: url('@/assets/barcode/adults-en.png');
+    background-size: contain;
+}
+
+.barcode-container {
+    top: 345px;
+    left: 19px;
+    width: 112px;
+    height: 50px;
+    transform: rotate(90deg);
+} */
+
+.cc {
+    width: 100%;
+    height: 100%;
+    background-image: url('@/assets/creative-commons.png');
+    background-size: contain;
+}
+
+.cc-container {
+    top: 53px;
+    left: 502px;
+    width: 139px;
+    height: 49px;
 }
 
 .card44-label0-position {
@@ -82,7 +137,7 @@ export default {
 .card44-label1-position {
     top: 112px;
     left: 52px;
-    width: 440px;
+    width: 446px;
     height: 157px;
     text-align: left;
     font-size: 14px;
@@ -135,42 +190,22 @@ export default {
 }
 
 .card44-label7-position {
-    top: 399px;
-    left: 178px;
-    width: 74px;
-    height: 30px;
-    color: red;
-    font-weight: 900;
-    /* border: red solid; */
-}
-
-.card44-label8-position {
-    top: 399px;
-    left: 275px;
-    width: 74px;
-    height: 30px;
-    color: red;
-    font-weight: 900;
-    /* border: red solid; */
-}
-
-.card44-label9-position {
-    top: 399px;
-    left: 385px;
-    width: 74px;
-    height: 30px;
-    color: red;
-    font-weight: 900;
-    /* border: red solid; */
+    top: 432px;
+    left: 43px;
+    width: 605px;
+    height: 20px;
+    font-size : 14px;
 }
 .outline-container-back {
     top: 404px;
-    left: 157px;
+    left: 206px;
     width: 240px;
     height: 20px;
     font-size: 14px;
     /* border: red solid 0.5px; */
 }
+
+
 
 </style>
 

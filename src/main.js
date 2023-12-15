@@ -9,6 +9,7 @@ import lineBreakDirective from "@/directives/lineBreakDirective.js";
 import lineSpacingDirective from "@/directives/lineSpacingDirective.js"; 
 import customTitleDivDirective from "./directives/customTitleDivDirective.js";
 import logoDirective from "./directives/logoDirective.js";
+import barcodeDirective from "./directives/barcodeDirective.js";
 import noBreakDirective from "./directives/noBreakDirective.js"
 import customCardZeroDirective from "./directives/customCardZeroDirective.js"
 import customCardFourtyFourDirective from "./directives/customCardFourtyFourDirective.js"
@@ -31,6 +32,7 @@ import sv from "@/locales/sv-SE.json";
 import fi from "@/locales/fi-FI.json";
 import nl from "@/locales/nl-NL.json";
 import es from "@/locales/es-ES.json";
+import lat from "@/locales/es-LAT.json";
 
 const messages = {
   en: en,
@@ -52,6 +54,7 @@ const messages = {
   fi : fi,
   nl : nl,
   es : es,
+  lat : lat,
 };
 
 // if we want to have the language as a param when executing the command
@@ -59,7 +62,7 @@ const messages = {
 // const locale = process.env.VUE_APP_LOCALE || "en";
 
 const i18n = createI18n({
-  locale: "es", // Remplacer par locale si passée en parametre
+  locale: "en", // Remplacer par locale si passée en parametre
   fallbackLocale: "en",
   messages,
 });
@@ -74,6 +77,7 @@ app.directive('linebreak', lineBreakDirective);
 app.directive('linespacing', lineSpacingDirective); 
 app.directive('customtitlediv', customTitleDivDirective); 
 app.directive('logo', logoDirective); 
+app.directive('barcode', barcodeDirective); 
 app.directive('no-break', noBreakDirective); 
 app.directive('card-zero', customCardZeroDirective)
 app.directive('card-fourtyfour', customCardFourtyFourDirective)
