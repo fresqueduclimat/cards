@@ -136,17 +136,17 @@ export default {
     height: 15px;
     justify-content: right;
     color: #1D5707;
-    /* border: solid red; */
+    /* border: solid red 0.2px; */
 }
 
 .card15-label6-position {
     top: 208px;
-    left: 59px;
-    width: 163px;
-    height: 15px;
+    left: 62px;
+    width: 160px;
+    height: 13px;
     justify-content: right;
-    color: #CADBC3;
-    /* border: solid red; */
+    color: #8CBA79;
+    /* border: solid red 0.2px; */
 }
 
 .card15-label7-position {

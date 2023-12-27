@@ -10,14 +10,14 @@
                 <div class="label third-rectangle"></div>
                 <p class="label font-medium card-number white">{{ cardNumber }}</p>
             </div>
-            <!-- <hr class="label border-white top-left-vertical">
+            <hr class="label border-white top-left-vertical">
             <hr class="label border-white top-left-horizontal">
             <hr class="label border-white top-right-vertical">
             <hr class="label border-white top-right-horizontal">
             <hr class="label border-white bottom-left-vertical">
             <hr class="label border-white bottom-left-horizontal">
             <hr class="label border-white bottom-right-vertical">
-            <hr class="label border-white bottom-right-horizontal"> -->
+            <hr class="label border-white bottom-right-horizontal">
             <slot></slot>
         </div>
     </section>
@@ -28,7 +28,7 @@
             </div>
             <div class="label logo-container">
                 <div class="logo"></div>
-                <p class="url">climatefresk.org</p>
+                <p class="url">fresqueduclimat.org</p>
             </div>
             <div class="horizontal-center vertical-center label back-set-container">
                 <div class="label first-rectangle"></div>
@@ -36,14 +36,14 @@
                 <div class="label third-rectangle"></div>
                 <p class="label font-medium card-number white">{{ cardNumber }}</p>
             </div>
-            <!-- <hr class="label border-black top-left-vertical">
+            <hr class="label border-black top-left-vertical">
             <hr class="label border-black top-left-horizontal">
             <hr class="label border-black top-right-vertical">
             <hr class="label border-black top-right-horizontal">
             <hr class="label border-black bottom-left-vertical">
             <hr class="label border-black bottom-left-horizontal">
             <hr class="label border-black bottom-right-vertical">
-            <hr class="label border-black bottom-right-horizontal"> -->
+            <hr class="label border-black bottom-right-horizontal">
             <slot name="back-content"></slot>
         </div>
     </section>
@@ -120,21 +120,21 @@ export default {
     left: 3415px;
     width: 970px;
     height: 375px; */
-    top: 18px;
-    left: 506px;
-    width: 143px;
-    height: 55px;
+    top: 30px;
+    left: 505px;
+    width: 148px;
+    height: 40px;
 }
 
 .logo {
     width: 100%;
     height: 100%;
-    background-image: url('@/assets/logo-en.png');
+    background-image: url('@/assets/logo-fr.png');
     background-size: contain;
 }
 
 .url {
-    font-size: 19px;
+    font-size: 17px;
 }
 
 .back-set-container {

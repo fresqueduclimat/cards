@@ -1,10 +1,10 @@
 export default {
     beforeMount(el, binding) {
         const currentLocale = binding.instance?.$i18n?.locale;
-        if (currentLocale === 'fr') {
+        if (currentLocale === 'en') {
             const corpusElements = el.querySelectorAll('#card44-label1');
             corpusElements.forEach(text => {
-                text.style.top = '100px';
+                text.style.top = '112px';
             });
         }
         if (currentLocale === 'de') {

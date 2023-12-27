@@ -38,10 +38,10 @@
                 <div class="cc"></div>
             </div>
             <div class="label white front-card-label2-position">
-                <p>{{ "Climate Fresk - " + $t('V0C0L0') + " - Adults - V9.0- 04/12/2024"}}</p>
+                <p>{{ "Climate Fresk - " + $t('V0C0L0') + " - Adults - V9.0- 19/12/2024"}}</p>
             </div>
             <div class="label outline-container-back">
-                <div class="outline">All the cards are in your hands!</div>
+                <div class="outline">Vous avez toutes les cartes en main !</div>
             </div>
         </div>
     </section>
@@ -68,23 +68,23 @@ export default {
 <!-- pour une résolution de 470x693 -->
 <style>
 .logo-container-big {
-    top: 304px;
-    left: 141px;
-    width: 296px;
-    height: 111px;
+    top: 329px;
+    left: 110px;
+    width: 280px;
+    height: 75px;
 }
 
 .logo {
     width: 100%;
     height: 100%;
-    background-image: url('@/assets/logo-en.png');
+    background-image: url('@/assets/logo-fr.png');
     background-size: contain;
 }
 
 .qr-code-siteweb {
     width: 100%;
     height: 100%;
-    background-image: url('@/assets/qr-code/qr-siteweb-en.png');
+    background-image: url('@/assets/qr-code/qr-siteweb-fr.png');
     background-size: contain;
 }
 
@@ -95,20 +95,19 @@ export default {
     height: 130px;
 }
 
-/* .barcode {
+ .barcode {
     width: 100%;
     height: 100%;
-    background-image: url('@/assets/barcode/adults-en.png');
+    background-image: url('@/assets/barcode/adults-fr.png');
     background-size: contain;
 }
 
 .barcode-container {
-    top: 345px;
-    left: 19px;
-    width: 112px;
-    height: 50px;
-    transform: rotate(90deg);
-} */
+    top: 500px; /*does not show unless print is true and element position are modified in printDirective.js*/
+    left: 51px;
+    width: 151px;
+    height: 67px;
+} 
 
 .cc {
     width: 100%;
@@ -135,7 +134,7 @@ export default {
 }
 
 .card44-label1-position {
-    top: 112px;
+    top: 100px;
     left: 52px;
     width: 446px;
     height: 157px;
@@ -190,18 +189,18 @@ export default {
 }
 
 .card44-label7-position {
-    top: 432px;
+    top: 432px; /* n'apparait pas sauf si fr,en,es,de cf. printDirective */
     left: 43px;
     width: 605px;
     height: 20px;
     font-size : 14px;
 }
 .outline-container-back {
-    top: 404px;
-    left: 206px;
+    top: 400px;
+    left: 155px;
     width: 240px;
     height: 20px;
-    font-size: 14px;
+    font-size: 13px;
     /* border: red solid 0.5px; */
 }
 
@@ -221,7 +220,7 @@ export default {
 .logo {
     width: 100%;
     height: 100%;
-    background-image: url('@/assets/logo-en.png');
+    background-image: url('@/assets/logo-fr.png');
     background-size: contain;
 }
 

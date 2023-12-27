@@ -11,11 +11,10 @@ export default {
                 title.style.height = '44px'; // Modifier la valeur de 'height'
             });
         }
-        const permafrostTitleElements = el.querySelectorAll('#card41-label0');
-        permafrostTitleElements.forEach(permafrostTitle => {
-            console.log(permafrostTitle);
-            permafrostTitle.style.left='115px';
-            permafrostTitle.style.width='487px';
-        });
+        const titleElements = el.querySelectorAll('#card41-label0');
+            titleElements.forEach(title => {
+                title.style.left = '112px';   // Modifier la valeur de 'left'
+                title.style.width = '484px'; // Modifier la valeur de 'width'
+            });
     },
 };

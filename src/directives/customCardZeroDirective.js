@@ -173,7 +173,28 @@ export default {
         if (currentLocale === 'es') {
             const labeltwoElements = el.querySelectorAll('#card0-label2');
             labeltwoElements.forEach(text => {
-                text.style.top = '324px';  
+                text.style.top = '317px';  
+            });
+        }
+        if (currentLocale === 'vi') {
+            const labeloneElements = el.querySelectorAll('#card0-label1');
+            labeloneElements.forEach(text => {
+                text.style.height = '34px';  
+            });
+            const labelthreeElements = el.querySelectorAll('#card0-label3');
+            labelthreeElements.forEach(text => {
+                text.style.top = '141px'; 
+                text.style.height = '53px'; 
+            });
+            const labelfourElements = el.querySelectorAll('#card0-label4');
+            labelfourElements.forEach(text => {
+                text.style.top = '201px';  
+                text.style.height = '18px'; 
+            });
+            const labelfiveElements = el.querySelectorAll('#card0-label5');
+            labelfiveElements.forEach(text => {
+                text.style.top = '227px';   
+                text.style.height = '53px'; 
             });
         }
     },
