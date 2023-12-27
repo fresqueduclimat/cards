@@ -9,7 +9,7 @@ import lineBreakDirective from "@/directives/lineBreakDirective.js";
 import lineSpacingDirective from "@/directives/lineSpacingDirective.js"; 
 import customTitleDivDirective from "./directives/customTitleDivDirective.js";
 import logoDirective from "./directives/logoDirective.js";
-import barcodeDirective from "./directives/barcodeDirective.js";
+import printDirective from "./directives/printDirective.js";
 import noBreakDirective from "./directives/noBreakDirective.js"
 import customCardZeroDirective from "./directives/customCardZeroDirective.js"
 import customCardFourtyFourDirective from "./directives/customCardFourtyFourDirective.js"
@@ -62,8 +62,8 @@ const messages = {
 // const locale = process.env.VUE_APP_LOCALE || "en";
 
 const i18n = createI18n({
-  locale: "en", // Remplacer par locale si passée en parametre
-  fallbackLocale: "en",
+  locale: "fr", // Remplacer par locale si passée en parametre
+  fallbackLocale: "fr",
   messages,
 });
 
@@ -77,7 +77,7 @@ app.directive('linebreak', lineBreakDirective);
 app.directive('linespacing', lineSpacingDirective); 
 app.directive('customtitlediv', customTitleDivDirective); 
 app.directive('logo', logoDirective); 
-app.directive('barcode', barcodeDirective); 
+app.directive('print', printDirective); 
 app.directive('no-break', noBreakDirective); 
 app.directive('card-zero', customCardZeroDirective)
 app.directive('card-fourtyfour', customCardFourtyFourDirective)

@@ -8,7 +8,7 @@
                 <p>{{ $t('V1C0L0') }}</p>
             </div>
             <div class="label white front-card-label2-position">
-                <p>{{ "Climate Fresk - " + $t('V0C0L0') + " - Adults - V9.0 - 04/12/2024"}}</p>
+                <p>{{ "Climate Fresk - " + $t('V0C0L0') + " - Adults - V9.0 - 19/12/2024"}}</p>
             </div>
             <div class="label logo-container-front">
                 <div class="logo"></div>
@@ -82,18 +82,18 @@ export default {
 }
 
 .logo-container-front {
-    top: 160px;
-    left: 72px;
-    width: 529px;
-    height: 210px;
+    top: 187px;
+    left: 96px;
+    width: 519px;
+    height: 149px;
     /* border : solid red 0.5px; */
 }
 
 .outline-container {
-    top: 347px;
-    left: 202px;
+    top: 317px;
+    left: 192px;
     width: 429px;
-    font-size: 30px;
+    font-size: 25px;
     /* border : solid red 0.5px; */
 }
 </style>

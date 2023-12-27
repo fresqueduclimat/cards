@@ -10,5 +10,10 @@ export default {
                 title.style.height = '44px'; // Modifier la valeur de 'height'
             });
         }
+        const titleElements = el.querySelectorAll('#card41-label0');
+            titleElements.forEach(title => {
+                title.style.left = '112px';   // Modifier la valeur de 'left'
+                title.style.width = '484px'; // Modifier la valeur de 'width'
+            });
     },
 };
