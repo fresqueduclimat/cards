@@ -1,5 +1,5 @@
 <template>
-    <CardBase :title="$t('V1C7L1')" :content="$t('V1C7L2')" :card-number="7" :background-front-image="'C7.png'">
+    <CardBase :title="$t('V1C7L1')" :content="$t('V1C7L2')" :card-number="7" :background-front-image="`C7.${imageType}`">
         <div id="card7-label1" class="horizontal-center vertical-center label black card7-label1-position">
             <p id="card7-text1">{{ $t('V1C7L5') }}</p>
         </div>
@@ -24,6 +24,11 @@ export default {
     name: "CardOne",
     components: {
         CardBase,
+    },
+    data() {
+        return {
+            imageType: process.env.VUE_APP_IMAGE_TYPE || 'png',
+        };
     },
 };
 </script>

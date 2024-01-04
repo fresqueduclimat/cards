@@ -38,7 +38,7 @@
                 <div class="cc"></div>
             </div>
             <div class="label white front-card-label2-position">
-                <p>{{ "Climate Fresk - " + $t('V0C0L0') + " - Adults - V9.0- 19/12/2024"}}</p>
+                <p>{{ "Climate Fresk - " + $t('V0C0L0') + " - Adults - V9.0- 04/01/2024"}}</p>
             </div>
             <div class="label outline-container-back">
                 <div class="outline">Vous avez toutes les cartes en main !</div>
@@ -57,9 +57,14 @@ export default {
             required: true,
         },
     },
+    data() {
+        return {
+            imageType: process.env.VUE_APP_IMAGE_TYPE || "png",
+        };
+    },
     computed: {
         backgroundFrontImageUrl() {
-            return require("@/assets/png/C0.png");
+            return require(`@/assets/${this.imageType}/C0.${this.imageType}`);
         },
     },
 };
@@ -95,10 +100,10 @@ export default {
     height: 130px;
 }
 
- .barcode {
+.barcode {
     width: 100%;
     height: 100%;
-    background-image: url('@/assets/barcode/adults-fr.png');
+    background-image: url('@/assets/barcode/adults-en.png');
     background-size: contain;
 }
 
@@ -220,7 +225,7 @@ export default {
 .logo {
     width: 100%;
     height: 100%;
-    background-image: url('@/assets/logo-fr.png');
+    background-image: url('@/assets/logo-fr.${imageType}');
     background-size: contain;
 }
 
