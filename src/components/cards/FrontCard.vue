@@ -8,7 +8,7 @@
                 <p>{{ $t('V1C0L0') }}</p>
             </div>
             <div class="label white front-card-label2-position">
-                <p>{{ "Climate Fresk - " + $t('V0C0L0') + " - Adults - V9.0 - 19/12/2024"}}</p>
+                <p>{{ "Climate Fresk - " + $t('V0C0L0') + " - Adults - V9.0 - 04/01/2024"}}</p>
             </div>
             <div class="label logo-container-front">
                 <div class="logo"></div>
@@ -29,14 +29,17 @@ export default {
             required: true,
         },
     },
+    data() {
+        return {
+        imageType: process.env.VUE_APP_IMAGE_TYPE || "png",
+        date: "",
+        };
+    },
     computed: {
         backgroundFrontImageUrl() {
-            return require("@/assets/png/C0.png");
+            return require(`@/assets/${this.imageType}/C0.${this.imageType}`);
         },
     },
-    data: () => ({
-          date: ''
-        }),
     methods: {
           printDate: function () {
             return new Date().toLocaleDateString();

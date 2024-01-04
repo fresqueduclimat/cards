@@ -47,9 +47,14 @@ export default {
             required: true,
         },
     },
+    data() {
+        return {
+            imageType: process.env.VUE_APP_IMAGE_TYPE || "png",
+        };
+    },
     computed: {
         backgroundFrontImageUrl() {
-            return require("@/assets/png/C0-back.png");
+            return require(`@/assets/${this.imageType}/C0-back.${this.imageType}`);
         },
     },
 };

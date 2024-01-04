@@ -1,5 +1,5 @@
 <template>
-    <CardBase :title="$t('V1C28L1')" :content="$t('V1C28L2')" :card-number="28" :background-front-image="'C28.png'" >
+    <CardBase :title="$t('V1C28L1')" :content="$t('V1C28L2')" :card-number="28" :background-front-image="`C28.${imageType}`" >
         <template v-slot:back-content>
             <div id="card38-back-label1" class="label white set-five">
                 <p id="card38-back-text1">{{ $t('V1C0L4') + ' ' + "5"}}</p>
@@ -15,6 +15,11 @@ export default {
     name: "CardOne",
     components: {
         CardBase,
+    },
+    data() {
+        return {
+            imageType: process.env.VUE_APP_IMAGE_TYPE || 'png',
+        };
     },
 };
 </script>

@@ -100,8 +100,8 @@ Chaque composant spécifique `CardOne`, `CardTwo`, `CardThree`, `CardFour` ... e
 Par exemple pour le composant `CardFive` :
 
 ```
-<CardBase :title="$t('V1C5L1')" :content="$t('V1C5L2')" :card-number="5" :background-front-image="'C5.png'"
-        :background-back-image="'C5-back.png'">
+<CardBase :title="$t('V1C5L1')" :content="$t('V1C5L2')" :card-number="5" :background-front-image="`C5.png'"
+        :background-back-image="`C5-back.png'">
 ```
 Pour les cartes avec du texte supplémentaire, il faut ajouter dans le composant spécifique les `div` et `p` correspondant à chaque texte.
 Par exemple pour le composant `CardFive` :
