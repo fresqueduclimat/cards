@@ -95,7 +95,7 @@ export default {
 
 .qr-code-siteweb-container {
     top: 243px;
-    left: 500px;
+    left: 506px;
     width: 130px;
     height: 130px;
 }
@@ -144,7 +144,7 @@ export default {
     width: 446px;
     height: 157px;
     text-align: left;
-    font-size: 14px;
+    font-size: 13px;
     /* border: red solid 0.2px; */
 }
 
@@ -152,9 +152,9 @@ export default {
     top: 266px;
     left: 52px;
     width: 192px;
-    height: 50px;
+    height: 60px;
     text-align: left;
-    font-size: 12px;
+    font-size: 13px;
     /* border: red solid 0.2px; */
 }
 
@@ -164,14 +164,14 @@ export default {
     width: 200px;
     height: 50px;
     text-align: left;
-    font-size: 12px;
+    font-size: 13px;
     /* border: red solid 0.2px; */
 }
 
 .card44-label4-position {
     top: 378px;
-    left: 493px;
-    width: 141px;
+    left: 502px;
+    width: 139px;
     height: 44px;
     font-size: 15px;
     /* border: red solid; */
@@ -179,16 +179,16 @@ export default {
 
 .card44-label5-position {
     top: 126px;
-    left: 507px;
-    width: 126px;
+    left: 502px;
+    width: 139px;
     height: 34px;
     /* border: red solid; */
 }
 
 .card44-label6-position {
     top: 186px;
-    left: 507px;
-    width: 126px;
+    left: 502px;
+    width: 139px;
     height: 34px;
     /* border: red solid; */
 }

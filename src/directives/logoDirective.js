@@ -17,10 +17,10 @@ export default {
             if (print === 'false') { //for printing version, the elements positions are defined in printDirective.js
                 const logoBigContainerElements = el.querySelectorAll('.logo-container-big');
                 logoBigContainerElements.forEach(logo => {
-                    logo.style.top = '304px';
-                    logo.style.left = '141px';
-                    logo.style.width = '296px';
-                    logo.style.height = '111px';
+                    logo.style.top = '314px';
+                    logo.style.left = '155px';
+                    logo.style.width = '268px'; //296
+                    logo.style.height = '101px'; //111
                 });
             }
             const logoFrontContainerElements = el.querySelectorAll('.logo-container-front');
@@ -45,12 +45,14 @@ export default {
                 logo.style.left = '202px';
                 logo.style.fontSize='30px';
             });
-            const outlineBackContainerElements = el.querySelectorAll('.outline-container-back');
-            outlineBackContainerElements.forEach(outline => {
-                outline.style.top = '404px';
-                outline.style.left = '206px';
-                outline.style.fontSize='14px';
-            });
+            if (print === 'false') { //for printing version, the elements positions are defined in printDirective.js
+                const outlineBackContainerElements = el.querySelectorAll('.outline-container-back');
+                outlineBackContainerElements.forEach(outline => {
+                    outline.style.top = '409px';
+                    outline.style.left = '203px';
+                    outline.style.fontSize='13px';
+                });
+            }
         }
     },
 };

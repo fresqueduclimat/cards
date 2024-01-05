@@ -44,7 +44,7 @@ export default {
 <!-- pour une résolution de 470x693 -->
 <style>
 .card43-label0-position {
-    top: 26px;
+    top: 25px;
     left: 35px;
     width: 622px;
     height: 84px;
@@ -52,7 +52,7 @@ export default {
     justify-content: center;
     align-items: center;
     white-space: nowrap;
-    font-size: 38px;
+    font-size: 70px;
     font-weight: 700;
     color: white;
 }

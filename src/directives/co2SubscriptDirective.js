@@ -25,7 +25,7 @@ export default {
         el.innerHTML = el.innerHTML.replace(regex, replacement);
 
         regex = /O3/g;
-        replacement = 'O<sub>3</sub>O';
+        replacement = 'O<sub>3</sub>';
         el.innerHTML = el.innerHTML.replace(regex, replacement);
 
         regex = /m2/g;
