@@ -48,8 +48,28 @@ export default {
         replacement = '<nobr>2,8 W/m2</nobr>';
         el.innerHTML = el.innerHTML.replace(regex, replacement);
 
+        regex = /7 m/g;
+        replacement = '<nobr>7 m</nobr>';
+        el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+        regex = /7m/g;
+        replacement = '<nobr>7m</nobr>';
+        el.innerHTML = el.innerHTML.replace(regex, replacement);
+
         regex = /54 m/g;
         replacement = '<nobr>54 m</nobr>';
+        el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+        regex = /54m/g;
+        replacement = '<nobr>54m</nobr>';
+        el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+        regex = /120 m/g;
+        replacement = '<nobr>120 m</nobr>';
+        el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+        regex = /120m/g;
+        replacement = '<nobr>120m</nobr>';
         el.innerHTML = el.innerHTML.replace(regex, replacement);
 
         regex = /40%/g;
@@ -58,6 +78,18 @@ export default {
 
         regex = /20%/g;
         replacement = '<nobr>20%</nobr>';
+        el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+        regex = /40 %/g;
+        replacement = '<nobr>40 %</nobr>';
+        el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+        regex = /20 %/g;
+        replacement = '<nobr>20 %</nobr>';
+        el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+        regex = /im Vergleich/g;
+        replacement = '<nobr>im Vergleich</nobr>';
         el.innerHTML = el.innerHTML.replace(regex, replacement);
 
     },

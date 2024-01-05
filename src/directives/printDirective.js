@@ -12,14 +12,15 @@ export default {
             if (currentLocale !== 'fr') {
                 const logocontainerElements = el.querySelectorAll('.logo-container-big');
                 logocontainerElements.forEach(logo => {
-                    logo.style.top = '304px';
-                    logo.style.left = '200px';
-                    logo.style.width = '296px';
-                    logo.style.height = '111px';
+                    logo.style.top = '313px';
+                    logo.style.left = '218px';
+                    logo.style.width = '264px';
+                    logo.style.height = '101px';
                 });
                 const outlineBackContainerElements = el.querySelectorAll('.outline-container-back');
                 outlineBackContainerElements.forEach(outline => {
-                    outline.style.left = '205px';
+                    outline.style.top = '409px';
+                    outline.style.left = '266px';
                  });
             }
             if (currentLocale === 'fr') {
@@ -53,10 +54,10 @@ export default {
         }
         // add es logo & qr code
         if (currentLocale === 'es') {
-            const barcodeElements = el.querySelectorAll('.barcode');
-            barcodeElements.forEach(code => {
-                code.style.backgroundImage = `url(${require('@/assets/barcode/adults-es.png')})`;
-            });
+            // const barcodeElements = el.querySelectorAll('.barcode');
+            // barcodeElements.forEach(code => {
+            //     code.style.backgroundImage = `url(${require('@/assets/barcode/adults-fr.png')})`;
+            // });
             const qrcodeElements = el.querySelectorAll('.qr-code-siteweb');
             qrcodeElements.forEach(code => {
                 code.style.backgroundImage = `url(${require('@/assets/qr-code/qr-siteweb-es.png')})`;

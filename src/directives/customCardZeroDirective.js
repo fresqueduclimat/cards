@@ -5,8 +5,8 @@ export default {
             const labeloneElements = el.querySelectorAll('#card0-label1');
             labeloneElements.forEach(text => {
                 text.style.top = '98px';    // Modifier la valeur de 'top'
-                text.style.height = '34px'; // Modifier la valeur de 'height'
-                text.style.fontSize = '13px';
+                text.style.height = '65px'; // Modifier la valeur de 'height'
+                text.style.fontSize = '15px';
             });
             const labeltwoElements = el.querySelectorAll('#card0-label2');
             labeltwoElements.forEach(text => {
@@ -15,21 +15,21 @@ export default {
             });
             const labelthreeElements = el.querySelectorAll('#card0-label3');
             labelthreeElements.forEach(text => {
-                text.style.top = '138px';    // Modifier la valeur de 'top'
-                text.style.height = '55px'; // Modifier la valeur de 'height'
-                text.style.fontSize = '13px';
+                text.style.top = '145px';    // Modifier la valeur de 'top'
+                text.style.height = '84px'; // Modifier la valeur de 'height'
+                text.style.fontSize = '15px';
             });
             const labelfourElements = el.querySelectorAll('#card0-label4');
             labelfourElements.forEach(text => {
-                text.style.top = '184px';    // Modifier la valeur de 'top'
-                text.style.height = '35px'; // Modifier la valeur de 'height'
-                text.style.fontSize = '13px';
+                text.style.top = '213px';    // Modifier la valeur de 'top'
+                text.style.height = '53px'; // Modifier la valeur de 'height'
+                text.style.fontSize = '15px';
             });
             const labelfiveElements = el.querySelectorAll('#card0-label5');
             labelfiveElements.forEach(text => {
-                text.style.top = '210px';    // Modifier la valeur de 'top'
-                text.style.height = '60px'; // Modifier la valeur de 'height'
-                text.style.fontSize = '13px';
+                text.style.top = '241px';    // Modifier la valeur de 'top'
+                text.style.height = '65px'; // Modifier la valeur de 'height'
+                text.style.fontSize = '15px';
             });
             const labelsevenElements = el.querySelectorAll('#card0-label7');
             labelsevenElements.forEach(text => {
@@ -143,6 +143,10 @@ export default {
             });
         }
         if (currentLocale === 'nl') {
+            const labeloneElements = el.querySelectorAll('#card0-label1');
+            labeloneElements.forEach(text => {
+                text.style.height = '51px'; 
+            });
             const labeltwoElements = el.querySelectorAll('#card0-label2');
             labeltwoElements.forEach(text => {
                 text.style.top = '319px';  
@@ -152,17 +156,19 @@ export default {
             });
             const labelthreeElements = el.querySelectorAll('#card0-label3');
             labelthreeElements.forEach(text => {
-                text.style.top = '141px'; 
+                text.style.top = '146px'; 
                 text.style.height = '61px'; 
             });
             const labelfourElements = el.querySelectorAll('#card0-label4');
             labelfourElements.forEach(text => {
-                text.style.top = '189px'; 
-                text.style.height = '45px'; // Modifier la valeur de 'height'
+                text.style.top = '194px'; 
+                text.style.height = '45px';
+                text.style.width = '577px';
             });
             const labelfiveElements = el.querySelectorAll('#card0-label5');
             labelfiveElements.forEach(text => {
-                text.style.top = '215px';    // Modifier la valeur de 'top'
+                text.style.top = '221px'; 
+                text.style.height = '69px'; 
             });
             const labelsevenElements = el.querySelectorAll('#card0-label7');
             labelsevenElements.forEach(text => {
