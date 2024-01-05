@@ -3,11 +3,20 @@
         <div id="card21-label1" class="horizontal-center label black card21-label1-position">
             <p id="card21-text1" class="font-medium">{{ $t('V1C21L6') }}</p>
         </div>
-        <div id="card21-fixed-label1" class="horizontal-center vertical-center label black card21-fixed-label1-position">
-            <p id="card21-fixed-text1" class="font-small">+ 1.2°C</p>
-        </div>
         <div id="card21-label2" class="label card21-label2-position">
             <p id="card21-text2" class="font-small">{{ $t('V1C999L90') }}</p>
+        </div>
+        <div id="card21-label3" class="label black card21-label3-position">
+            <p id="card21-text3" class="font-small">{{ $t('V1C21L7') }}</p>
+        </div>
+        <div id="card21-label4" class="label card21-label4-position">
+            <p id="card21-text4" class="font-small">{{ $t('V1C21L8') }}</p>
+        </div>
+        <div id="card21-label5" class="label card21-label5-position">
+            <p id="card21-text5" class="font-small">{{ $t('V1C21L9') }}</p>
+        </div>
+        <div id="card21-fixed-label1" class="horizontal-center vertical-center label black card21-fixed-label1-position">
+            <p id="card21-fixed-text1" class="font-small">+ 1.2°C</p>
         </div>
         <div id="card21-fixed-label2" class="horizontal-center vertical-center label black card21-fixed-label2-position">
             <p id="card21-fixed-text2" class="font-small">+ 5°C</p>
@@ -59,6 +68,41 @@ export default {
     /* border: solid red 0.2px; */
     color:grey;
     font-size:14px;
+}
+
+.card21-label3-position {
+    top: 170px;
+    left: 260px;
+    width: 37px;
+    height: 16px;
+    background-color: white;
+    /* border: solid red 0.2px; */
+    text-align: left;
+    font-size: 6px;
+}
+
+.card21-label4-position {
+    top: 183px;
+    left: 260px;
+    width: 37px;
+    height: 39px;
+    background-color: white;
+    /* border: solid red 0.2px; */
+    text-align: left;
+    color : #936D22;
+    font-size: 6px;
+}
+
+.card21-label5-position {
+    top: 231px;
+    left: 260px;
+    width: 37px;
+    height: 35px;
+    background-color: white;
+    /* border: solid red 0.2px; */
+    text-align: left;
+    color : #3F635F;
+    font-size: 6px;
 }
 
 .card21-fixed-label1-position {

@@ -6,7 +6,60 @@ export default {
 
         regex = /စိုက်ပျိုးရေးအထွက်နှုန်းကျဆင်းလာခြင်းတို့ကြောင/g;
         replacement = '<nobr>စိုက်ပျိုးရေးအထွက်နှုန်းကျဆင်းလာခြင်းတို့ကြောင</nobr>';
-        el.innerHTML = el.innerHTML.replace(regex, replacement);        
+        el.innerHTML = el.innerHTML.replace(regex, replacement); 
+        
+        regex = /-1 W[/]m²/g;
+        replacement = '<nobr>-1 W/m²</nobr>';
+        el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+        regex = /-1 W[/]m2/g;
+        replacement = '<nobr>-1 W/m2</nobr>';
+        el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+        regex = /3,8 W[/]m²/g;
+        replacement = '<nobr>3,8 W/m²</nobr>';
+        el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+        regex = /3.8 W[/]m2/g;
+        replacement = '<nobr>3.8 W/m2</nobr>';
+        el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+        regex = /3.8 W[/]m²/g;
+        replacement = '<nobr>3.8 W/m²</nobr>';
+        el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+        regex = /3,8 W[/]m2/g;
+        replacement = '<nobr>3,8 W/m2</nobr>';
+        el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+        regex = /2,8 W[/]m²/g;
+        replacement = '<nobr>2,8 W/m²</nobr>';
+        el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+        regex = /2.8 W[/]m2/g;
+        replacement = '<nobr>2.8 W/m2</nobr>';
+        el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+        regex = /2.8 W[/]m²/g;
+        replacement = '<nobr>2.8 W/m²</nobr>';
+        el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+        regex = /2,8 W[/]m2/g;
+        replacement = '<nobr>2,8 W/m2</nobr>';
+        el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+        regex = /54 m/g;
+        replacement = '<nobr>54 m</nobr>';
+        el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+        regex = /40%/g;
+        replacement = '<nobr>40%</nobr>';
+        el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+        regex = /20%/g;
+        replacement = '<nobr>20%</nobr>';
+        el.innerHTML = el.innerHTML.replace(regex, replacement);
+
     },
 };
 

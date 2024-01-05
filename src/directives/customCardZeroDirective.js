@@ -157,16 +157,16 @@ export default {
             });
             const labelfourElements = el.querySelectorAll('#card0-label4');
             labelfourElements.forEach(text => {
-                text.style.top = '204px'; 
+                text.style.top = '189px'; 
                 text.style.height = '45px'; // Modifier la valeur de 'height'
             });
             const labelfiveElements = el.querySelectorAll('#card0-label5');
             labelfiveElements.forEach(text => {
-                text.style.top = '245px';    // Modifier la valeur de 'top'
+                text.style.top = '215px';    // Modifier la valeur de 'top'
             });
             const labelsevenElements = el.querySelectorAll('#card0-label7');
             labelsevenElements.forEach(text => {
-                text.style.top = '399px';
+                text.style.top = '393px';
                 text.style.fontSize = '15px';
             });
         }
