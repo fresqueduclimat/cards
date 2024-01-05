@@ -1,5 +1,5 @@
 <template>
-  <div v-font-family v-card-fourtyfour v-card-zero v-no-break v-print v-logo v-customtitlediv v-linespacing v-linebreak v-text-direction v-co2-subscript id="app" class="reveal">
+  <div v-custom-width v-font-family v-card-fourtyfour v-card-zero v-no-break v-print v-logo v-customtitlediv v-linespacing v-linebreak v-text-direction v-co2-subscript id="app" class="reveal">
     <div class="slides">
       <FrontCard />
       <CardZero />
@@ -172,7 +172,7 @@ export default {
   },
   methods: {
     adjustFontSize() {
-      const labels_max = [10, 0, 0, 0, 0, 5, 0, 4, 0, 0, 0, 2, 6, 5, 7, 18, 0, 0, 0, 0, 7, 3, 3, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
+      const labels_max = [10, 0, 0, 0, 0, 5, 0, 4, 0, 0, 0, 2, 6, 5, 7, 18, 0, 0, 0, 0, 7, 6, 3, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
       const labels = [];
       for (let card_id = 0; card_id <= labels_max.length-1; card_id++) {
         let titleValue = {
