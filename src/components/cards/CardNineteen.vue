@@ -4,10 +4,10 @@
             <p id="card19-text1" class="font-small">{{ $t('V1C999L90') }}</p>
         </div>
         <div id="card19-fixed-label1" class="horizontal-center vertical-center label card19-fixed-label1-position">
-            <p id="card19-fixed-text1" class="font-small">+7m</p>
+            <p id="card19-fixed-text1" class="font-small">{{'+' + $t('V1C19L3')}}</p>
         </div>
         <div id="card19-fixed-label2" class="horizontal-center vertical-center label card19-fixed-label2-position">
-            <p id="card19-fixed-text2" class="font-small">+54m</p>
+            <p id="card19-fixed-text2" class="font-small">{{'+' + $t('V1C19L4')}}</p>
         </div>
         <template v-slot:back-content>
             <div id="card19-back-label1" class="label white set-three">
