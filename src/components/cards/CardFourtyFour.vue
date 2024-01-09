@@ -83,15 +83,20 @@ export default {
 
 <!-- pour une résolution de 470x693 -->
 <style>
+/* default is en logo, without barcode (website format) */
 .logo-container-big {
-    top: 329px;
+    top: 314px;
+    left: 155px;
+    width: 268px;
+    height: 101px;
+    /* top: 329px;
     left: 110px;
     width: 280px;
-    height: 75px;
+    height: 75px; */
 }
 
 .logo-container-small {
-    top: 110px;
+    top: 1000px; /* appears if defined in logoDirective.js*/
     left: 503px;
     width: 135px;
     height: 55px;
@@ -222,17 +227,23 @@ export default {
 }
 
 .card44-label7-position {
-    top: 432px; /* n'apparait pas sauf si fr,en,es,de cf. printDirective */
+    top: 600px; /* print=true, cf.printDirective */
     left: 43px;
     width: 605px;
     height: 20px;
     font-size : 14px;
 }
+
+/* default is en logo without barcode (website version) */
 .outline-container-back {
-    top: 400px;
-    left: 155px;
+    top: 409px;
+    left: 203px;
     width: 240px;
     height: 20px;
+    /* top: 400px;
+    left: 155px;
+    width: 240px;
+    height: 20px; */
     font-size: 13px;
     text-align: left;
     /* border: red solid 0.5px; */
