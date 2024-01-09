@@ -8,14 +8,25 @@
                 <p>{{ $t('V1C0L0') }}</p>
             </div>
             <div class="label white front-card-label2-position">
-                <p>{{ "Climate Fresk - " + $t('V0C0L0') + " - Adults - V9.0 - 04/01/2024"}}</p>
+                <p>{{ "Climate Fresk - " + $t('V0C0L0') + " - " + $t('V1C0L0') + " - V9.0 - 08/01/2024"}}</p>
             </div>
             <div class="label logo-container-front">
+                <div class="local-logo"></div>
+            </div>
+            <div class="label logo-container-front-small">
                 <div class="logo"></div>
             </div>
             <div class="label outline-container">
-                <div class="outline">All the cards are in your hands!</div>
+                <div class="outline">{{ $t('V1C0L15') }}</div>
             </div>
+            <hr class="label border-white top-left-vertical">
+            <hr class="label border-white top-left-horizontal">
+            <hr class="label border-white top-right-vertical">
+            <hr class="label border-white top-right-horizontal">
+            <hr class="label border-white bottom-left-vertical">
+            <hr class="label border-white bottom-left-horizontal">
+            <hr class="label border-white bottom-right-vertical">
+            <hr class="label border-white bottom-right-horizontal">
         </div>
     </section>
 </template>
@@ -54,7 +65,7 @@ export default {
 <!-- pour une résolution de 470x693 -->
 <style>
 .front-card-label0-position {
-    top: 81px;   /* A' = 550 * 470 / 3180 = 80.92 (arrondi à 81) */
+    top: 71px;   /* A' = 550 * 470 / 3180 = 80.92 (arrondi à 81) */
     left: 96px;  /* B' = 580 * 693 / 4680 = 86.03 (arrondi à 96) */
     width: 243px; /* C' = 1300 * 693 / 4680 = 192.64 (arrondi à 153) */
     height: 52px; /* D' = 350 * 470 / 3180 = 51.77 (arrondi à 52) */
@@ -64,12 +75,18 @@ export default {
 }
 
 .front-card-label1-position {
-    top: 81px;
+    top: 120px;
+    left: 96px;
+    width: 350px;
+    height: 52px;
+    font-size: 30px;
+    text-align: left;
+    /* top: 81px;
     left: 250px;
     width: 350px;
     height: 52px;
     font-size: 40px;
-    text-align: right;
+    text-align: right; */
     /* border : solid red 0.5px; */
 }
 
@@ -92,11 +109,20 @@ export default {
     /* border : solid red 0.5px; */
 }
 
+.logo-container-front-small {
+    top: 71px;
+    left: 470px;
+    width: 143px;
+    height: 55px;
+    /* border : solid red 0.5px; */
+}
+
 .outline-container {
     top: 317px;
     left: 192px;
     width: 429px;
     font-size: 25px;
+    text-align:left;
     /* border : solid red 0.5px; */
 }
 </style>

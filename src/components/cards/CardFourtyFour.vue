@@ -16,16 +16,19 @@
             <div id="card44-label4" class="label black card44-label4-position">
                 <p id="card44-text4">{{ $t('V1C999L7') }}</p>
             </div>
-            <div id="card44-label5" class="label black card44-label5-position">
+            <!-- <div id="card44-label5" class="label black card44-label5-position">
                 <p id="card44-text5">{{ $t('V1C999L8') }}</p>
             </div>
             <div id="card44-label6" class="label black card44-label6-position">
                 <p id="card44-text6">{{ $t('V1C999L9') }}</p>
-            </div>
+            </div> -->
             <div id="card44-label7" class="label white card44-label7-position">
                 <p id="card44-label7">{{ $t('V1C999L91') }}</p>
             </div>
             <div class="label logo-container-big">
+                <div class="local-logo"></div>
+            </div>
+            <div class="label logo-container-small">
                 <div class="logo"></div>
             </div>
             <div class="label qr-code-siteweb-container">
@@ -38,11 +41,19 @@
                 <div class="cc"></div>
             </div>
             <div class="label white front-card-label2-position">
-                <p>{{ "Climate Fresk - " + $t('V0C0L0') + " - Adults - V9.0- 04/01/2024"}}</p>
+                <p>{{ "Climate Fresk - " + $t('V0C0L0') + " - " + $t('V1C0L0') + " - V9.0 - 08/01/2024"}}</p>
             </div>
             <div class="label outline-container-back">
-                <div class="outline">Vous avez toutes les cartes en main !</div>
+                <div class="outline">{{ $t('V1C0L15') }}</div>
             </div>
+            <hr class="label border-white top-left-vertical">
+            <hr class="label border-white top-left-horizontal">
+            <hr class="label border-white top-right-vertical">
+            <hr class="label border-white top-right-horizontal">
+            <hr class="label border-white bottom-left-vertical">
+            <hr class="label border-white bottom-left-horizontal">
+            <hr class="label border-white bottom-right-vertical">
+            <hr class="label border-white bottom-right-horizontal">
         </div>
     </section>
     
@@ -79,10 +90,25 @@ export default {
     height: 75px;
 }
 
+.logo-container-small {
+    top: 110px;
+    left: 503px;
+    width: 135px;
+    height: 55px;
+}
+
 .logo {
     width: 100%;
     height: 100%;
-    background-image: url('@/assets/logo-fr.png');
+    background-image: url('@/assets/logo-en.png');
+    background-size: contain;
+}
+
+
+.local-logo {
+    width: 100%;
+    height: 100%;
+    background-image: url('@/assets/logo-en.png');
     background-size: contain;
 }
 
@@ -103,15 +129,15 @@ export default {
 .barcode {
     width: 100%;
     height: 100%;
-    background-image: url('@/assets/barcode/adults-en.png');
+    background-image: url('@/assets/barcode/adults-en-mini.png');
     background-size: contain;
 }
 
 .barcode-container {
     top: 500px; /*does not show unless print is true and element position are modified in printDirective.js*/
-    left: 51px;
-    width: 151px;
-    height: 67px;
+    left: 62px;
+    width: 161px;
+    height: 71px;
 } 
 
 .cc {
@@ -178,7 +204,8 @@ export default {
 }
 
 .card44-label5-position {
-    top: 126px;
+    /* top: 126px; */
+    top : 174px;
     left: 502px;
     width: 139px;
     height: 34px;
@@ -186,7 +213,8 @@ export default {
 }
 
 .card44-label6-position {
-    top: 186px;
+    /* top: 186px; */
+    top : 209px;
     left: 502px;
     width: 139px;
     height: 34px;
@@ -206,6 +234,7 @@ export default {
     width: 240px;
     height: 20px;
     font-size: 13px;
+    text-align: left;
     /* border: red solid 0.5px; */
 }
 

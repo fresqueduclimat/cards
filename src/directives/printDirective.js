@@ -12,15 +12,15 @@ export default {
             if (currentLocale !== 'fr') {
                 const logocontainerElements = el.querySelectorAll('.logo-container-big');
                 logocontainerElements.forEach(logo => {
-                    logo.style.top = '313px';
-                    logo.style.left = '218px';
-                    logo.style.width = '264px';
+                    logo.style.top = '322px';
+                    logo.style.left = '230px';
+                    logo.style.width = '237px';
                     logo.style.height = '101px';
                 });
                 const outlineBackContainerElements = el.querySelectorAll('.outline-container-back');
                 outlineBackContainerElements.forEach(outline => {
                     outline.style.top = '409px';
-                    outline.style.left = '266px';
+                    outline.style.left = '299px';
                  });
             }
             if (currentLocale === 'fr') {
@@ -43,6 +43,21 @@ export default {
             // barcodeElements.forEach(code => {
             //     code.style.backgroundImage = `url(${require('@/assets/barcode/adults-en.png')})`;
             // });
+            const qrcodeElements = el.querySelectorAll('.qr-code-siteweb');
+            qrcodeElements.forEach(code => {
+                code.style.backgroundImage = `url(${require('@/assets/qr-code/qr-siteweb-en.png')})`;
+            });
+            const recycledpaperElements = el.querySelectorAll('#card44-label7');
+            recycledpaperElements.forEach(text => {
+                text.style.top = '600px';
+            });
+        }
+         // add en logo & qr code 
+         if (currentLocale === 'nl') {
+            const barcodeElements = el.querySelectorAll('.barcode');
+            barcodeElements.forEach(code => {
+                code.style.backgroundImage = `url(${require('@/assets/barcode/adults-nl.png')})`;
+            });
             const qrcodeElements = el.querySelectorAll('.qr-code-siteweb');
             qrcodeElements.forEach(code => {
                 code.style.backgroundImage = `url(${require('@/assets/qr-code/qr-siteweb-en.png')})`;

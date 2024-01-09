@@ -43,9 +43,9 @@ export default {
         if (currentLocale === 'nl') {
             const corpusElements = el.querySelectorAll('#card44-label1');
             corpusElements.forEach(text => {
-                text.style.width = '465px';
-                text.style.height = '167px';
-                text.style.top = '106px';
+                text.style.width = '444px';
+                text.style.height = '195px';
+                text.style.top = '91px';
             });
             const addressngoElements = el.querySelectorAll('#card44-label3');
             addressngoElements.forEach(text => {
