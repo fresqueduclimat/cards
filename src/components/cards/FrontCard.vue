@@ -101,27 +101,29 @@ export default {
     /* border : solid red 0.5px; */
 }
 
+/* default is en logo */
 .logo-container-front {
-    top: 187px;
-    left: 96px;
-    width: 519px;
-    height: 149px;
+    top: 160px;
+    left: 72px;
+    width: 529px;
+    height: 210px;
     /* border : solid red 0.5px; */
 }
 
 .logo-container-front-small {
-    top: 71px;
+    top: 1000px; /* appears if defined in logoDirective.js*/
     left: 470px;
     width: 143px;
     height: 55px;
     /* border : solid red 0.5px; */
 }
 
+/* default is en logo */
 .outline-container {
-    top: 317px;
-    left: 192px;
+    top: 347px;
+    left: 202px;
     width: 429px;
-    font-size: 25px;
+    font-size: 30px;
     text-align:left;
     /* border : solid red 0.5px; */
 }

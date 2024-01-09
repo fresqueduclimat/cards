@@ -28,7 +28,7 @@
             </div>
             <div class="label logo-container">
                 <div class="logo"></div>
-                <p class="url">fresqueduclimat.org</p>
+                <p class="url">climatefresk.org</p>
             </div>
             <div class="horizontal-center vertical-center label back-set-container">
                 <div class="label first-rectangle"></div>
@@ -120,15 +120,12 @@ export default {
     font-size: 38px;
 }
 
+/* default is en logo */
 .logo-container {
-    /* top: 120px;
-    left: 3415px;
-    width: 970px;
-    height: 375px; */
-    top: 30px;
-    left: 505px;
-    width: 148px;
-    height: 40px;
+    top: 18px;
+    left: 506px;
+    width: 143px;
+    height: 55px;
 }
 
 .logo {
@@ -139,7 +136,7 @@ export default {
 }
 
 .url {
-    font-size: 17px;
+    font-size: 19px;
 }
 
 .back-set-container {
