@@ -35,6 +35,10 @@ export default {
                     outline.style.top = '399px';
                     outline.style.left = '279px';
                 });
+                const recycledpaperElements = el.querySelectorAll('#card44-label7');
+                recycledpaperElements.forEach(text => {
+                    text.style.top = '432px';
+                });
             }
         
             // add en logo & qr code 

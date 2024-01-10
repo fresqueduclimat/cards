@@ -8,14 +8,14 @@
                 <div class="qr-code-memo"></div>
             </div>
         </div>
-        <hr class="label border-black top-left-vertical">
+        <!-- <hr class="label border-black top-left-vertical">
         <hr class="label border-black top-left-horizontal">
         <hr class="label border-black top-right-vertical">
         <hr class="label border-black top-right-horizontal">
         <hr class="label border-black bottom-left-vertical">
         <hr class="label border-black bottom-left-horizontal">
         <hr class="label border-black bottom-right-vertical">
-        <hr class="label border-black bottom-right-horizontal">
+        <hr class="label border-black bottom-right-horizontal"> -->
     </section>
 </template>
 
