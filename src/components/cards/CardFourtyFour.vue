@@ -46,14 +46,14 @@
             <div class="label outline-container-back">
                 <div class="outline">{{ $t('V1C0L15') }}</div>
             </div>
-            <hr class="label border-white top-left-vertical">
+            <!-- <hr class="label border-white top-left-vertical">
             <hr class="label border-white top-left-horizontal">
             <hr class="label border-white top-right-vertical">
             <hr class="label border-white top-right-horizontal">
             <hr class="label border-white bottom-left-vertical">
             <hr class="label border-white bottom-left-horizontal">
             <hr class="label border-white bottom-right-vertical">
-            <hr class="label border-white bottom-right-horizontal">
+            <hr class="label border-white bottom-right-horizontal"> -->
         </div>
     </section>
     
@@ -134,7 +134,7 @@ export default {
 .barcode {
     width: 100%;
     height: 100%;
-    background-image: url('@/assets/barcode/adults-en-mini.png');
+    background-image: url('@/assets/barcode/adults-nl.png');
     background-size: contain;
 }
 

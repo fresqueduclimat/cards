@@ -19,14 +19,14 @@
             <div class="label outline-container">
                 <div class="outline">{{ $t('V1C0L15') }}</div>
             </div>
-            <hr class="label border-white top-left-vertical">
+            <!-- <hr class="label border-white top-left-vertical">
             <hr class="label border-white top-left-horizontal">
             <hr class="label border-white top-right-vertical">
             <hr class="label border-white top-right-horizontal">
             <hr class="label border-white bottom-left-vertical">
             <hr class="label border-white bottom-left-horizontal">
             <hr class="label border-white bottom-right-vertical">
-            <hr class="label border-white bottom-right-horizontal">
+            <hr class="label border-white bottom-right-horizontal"> -->
         </div>
     </section>
 </template>

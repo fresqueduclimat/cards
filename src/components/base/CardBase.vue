@@ -10,14 +10,14 @@
                 <div class="label third-rectangle"></div>
                 <p class="label font-medium card-number white">{{ cardNumber }}</p>
             </div>
-            <hr class="label border-white top-left-vertical">
+            <!-- <hr class="label border-white top-left-vertical">
             <hr class="label border-white top-left-horizontal">
             <hr class="label border-white top-right-vertical">
             <hr class="label border-white top-right-horizontal">
             <hr class="label border-white bottom-left-vertical">
             <hr class="label border-white bottom-left-horizontal">
             <hr class="label border-white bottom-right-vertical">
-            <hr class="label border-white bottom-right-horizontal">
+            <hr class="label border-white bottom-right-horizontal"> -->
             <slot></slot>
         </div>
     </section>
@@ -36,14 +36,14 @@
                 <div class="label third-rectangle"></div>
                 <p class="label font-medium card-number white">{{ cardNumber }}</p>
             </div>
-            <hr class="label border-black top-left-vertical">
+            <!-- <hr class="label border-black top-left-vertical">
             <hr class="label border-black top-left-horizontal">
             <hr class="label border-black top-right-vertical">
             <hr class="label border-black top-right-horizontal">
             <hr class="label border-black bottom-left-vertical">
             <hr class="label border-black bottom-left-horizontal">
             <hr class="label border-black bottom-right-vertical">
-            <hr class="label border-black bottom-right-horizontal">
+            <hr class="label border-black bottom-right-horizontal"> -->
             <slot name="back-content"></slot>
         </div>
     </section>
@@ -323,17 +323,23 @@ export default {
     /* height : 90px;
     top: -100px;
     left: 4580px; */
-    height : 10px;
+    /* height : 10px;
     top: -15px;
-    left: 679px;
+    left: 679px; */
+    height : 5px;
+    top: -10px;
+    left: 680px;
 }
 .top-right-horizontal {
     /* width : 90px;
     top: 35px;
     left: 4620px; */
-    width : 10px;
-    top: 5px;
-    left: 683px;
+    /* width : 10px; 
+    top : 5px;
+    left : 683px;*/
+    width : 5px; 
+    top: -1px;
+    left: 685px;
 }
 .bottom-left-vertical {
     /* height : 90px;
