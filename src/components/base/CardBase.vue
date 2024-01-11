@@ -128,7 +128,7 @@ export default {
 }
 
 .url {
-    font-size: 19px;
+    font-size: 16.3px;
 }
 
 .back-set-container {

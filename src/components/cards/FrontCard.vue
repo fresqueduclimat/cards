@@ -84,10 +84,11 @@ export default {
 }
 
 .front-card-label2-position {
-    top: 194px;
+    top: 196px;
     left: 404px;
-    width: 499px;
+    width: 333px;
     height: 17px;
+    font-size: 12px;
     font-size: 12px;
     transform: rotate(-90deg);
     font-weight: 500;
