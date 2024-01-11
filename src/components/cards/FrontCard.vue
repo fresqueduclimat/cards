@@ -65,37 +65,30 @@ export default {
 <!-- pour une résolution de 470x693 -->
 <style>
 .front-card-label0-position {
-    top: 71px;   /* A' = 550 * 470 / 3180 = 80.92 (arrondi à 81) */
-    left: 96px;  /* B' = 580 * 693 / 4680 = 86.03 (arrondi à 96) */
-    width: 243px; /* C' = 1300 * 693 / 4680 = 192.64 (arrondi à 153) */
-    height: 52px; /* D' = 350 * 470 / 3180 = 51.77 (arrondi à 52) */
-    font-size: 40px;
+    top: 61px; 
+    left: 82.5px;  /* B' = 580 * 693 / 4680 = 86.03 (arrondi à 96) */
+    width: 209px; /* C' = 1300 * 693 / 4680 = 192.64 (arrondi à 153) */
+    height: 44.7px; /* D' = 350 * 470 / 3180 = 51.77 (arrondi à 52) */
+    font-size: 34.4px;
     text-align: left;
     /* border : solid red 0.5px; */
 }
 
 .front-card-label1-position {
-    top: 120px;
-    left: 96px;
-    width: 350px;
-    height: 52px;
-    font-size: 30px;
+    top: 104px;
+    left: 82.5px;
+    height: 44.7px;
+    font-size: 25.8px;
     text-align: left;
-    /* top: 81px;
-    left: 250px;
-    width: 350px;
-    height: 52px;
-    font-size: 40px;
-    text-align: right; */
     /* border : solid red 0.5px; */
 }
 
 .front-card-label2-position {
-    top: 225px;
-    left: 470px;
-    width: 380px;
-    height: 20px;
-    font-size: 14px;
+    top: 194px;
+    left: 404px;
+    width: 499px;
+    height: 17px;
+    font-size: 12px;
     transform: rotate(-90deg);
     font-weight: 500;
     /* border : solid red 0.5px; */
@@ -103,76 +96,28 @@ export default {
 
 /* default is en logo */
 .logo-container-front {
-    top: 160px;
-    left: 72px;
-    width: 529px;
-    height: 210px;
+    top: 137.6px;
+    left: 62px;
+    width: 455px;
+    height: 180px;
     /* border : solid red 0.5px; */
 }
 
 .logo-container-front-small {
     top: 1000px; /* appears if defined in logoDirective.js*/
-    left: 470px;
-    width: 143px;
-    height: 55px;
+    left: 404px;
+    width: 123px;
+    height: 47.3px;
     /* border : solid red 0.5px; */
 }
 
 /* default is en logo */
 .outline-container {
-    top: 347px;
-    left: 202px;
-    width: 429px;
-    font-size: 30px;
+    top: 299px;
+    left: 173.7px;
+    width: 369px;
+    font-size: 25.8px;
     text-align:left;
     /* border : solid red 0.5px; */
 }
 </style>
-
-
-<!-- pour une résolution de 3180x4680 -->
-<!-- <style>
-.front-card-label0-position {
-    top: 550px;
-    left: 580px;
-    width: 1300px;
-    height: 350px;
-    font-size: 270px;
-    text-align: left;
-}
-
-.front-card-label1-position {
-    top: 550px;
-    left: 1200px;
-    width: 3000px;
-    height: 350px;
-    font-size: 270px;
-    text-align: right;
-}
-
-.front-card-label2-position {
-    top: 1515px;
-    left: 3170px;
-    width: 2580px;
-    height: 150px;
-    font-size: 95px;
-    /* border: solid white; */
-    transform: rotate(-90deg);
-
-}
-
-.logo-container-front {
-    top: 955px;
-    left: 300px;
-    width: 3650px;
-    height: 1550px;
-    /* border :solid red; */
-}
-
-.outline-container {
-    top: 2290px;
-    left: 1400px;
-    font-size: 200px;
-}
-
-</style> -->

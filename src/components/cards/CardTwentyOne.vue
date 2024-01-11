@@ -51,136 +51,90 @@ export default {
 <!-- pour une résolution de 470x693 -->
 <style>
 .card21-label1-position {
-    top: 120px;
-    left: 380px;
-    width: 257px;
-    height: 35px;
+    top: 103px;
+    left: 326.8px;
+    width: 221px;
+    height: 30px;
     text-align: right;
     justify-content: right;
 }
 
 .card21-label2-position {
-    top: 386px;
-    left: 577px;
-    width: 99px;
-    height: 42px;
+    top: 331.9px;
+    left: 496.2px;
+    width: 85px;
+    height: 36px;
     transform: rotate(-90deg);
     /* border: solid red 0.2px; */
     color:grey;
-    font-size:14px;
+    font-size:12px;
 }
 
 .card21-label3-position {
-    top: 170px;
-    left: 260px;
-    width: 37px;
-    height: 16px;
+    top: 146.2px;
+    left: 223.6px;
+    width: 31.8px;
+    height: 13.7px;
     background-color: white;
     /* border: solid red 0.2px; */
     text-align: left;
-    font-size: 6px;
+    font-size: 5px;
 }
 
 .card21-label4-position {
-    top: 183px;
-    left: 260px;
-    width: 37px;
-    height: 39px;
+    top: 157.3px;
+    left: 223.6px;
+    width: 31.8px;
+    height: 33.5px;
     background-color: white;
     /* border: solid red 0.2px; */
     text-align: left;
     color : #936D22;
-    font-size: 6px;
+    font-size: 5px;
 }
 
 .card21-label5-position {
-    top: 231px;
-    left: 260px;
-    width: 37px;
-    height: 35px;
+    top: 198.6px;
+    left: 223.6px;
+    width: 31.8px;
+    height: 33.5px;
     background-color: white;
     /* border: solid red 0.2px; */
     text-align: left;
     color : #3F635F;
-    font-size: 6px;
+    font-size: 5px;
 }
 
 .card21-fixed-label1-position {
-    top: 151px;
-    left: 53px;
-    width: 125px;
-    height: 35px;
-    border: solid black 4px;
+    top: 130px;
+    left: 45.6px;
+    width: 107.5px;
+    height: 30px;
+    border: solid black 3.5px;
     background-color: white;
-    border-radius: 4px;
-    font-size: 25px;
+    border-radius: 3.5px;
+    font-size: 21.5px;
 }
 
 .card21-fixed-label2-position {
-    top: 174px;
-    left: 390px;
-    width: 125px;
-    height: 35px;
-    border: solid #980002 4px;
+    top: 151px;
+    left: 335.4px;
+    width: 107.5px;
+    height: 30px;
+    border: solid #980002 3.5px;
     background-color: white;
-    border-radius: 4px;
-    font-size: 25px;
+    border-radius: 3.5px;
+    font-size: 21.5px;
 }
 
 .card21-fixed-label3-position {
-    top: 340px;
-    left: 395px;
-    width: 125px;
-    height: 35px;
-    border: solid #00A9CF 4px;
+    top: 294px;
+    left: 341px;
+    width: 107.5px;
+    height: 30px;
+    border: solid #00A9CF 3.5px;
     background-color: white;
-    border-radius: 4px;
-    font-size: 25px;
+    border-radius: 3.5px;
+    font-size: 21.5px;
 }
 </style>
-
-<!-- pour une résolution de 3180x4680 -->
-<!-- <style>
-.card21-label1-position {
-    top: 790px;
-    left: 2100px;
-    width: 2200px;
-    height: 300px;
-    text-align : right;
-    justify-content: right;
-    /* border: solid red; */
-}
-
-.card21-fixed-label1-position {
-    top: 1030px;
-    left: 365px;
-    width: 890px;
-    height: 300px;
-    border: solid black 20px;
-    background-color: white;
-    border-radius: 15px;
-    font-size : 200px;
-}
-
-.card21-fixed-label2-position {
-    top: 1215px;
-    left: 2630px;
-    width: 830px;
-    height: 290px;
-    border: solid red 20px;
-    background-color: white;
-    border-radius: 15px;
-    font-size : 200px;
-}
-
-.card21-fixed-label3-position {
-    top: 2290px;
-    left: 2620px;
-    width: 850px;
-    height: 300px;
-    border: solid lightblue 20px;
-    background-color: white;
-    border-radius: 15px;
-    font-size: 200px;
-}
-</style> -->

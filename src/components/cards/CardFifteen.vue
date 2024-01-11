@@ -51,6 +51,9 @@
         <div id="card15-label17" class="horizontal-center vertical-center label black label5 card15-label17-position">
             <p id="card15-text17" class="font-big">{{ $t('V1C15L4') }}</p>
         </div>
+        <div id="card15-label18" class="horizontal-center vertical-center label card15-label18-position">
+            <p id="card15-text18" class="font-small">{{ $t('V1C999L90') }}</p>
+        </div>
         <div id="card15-fixed-label1" class="horizontal-center vertical-center label card15-fixed-label1-position">
             <p id="card15-fixed-text1" class="font-big">SSP5-8.5</p>
         </div>
@@ -96,109 +99,109 @@ export default {
 <!-- pour une résolution de 470x693 -->
 <style>
 .card15-label1-position {
-    top: 117px;
-    left: 59px;
-    width: 163px;
-    height: 15px;
+    top: 100.6px;
+    left: 50.7px;
+    width: 140px;
+    height: 12.9px;
     justify-content: right;
     color: #FF9B00;
     /* border: solid red; */
 }
 
 .card15-label2-position {
-    top: 136px;
-    left: 59px;
-    width: 163px;
-    height: 15px;
+    top: 117px;
+    left: 50.7px;
+    width: 140px;
+    height: 12.9px;
     justify-content: right;
     /* border: solid red; */
 }
 
 .card15-label3-position {
-    top: 154px;
-    left: 59px;
-    width: 163px;
-    height: 15px;
+    top: 132.4px;
+    left: 50.7px;
+    width: 140px;
+    height: 12.9px;
     justify-content: right;
     color: #969595;
     /* border: solid red; */
 }
 
 .card15-label4-position {
-    top: 172px;
-    left: 59px;
-    width: 163px;
-    height: 15px;
+    top: 147px;
+    left: 50.7px;
+    width: 140px;
+    height: 14.9px;
     justify-content: right;
     color: #62F0F3;
     /* border: solid red; */
 }
 
 .card15-label5-position {
-    top: 190px;
-    left: 59px;
-    width: 163px;
-    height: 15px;
+    top: 163.4px;
+    left: 50.7px;
+    width: 140px;
+    height: 14.9px;
     justify-content: right;
     color: #1D5707;
     /* border: solid red 0.2px; */
 }
 
 .card15-label6-position {
-    top: 208px;
-    left: 62px;
-    width: 160px;
-    height: 13px;
+    top: 179px;
+    left: 50.7px;
+    width: 140px;
+    height: 12.9px;
     justify-content: right;
     color: #8CBA79;
     /* border: solid red 0.2px; */
 }
 
 .card15-label7-position {
-    top: 226px;
-    left: 59px;
-    width: 163px;
-    height: 15px;
+    top: 194.3px;
+    left: 50.7px;
+    width: 140px;
+    height: 12.9px;
     justify-content: right;
     color: #7AB191;
     /* border: solid red; */
 }
 
 .card15-label8-position {
-    top: 244px;
-    left: 59px;
-    width: 163px;
-    height: 15px;
+    top: 209.8px;
+    left: 50.7px;
+    width: 140px;
+    height: 12.9px;
     justify-content: right;
     color: #498DA5;
     /* border: solid red; */
 }
 
 .card15-label9-position {
-    top: 262px;
-    left: 59px;
-    width: 163px;
-    height: 16px;
+    top: 225.32px;
+    left: 50.7px;
+    width: 140px;
+    height: 13.7px;
     justify-content: right;
     color: #A6A6A6;
     /* border: solid red; */
 }
 
 .card15-label10-position {
-    top: 329px;
-    left: 93px;
-    width: 133px;
-    height: 18px;
+    top: 287.9px;
+    left: 56.7px;
+    width: 140px;
+    height: 15.4px;
     justify-content: right;
     color: #58E60F;
     /* border: solid red; */
 }
 
 .card15-label11-position {
-    top: 349px;
-    left: 93px;
-    width: 133px;
-    height: 18px;
+    top: 306px;
+    left: 57.7px;
+    width: 140px;
+    height: 15.4px;
     justify-content: right;
     color: #EE350B;
     z-index: 3; /* devant */
@@ -206,281 +209,122 @@ export default {
 }
 
 .card15-label12-position {
-    top: 370px;
-    left: 93px;
-    width: 134px;
-    height: 22px;
+    top: 323px;
+    left: 82.7px;
+    width: 115.2px;
+    height: 19px;
     justify-content: right;
     color: #FE9D07;
     z-index: 3; /* devant */
-    /* border: solid red; */
+    /* border: solid red 1px; */
 }
 
 .card15-label13-position {
-    top: 393px;
-    left: 93px;
-    width: 133px;
-    height: 19px;
+    top: 342px;
+    left: 83px;
+    width: 114.3px;
+    height: 15.3px;
     justify-content: right;
     color: #595959;
-    /* border: solid red; */
+    /* border: solid red 1px; */
 }
 
 .card15-label14-position {
-    top: 129px;
-    left: 510px;
-    width: 163px;
-    height: 22px;
+    top: 110.9px;
+    left: 438.6px;
+    width: 140px;
+    height: 19px;
     /* border: solid red; */
 }
 
 .card15-label15-position {
-    top: 154px;
-    left: 510px;
-    width: 163px;
-    height: 22px;
+    top: 132.4px;
+    left: 438.6px;
+    width: 140px;
+    height: 19px;
     /* border: solid red; */
 }
 
 .card15-label16-position {
-    top: 118px;
-    left: 286px;
-    width: 170px;
-    height: 52px;
+    top: 103.5px;
+    left: 245px;
+    width: 153px;
+    height: 44.7px;
     color: white;
     /* border: solid red; */
 }
 
 .card15-label17-position {
-    top: 370px;
-    left: 289px;
-    width: 170px;
-    height: 52px;
+    top: 320px;
+    left: 242.5px;
+    width: 154.2px;
+    height: 44.7px;
     /* border: solid red; */
 }
 
+.card15-label18-position {
+    top: 368px;
+    left: 417px;
+    width: 172px;
+    height: 17px;
+    color: grey;
+    font-size: 13px;
+    /* border : solid red 1px; */
+}
+
 .card15-fixed-label1-position {
-    top: 269px;
-    left: 605px;
-    width: 55px;
-    height: 18px;
-    font-size: 10px;
+    top: 234.34px;
+    left: 521px;
+    width: 47px;
+    height: 15.5px;
+    font-size: 8.6px;
     color: #980002;
     /* border: solid red 0.5px; */
 }
 .card15-fixed-label2-position {
-    top: 296px;
-    left: 605px;
-    width: 55px;
-    height: 18px;
-    font-size: 10px;
+    top: 256.5px;
+    left: 521px;
+    width: 47px;
+    height: 15.5px;
+    font-size: 8.6px;
     color: #DF0000;
     /* border: solid red  0.5px; */
 }
 .card15-fixed-label3-position {
-    top: 318px;
-    left: 605px;
-    width: 55px;
-    height: 18px;
-    font-size: 10px;
+    top: 276.5px;
+    left: 522px;
+    width: 47px;
+    height: 15.5px;
+    font-size: 8.6px;
     color : #F59527;
     /* border: solid red  0.5px; */
 }
 .card15-fixed-label4-position {
-    top: 340px;
-    left: 605px;
-    width: 55px;
-    height: 18px;
-    font-size: 10px;
+    top: 294.4px;
+    left: 521px;
+    width: 47px;
+    height: 15.5px;
+    font-size: 8.6px;
     color : #003466;
     /* border: solid red  0.5px; */
 }
 .card15-fixed-label5-position {
-    top: 362px;
-    left: 605px;
-    width: 55px;
-    height: 18px;
-    font-size: 10px;
+    top: 315.3px;
+    left: 521px;
+    width: 47px;
+    height: 15.5px;
+    font-size: 8.6px;
     color :#00A9CF;
     /* border: solid red  0.5px; */
 }
 .card15-fixed-label6-position {
-    top: 185px;
-    left: 515px;
-    width: 114px;
-    height: 37px;
-    font-size: 20px;
+    top: 161px;
+    left: 446px;
+    width: 98px;
+    height: 31.8px;
+    font-size: 17px;
     /* border: solid red; */
 }
 
 
 </style>
-
-<!-- pour une résolution de 3180x4680 -->
-<!-- <style>
-.card15-label1-position {
-    top: 790px;
-    left: 400px;
-    width: 1100px;
-    height: 100px;
-    justify-content: right;
-    color : lightsalmon;
-    /* border: solid red; */
-}
-
-.card15-label2-position {
-    top: 920px;
-    left: 400px;
-    width: 1100px;
-    height: 100px;
-    justify-content: right;
-    /* border: solid red; */
-}
-
-.card15-label3-position {
-    top: 1040px;
-    left: 400px;
-    width: 1100px;
-    height: 100px;
-    justify-content: right;
-    color: grey;
-    /* border: solid red; */
-}
-
-.card15-label4-position {
-    top: 1160px;
-    left: 400px;
-    width: 1100px;
-    height: 100px;
-    justify-content: right;
-    color : cyan;
-    /* border: solid red; */
-}
-.card15-label5-position {
-    top: 1280px;
-    left: 400px;
-    width: 1100px;
-    height: 100px;
-    justify-content: right;
-    color : darkgreen;
-    /* border: solid red; */
-}
-
-.card15-label6-position {
-    top: 1400px;
-    left: 400px;
-    width: 1100px;
-    height: 100px;
-    justify-content: right;
-    color : lightblue;
-    /* border: solid red; */
-}
-
-.card15-label7-position {
-    top: 1520px;
-    left: 400px;
-    width: 1100px;
-    height: 100px;
-    justify-content: right;
-    color : lightgreen;
-    /* border: solid red; */
-}
-
-.card15-label8-position {
-    top: 1640px;
-    left: 400px;
-    width: 1100px;
-    height: 100px;
-    justify-content: right;
-    color : green;
-    /* border: solid red; */
-}
-
-.card15-label9-position {
-    top: 1760px;
-    left: 400px;
-    width: 1100px;
-    height: 110px;
-    justify-content: right;
-    color : darkgrey;
-    /* border: solid red; */
-}
-
-.card15-label10-position {
-    top: 2220px;
-    left: 630px;
-    width: 900px;
-    height: 120px;
-    justify-content: right;
-    color : green;
-    /* border: solid red; */
-}
-.card15-label11-position {
-    top: 2360px;
-    left: 630px;
-    width: 900px;
-    height: 120px;
-    justify-content: right;
-    color : red;
-    /* border: solid red; */
-}
-
-.card15-label12-position {
-    top: 2500px;
-    left: 630px;
-    width: 900px;
-    height: 150px;
-    justify-content: right;
-    color : orange;
-    /* border: solid red; */
-}
-
-.card15-label13-position {
-    top: 2650px;
-    left: 630px;
-    width: 900px;
-    height: 130px;
-    justify-content: right;
-    color : grey;
-    /* border: solid red; */
-}
-
-.card15-label14-position {
-    top: 870px;
-    left: 3450px;
-    width: 1100px;
-    height: 150px;
-    /* border: solid red; */
-}
-.card15-label15-position {
-    top: 1040px;
-    left: 3450px;
-    width: 1100px;
-    height: 150px;
-    /* border: solid red; */
-}
-.card15-label16-position {
-    top: 800px;
-    left: 1950px;
-    width: 1150px;
-    height: 350px;
-    color : white;
-    /* border: solid red; */
-}
-.card15-label17-position {
-    top: 2500px;
-    left: 1950px;
-    width: 1150px;
-    height: 350px;
-    /* border: solid red; */
-}
-
-.card15-fixed-label1-position {
-    top: 1250px;
-    left: 3485px;
-    width: 770px;
-    height: 250px;
-    font-size: 150px;
-    /* border: solid red; */
-}
-</style> -->

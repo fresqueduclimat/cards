@@ -85,21 +85,17 @@ export default {
 <style>
 /* default is en logo, without barcode (website format) */
 .logo-container-big {
-    top: 314px;
-    left: 155px;
-    width: 268px;
-    height: 101px;
-    /* top: 329px;
-    left: 110px;
-    width: 280px;
-    height: 75px; */
+    top: 270px;
+    left: 133px;
+    width: 230px;
+    height: 87px;
 }
 
 .logo-container-small {
     top: 1000px; /* appears if defined in logoDirective.js*/
-    left: 503px;
-    width: 135px;
-    height: 55px;
+    left: 432.5px;
+    width: 116px;
+    height: 47px;
 }
 
 .logo {
@@ -125,24 +121,24 @@ export default {
 }
 
 .qr-code-siteweb-container {
-    top: 243px;
-    left: 506px;
-    width: 130px;
-    height: 130px;
+    top: 209px;
+    left: 435px;
+    width: 111px;
+    height: 111px;
 }
 
 .barcode {
     width: 100%;
     height: 100%;
-    background-image: url('@/assets/barcode/adults-nl.png');
+    background-image: url('@/assets/barcode/adults-es.png');
     background-size: contain;
 }
 
 .barcode-container {
     top: 500px; /*does not show unless print is true and element position are modified in printDirective.js*/
-    left: 62px;
-    width: 161px;
-    height: 71px;
+    left: 53px;
+    width: 138.4px;
+    height: 61px;
 } 
 
 .cc {
@@ -153,220 +149,93 @@ export default {
 }
 
 .cc-container {
-    top: 53px;
-    left: 502px;
-    width: 139px;
-    height: 49px;
+    top: 46px;
+    left: 431.7px;
+    width: 119.5px;
+    height: 42px;
 }
 
 .card44-label0-position {
-    top: 54px;
-    left: 52px;
-    width: 440px;
-    height: 52px;
+    top: 46px;
+    left: 44.7px;
+    width: 378px;
+    height: 44.7px;
     font-weight: 900;
     text-align: left;
     /* border: red solid; */
 }
 
 .card44-label1-position {
-    top: 100px;
-    left: 52px;
-    width: 446px;
-    height: 157px;
+    top: 86px;
+    left: 44.7px;
+    width: 383.5px;
+    height: 135px;
     text-align: left;
-    font-size: 13px;
+    font-size: 11px;
     /* border: red solid 0.2px; */
 }
 
 .card44-label2-position {
-    top: 266px;
-    left: 52px;
-    width: 192px;
-    height: 60px;
+    top: 229px;
+    left: 44.7px;
+    width: 165px;
+    height: 51.6px;
     text-align: left;
-    font-size: 13px;
+    font-size: 11px;
     /* border: red solid 0.2px; */
 }
 
 .card44-label3-position {
-    top: 266px;
-    left: 259px;
-    width: 200px;
-    height: 50px;
+    top: 229px;
+    left: 228px;
+    width: 172px;
+    height: 43px;
     text-align: left;
-    font-size: 13px;
+    font-size: 11px;
     /* border: red solid 0.2px; */
 }
 
 .card44-label4-position {
-    top: 378px;
-    left: 502px;
-    width: 139px;
-    height: 44px;
-    font-size: 15px;
+    top: 325px;
+    left: 432px;
+    width: 119.5px;
+    height: 37.8px;
+    font-size: 13px;
     /* border: red solid; */
 }
 
-.card44-label5-position {
-    /* top: 126px; */
+/* .card44-label5-position {
     top : 174px;
     left: 502px;
     width: 139px;
     height: 34px;
-    /* border: red solid; */
+    border: red solid;
 }
 
 .card44-label6-position {
-    /* top: 186px; */
     top : 209px;
     left: 502px;
     width: 139px;
     height: 34px;
-    /* border: red solid; */
-}
+    border: red solid;
+}  */
 
 .card44-label7-position {
-    top: 600px; /* print=true, cf.printDirective */
-    left: 43px;
-    width: 605px;
-    height: 20px;
-    font-size : 14px;
+    top: 516px; /* print=true, cf.printDirective */
+    left: 37px;
+    width: 520px;
+    height: 17px;
+    font-size : 11px;
 }
 
 /* default is en logo without barcode (website version) */
 .outline-container-back {
-    top: 409px;
-    left: 203px;
-    width: 240px;
-    height: 20px;
-    /* top: 400px;
-    left: 155px;
-    width: 240px;
-    height: 20px; */
-    font-size: 13px;
+    top: 351.7px;
+    left: 174.6px;
+    width: 206px;
+    height: 17px;
+    font-size: 11px;
     text-align: left;
     /* border: red solid 0.5px; */
 }
-
-
-
 </style>
-
-<!-- pour une résolution de 3180x4680 -->
-<!-- <style>
-.logo-container-big {
-    top: 2050px;
-    left: 615px;
-    width: 2000px;
-    height: 750px;
-}
-
-.logo {
-    width: 100%;
-    height: 100%;
-    background-image: url('@/assets/logo-fr.${imageType}');
-    background-size: contain;
-}
-
-.card44-label0-position {
-    top: 400px;
-    left: 350px;
-    width: 2900px;
-    height: 300px;
-    font-weight: 900;
-    text-align : left;
-    /* border : red solid; */
-}
-
-.card44-label1-position {
-    top: 740px;
-    left: 350px;
-    width: 2970px;
-    height: 910px;
-    text-align: left;
-    font-size: 100px;
-    /* border : red solid; */
-}
-
-.card44-label2-position {
-    top: 1670px;
-    left: 350px;
-    width: 1300px;
-    height: 340px;
-    text-align: left;
-    font-size: 100px;
-    /* border : red solid; */
-}
-
-.card44-label3-position {
-    top: 1670px;
-    left: 1900px;
-    width: 1300px;
-    height: 250px;
-    text-align: left;
-    font-size: 100px;
-    /* border : red solid; */
-}
-
-.card44-label4-position {
-    top: 2550px;
-    left: 3320px;
-    width: 950px;
-    height: 300px;
-    font-size: 100px;
-    /* border : red solid; */
-}
-
-.card44-label5-position {
-    top: 850px;
-    left: 3420px;
-    width: 850px;
-    height: 230px;
-    /* border : red solid; */
-    
-}
-
-.card44-label6-position {
-    top: 1250px;
-    left: 3420px;
-    width: 850px;
-    height: 230px;
-    /* border : red solid; */
-    
-}
-
-.card44-label7-position {
-    top: 2700px;
-    left: 1200px;
-    width: 500px;
-    height: 200px;
-    color : red;
-    font-weight: 900;
-    /* border : red solid; */
-    
-}
-
-.card44-label8-position {
-    top: 2700px;
-    left: 1850px;
-    width: 500px;
-    height: 200px;
-    color : red;
-    font-weight: 900;
-    /* border : red solid; */
-    
-}
-
-.card44-label9-position {
-    top: 2700px;
-    left: 2600px;
-    width: 500px;
-    height: 200px;
-    color : red;
-    font-weight: 900;
-    /* border : red solid; */
-    
-}
-
-</style>-->

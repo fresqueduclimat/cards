@@ -36,67 +36,30 @@ export default {
 <!-- pour une résolution de 470x693 -->
 <style>
 .card7-label1-position {
-    top: 24vh;
-    left: 9vw;
-    width: 87vw;
-    height: 8vh;
+    top: 24.6vh;
+    left: 12.7vw;
+    width: 74.8vw;
+    height: 6.88vh;
     /* border: solid red; */
 }
 
 .card7-label2-position {
-    top: 304px;
-    left: 252px;
-    width: 218px;
-    height: 37px;
+    top: 261.4px;
+    left: 216.7px;
+    width: 187.5px;
+    height: 31.8px;
     text-align: left;
-    font-size: 20px;
+    font-size: 17px;
     /* border: solid red; */
 }
 
 .card7-label3-position {
-    top: 378px;
-    left: 251px;
-    width: 148px;
-    height: 37px;
+    top: 325px;
+    left: 215.8px;
+    width: 127.3px;
+    height: 31.8px;
     text-align: left;
-    font-size: 20px;
+    font-size: 17px;
     /* border: solid red; */
 }
 </style>
-
-<!-- pour une résolution de 3180x4680 -->
-<!-- <style>
-.card7-label1-position {
-    top: 24vh;
-    left: 9vw;
-    width: 87vw;
-    height: 8vh;
-    /* border: solid red; */
-}
-
-.card7-label2-position {
-    top: 2055px;
-    left: 1700px;
-    width: 1000px;
-    height: 250px;
-    text-align: left;
-    /* border: solid red; */
-}
-
-.card7-label3-position {
-    top: 2555px;
-    left: 1700px;
-    width: 1000px;
-    height: 250px;
-    text-align: left;
-    /* border: solid red; */
-}
-
-.card7-label2-position p {
-    font-size: 135px;
-}
-
-.card7-label3-position p {
-    font-size: 135px;
-}
-</style> -->

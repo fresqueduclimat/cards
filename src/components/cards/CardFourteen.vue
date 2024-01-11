@@ -59,59 +59,59 @@ export default {
 
 <style>
 .card14-label1-position {
-    top: 141px;
-    left: 496px;
-    width: 119px;
-    height: 52px;
+    top: 123.2px;
+    left: 427.5px;
+    width: 102.3px;
+    height: 44.7px;
     text-align: left;
-    font-size: 20px;
+    font-size: 17px;
     /* border: solid red; */
 }
 
 .card14-label2-position {
-    top: 207px;
-    left: 496px;
-    width: 119px;
-    height: 52px;
+    top: 179px;
+    left: 427.5px;
+    width: 102.3px;
+    height: 44.7px;
     text-align: left;
-    font-size: 20px;
+    font-size: 17px;
     /* border: solid red; */
 }
 
 .card14-label3-position {
-    top: 274px;
-    left: 496px;
-    width: 119px;
-    height: 52px;
+    top: 237.6px;
+    left: 427.5px;
+    width: 102.3px;
+    height: 44.7px;
     text-align: left;
     font-size: 20px;
     /* border: solid red; */
 }
 
 .card14-label4-position {
-    top: 335px;
-    left: 496px;
-    width: 119px;
-    height: 52px;
+    top: 292px;
+    left: 427.5px;
+    width: 98.3px;
+    height: 44.7px;
     text-align: left;
     font-size: 20px;
-    /* border: solid red; */
+    /* border: solid red 1px; */
 }
 
 .card14-label5-position {
-    top: 220px;
-    left: -42px;
-    width: 220px;
-    height: 30px;
+    top: 189.2px;
+    left: -36.1px;
+    width: 189.2px;
+    height: 25.8px;
     transform: rotate(-90deg);
     /* border: solid red; */
 }
 
 .card14-label6-position {
-    top: 244px;
-    left: 493px;
-    width: 289px;
-    height: 30px;
+    top: 210px;
+    left: 424px;
+    width: 248.5px;
+    height: 25.8px;
     transform: rotate(-90deg);
     color : grey;
     /* border: solid red 0.5px; */
@@ -119,37 +119,37 @@ export default {
 }
 
 .card14-fixed-label1-position {
-    top: 141px;
-    left: 378px;
-    width: 109px;
-    height: 49px;
-    font-size: 30px;
+    top: 123.2px;
+    left: 327px;
+    width: 93.7px;
+    height: 42px;
+    font-size: 25.8px;
 }
 
 .card14-fixed-label2-position {
-    top: 207px;
-    left: 378px;
-    width: 109px;
-    height: 49px;
-    font-size: 30px;
+    top: 180px;
+    left: 327px;
+    width: 93.7px;
+    height: 42px;
+    font-size: 25.8px;
     /* border: red solid; */
 }
 
 .card14-fixed-label3-position {
-    top: 274px;
-    left: 378px;
-    width: 109px;
-    height: 49px;
-    font-size: 30px;
+    top: 236.6px;
+    left: 327px;
+    width: 93.7px;
+    height: 42px;
+    font-size: 25.8px;
     /* border: red solid; */
 }
 
 .card14-fixed-label4-position {
-    top: 338px;
-    left: 378px;
-    width: 109px;
-    height: 49px;
-    font-size: 30px;
+    top: 293.7px;
+    left: 327px;
+    width: 93.7px;
+    height: 42px;
+    font-size: 25.8px;
     /* border: red solid; */
 }
 

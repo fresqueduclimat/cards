@@ -63,107 +63,107 @@ export default {
 <!-- pour une résolution de 470x693 -->
 <style>
 .card0-label0-position {
-    top: 44px;
-    left: 59px;
-    width: 563px;
-    height: 52px;
+    top: 40px;
+    left: 51px;
+    width: 484px;
+    height: 44.7px;
     color: red;
     font-weight: 900;
     /* border: red solid; */
     /* font-size: 200px; */
-    font-size: 297px;
+    font-size: 255.4px;
 }
 
 .card0-label1-position {
-    top: 98px;
-    left: 59px;
-    width: 563px;
-    height: 40px;
+    top: 84.3px;
+    left: 50.7px;
+    width: 484px;
+    height: 34.4px;
     text-align: left;
     /* border: red solid 0.5px; */
-    font-size: 16px;
+    font-size: 13.7px;
 }
 
 .card0-label2-position {
-    top: 317px;
-    left: 489px;
-    width: 135px;
-    height: 68px;
+    top: 273.6px;
+    left: 421.5px;
+    width: 116px;
+    height: 58px;
     transform: rotate(15deg);
     /* border: red solid 0.5px; */
 }
 .card0-label3-position {
-    top: 148px;
-    left: 59px;
-    width: 563px;
-    height: 40px;
+    top: 127.2px;
+    left: 50.7px;
+    width: 484px;
+    height: 34.4px;
     text-align: left;
     /* border: red solid 0.5px; */
-    font-size: 16px;
+    font-size: 13.7px;
 }
 
 .card0-label4-position {
-    top: 197px;
-    left: 59px;
-    width: 563px;
-    height: 20px;
+    top: 169.4px;
+    left: 50.7px;
+    width: 584px;
+    height: 17px;
     text-align: left;
     /* border: red solid 0.5px; */
-    font-size: 16px;
+    font-size: 13.7px;
 }
 
 .card0-label5-position {
-    top: 225px;
-    left: 59px;
-    width: 563px;
-    height: 60px;
+    top: 193.5px;
+    left: 50.7px;
+    width: 484px;
+    height: 51.6px;
     text-align: left;
     /* border: red solid 0.5px; */
-    font-size: 16px;
+    font-size: 13.7px;
 }
 
 .card0-label6-position {
-    top: 399px;
-    left: 62px;
-    width: 96px;
-    height: 22px;
+    top: 343px;
+    left: 53px;
+    width: 82.5px;
+    height: 19px;
     color: red;
     font-weight: 900;
     /* border: red solid; */
-    font-size: 15px;
+    font-size: 12.9px;
 }
 
 .card0-label7-position {
-    top: 394px;
-    left: 166px;
-    width: 96px;
-    height: 32px;
+    top: 339px;
+    left: 142.7px;
+    width: 82.5px;
+    height: 27.5px;
     color: red;
     font-weight: 900;
     /* border: red solid; */
-    font-size: 14px;
+    font-size: 12.9px;
 }
 
 .card0-label8-position {
-    top: 399px;
-    left: 268px;
-    width: 96px;
-    height: 22px;
+    top: 343px;
+    left: 230.5px;
+    width: 82.5px;
+    height: 19px;
     color: red;
     font-weight: 900;
     /* border: red solid; */
-    font-size: 15px;
+    font-size: 12.9px;
 }
 
 .card0-label9-position {
-    top: 399px;
-    left: 372px;
-    width: 96px;
-    height: 22px;
+    top: 343px;
+    left: 320px;
+    width: 82.5px;
+    height: 19px;
     color: red;
     font-weight: 900;
     /* border: red solid; */
-    font-size: 15px;
+    font-size: 12.9px;
 }
 
 </style>

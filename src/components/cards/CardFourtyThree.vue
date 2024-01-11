@@ -44,15 +44,15 @@ export default {
 <!-- pour une résolution de 470x693 -->
 <style>
 .card43-label0-position {
-    top: 25px;
-    left: 35px;
-    width: 622px;
-    height: 84px;
+    top: 21.5px;
+    left: 30.1px;
+    width: 535px;
+    height: 72.2px;
     display: flex;
     justify-content: center;
     align-items: center;
     white-space: nowrap;
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 700;
     color: white;
 }
@@ -65,35 +65,9 @@ export default {
 }
 
 .qr-code-memo-container {
-    top: 307px;
-    left: 48px;
-    width: 130px;
-    height: 130px;
+    top: 264px;
+    left: 41.8px;
+    width: 111px;
+    height: 111px;
 }
 </style>
-
-
-<!-- pour une résolution de 3180x4680 -->
-<!-- <style>
-.card43-label0-position {
-    top: 178px;
-    left: 240px;
-    width: 4200px;
-    height: 570px;
-    /* border: solid red; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    white-space: nowrap;
-    font-size: 256px;
-}
-.card43-label1-position {
-    top: 2770px;
-    left: 555px;
-    width: 1000px;
-    height: 250px;
-    font-size: 200px;
-    text-align: left;
-    /* border : red solid; */
-}
-</style> -->

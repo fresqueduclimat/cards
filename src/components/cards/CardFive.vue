@@ -68,134 +68,134 @@ export default {
 <!-- pour une résolution de 470x693 -->
 <style>
 .card5-label1-position {
-    top: 140px; /* A' = 954 * 470 / 3180 = 140.35px */
-    left: 181px; /* B' = 1216.8 * 693 / 4680 = 181.28px */
-    width: 204px; /* C' = 1357.2 * 693 / 4680 = 204.18px */
-    height: 38px; /* D' = 254.4 * 470 / 3180 = 37.53px */
+    top: 120px; 
+    left: 155px; 
+    width: 175.4px;
+    height: 32.7px;
     /* border: solid red; */
 }
 
 .card5-label2-position {
-    top: 225px; /* A' = 1517 * 470 / 3180 = 223.01px */
-    left: 249px; /* B' = 1690 * 693 / 4680 = 249.93px */
-    width: 98px; /* C' = 660 * 693 / 4680 = 97.71px */
-    height: 19px; /* D' = 125 * 470 / 3180 = 18.49px */
+    top: 196px; /* A' = 1517 * 470 / 3180 = 223.01px */
+    left: 215px; /* B' = 1690 * 693 / 4680 = 249.93px */
+    width: 84px; /* C' = 660 * 693 / 4680 = 97.71px */
+    height: 16px; /* D' = 125 * 470 / 3180 = 18.49px */
     /* border: solid red; */
 }
 
 .card5-label3-position {
-    top: 218px; /* A' = 1500 * 470 / 3180 = 221.70px */
-    left: -20px; /* B' = -200 * 693 / 4680 = -29.73px */
-    width: 227px; /* C' = 1650 * 693 / 4680 = 247.05px */
-    height: 29px; /* D' = 200 * 470 / 3180 = 29.63px */
+    top: 187.5px; /* A' = 1500 * 470 / 3180 = 221.70px */
+    left: -17.2px; /* B' = -200 * 693 / 4680 = -29.73px */
+    width: 195.2px; /* C' = 1650 * 693 / 4680 = 247.05px */
+    height: 25px; /* D' = 200 * 470 / 3180 = 29.63px */
     transform: rotate(-90deg);
     /* border: solid red; */
 }
 
 .card5-label4-position {
-    top: 243px;
-    left: 455px;
-    width: 270px;
-    height: 20px;
+    top: 209px;
+    left: 391px;
+    width: 232.3px;
+    height: 17px;
     transform: rotate(-90deg);
     color : grey;
     /* border: solid red; */
 }
 
 .card5-fixed-label1-position {
-    top: 126px; /* A' = 840 * 470 / 3180 = 123.88px */
-    left: 422px; /* B' = 2850 * 693 / 4680 = 423.09px */
-    width: 67px; /* C' = 450 * 693 / 4680 = 67.08px */
-    height: 22px; /* D' = 150 * 470 / 3180 = 22.12px */
-    font-size: 12px;
+    top: 108.3px; /* A' = 840 * 470 / 3180 = 123.88px */
+    left: 363px; /* B' = 2850 * 693 / 4680 = 423.09px */
+    width: 58px; 
+    height: 19px; 
+    font-size: 10.3px;
     color: #980002;
     /* border: red solid; */
 }
 
 .card5-fixed-label2-position {
-    top: 165px; /* A' = 1100 * 470 / 3180 = 161.94px */
-    left: 475px; /* B' = 3200 * 693 / 4680 = 472.23px */
-    width: 67px; /* C' = 450 * 693 / 4680 = 67.08px */
-    height: 20px; /* D' = 150 * 470 / 3180 = 22.12px */
-    font-size : 12px;
+    top: 142px; /* A' = 1100 * 470 / 3180 = 161.94px */
+    left: 408.5px; /* B' = 3200 * 693 / 4680 = 472.23px */
+    width: 58px; 
+    height: 19px; 
+    font-size : 10.3px;
     color: #DF0000;
     /* border: red solid; */
 }
 
 .card5-fixed-label3-position {
-    top: 240px; /* A' = 1610 * 470 / 3180 = 236.05px */
-    left: 473px; /* B' = 3190 * 693 / 4680 = 468.98px */
-    width: 67px; /* C' = 450 * 693 / 4680 = 67.08px */
-    height: 20px; /* D' = 150 * 470 / 3180 = 22.12px */
-    font-size: 12px;
+    top: 206.4px; /* A' = 1610 * 470 / 3180 = 236.05px */
+    left: 406.8px; /* B' = 3190 * 693 / 4680 = 468.98px */
+    width: 58px; 
+    height: 19px; 
+    font-size: 10.3px;
     color : #F59527;
     /* border: red solid; */
 }
 
 .card5-fixed-label4-position {
-    top: 291px; /* A' = 1950 * 470 / 3180 = 286.76px */
-    left: 450px; /* B' = 3033 * 693 / 4680 = 449.87px */
-    width: 67px; /* C' = 450 * 693 / 4680 = 67.08px */
-    height: 20px; /* D' = 150 * 470 / 3180 = 22.12px */
-    font-size : 12px;
+    top: 250px; /* A' = 1950 * 470 / 3180 = 286.76px */
+    left: 387px; /* B' = 3033 * 693 / 4680 = 449.87px */
+    width: 58px; 
+    height: 19px; 
+    font-size : 10.3px;
     color : #003466;
     /* border: red solid; */
 }
 
 .card5-fixed-label5-position {
-    top: 308px; /* A' = 2070 * 470 / 3180 = 304.70px */
-    left: 364px; /* B' = 2450 * 693 / 4680 = 361.46px */
-    width: 67px; /* C' = 450 * 693 / 4680 = 67.08px */
-    height: 20px; /* D' = 150 * 470 / 3180 = 22.12px */
-    font-size: 12px;
+    top: 265px; /* A' = 2070 * 470 / 3180 = 304.70px */
+    left: 313px; /* B' = 2450 * 693 / 4680 = 361.46px */
+    width: 58px; 
+    height: 19px; 
+    font-size: 10.3px;
     color :#00A9CF;
     /* border: red solid; */
 }
 
 .card5-fixed-label6-position {
-    top: 348px; /* A' = 2360 * 470 / 3180 = 347.29px */
-    left: 460px; /* B' = 3050 * 693 / 4680 = 449.02px */
-    width: 51px; /* C' = 350 * 693 / 4680 = 51.84px */
-    height: 15px; /* D' = 100 * 470 / 3180 = 14.81px */
-    font-size: 12px;
+    top: 299.3px; /* A' = 2360 * 470 / 3180 = 347.29px */
+    left: 395.6px; /* B' = 3050 * 693 / 4680 = 449.02px */
+    width: 43.8px; /* C' = 350 * 693 / 4680 = 51.84px */
+    height: 13px; /* D' = 100 * 470 / 3180 = 14.81px */
+    font-size: 10.3px;
     color :#00A9CF;
     /* border: red solid; */
 }
 
 .card5-fixed-label7-position {
-    top: 348px; /* A' = 2360 * 470 / 3180 = 347.29px */
-    left: 401px; /* B' = 3365 * 693 / 4680 = 496.60px */
-    width: 51px; /* C' = 350 * 693 / 4680 = 51.84px */
-    height: 15px; /* D' = 100 * 470 / 3180 = 14.81px */
-    font-size: 12px;
+    top: 299.3px; /* A' = 2360 * 470 / 3180 = 347.29px */
+    left: 344.8px; /* B' = 3365 * 693 / 4680 = 496.60px */
+    width: 43.8px; /* C' = 350 * 693 / 4680 = 51.84px */
+    height: 13px; /* D' = 100 * 470 / 3180 = 14.81px */
+    font-size: 10.3px;
     color :#003466;
     /* border: red solid; */
 }
 .card5-fixed-label7-position {
-    top: 347px; /* A' = 2360 * 470 / 3180 = 347.29px */
-    left: 496px; /* B' = 3365 * 693 / 4680 = 496.60px */
-    width: 52px; /* C' = 350 * 693 / 4680 = 51.84px */
-    height: 15px; /* D' = 100 * 470 / 3180 = 14.81px */
-    font-size: 12px;
+    top: 298.3px; /* A' = 2360 * 470 / 3180 = 347.29px */
+    left: 426.5px; /* B' = 3365 * 693 / 4680 = 496.60px */
+    width: 43.8px; /* C' = 350 * 693 / 4680 = 51.84px */
+    height: 13px; /* D' = 100 * 470 / 3180 = 14.81px */
+    font-size: 10.3px;
     color: #003466;
     /* border: red solid; */
 }
 
 .card5-fixed-label8-position {
-    top: 333px; /* A' = 2235 * 470 / 3180 = 329.75px */
-    left: 479px; /* B' = 3235 * 693 / 4680 = 479.34px */
-    width: 7px; /* C' = 50 * 693 / 4680 = 7.43px */
-    height: 7px; /* D' = 50 * 470 / 3180 = 7.41px */
-    font-size: 12px;
+    top: 288.4px; /* A' = 2235 * 470 / 3180 = 329.75px */
+    left: 412px; /* B' = 3235 * 693 / 4680 = 479.34px */
+    width: 5px; /* C' = 50 * 693 / 4680 = 7.43px */
+    height: 5px; /* D' = 50 * 470 / 3180 = 7.41px */
+    font-size: 10.3px;
     /* border: red solid; */
 }
 
 .card5-fixed-label9-position {
-    top: 333px; /* A' = 2405 * 470 / 3180 = 354.06px */
-    left: 518px; /* B' = 3505 * 693 / 4680 = 497.03px */
-    width: 7px; /* C' = 50 * 693 / 4680 = 7.43px */
-    height: 7px; /* D' = 50 * 470 / 3180 = 7.41px */
-    font-size: 12px;
+    top: 288.4px; /* A' = 2405 * 470 / 3180 = 354.06px */
+    left: 445.5px; /* B' = 3505 * 693 / 4680 = 497.03px */
+    width: 5px; /* C' = 50 * 693 / 4680 = 7.43px */
+    height: 5px; /* D' = 50 * 470 / 3180 = 7.41px */
+    font-size: 10.3px;
     /* border: red solid; */
 }
 

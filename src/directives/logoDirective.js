@@ -19,45 +19,45 @@ export default {
             const urlElements = el.querySelectorAll('.url');
             urlElements.forEach(url => {
                 url.textContent = "fresqueduclimat.org";
-                url.style.fontSize = '17px';
+                url.style.fontSize = '14px';
             });
             //front page
             const logofrontContainerElements = el.querySelectorAll('.logo-container-front');
             logofrontContainerElements.forEach(logo => {
-                logo.style.top = '180px';
-                logo.style.left = '72px';
-                logo.style.width = '536px';
-                logo.style.height = '149px';
+                logo.style.top = '155px';
+                logo.style.left = '62px';
+                logo.style.width = '461px';
+                logo.style.height = '128px';
             });
             const outlineContainerElements = el.querySelectorAll('.outline-container');
             outlineContainerElements.forEach(logo => {
-                logo.style.left = '197px';
-                logo.style.top = '311px';
-                logo.style.fontSize = '25px'
+                logo.style.left = '170px';
+                logo.style.top = '268px';
+                logo.style.fontSize = '21.5px'
             });
             if (print === 'false') { //if print is true, the position is defined in the logoDirective
                 //last page
                 const logoBigContainerElements = el.querySelectorAll('.logo-container-big');
                 logoBigContainerElements.forEach(logo => {
-                    logo.style.top = '333px';
-                    logo.style.left = '123px';
-                    logo.style.width = '254px'; 
-                    logo.style.height = '74px';
+                    logo.style.top = '286px';
+                    logo.style.left = '106px';
+                    logo.style.width = '219px'; 
+                    logo.style.height = '64px';
                 });
                 const outlineBackContainerElements = el.querySelectorAll('.outline-container-back');
                 outlineBackContainerElements.forEach(outline => {
-                    outline.style.top = '398px';
-                    outline.style.left = '181px'; 
-                    outline.style.fontSize = '12.5px';
+                    outline.style.top = '343px';
+                    outline.style.left = '156px'; 
+                    outline.style.fontSize = '11px';
                 });
             }
             //small logos on each side of cards
             const logoContainerElements = el.querySelectorAll('.logo-container');
             logoContainerElements.forEach(logo => {
-                logo.style.top = '30px'; 
-                logo.style.left = '505px'; 
-                logo.style.width = '148px'; 
-                logo.style.height = '40px'; 
+                logo.style.top = '25.8px'; 
+                logo.style.left = '434px'; 
+                logo.style.width = '127px'; 
+                logo.style.height = '34.4px'; 
             });
             //small climatefresk logo should not appear on front page
             const logoSmallContainerElements = el.querySelectorAll('.logo-container-small');
@@ -90,29 +90,29 @@ export default {
             //front page
             const logoContainerElements = el.querySelectorAll('.logo-container-front');
             logoContainerElements.forEach(logo => {
-                logo.style.top = '172px';
-                logo.style.left = '78px';
-                logo.style.width = '498px';
-                logo.style.height = '210px'; 
+                logo.style.top = '148px';
+                logo.style.left = '67px';
+                logo.style.width = '428px';
+                logo.style.height = '180px'; 
             });
             const outlineContainerElements = el.querySelectorAll('.outline-container');
             outlineContainerElements.forEach(logo => {
-                logo.style.left = '228px';
-                logo.style.top = '347px';
+                logo.style.left = '196px';
+                logo.style.top = '300px';
             });
             if (print === 'false') { //if print is true, the position is defined in the logoDirective
             //last page
             const logoBigContainerElements = el.querySelectorAll('.logo-container-big');
                 logoBigContainerElements.forEach(logo => {
-                    logo.style.top = '322px';
-                    logo.style.left = '134px';
-                    logo.style.width = '237px';
-                    logo.style.height = '101px';
+                    logo.style.top = '277px';
+                    logo.style.left = '115px';
+                    logo.style.width = '204px';
+                    logo.style.height = '87px';
                 });
                 const outlineBackContainerElements = el.querySelectorAll('.outline-container-back');
                 outlineBackContainerElements.forEach(outline => {
-                    outline.style.top = '409px';
-                    outline.style.left = '203px';
+                    outline.style.top = '352px';
+                    outline.style.left = '175px';
                 });
             }
         }
@@ -126,29 +126,29 @@ export default {
             //front page
             const logoContainerElements = el.querySelectorAll('.logo-container-front');
             logoContainerElements.forEach(logo => {
-                logo.style.top = '175px';
-                logo.style.left = '72px';
-                logo.style.width = '529px';
-                logo.style.height = '200px';
+                logo.style.top = '151px';
+                logo.style.left = '62px';
+                logo.style.width = '455px';
+                logo.style.height = '172px';
             });
             const outlineContainerElements = el.querySelectorAll('.outline-container');
             outlineContainerElements.forEach(logo => {
-                logo.style.top = '317px';
-                logo.style.left = '210px';
-                logo.style.fontSize = '25px';
+                logo.style.top = '273px';
+                logo.style.left = '181px';
+                logo.style.fontSize = '21.5px';
             });
             if (print === 'false') { //if print is true, the position is defined in the logoDirective
             //last page
             const logoBigContainerElements = el.querySelectorAll('.logo-container-big');
                 logoBigContainerElements.forEach(logo => {
-                    logo.style.top = '327px';
-                    logo.style.left = '130px';
-                    logo.style.width = '260px'; 
+                    logo.style.top = '282px';
+                    logo.style.left = '111px';
+                    logo.style.width = '224px'; 
                 });
                 const outlineBackContainerElements = el.querySelectorAll('.outline-container-back');
                 outlineBackContainerElements.forEach(outline => {
-                    outline.style.top = '400px';
-                    outline.style.left = '193px'; 
+                    outline.style.top = '344px';
+                    outline.style.left = '166px'; 
                 });
             }
         }
@@ -162,28 +162,28 @@ export default {
             //front page
             const logoContainerElements = el.querySelectorAll('.logo-container-front');
             logoContainerElements.forEach(logo => {
-                logo.style.top = '175px';
-                logo.style.left = '72px';
-                logo.style.width = '529px';
-                logo.style.height = '177px';
+                logo.style.top = '151px';
+                logo.style.left = '62px';
+                logo.style.width = '455px';
+                logo.style.height = '152px';
             });
             const outlineContainerElements = el.querySelectorAll('.outline-container');
             outlineContainerElements.forEach(logo => {
-                logo.style.top = '317px';
-                logo.style.left = '210px';
-                logo.style.fontSize = '28px';
+                logo.style.top = '273px';
+                logo.style.left = '181px';
+                logo.style.fontSize = '24px';
             });
             if (print === 'false') { //if print is true, the position is defined in the logoDirective
                 //last page
                 const logoBigContainerElements = el.querySelectorAll('.logo-container-big');
                 logoBigContainerElements.forEach(logo => {
-                    logo.style.top = '328px';
-                    logo.style.height = '89px';
+                    logo.style.top = '282px';
+                    logo.style.height = '77px';
                 });
                 const outlineBackContainerElements = el.querySelectorAll('.outline-container-back');
                 outlineBackContainerElements.forEach(outline => {
-                    outline.style.top = '404px';
-                    outline.style.left = '218px'; 
+                    outline.style.top = '348px';
+                    outline.style.left = '188px'; 
                 });
             }
         }
@@ -192,12 +192,12 @@ export default {
             //small climatefresk logo should not appear on the front page
             const logoSmallContainerElements = el.querySelectorAll('.logo-container-small');
             logoSmallContainerElements.forEach(logo => {
-                logo.style.top = '110px';
+                logo.style.top = '95px';
             });
             //small climatefresk logo should not appear on the front page
             const logofrontSmallContainerElements = el.querySelectorAll('.logo-container-front-small');
             logofrontSmallContainerElements.forEach(logo => {
-                logo.style.top = '71px';
+                logo.style.top = '61px';
             });
         }
     },
