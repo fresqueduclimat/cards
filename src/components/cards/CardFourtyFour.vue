@@ -130,7 +130,7 @@ export default {
 .barcode {
     width: 100%;
     height: 100%;
-    background-image: url('@/assets/barcode/adults-es.png');
+    background-image: url('@/assets/barcode/adults-en.png');
     background-size: contain;
 }
 

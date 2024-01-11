@@ -255,7 +255,7 @@ export default {
 }
 
 .card15-label17-position {
-    top: 320px;
+    top: 315px;
     left: 242.5px;
     width: 154.2px;
     height: 44.7px;
