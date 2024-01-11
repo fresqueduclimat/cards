@@ -6,38 +6,38 @@ export default {
             // change top variable to reveal the barcode container
             const barcodeElements = el.querySelectorAll('.barcode-container');
                 barcodeElements.forEach(code => {
-                    code.style.top = '339px';
+                    code.style.top = '292px';
                 });
             if (currentLocale === 'en') {
                 const logocontainerElements = el.querySelectorAll('.logo-container-big');
                 logocontainerElements.forEach(logo => {
-                    logo.style.top = '322px';
-                    logo.style.left = '230px';
-                    logo.style.width = '237px';
-                    logo.style.height = '101px';
+                    logo.style.top = '277px';
+                    logo.style.left = '198px';
+                    logo.style.width = '204px';
+                    logo.style.height = '87px';
                 });
                 const outlineBackContainerElements = el.querySelectorAll('.outline-container-back');
                 outlineBackContainerElements.forEach(outline => {
-                    outline.style.top = '409px';
-                    outline.style.left = '299px';
+                    outline.style.top = '352px';
+                    outline.style.left = '257px';
                  });
             }
             if (currentLocale === 'fr') {
                 const logocontainerElements = el.querySelectorAll('.logo-container-big');
                 logocontainerElements.forEach(logo => {
-                    logo.style.top = '333px';
-                    logo.style.left = '232px';
-                    logo.style.width = '254px'; 
-                    logo.style.height = '74px';
+                    logo.style.top = '286px';
+                    logo.style.left = '200px';
+                    logo.style.width = '218px'; 
+                    logo.style.height = '58.6px';
                 });
                 const outlineBackContainerElements = el.querySelectorAll('.outline-container-back');
                 outlineBackContainerElements.forEach(outline => {
-                    outline.style.top = '399px';
-                    outline.style.left = '279px';
+                    outline.style.top = '342px';
+                    outline.style.left = '240px';
                 });
                 const recycledpaperElements = el.querySelectorAll('#card44-label7');
                 recycledpaperElements.forEach(text => {
-                    text.style.top = '432px';
+                    text.style.top = '374px';
                 });
             }
         
@@ -53,7 +53,7 @@ export default {
                 });
                 const recycledpaperElements = el.querySelectorAll('#card44-label7');
                 recycledpaperElements.forEach(text => {
-                    text.style.top = '432px';
+                    text.style.top = '371px';
                 });
             }
                 // add en logo & qr code 
@@ -61,15 +61,15 @@ export default {
                 // the logo should be on the right side to leave some space to barcode
                 const logoBigContainerElements = el.querySelectorAll('.logo-container-big');
                 logoBigContainerElements.forEach(logo => {
-                    logo.style.top = '322px';
-                    logo.style.left = '230px';
-                    logo.style.width = '237px';
-                    logo.style.height = '101px';
+                    logo.style.top = '277px';
+                    logo.style.left = '198px';
+                    logo.style.width = '204px';
+                    logo.style.height = '87px';
                 });
                 const outlineBackContainerElements = el.querySelectorAll('.outline-container-back');
                 outlineBackContainerElements.forEach(outline => {
-                    outline.style.top = '409px';
-                    outline.style.left = '299px';
+                    outline.style.top = '352px';
+                    outline.style.left = '257px';
                 });
                 const barcodeElements = el.querySelectorAll('.barcode');
                 barcodeElements.forEach(code => {
@@ -81,7 +81,7 @@ export default {
                 });
                 const recycledpaperElements = el.querySelectorAll('#card44-label7');
                 recycledpaperElements.forEach(text => {
-                    text.style.top = '432px';
+                    text.style.top = '372px';
                 });
             }
             // add es logo & qr code
@@ -89,14 +89,14 @@ export default {
                     // the logo should be on the right side to leave some space to barcode
                     const logoBigContainerElements = el.querySelectorAll('.logo-container-big');
                     logoBigContainerElements.forEach(logo => {
-                        logo.style.top = '327px';
-                        logo.style.left = '222px';
-                        logo.style.width = '260px'; 
+                        logo.style.top = '281px';
+                        logo.style.left = '190px';
+                        logo.style.width = '223px'; 
                     });
                     const outlineBackContainerElements = el.querySelectorAll('.outline-container-back');
                     outlineBackContainerElements.forEach(outline => {
-                        outline.style.top = '400px';
-                        outline.style.left = '281px'; 
+                        outline.style.top = '344px';
+                        outline.style.left = '242px'; 
                     });
                 // const barcodeElements = el.querySelectorAll('.barcode');
                 // barcodeElements.forEach(code => {
@@ -108,7 +108,7 @@ export default {
                 });
                 const recycledpaperElements = el.querySelectorAll('#card44-label7');
                 recycledpaperElements.forEach(text => {
-                    text.style.top = '432px'; 
+                    text.style.top = '372px'; 
                 });
             }
             // add de logo & qr code
@@ -116,15 +116,15 @@ export default {
                 // the logo should be on the right side to leave some space to barcode
                 const logoBigContainerElements = el.querySelectorAll('.logo-container-big');
                 logoBigContainerElements.forEach(logo => {
-                    logo.style.top = '326px';
-                    logo.style.left = '224px';
-                    logo.style.width = '261px'; 
-                    logo.style.height = '88px'; 
+                    logo.style.top = '280px';
+                    logo.style.left = '192px';
+                    logo.style.width = '224px'; 
+                    logo.style.height = '75.6px'; 
                 });
                 const outlineBackContainerElements = el.querySelectorAll('.outline-container-back');
                 outlineBackContainerElements.forEach(outline => {
-                    outline.style.top = '400px';
-                    outline.style.left = '292px'; 
+                    outline.style.top = '344px';
+                    outline.style.left = '251px'; 
                 });
                 const barcodeElements = el.querySelectorAll('.barcode');
                 barcodeElements.forEach(code => {
@@ -136,7 +136,7 @@ export default {
                 });
                 const recycledpaperElements = el.querySelectorAll('#card44-label7');
                 recycledpaperElements.forEach(text => {
-                    text.style.top = '432px'; 
+                    text.style.top = '372px'; 
                 });
             } 
     }      

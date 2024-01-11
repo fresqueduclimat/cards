@@ -54,148 +54,69 @@ export default {
 <!-- pour une résolution de 470x693 -->
 <style>
 .card12-label1-position {
-    top: 222px;
-    left: 236px;
-    width: 192px;
-    height: 37px;
-    font-size: 21px;
+    top: 191px;
+    left: 203px;
+    width: 165px;
+    height: 31.8px;
+    font-size: 18px;
     text-align: right;
 }
 
 .card12-label2-position {
-    top: 290px;
-    left: 238px;
-    width: 182px;
-    height: 35px;
-    font-size: 21px;
+    top: 249.4px;
+    left: 203px;
+    width: 165px;
+    height: 31.8px;
+    font-size: 18px;
     text-align: right;
 }
 
 .card12-label3-position {
-    top: 359px;
-    left: 238px;
-    width: 182px;
-    height: 35px;
-    font-size: 21px;
+    top: 308.7px;
+    left: 203px;
+    width: 165px;
+    height: 31.8px;
+    font-size: 18px;
     text-align: right;
 }
 
 .card12-label4-position {
-    top: 166px;
-    left: 90px;
-    width: 510px;
-    height: 35px;
+    top: 142.7px;
+    left: 77.4px;
+    width: 438.6px;
+    height: 30px;
     transform: rotate(-180deg);
 }
 
 .card12-label5-position {
-    top: 407px;
-    left: 272px;
-    width: 200px;
-    height: 20px;
-    transform: rotate(7deg);
+    top: 366px;
+    left: 359px;
+    width: 172px;
+    height: 17px;
     color: grey;
 }
 
 .card12-fixed-label1-position {
-    top: 213px;
-    left: 450px;
-    width: 109px;
-    height: 52px;
-    font-size: 30px;
+    top: 184px;
+    left: 387px;
+    width: 93.7px;
+    height: 44.7px;
+    font-size: 25.8px;
 }
 
 .card12-fixed-label2-position {
-    top: 280px;
-    left: 450px;
-    width: 109px;
-    height: 52px;
-    font-size: 30px;
+    top: 242px;
+    left: 387px;
+    width: 93.7px;
+    height: 44.7px;
+    font-size: 25.8px;
 }
 
 .card12-fixed-label3-position {
-    top: 345px;
-    left: 450px;
-    width: 109px;
-    height: 52px;
-    font-size: 30px;
+    top: 298px;
+    left: 387px;
+    width: 93.7px;
+    height: 44.7px;
+    font-size: 25.8px;
 }
 </style>
-
-<!-- <style>
-.card12-label1-position {
-    top: 1500px;
-    left: 1600px;
-    width: 1300px;
-    height: 250px;
-    font-size: 150px;
-    text-align : right;
-    /* border: solid red; */
-}
-
-.card12-label2-position {
-    top: 1950px;
-    left: 1600px;
-    width: 1300px;
-    height: 250px;
-    font-size: 150px;
-    text-align: right;
-    /* border: solid red; */
-}
-
-.card12-label3-position {
-    top: 2400px;
-    left: 1600px;
-    width: 1300px;
-    height: 250px;
-    font-size: 150px;
-    text-align: right;
-    /* border: solid red; */
-}
-
-.card12-label4-position {
-    top: 1100px;
-    left: 600px;
-    width: 3500px;
-    height: 250px;
-    transform : rotate(-180deg);
-    /* border: solid red; */
-}
-
-.card12-label5-position {
-    top: 2780px;
-    left: 2000px;
-    width: 1700px;
-    height: 200px;
-    transform: rotate(7deg);
-    color: grey;
-    /* border: red solid; */
-}
-
-.card12-fixed-label1-position {
-    top: 1440px;
-    left: 3033px;
-    width: 736px;
-    height: 350px;
-    font-size : 200px;
-}
-
-.card12-fixed-label2-position {
-    top: 1890px;
-    left: 3033px;
-    width: 736px;
-    height: 350px;
-    font-size : 200px;
-    /* border: red solid; */
-}
-
-.card12-fixed-label3-position {
-    top: 2330px;
-    left: 3033px;
-    width: 736px;
-    height: 350px;
-    font-size: 200px;
-    /* border: red solid; */
-}
-
-</style> -->

@@ -49,105 +49,51 @@ export default {
 <!-- pour une résolution de 470x693 -->
 <style>
 .card20-label1-position {
-    top: 200px;
-    left: 111px;
-    width: 119px;
-    height: 37px;
+    top: 172px;
+    left: 84.5px;
+    width: 120.4px;
+    height: 36px;
     /* border: solid red; */
 }
 
 .card20-label2-position {
-    top: 178px;
-    left: 237px;
-    width: 119px;
-    height: 37px;
+    top: 153px;
+    left: 203.8px;
+    width: 102px;
+    height: 26px;
     /* border: solid red; */
 }
 
 .card20-label3-position {
-    top: 163px;
-    left: 429px;
-    width: 119px;
-    height: 30px;
+    top: 140px;
+    left: 369px;
+    width: 102px;
+    height: 26px;
     /* border: solid red; */
 }
 
 .card20-label4-position {
-    top: 118px;
-    left: 535px;
-    width: 119px;
-    height: 30px;
+    top: 101.5px;
+    left: 460px;
+    width: 102px;
+    height: 26px;
     /* border: solid red; */
 }
 
 .card20-label5-position {
-    top: 306px;
-    left: 237px;
-    width: 119px;
-    height: 30px;
+    top: 263px;
+    left: 203.8px;
+    width: 102.3px;
+    height: 26px;
     transform: rotate(-24deg);
     /* border: solid red; */
 }
 
 .card20-label6-position {
-    top: 341px;
-    left: 535px;
-    width: 119px;
-    height: 30px;
+    top: 293px;
+    left: 460px;
+    width: 102.3px;
+    height: 26px;
     /* border: solid red; */
 }
 </style>
-
-
-
-<!-- pour une résolution de 3180x4680 -->
-<!-- <style>
-.card20-label1-position {
-    top: 1350px;
-    left: 750px;
-    width: 800px;
-    height: 250px;
-    /* border: solid red; */
-}
-
-.card20-label2-position {
-    top: 1200px;
-    left: 1600px;
-    width: 800px;
-    height: 250px;
-    /* border: solid red; */
-}
-
-.card20-label3-position {
-    top: 1100px;
-    left: 2900px;
-    width: 800px;
-    height: 200px;
-    /* border: solid red; */
-}
-
-.card20-label4-position {
-    top: 800px;
-    left: 3600px;
-    width: 800px;
-    height: 200px;
-    /* border: solid red; */
-}
-
-.card20-label5-position {
-    top: 2070px;
-    left: 1600px;
-    width: 800px;
-    height: 200px;
-    transform: rotate(-24deg);
-    /* border: solid red; */
-}
-
-.card20-label6-position {
-    top: 2300px;
-    left: 3600px;
-    width: 800px;
-    height: 200px;
-    /* border: solid red; */
-}
-</style> -->

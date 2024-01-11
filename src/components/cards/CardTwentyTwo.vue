@@ -44,96 +44,53 @@ export default {
 
 <style>
 .card22-label1-position {
-    top: 118px;
-    left: 44px;
-    width: 603px;
-    height: 44px;
+    top: 101.4px;
+    left: 37.8px;
+    width: 518.5px;
+    height: 37.8px;
     /* border: solid red; */
 }
 .card22-label2-position {
-    top: 175px;
-    left: 200px;
-    width: 185px;
-    height: 70px;
+    top: 150.5px;
+    left: 172px;
+    width: 159px;
+    height: 60.2px;
     /* border: solid red; */
 }
 .card22-label3-position {
-    top: 420px;
-    left: 300px;
-    width: 345px;
-    height: 30px;
+    top: 364px;
+    left: 258px;
+    width: 296.7px;
+    height: 20.8px;
     text-align: right;
     color:grey;
+    font-size: 13px;
     /* border: solid red 0.5px; */
 }
 .card22-fixed-label1-position {
-    top: 306px;
-    left: 132px;
-    width: 109px;
-    height: 44px;
+    top: 265px;
+    left: 113.5px;
+    width: 93.7px;
+    height: 37.8px;
     /* border: solid red; */
-    font-size : 27px;
+    font-size : 23.2px;
 }
 
 .card22-fixed-label2-position {
-    top: 226px;
-    left: 527px;
-    width: 109px;
-    height: 43px;
+    top: 197px;
+    left: 455px;
+    width: 94px;
+    height: 37px;
     /* border: solid red; */
-    font-size : 27px;
+    font-size : 23.2px;
 }
 
 .card22-fixed-label3-position {
-    top: 352px;
-    left: 527px;
-    width: 109px;
-    height: 43px;
+    top: 309.7px;
+    left: 456.2px;
+    width: 93.7px;
+    height: 25.8px;
     /* border: solid red; */
-    font-size: 27px;
+    font-size: 23.2px;
 }
 </style>
-
-<!-- <style>
-.card22-label1-position {
-    top: 800px;
-    left: 300px;
-    width: 4070px;
-    height: 300px;
-    /* border: solid red; */
-}
-.card22-label2-position {
-    top: 1170px;
-    left: 1300px;
-    width: 1357.2px;
-    height: 500px;
-    /* border: solid red; */
-}
-
-.card22-fixed-label1-position {
-    top: 2070px;
-    left: 895px;
-    width: 736px;
-    height: 300px;
-    /* border: solid red; */
-    font-size : 200px;
-}
-
-.card22-fixed-label2-position {
-    top: 1530px;
-    left: 3560px;
-    width: 735px;
-    height: 290px;
-    /* border: solid red; */
-    font-size : 200px;
-}
-
-.card22-fixed-label3-position {
-    top: 2380px;
-    left: 3560px;
-    width: 735px;
-    height: 290px;
-    /* border: solid red; */
-    font-size: 200px;
-}
-</style> -->

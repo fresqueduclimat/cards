@@ -16,37 +16,37 @@ export default {
         replacement = '<nobr>-1 W/m2</nobr>';
         el.innerHTML = el.innerHTML.replace(regex, replacement);
 
-        regex = /3,8 W[/]m²/g;
-        replacement = '<nobr>3,8 W/m²</nobr>';
-        el.innerHTML = el.innerHTML.replace(regex, replacement);
+        // regex = /3,8 W[/]m²/g;
+        // replacement = '<nobr>3,8 W/m²</nobr>';
+        // el.innerHTML = el.innerHTML.replace(regex, replacement);
 
-        regex = /3.8 W[/]m2/g;
-        replacement = '<nobr>3.8 W/m2</nobr>';
-        el.innerHTML = el.innerHTML.replace(regex, replacement);
+        // regex = /3.8 W[/]m2/g;
+        // replacement = '<nobr>3.8 W/m2</nobr>';
+        // el.innerHTML = el.innerHTML.replace(regex, replacement);
 
-        regex = /3.8 W[/]m²/g;
-        replacement = '<nobr>3.8 W/m²</nobr>';
-        el.innerHTML = el.innerHTML.replace(regex, replacement);
+        // regex = /3.8 W[/]m²/g;
+        // replacement = '<nobr>3.8 W/m²</nobr>';
+        // el.innerHTML = el.innerHTML.replace(regex, replacement);
 
-        regex = /3,8 W[/]m2/g;
-        replacement = '<nobr>3,8 W/m2</nobr>';
-        el.innerHTML = el.innerHTML.replace(regex, replacement);
+        // regex = /3,8 W[/]m2/g;
+        // replacement = '<nobr>3,8 W/m2</nobr>';
+        // el.innerHTML = el.innerHTML.replace(regex, replacement);
 
-        regex = /2,8 W[/]m²/g;
-        replacement = '<nobr>2,8 W/m²</nobr>';
-        el.innerHTML = el.innerHTML.replace(regex, replacement);
+        // regex = /2,8 W[/]m²/g;
+        // replacement = '<nobr>2,8 W/m²</nobr>';
+        // el.innerHTML = el.innerHTML.replace(regex, replacement);
 
-        regex = /2.8 W[/]m2/g;
-        replacement = '<nobr>2.8 W/m2</nobr>';
-        el.innerHTML = el.innerHTML.replace(regex, replacement);
+        // regex = /2.8 W[/]m2/g;
+        // replacement = '<nobr>2.8 W/m2</nobr>';
+        // el.innerHTML = el.innerHTML.replace(regex, replacement);
 
-        regex = /2.8 W[/]m²/g;
-        replacement = '<nobr>2.8 W/m²</nobr>';
-        el.innerHTML = el.innerHTML.replace(regex, replacement);
+        // regex = /2.8 W[/]m²/g;
+        // replacement = '<nobr>2.8 W/m²</nobr>';
+        // el.innerHTML = el.innerHTML.replace(regex, replacement);
 
-        regex = /2,8 W[/]m2/g;
-        replacement = '<nobr>2,8 W/m2</nobr>';
-        el.innerHTML = el.innerHTML.replace(regex, replacement);
+        // regex = /2,8 W[/]m2/g;
+        // replacement = '<nobr>2,8 W/m2</nobr>';
+        // el.innerHTML = el.innerHTML.replace(regex, replacement);
 
         regex = /7 m/g;
         replacement = '<nobr>7 m</nobr>';

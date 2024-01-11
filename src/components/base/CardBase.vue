@@ -89,15 +89,11 @@ export default {
 
 .title {
     position: absolute;
-    /* top: 178px;
-    left: 240px;
-    width: 4200px;
-    height: 570px; */
     /* border: solid red 0.5px; */
-    top: 25px;
-    left: 35px;
-    width: 622px;
-    height: 84px;
+    top: 21.5px;
+    left: 30.1px;
+    width: 535px;
+    height: 72.2px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -105,28 +101,24 @@ export default {
 }
 
 .content {
-    /* top: 900px;
-    left: 350px;
-    width: 4000px;
-    height: 1600px; */
     /* border: solid red 0.5px; */
-    top: 123px;
-    left: 40px;
-    width: 620px;
-    height: 265px;
+    top: 105.8px;
+    left: 34.4px;
+    width: 533.2px;
+    height: 228px;
 }
 
 .content p {
     /* font-size: 256px; */
-    font-size: 38px;
+    font-size: 33px;
 }
 
 /* default is en logo */
 .logo-container {
-    top: 18px;
-    left: 506px;
-    width: 143px;
-    height: 55px;
+    top: 16px;
+    left: 435px;
+    width: 123px;
+    height: 47px;
 }
 
 .logo {
@@ -141,166 +133,125 @@ export default {
 }
 
 .back-set-container {
-    /* top: 195px;
-    left: 180px;
-    width: 600px;
-    height: 620px; */
     /* border: solid red; */
-    top: 29px;
-    left: 27px;
-    width: 89px;
-    height: 92px;
+    top: 25px;
+    left: 23.2px;
+    width: 76.5px;
+    height: 82px;
 }
 
 .front-set-container {
-    /* top: 2410px;
-    left: 180px;
-    width: 600px;
-    height: 620px; */
     /* border: solid red; */
-    top: 356px;
-    left: 27px;
-    width: 85px;
-    height: 92px;
+    top: 306px;
+    left: 23.2px;
+    width: 73.1px;
+    height: 79px;
 }
 
 .first-rectangle {
     background-color: #A4E0E7;
     /* background-color: red; */
-    /* top: 50px;
-    left: 100px;
-    width: 380px;
-    height: 507px; */
-    top: 7px;
-    left: 15px;
-    width: 56px;
-    height: 75px;
-    border-radius: 10%;
+    top: 6px;
+    left: 13px;
+    width: 48.1px;
+    height: 64.5px;
+    border-radius: 8.6%;
     transform: rotate(10deg);
     z-index: 1; /* au fond */
 }
 
 .second-rectangle {
     background-color: #71CED0;
-    /* top: 50px;
-    left: 100px;
-    width: 380px;
-    height: 507px; */
-    top: 7px;
-    left: 15px;
-    width: 56px;
-    height: 75px;
-    border-radius: 10%;
+    top: 6px;
+    left: 13px;
+    width: 48.1px;
+    height: 64.5px;
+    border-radius: 8.6%;
     transform: rotate(-15deg);
     z-index: 2; /* milieu */
 }
 
 .third-rectangle {
     background-color: #00C6C1;
-    /* top: 65px;
-    left: 105px;
-    width: 380px;
-    height: 507px; */
-    top: 10px;
-    left: 16px;
-    width: 56px;
-    height: 75px;
-    border-radius: 10%;
+    top: 8.6px;
+    left: 13.8px;
+    width: 48px;
+    height: 64.5px;
+    border-radius: 8.6%;
     transform: rotate(-40deg);
     z-index: 3; /* devant */
 }
 
 .card-number {
     z-index: 4;
-    font-size: 40px;
+    font-size: 34px;
 }
 
 .set-one {
-    /* top: 2670px;
-    left: 225px;
-    width: 772px;
-    height: 560px; */
-    top: 395px;
-    left: 33px;
-    width: 115px;
-    height: 65px;
+    top: 340px;
+    left: 28px;
+    width: 99px;
+    height: 56px;
     background-color: red;
-    padding-top: 11px;
-    font-weight: 500;
-    font-size : 22px;
+    padding-top: 9.5px;
+    font-weight: 430;
+    font-size : 19px;
 }
 
 .set-two {
-    /* top: 2670px;
-    left: 1090px;
-    width: 772px;
-    height: 560px; */
-    top: 395px;
-    left: 161px;
-    width: 115px;
-    height: 65px;
+    top: 340.5px;
+    left: 138.5px;
+    width: 100px;
+    height: 56px;
     background-color: red;
-    padding-top: 11px;
-    font-weight: 500;
-    font-size : 22px;
+    padding-top: 9.5px;
+    font-weight: 430;
+    font-size : 19px;
 }
 
 .set-three {
-    /* top: 2670px;
-    left: 1690px;
-    width: 772px;
-    height: 560px; */
-    top: 396px;
-    left: 289px;
-    width: 115px;
-    height: 65px;
+    top: 340.5px;
+    left: 248.5px;
+    width: 100px;
+    height: 56px;
     background-color: red;
-    padding-top: 11px;
-    font-weight: 500;
-    font-size : 22px;
+    padding-top: 9.5px;
+    font-weight: 430;
+    font-size : 19px;
 }
 
 .set-four {
-    /* top: 2670px;
-    left: 2490px;
-    width: 772px;
-    height: 560px; */
-    top: 396px;
-    left: 417px;
-    width: 115px;
-    height: 65px;
+    top: 340.5px;
+    left: 358.6px;
+    width: 100px;
+    height: 56px;
     background-color: red;
-    padding-top: 15px;
-    font-weight: 500;
-    font-size : 22px;
+    padding-top: 9.5px;
+    font-weight: 430;
+    font-size : 19px;
 }
 
 .set-five {
-    /* top: 2670px;
-    left: 3090px;
-    width: 772px;
-    height: 560px; */
-    top: 394px;
-    left: 545px;
-    width: 115px;
-    height: 65px;
+    top: 340.5px;
+    left: 469px;
+    width: 100px;
+    height: 56px;
     background-color: red;
-    padding-top: 11px;
-    font-weight: 500;
-    font-size : 22px;
+    padding-top: 9.5px;
+    font-weight: 430;
+    font-size : 19px;
 }
 
 .set p {
-    /* font-size: 256px; */
-    font-size : 156px;
+    font-size : 134px;
 }
 
 .border-white {
-    border: solid white 1px;
+    border: solid white 0.8px;
 }
 
 .border-black {
-    border: solid black 1px;
+    border: solid black 0.8px;
 }
 
 .top-left-vertical {

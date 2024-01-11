@@ -37,41 +37,29 @@ export default {
 <!-- pour une résolution de 470x693 -->
 <style>
 .card19-label1-position {
-    top: 414px;
-    left: 67px;
-    width: 252px;
-    height: 30px;
+    top: 356px;
+    left: 57.6px;
+    width: 217px;
+    height: 25.8px;
     color : grey;
     /* border: solid red; */
 }
 
 .card19-fixed-label1-position {
-    top: 265px;
-    left: 174px;
-    width: 100px;
-    height: 50px;
-    font-size: 40px;
+    top: 228px;
+    left: 149.6px;
+    width: 86px;
+    height: 43px;
+    font-size: 34.4px;
     /* border: solid red; */
 }
 
 .card19-fixed-label2-position {
-    top: 357px;
-    left: 277px;
-    width: 100px;
-    height: 50px;
-    font-size: 40px;
+    top: 307px;
+    left: 238.2px;
+    width: 86px;
+    height: 43px;
+    font-size: 34.4px;
     /* border: solid red; */
 }
 </style>
-
-<!-- pour une résolution de 3180x4680 -->
-<!-- <style>
-.card19-label1-position {
-    top: 2800px;
-    left: 450px;
-    width: 1700px;
-    height: 200px;
-    color : grey;
-    /* border: solid red; */
-}
-</style> -->
