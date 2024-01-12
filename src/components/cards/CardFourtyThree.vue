@@ -44,15 +44,15 @@ export default {
 <!-- pour une résolution de 470x693 -->
 <style>
 .card43-label0-position {
-    top: 21.5px;
-    left: 30.1px;
-    width: 535px;
-    height: 72.2px;
+    top: calc(21.5px * var(--scale-factor));
+    left: calc(30.1px * var(--scale-factor));
+    width: calc(535px * var(--scale-factor));
+    height: calc(72.2px * var(--scale-factor));
     display: flex;
     justify-content: center;
     align-items: center;
     white-space: nowrap;
-    font-size: 60px;
+    font-size: calc(60px * var(--scale-factor));
     font-weight: 700;
     color: white;
 }
@@ -65,9 +65,9 @@ export default {
 }
 
 .qr-code-memo-container {
-    top: 264px;
-    left: 41.8px;
-    width: 111px;
-    height: 111px;
+    top: calc(264px * var(--scale-factor));
+    left: calc(41.8px * var(--scale-factor));
+    width: calc(111px * var(--scale-factor));
+    height: calc(111px * var(--scale-factor));
 }
 </style>

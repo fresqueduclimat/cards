@@ -89,11 +89,11 @@ export default {
 
 .title {
     position: absolute;
-    /* border: solid red 0.5px; */
-    top: 21.5px;
-    left: 30.1px;
-    width: 535px;
-    height: 72.2px;
+    /* border: solid red 0.5px * var(--scale-factor)); */
+    top: calc(21.5px * var(--scale-factor));
+    left: calc(30.1px * var(--scale-factor));
+    width: calc(535px * var(--scale-factor));
+    height: calc(72.2px * var(--scale-factor));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,24 +101,24 @@ export default {
 }
 
 .content {
-    /* border: solid red 0.5px; */
-    top: 105.8px;
-    left: 34.4px;
-    width: 533.2px;
-    height: 228px;
+    /* border: solid red 0.5px * var(--scale-factor)); */
+    top: calc(105.8px * var(--scale-factor));
+    left: calc(34.4px * var(--scale-factor));
+    width: calc(533.2px * var(--scale-factor));
+    height: calc(228px * var(--scale-factor));
 }
 
 .content p {
-    /* font-size: 256px; */
-    font-size: 33px;
+    /* font-size: calc(256px * var(--scale-factor)); */
+    font-size: calc(33px * var(--scale-factor));
 }
 
 /* default is en logo */
 .logo-container {
-    top: 16px;
-    left: 435px;
-    width: 123px;
-    height: 47px;
+    top: calc(16px * var(--scale-factor));
+    left: calc(435px * var(--scale-factor));
+    width: calc(123px * var(--scale-factor));
+    height: calc(47px * var(--scale-factor));
 }
 
 .logo {
@@ -129,32 +129,32 @@ export default {
 }
 
 .url {
-    font-size: 16.3px;
+    font-size: calc(16.3px * var(--scale-factor));
 }
 
 .back-set-container {
     /* border: solid red; */
-    top: 25px;
-    left: 23.2px;
-    width: 76.5px;
-    height: 82px;
+    top: calc(25px * var(--scale-factor));
+    left: calc(23.2px * var(--scale-factor));
+    width: calc(76.5px * var(--scale-factor));
+    height: calc(82px * var(--scale-factor));
 }
 
 .front-set-container {
     /* border: solid red; */
-    top: 306px;
-    left: 23.2px;
-    width: 73.1px;
-    height: 79px;
+    top: calc(306px * var(--scale-factor));
+    left: calc(23.2px * var(--scale-factor));
+    width: calc(73.1px * var(--scale-factor));
+    height: calc(79px * var(--scale-factor));
 }
 
 .first-rectangle {
     background-color: #A4E0E7;
     /* background-color: red; */
-    top: 6px;
-    left: 13px;
-    width: 48.1px;
-    height: 64.5px;
+    top: calc(6px * var(--scale-factor));
+    left: calc(13px * var(--scale-factor));
+    width: calc(48.1px * var(--scale-factor));
+    height: calc(64.5px * var(--scale-factor));
     border-radius: 8.6%;
     transform: rotate(10deg);
     z-index: 1; /* au fond */
@@ -162,10 +162,10 @@ export default {
 
 .second-rectangle {
     background-color: #71CED0;
-    top: 6px;
-    left: 13px;
-    width: 48.1px;
-    height: 64.5px;
+    top: calc(6px * var(--scale-factor));
+    left: calc(13px * var(--scale-factor));
+    width: calc(48.1px * var(--scale-factor));
+    height: calc(64.5px * var(--scale-factor));
     border-radius: 8.6%;
     transform: rotate(-15deg);
     z-index: 2; /* milieu */
@@ -173,10 +173,10 @@ export default {
 
 .third-rectangle {
     background-color: #00C6C1;
-    top: 8.6px;
-    left: 13.8px;
-    width: 48px;
-    height: 64.5px;
+    top: calc(8.6px * var(--scale-factor));
+    left: calc(13.8px * var(--scale-factor));
+    width: calc(48px * var(--scale-factor));
+    height: calc(64.5px * var(--scale-factor));
     border-radius: 8.6%;
     transform: rotate(-40deg);
     z-index: 3; /* devant */
@@ -184,66 +184,66 @@ export default {
 
 .card-number {
     z-index: 4;
-    font-size: 34px;
+    font-size: calc(34px * var(--scale-factor));
 }
 
 .set-one {
-    top: 340px;
-    left: 28px;
-    width: 99px;
-    height: 56px;
+    top: calc(340px * var(--scale-factor));
+    left: calc(28px * var(--scale-factor));
+    width: calc(99px * var(--scale-factor));
+    height: calc(56px * var(--scale-factor));
     background-color: red;
-    padding-top: 9.5px;
+    padding-top: calc(9.5px * var(--scale-factor));
     font-weight: 430;
-    font-size : 19px;
+    font-size: calc(19px * var(--scale-factor));
 }
 
 .set-two {
-    top: 340.5px;
-    left: 138.5px;
-    width: 100px;
-    height: 56px;
+    top: calc(340.5px * var(--scale-factor));
+    left: calc(138.5px * var(--scale-factor));
+    width: calc(100px * var(--scale-factor));
+    height: calc(56px * var(--scale-factor));
     background-color: red;
-    padding-top: 9.5px;
+    padding-top: calc(9.5px * var(--scale-factor));
     font-weight: 430;
-    font-size : 19px;
+    font-size: calc(19px * var(--scale-factor));
 }
 
 .set-three {
-    top: 340.5px;
-    left: 248.5px;
-    width: 100px;
-    height: 56px;
+    top: calc(340.5px * var(--scale-factor));
+    left: calc(248.5px * var(--scale-factor));
+    width: calc(100px * var(--scale-factor));
+    height: calc(56px * var(--scale-factor));
     background-color: red;
-    padding-top: 9.5px;
+    padding-top: calc(9.5px * var(--scale-factor));
     font-weight: 430;
-    font-size : 19px;
+    font-size: calc(19px * var(--scale-factor));
 }
 
 .set-four {
-    top: 340.5px;
-    left: 358.6px;
-    width: 100px;
-    height: 56px;
+    top: calc(340.5px * var(--scale-factor));
+    left: calc(358.6px * var(--scale-factor));
+    width: calc(100px * var(--scale-factor));
+    height: calc(56px * var(--scale-factor));
     background-color: red;
-    padding-top: 9.5px;
+    padding-top: calc(9.5px * var(--scale-factor));
     font-weight: 430;
-    font-size : 19px;
+    font-size: calc(19px * var(--scale-factor));
 }
 
 .set-five {
-    top: 340.5px;
-    left: 469px;
-    width: 100px;
-    height: 56px;
+    top: calc(340.5px * var(--scale-factor));
+    left: calc(469px * var(--scale-factor));
+    width: calc(100px * var(--scale-factor));
+    height: calc(56px * var(--scale-factor));
     background-color: red;
-    padding-top: 9.5px;
+    padding-top: calc(9.5px * var(--scale-factor));
     font-weight: 430;
-    font-size : 19px;
+    font-size: calc(19px * var(--scale-factor));
 }
 
 .set p {
-    font-size : 134px;
+    font-size: calc(134px * var(--scale-factor));
 }
 
 .border-white {
@@ -255,73 +255,43 @@ export default {
 }
 
 .top-left-vertical {
-    /* height : 90px;
-    top: -100px;
-    left: 95px; */
-    height : 10px;
-    top: -15px;
-    left: 14px;
+    height: calc(10px * var(--scale-factor));
+    top: calc(-15px * var(--scale-factor));
+    left: calc(14px * var(--scale-factor));
 }
 .top-left-horizontal {
-    /* width : 90px;
-    top: 35px;
-    left: -35px; */
-    width : 10px;
-    top: 5px;
-    left: -5px;
+    width: calc(10px * var(--scale-factor));
+    top: calc(5px * var(--scale-factor));
+    left: calc(-5px * var(--scale-factor));
 }
 .top-right-vertical {
-    /* height : 90px;
-    top: -100px;
-    left: 4580px; */
-    /* height : 10px;
-    top: -15px;
-    left: 679px; */
-    height : 5px;
-    top: -10px;
-    left: 680px;
+    height: calc(5px * var(--scale-factor));
+    top: calc(-10px * var(--scale-factor));
+    left: calc(680px * var(--scale-factor));
 }
 .top-right-horizontal {
-    /* width : 90px;
-    top: 35px;
-    left: 4620px; */
-    /* width : 10px; 
-    top : 5px;
-    left : 683px;*/
-    width : 5px; 
-    top: -1px;
-    left: 685px;
+    width: calc(5px * var(--scale-factor)); 
+    top: calc(-1px * var(--scale-factor));
+    left: calc(685px * var(--scale-factor));
 }
 .bottom-left-vertical {
-    /* height : 90px;
-    top: 3060px;
-    left: 95px; */
-    height : 10px;
-    top: 452px;
-    left: 14px;
+    height: calc(10px * var(--scale-factor));
+    top: calc(452px * var(--scale-factor));
+    left: calc(14px * var(--scale-factor));
 }
 .bottom-left-horizontal {
-    /* width : 90px;
-    top: 3025px;
-    left: -35px; */
-    width : 10px;
-    top: 446px;
-    left: -5px;
+    width: calc(10px * var(--scale-factor));
+    top: calc(446px * var(--scale-factor));
+    left: calc(-5px * var(--scale-factor));
 }
 .bottom-right-vertical {
-    /* height : 90px;
-    top: 3060px;
-    left: 4580px; */
-    height : 10px;
-    top: 453px;
-    left: 678px;
+    height: calc(10px * var(--scale-factor));
+    top: calc(453px * var(--scale-factor));
+    left: calc(678px * var(--scale-factor));
 }
 .bottom-right-horizontal {
-    /* width : 90px;
-    top: 3025px;
-    left: 4620px; */
-    width : 10px;
-    top: 446px;
-    left: 684px;
+    width: calc(10px * var(--scale-factor));
+    top: calc(446px * var(--scale-factor));
+    left: calc(684px * var(--scale-factor));
 }
 </style>

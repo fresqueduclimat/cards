@@ -44,53 +44,53 @@ export default {
 
 <style>
 .card22-label1-position {
-    top: 101.4px;
-    left: 37.8px;
-    width: 518.5px;
-    height: 37.8px;
+    top: calc(101.4px * var(--scale-factor));
+    left: calc(37.8px * var(--scale-factor));
+    width: calc(518.5px * var(--scale-factor));
+    height: calc(37.8px * var(--scale-factor));
     /* border: solid red; */
 }
 .card22-label2-position {
-    top: 150.5px;
-    left: 172px;
-    width: 159px;
-    height: 60.2px;
+    top: calc(150.5px * var(--scale-factor));
+    left: calc(172px * var(--scale-factor));
+    width: calc(159px * var(--scale-factor));
+    height: calc(60.2px * var(--scale-factor));
     /* border: solid red; */
 }
 .card22-label3-position {
-    top: 364px;
-    left: 258px;
-    width: 296.7px;
-    height: 20.8px;
+    top: calc(364px * var(--scale-factor));
+    left: calc(258px * var(--scale-factor));
+    width: calc(296.7px * var(--scale-factor));
+    height: calc(20.8px * var(--scale-factor));
     text-align: right;
     color:grey;
-    font-size: 13px;
-    /* border: solid red 0.5px; */
+    font-size: calc(13px * var(--scale-factor));
+    /* border: solid red 0.5px * var(--scale-factor)); */
 }
 .card22-fixed-label1-position {
-    top: 265px;
-    left: 113.5px;
-    width: 93.7px;
-    height: 37.8px;
+    top: calc(265px * var(--scale-factor));
+    left: calc(113.5px * var(--scale-factor));
+    width: calc(93.7px * var(--scale-factor));
+    height: calc(37.8px * var(--scale-factor));
     /* border: solid red; */
-    font-size : 23.2px;
+    font-size: calc(23.2px * var(--scale-factor));
 }
 
 .card22-fixed-label2-position {
-    top: 197px;
-    left: 455px;
-    width: 94px;
-    height: 37px;
+    top: calc(197px * var(--scale-factor));
+    left: calc(455px * var(--scale-factor));
+    width: calc(94px * var(--scale-factor));
+    height: calc(37px * var(--scale-factor));
     /* border: solid red; */
-    font-size : 23.2px;
+    font-size: calc(23.2px * var(--scale-factor));
 }
 
 .card22-fixed-label3-position {
-    top: 309.7px;
-    left: 456.2px;
-    width: 93.7px;
-    height: 25.8px;
+    top: calc(309.7px * var(--scale-factor));
+    left: calc(456.2px * var(--scale-factor));
+    width: calc(93.7px * var(--scale-factor));
+    height: calc(25.8px * var(--scale-factor));
     /* border: solid red; */
-    font-size: 23.2px;
+    font-size: calc(23.2px * var(--scale-factor));
 }
 </style>

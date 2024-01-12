@@ -1,55 +1,56 @@
 export default {
     beforeMount(el, binding) {
+        const scaleFactor = 0.720;
         const currentLocale = binding.instance?.$i18n?.locale;
         if (currentLocale === 'en') {
             const corpusElements = el.querySelectorAll('#card44-label1');
             corpusElements.forEach(text => {
-                text.style.top = '96px';
+                text.style.top = `${96 * scaleFactor}px`;
             });
         }
         if (currentLocale === 'de') {
             const corpusElements = el.querySelectorAll('#card44-label1');
             corpusElements.forEach(text => {
-                text.style.top = '90px';
+                text.style.top = `${90 * scaleFactor}px`;
             });
             const addressElements = el.querySelectorAll('#card44-label2');
             addressElements.forEach(text => {
-                text.style.top = '230px';
+                text.style.top = `${230 * scaleFactor}px`;
             });
             const addressngoElements = el.querySelectorAll('#card44-label3');
             addressngoElements.forEach(text => {
-                text.style.top = '230px';
+                text.style.top = `${230 * scaleFactor}px`;
             });
         }
         if (currentLocale === 'es') {
             const corpusElements = el.querySelectorAll('#card44-label1');
             corpusElements.forEach(text => {
-                text.style.top = '93px';
-                text.style.fontSize = '12px';
+                text.style.top = `${93 * scaleFactor}px`;
+                text.style.fontSize = `${12 * scaleFactor}px`;
             });
             const addressElements = el.querySelectorAll('#card44-label2');
             addressElements.forEach(text => {
-                text.style.width = '201px';
-                text.style.height = '57px';
-                text.style.fontSize = '12px';
+                text.style.width = `${201 * scaleFactor}px`;
+                text.style.height = `${57 * scaleFactor}px`;
+                text.style.fontSize = `${12 * scaleFactor}px`;
             });
             const addressngoElements = el.querySelectorAll('#card44-label3');
             addressngoElements.forEach(text => {
-                text.style.left = '228px';
-                text.style.width = '188px';
-                text.style.fontSize = '12px';
+                text.style.left = `${228 * scaleFactor}px`;
+                text.style.width = `${188 * scaleFactor}px`;
+                text.style.fontSize = `${12 * scaleFactor}px`;
             });
         }
         if (currentLocale === 'nl') {
             const corpusElements = el.querySelectorAll('#card44-label1');
             corpusElements.forEach(text => {
-                text.style.width = '382px';
-                text.style.height = '168px';
-                text.style.top = '86px';
+                text.style.width = `${382 * scaleFactor}px`;
+                text.style.height = `${168 * scaleFactor}px`;
+                text.style.top = `${86 * scaleFactor}px`;
             });
             const addressngoElements = el.querySelectorAll('#card44-label3');
             addressngoElements.forEach(text => {
-                text.style.width = '198px';
+                text.style.width = `${198 * scaleFactor}px`;
             });
         }
     },

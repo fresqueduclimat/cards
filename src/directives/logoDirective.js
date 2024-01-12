@@ -1,5 +1,6 @@
 export default {
     beforeMount(el, binding) {
+        const scaleFactor = 0.720;
         const currentLocale = binding.instance?.$i18n?.locale;
         const print = process.env.VUE_APP_PRINT;
         console.log(print)
@@ -19,55 +20,55 @@ export default {
             const urlElements = el.querySelectorAll('.url');
             urlElements.forEach(url => {
                 url.textContent = "fresqueduclimat.org";
-                url.style.fontSize = '14px';
+                url.style.fontSize = `${14 * scaleFactor}px`;
             });
             //front page
             const logofrontContainerElements = el.querySelectorAll('.logo-container-front');
             logofrontContainerElements.forEach(logo => {
-                logo.style.top = '155px';
-                logo.style.left = '62px';
-                logo.style.width = '461px';
-                logo.style.height = '128px';
+                logo.style.top = `${155 * scaleFactor}px`;
+                logo.style.left = `${62 * scaleFactor}px`;
+                logo.style.width = `${461 * scaleFactor}px`;
+                logo.style.height = `${128 * scaleFactor}px`;
             });
             const outlineContainerElements = el.querySelectorAll('.outline-container');
             outlineContainerElements.forEach(logo => {
-                logo.style.left = '170px';
-                logo.style.top = '268px';
-                logo.style.fontSize = '21.5px'
+                logo.style.left = `${170 * scaleFactor}px`;
+                logo.style.top = `${268 * scaleFactor}px`;
+                logo.style.fontSize = `${21.5 * scaleFactor}px`;
             });
             if (print === 'false') { //if print is true, the position is defined in the logoDirective
                 //last page
                 const logoBigContainerElements = el.querySelectorAll('.logo-container-big');
                 logoBigContainerElements.forEach(logo => {
-                    logo.style.top = '286px';
-                    logo.style.left = '106px';
-                    logo.style.width = '219px'; 
-                    logo.style.height = '64px';
+                    logo.style.top = `${286 * scaleFactor}px`;
+                    logo.style.left = `${106 * scaleFactor}px`;
+                    logo.style.width = `${219 * scaleFactor}px`; 
+                    logo.style.height = `${64 * scaleFactor}px`;
                 });
                 const outlineBackContainerElements = el.querySelectorAll('.outline-container-back');
                 outlineBackContainerElements.forEach(outline => {
-                    outline.style.top = '343px';
-                    outline.style.left = '156px'; 
-                    outline.style.fontSize = '11px';
+                    outline.style.top = `${343 * scaleFactor}px`;
+                    outline.style.left = `${156 * scaleFactor}px`; 
+                    outline.style.fontSize = `${11 * scaleFactor}px`;
                 });
             }
             //small logos on each side of cards
             const logoContainerElements = el.querySelectorAll('.logo-container');
             logoContainerElements.forEach(logo => {
-                logo.style.top = '25.8px'; 
-                logo.style.left = '434px'; 
-                logo.style.width = '127px'; 
-                logo.style.height = '34.4px'; 
+                logo.style.top = `${25.8 * scaleFactor}px`; 
+                logo.style.left = `${434 * scaleFactor}px`; 
+                logo.style.width = `${127 * scaleFactor}px`; 
+                logo.style.height = `${34.4 * scaleFactor}px`; 
             });
             //small climatefresk logo should not appear on front page
             const logoSmallContainerElements = el.querySelectorAll('.logo-container-small');
             logoSmallContainerElements.forEach(logo => {
-                logo.style.top = '1000px';
+                logo.style.top = `${1000 * scaleFactor}px`;
             });
             //small climatefresk logo should not appear on front page
             const logofrontSmallContainerElements = el.querySelectorAll('.logo-container-front-small');
             logofrontSmallContainerElements.forEach(logo => {
-                logo.style.top = '1000px';
+                logo.style.top = `${1000 * scaleFactor}px`;
             });
         }
 
@@ -80,39 +81,39 @@ export default {
             //small climatefresk logo should not appear
             const logoSmallContainerElements = el.querySelectorAll('.logo-container-small');
             logoSmallContainerElements.forEach(logo => {
-                logo.style.top = '1000px';
+                logo.style.top = `${1000 * scaleFactor}px`;
             });
             //small climatefresk logo should not appear
             const logofrontSmallContainerElements = el.querySelectorAll('.logo-container-front-small');
             logofrontSmallContainerElements.forEach(logo => {
-                logo.style.top = '1000px';
+                logo.style.top = `${1000 * scaleFactor}px`;
             });
             //front page
             const logoContainerElements = el.querySelectorAll('.logo-container-front');
             logoContainerElements.forEach(logo => {
-                logo.style.top = '148px';
-                logo.style.left = '67px';
-                logo.style.width = '428px';
-                logo.style.height = '180px'; 
+                logo.style.top = `${148 * scaleFactor}px`;
+                logo.style.left = `${67 * scaleFactor}px`;
+                logo.style.width = `${428 * scaleFactor}px`;
+                logo.style.height = `${180 * scaleFactor}px`; 
             });
             const outlineContainerElements = el.querySelectorAll('.outline-container');
             outlineContainerElements.forEach(logo => {
-                logo.style.left = '196px';
-                logo.style.top = '300px';
+                logo.style.left = `${196 * scaleFactor}px`;
+                logo.style.top = `${300 * scaleFactor}px`;
             });
             if (print === 'false') { //if print is true, the position is defined in the logoDirective
             //last page
             const logoBigContainerElements = el.querySelectorAll('.logo-container-big');
                 logoBigContainerElements.forEach(logo => {
-                    logo.style.top = '277px';
-                    logo.style.left = '115px';
-                    logo.style.width = '204px';
-                    logo.style.height = '87px';
+                    logo.style.top = `${277 * scaleFactor}px`;
+                    logo.style.left = `${115 * scaleFactor}px`;
+                    logo.style.width = `${204 * scaleFactor}px`;
+                    logo.style.height = `${87 * scaleFactor}px`;
                 });
                 const outlineBackContainerElements = el.querySelectorAll('.outline-container-back');
                 outlineBackContainerElements.forEach(outline => {
-                    outline.style.top = '352px';
-                    outline.style.left = '175px';
+                    outline.style.top = `${352 * scaleFactor}px`;
+                    outline.style.left = `${175 * scaleFactor}px`;
                 });
             }
         }
@@ -126,29 +127,29 @@ export default {
             //front page
             const logoContainerElements = el.querySelectorAll('.logo-container-front');
             logoContainerElements.forEach(logo => {
-                logo.style.top = '151px';
-                logo.style.left = '62px';
-                logo.style.width = '455px';
-                logo.style.height = '172px';
+                logo.style.top = `${151 * scaleFactor}px`;
+                logo.style.left = `${62 * scaleFactor}px`;
+                logo.style.width = `${455 * scaleFactor}px`;
+                logo.style.height = `${172 * scaleFactor}px`;
             });
             const outlineContainerElements = el.querySelectorAll('.outline-container');
             outlineContainerElements.forEach(logo => {
-                logo.style.top = '273px';
-                logo.style.left = '181px';
-                logo.style.fontSize = '21.5px';
+                logo.style.top = `${273 * scaleFactor}px`;
+                logo.style.left = `${181 * scaleFactor}px`;
+                logo.style.fontSize = `${21.5 * scaleFactor}px`;
             });
             if (print === 'false') { //if print is true, the position is defined in the logoDirective
             //last page
             const logoBigContainerElements = el.querySelectorAll('.logo-container-big');
                 logoBigContainerElements.forEach(logo => {
-                    logo.style.top = '282px';
-                    logo.style.left = '111px';
-                    logo.style.width = '224px'; 
+                    logo.style.top = `${282 * scaleFactor}px`;
+                    logo.style.left = `${111 * scaleFactor}px`;
+                    logo.style.width = `${224 * scaleFactor}px`; 
                 });
                 const outlineBackContainerElements = el.querySelectorAll('.outline-container-back');
                 outlineBackContainerElements.forEach(outline => {
-                    outline.style.top = '344px';
-                    outline.style.left = '166px'; 
+                    outline.style.top = `${344 * scaleFactor}px`;
+                    outline.style.left = `${166 * scaleFactor}px`; 
                 });
             }
         }
@@ -162,28 +163,28 @@ export default {
             //front page
             const logoContainerElements = el.querySelectorAll('.logo-container-front');
             logoContainerElements.forEach(logo => {
-                logo.style.top = '151px';
-                logo.style.left = '62px';
-                logo.style.width = '455px';
-                logo.style.height = '152px';
+                logo.style.top = `${151 * scaleFactor}px`;
+                logo.style.left = `${62 * scaleFactor}px`;
+                logo.style.width = `${455 * scaleFactor}px`;
+                logo.style.height = `${152 * scaleFactor}px`;
             });
             const outlineContainerElements = el.querySelectorAll('.outline-container');
             outlineContainerElements.forEach(logo => {
-                logo.style.top = '273px';
-                logo.style.left = '181px';
-                logo.style.fontSize = '24px';
+                logo.style.top = `${273 * scaleFactor}px`;
+                logo.style.left = `${181 * scaleFactor}px`;
+                logo.style.fontSize = `${24 * scaleFactor}px`;
             });
             if (print === 'false') { //if print is true, the position is defined in the logoDirective
                 //last page
                 const logoBigContainerElements = el.querySelectorAll('.logo-container-big');
                 logoBigContainerElements.forEach(logo => {
-                    logo.style.top = '282px';
-                    logo.style.height = '77px';
+                    logo.style.top = `${282 * scaleFactor}px`;
+                    logo.style.height = `${77 * scaleFactor}px`;
                 });
                 const outlineBackContainerElements = el.querySelectorAll('.outline-container-back');
                 outlineBackContainerElements.forEach(outline => {
-                    outline.style.top = '348px';
-                    outline.style.left = '188px'; 
+                    outline.style.top = `${348 * scaleFactor}px`;
+                    outline.style.left = `${188 * scaleFactor}px`; 
                 });
             }
         }
@@ -192,12 +193,12 @@ export default {
             //small climatefresk logo should not appear on the front page
             const logoSmallContainerElements = el.querySelectorAll('.logo-container-small');
             logoSmallContainerElements.forEach(logo => {
-                logo.style.top = '95px';
+                logo.style.top = `${95 * scaleFactor}px`;
             });
             //small climatefresk logo should not appear on the front page
             const logofrontSmallContainerElements = el.querySelectorAll('.logo-container-front-small');
             logofrontSmallContainerElements.forEach(logo => {
-                logo.style.top = '61px';
+                logo.style.top = `${61 * scaleFactor}px`;
             });
         }
     },

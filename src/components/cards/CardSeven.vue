@@ -44,22 +44,22 @@ export default {
 }
 
 .card7-label2-position {
-    top: 261.4px;
-    left: 216.7px;
-    width: 187.5px;
-    height: 31.8px;
+    top: calc(261.4px * var(--scale-factor));
+    left: calc(216.7px * var(--scale-factor));
+    width: calc(187.5px * var(--scale-factor));
+    height: calc(31.8px * var(--scale-factor));
     text-align: left;
-    font-size: 17px;
+    font-size: calc(17px * var(--scale-factor));
     /* border: solid red; */
 }
 
 .card7-label3-position {
-    top: 325px;
-    left: 215.8px;
-    width: 127.3px;
-    height: 31.8px;
+    top: calc(325px * var(--scale-factor));
+    left: calc(215.8px * var(--scale-factor));
+    width: calc(127.3px * var(--scale-factor));
+    height: calc(31.8px * var(--scale-factor));
     text-align: left;
-    font-size: 17px;
+    font-size: calc(17px * var(--scale-factor));
     /* border: solid red; */
 }
 </style>

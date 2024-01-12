@@ -49,51 +49,51 @@ export default {
 <!-- pour une résolution de 470x693 -->
 <style>
 .card20-label1-position {
-    top: 172px;
-    left: 84.5px;
-    width: 120.4px;
-    height: 36px;
+    top: calc(172px * var(--scale-factor));
+    left: calc(84.5px * var(--scale-factor));
+    width: calc(120.4px * var(--scale-factor));
+    height: calc(36px * var(--scale-factor));
     /* border: solid red; */
 }
 
 .card20-label2-position {
-    top: 153px;
-    left: 203.8px;
-    width: 102px;
-    height: 26px;
+    top: calc(153px * var(--scale-factor));
+    left: calc(203.8px * var(--scale-factor));
+    width: calc(102px * var(--scale-factor));
+    height: calc(26px * var(--scale-factor));
     /* border: solid red; */
 }
 
 .card20-label3-position {
-    top: 140px;
-    left: 369px;
-    width: 102px;
-    height: 26px;
+    top: calc(140px * var(--scale-factor));
+    left: calc(369px * var(--scale-factor));
+    width: calc(102px * var(--scale-factor));
+    height: calc(26px * var(--scale-factor));
     /* border: solid red; */
 }
 
 .card20-label4-position {
-    top: 101.5px;
-    left: 460px;
-    width: 102px;
-    height: 26px;
+    top: calc(101.5px * var(--scale-factor));
+    left: calc(460px * var(--scale-factor));
+    width: calc(102px * var(--scale-factor));
+    height: calc(26px * var(--scale-factor));
     /* border: solid red; */
 }
 
 .card20-label5-position {
-    top: 263px;
-    left: 203.8px;
-    width: 102.3px;
-    height: 26px;
+    top: calc(263px * var(--scale-factor));
+    left: calc(203.8px * var(--scale-factor));
+    width: calc(102.3px * var(--scale-factor));
+    height: calc(26px * var(--scale-factor));
     transform: rotate(-24deg);
     /* border: solid red; */
 }
 
 .card20-label6-position {
-    top: 293px;
-    left: 460px;
-    width: 102.3px;
-    height: 26px;
+    top: calc(293px * var(--scale-factor));
+    left: calc(460px * var(--scale-factor));
+    width: calc(102.3px * var(--scale-factor));
+    height: calc(26px * var(--scale-factor));
     /* border: solid red; */
 }
 </style>

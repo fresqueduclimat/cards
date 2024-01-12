@@ -85,17 +85,17 @@ export default {
 <style>
 /* default is en logo, without barcode (website format) */
 .logo-container-big {
-    top: 270px;
-    left: 133px;
-    width: 230px;
-    height: 87px;
+    top: calc(270px * var(--scale-factor));
+    left: calc(133px * var(--scale-factor));
+    width: calc(230px * var(--scale-factor));
+    height: calc(87px * var(--scale-factor));
 }
 
 .logo-container-small {
-    top: 1000px; /* appears if defined in logoDirective.js*/
-    left: 432.5px;
-    width: 116px;
-    height: 47px;
+    top: calc(1000px * var(--scale-factor)); /* appears if defined in logoDirective.js*/
+    left: calc(432.5px * var(--scale-factor));
+    width: calc(116px * var(--scale-factor));
+    height: calc(47px * var(--scale-factor));
 }
 
 .logo {
@@ -121,24 +121,24 @@ export default {
 }
 
 .qr-code-siteweb-container {
-    top: 209px;
-    left: 435px;
-    width: 111px;
-    height: 111px;
+    top: calc(209px * var(--scale-factor));
+    left: calc(435px * var(--scale-factor));
+    width: calc(111px * var(--scale-factor));
+    height: calc(111px * var(--scale-factor));
 }
 
 .barcode {
     width: 100%;
     height: 100%;
-    background-image: url('@/assets/barcode/adults-en.png');
+    background-image: url('@/assets/barcode/adults-en-mini.png');
     background-size: contain;
 }
 
 .barcode-container {
-    top: 500px; /*does not show unless print is true and element position are modified in printDirective.js*/
-    left: 53px;
-    width: 138.4px;
-    height: 61px;
+    top: calc(500px * var(--scale-factor)); /*does not show unless print is true and element position are modified in printDirective.js*/
+    left: calc(53px * var(--scale-factor));
+    width: calc(138.4px * var(--scale-factor));
+    height: calc(61px * var(--scale-factor));
 } 
 
 .cc {
@@ -149,93 +149,93 @@ export default {
 }
 
 .cc-container {
-    top: 46px;
-    left: 431.7px;
-    width: 119.5px;
-    height: 42px;
+    top: calc(46px * var(--scale-factor));
+    left: calc(431.7px * var(--scale-factor));
+    width: calc(119.5px * var(--scale-factor));
+    height: calc(42px * var(--scale-factor));
 }
 
 .card44-label0-position {
-    top: 46px;
-    left: 44.7px;
-    width: 378px;
-    height: 44.7px;
+    top: calc(46px * var(--scale-factor));
+    left: calc(44.7px * var(--scale-factor));
+    width: calc(378px * var(--scale-factor));
+    height: calc(44.7px * var(--scale-factor));
     font-weight: 900;
     text-align: left;
     /* border: red solid; */
 }
 
 .card44-label1-position {
-    top: 86px;
-    left: 44.7px;
-    width: 383.5px;
-    height: 135px;
+    top: calc(86px * var(--scale-factor));
+    left: calc(44.7px * var(--scale-factor));
+    width: calc(383.5px * var(--scale-factor));
+    height: calc(135px * var(--scale-factor));
     text-align: left;
-    font-size: 11px;
-    /* border: red solid 0.2px; */
+    font-size: calc(11px * var(--scale-factor));
+    /* border: red solid 0.2px * var(--scale-factor)); */
 }
 
 .card44-label2-position {
-    top: 229px;
-    left: 44.7px;
-    width: 165px;
-    height: 51.6px;
+    top: calc(229px * var(--scale-factor));
+    left: calc(44.7px * var(--scale-factor));
+    width: calc(165px * var(--scale-factor));
+    height: calc(51.6px * var(--scale-factor));
     text-align: left;
-    font-size: 11px;
-    /* border: red solid 0.2px; */
+    font-size: calc(11px * var(--scale-factor));
+    /* border: red solid 0.2px * var(--scale-factor)); */
 }
 
 .card44-label3-position {
-    top: 229px;
-    left: 228px;
-    width: 172px;
-    height: 43px;
+    top: calc(229px * var(--scale-factor));
+    left: calc(228px * var(--scale-factor));
+    width: calc(172px * var(--scale-factor));
+    height: calc(43px * var(--scale-factor));
     text-align: left;
-    font-size: 11px;
-    /* border: red solid 0.2px; */
+    font-size: calc(11px * var(--scale-factor));
+    /* border: red solid 0.2px * var(--scale-factor)); */
 }
 
 .card44-label4-position {
-    top: 325px;
-    left: 432px;
-    width: 119.5px;
-    height: 37.8px;
-    font-size: 13px;
+    top: calc(325px * var(--scale-factor));
+    left: calc(432px * var(--scale-factor));
+    width: calc(119.5px * var(--scale-factor));
+    height: calc(37.8px * var(--scale-factor));
+    font-size: calc(13px * var(--scale-factor));
     /* border: red solid; */
 }
 
 /* .card44-label5-position {
-    top : 174px;
-    left: 502px;
-    width: 139px;
-    height: 34px;
+    top : 174px * var(--scale-factor));
+    left: calc(502px * var(--scale-factor));
+    width: calc(139px * var(--scale-factor));
+    height: calc(34px * var(--scale-factor));
     border: red solid;
 }
 
 .card44-label6-position {
-    top : 209px;
-    left: 502px;
-    width: 139px;
-    height: 34px;
+    top : 209px * var(--scale-factor));
+    left: calc(502px * var(--scale-factor));
+    width: calc(139px * var(--scale-factor));
+    height: calc(34px * var(--scale-factor));
     border: red solid;
 }  */
 
 .card44-label7-position {
-    top: 516px; /* print=true, cf.printDirective */
-    left: 37px;
-    width: 520px;
-    height: 17px;
-    font-size : 11px;
+    top: calc(516px * var(--scale-factor)); /* print=true, cf.printDirective */
+    left: calc(37px * var(--scale-factor));
+    width: calc(520px * var(--scale-factor));
+    height: calc(17px * var(--scale-factor));
+    font-size: calc(11px * var(--scale-factor));
 }
 
 /* default is en logo without barcode (website version) */
 .outline-container-back {
-    top: 351.7px;
-    left: 174.6px;
-    width: 206px;
-    height: 17px;
-    font-size: 11px;
+    top: calc(351.7px * var(--scale-factor));
+    left: calc(174.6px * var(--scale-factor));
+    width: calc(206px * var(--scale-factor));
+    height: calc(17px * var(--scale-factor));
+    font-size: calc(11px * var(--scale-factor));
     text-align: left;
-    /* border: red solid 0.5px; */
+    /* border: red solid 0.5px * var(--scale-factor)); */
 }
 </style>
