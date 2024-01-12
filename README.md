@@ -128,10 +128,10 @@ Il faut positionner et déterminer une taille pour chacune de ces divs selon la 
 Par exemple pour le premier texte de la carte 5 :
 ```
 .card5-label1-position {
-    top: 954px;
-    left: 1216.8px;
-    width: 1357.2px;
-    height: 254.4px;
+    top: calc(954px * var(--scale-factor));
+    left: calc(1216.8px * var(--scale-factor));
+    width: calc(1357.2px * var(--scale-factor));
+    height: calc(254.4px * var(--scale-factor));
 }
 ```
 

@@ -37,29 +37,29 @@ export default {
 <!-- pour une résolution de 470x693 -->
 <style>
 .card19-label1-position {
-    top: 356px;
-    left: 57.6px;
-    width: 217px;
-    height: 25.8px;
+    top: calc(356px * var(--scale-factor));
+    left: calc(57.6px * var(--scale-factor));
+    width: calc(217px * var(--scale-factor));
+    height: calc(25.8px * var(--scale-factor));
     color : grey;
     /* border: solid red; */
 }
 
 .card19-fixed-label1-position {
-    top: 228px;
-    left: 149.6px;
-    width: 86px;
-    height: 43px;
-    font-size: 34.4px;
+    top: calc(228px * var(--scale-factor));
+    left: calc(149.6px * var(--scale-factor));
+    width: calc(86px * var(--scale-factor));
+    height: calc(43px * var(--scale-factor));
+    font-size: calc(34.4px * var(--scale-factor));
     /* border: solid red; */
 }
 
 .card19-fixed-label2-position {
-    top: 307px;
-    left: 238.2px;
-    width: 86px;
-    height: 43px;
-    font-size: 34.4px;
+    top: calc(307px * var(--scale-factor));
+    left: calc(238.2px * var(--scale-factor));
+    width: calc(86px * var(--scale-factor));
+    height: calc(43px * var(--scale-factor));
+    font-size: calc(34.4px * var(--scale-factor));
     /* border: solid red; */
 }
 </style>

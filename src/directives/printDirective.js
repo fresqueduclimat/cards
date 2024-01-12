@@ -1,43 +1,44 @@
 export default {
     beforeMount(el, binding) {
+        const scaleFactor = 0.720;
         const currentLocale = binding.instance?.$i18n?.locale;
         const print = process.env.VUE_APP_PRINT;
         if (print === 'true') {
             // change top variable to reveal the barcode container
             const barcodeElements = el.querySelectorAll('.barcode-container');
                 barcodeElements.forEach(code => {
-                    code.style.top = '292px';
+                    code.style.top = `${292 * scaleFactor}px`;
                 });
             if (currentLocale === 'en') {
                 const logocontainerElements = el.querySelectorAll('.logo-container-big');
                 logocontainerElements.forEach(logo => {
-                    logo.style.top = '277px';
-                    logo.style.left = '198px';
-                    logo.style.width = '204px';
-                    logo.style.height = '87px';
+                    logo.style.top = `${277 * scaleFactor}px`;
+                    logo.style.left = `${198 * scaleFactor}px`;
+                    logo.style.width = `${204 * scaleFactor}px`;
+                    logo.style.height = `${87 * scaleFactor}px`;
                 });
                 const outlineBackContainerElements = el.querySelectorAll('.outline-container-back');
                 outlineBackContainerElements.forEach(outline => {
-                    outline.style.top = '352px';
-                    outline.style.left = '257px';
+                    outline.style.top = `${352 * scaleFactor}px`;
+                    outline.style.left = `${257 * scaleFactor}px`;
                  });
             }
             if (currentLocale === 'fr') {
                 const logocontainerElements = el.querySelectorAll('.logo-container-big');
                 logocontainerElements.forEach(logo => {
-                    logo.style.top = '286px';
-                    logo.style.left = '200px';
-                    logo.style.width = '218px'; 
-                    logo.style.height = '58.6px';
+                    logo.style.top = `${286 * scaleFactor}px`;
+                    logo.style.left = `${200 * scaleFactor}px`;
+                    logo.style.width = `${218 * scaleFactor}px`; 
+                    logo.style.height = `${58.6 * scaleFactor}px`;
                 });
                 const outlineBackContainerElements = el.querySelectorAll('.outline-container-back');
                 outlineBackContainerElements.forEach(outline => {
-                    outline.style.top = '342px';
-                    outline.style.left = '240px';
+                    outline.style.top = `${342 * scaleFactor}px`;
+                    outline.style.left = `${240 * scaleFactor}px`;
                 });
                 const recycledpaperElements = el.querySelectorAll('#card44-label7');
                 recycledpaperElements.forEach(text => {
-                    text.style.top = '374px';
+                    text.style.top = `${374 * scaleFactor}px`;
                 });
             }
         
@@ -53,7 +54,7 @@ export default {
                 });
                 const recycledpaperElements = el.querySelectorAll('#card44-label7');
                 recycledpaperElements.forEach(text => {
-                    text.style.top = '371px';
+                    text.style.top = `${371 * scaleFactor}px`;
                 });
             }
                 // add en logo & qr code 
@@ -61,15 +62,15 @@ export default {
                 // the logo should be on the right side to leave some space to barcode
                 const logoBigContainerElements = el.querySelectorAll('.logo-container-big');
                 logoBigContainerElements.forEach(logo => {
-                    logo.style.top = '277px';
-                    logo.style.left = '198px';
-                    logo.style.width = '204px';
-                    logo.style.height = '87px';
+                    logo.style.top = `${277 * scaleFactor}px`;
+                    logo.style.left = `${198 * scaleFactor}px`;
+                    logo.style.width = `${204 * scaleFactor}px`;
+                    logo.style.height = `${87 * scaleFactor}px`;
                 });
                 const outlineBackContainerElements = el.querySelectorAll('.outline-container-back');
                 outlineBackContainerElements.forEach(outline => {
-                    outline.style.top = '352px';
-                    outline.style.left = '257px';
+                    outline.style.top = `${352 * scaleFactor}px`;
+                    outline.style.left = `${257 * scaleFactor}px`;
                 });
                 const barcodeElements = el.querySelectorAll('.barcode');
                 barcodeElements.forEach(code => {
@@ -81,7 +82,7 @@ export default {
                 });
                 const recycledpaperElements = el.querySelectorAll('#card44-label7');
                 recycledpaperElements.forEach(text => {
-                    text.style.top = '372px';
+                    text.style.top = `${372 * scaleFactor}px`;
                 });
             }
             // add es logo & qr code
@@ -89,14 +90,14 @@ export default {
                     // the logo should be on the right side to leave some space to barcode
                     const logoBigContainerElements = el.querySelectorAll('.logo-container-big');
                     logoBigContainerElements.forEach(logo => {
-                        logo.style.top = '281px';
-                        logo.style.left = '190px';
-                        logo.style.width = '223px'; 
+                        logo.style.top = `${281 * scaleFactor}px`;
+                        logo.style.left = `${190 * scaleFactor}px`;
+                        logo.style.width = `${223 * scaleFactor}px`; 
                     });
                     const outlineBackContainerElements = el.querySelectorAll('.outline-container-back');
                     outlineBackContainerElements.forEach(outline => {
-                        outline.style.top = '344px';
-                        outline.style.left = '242px'; 
+                        outline.style.top = `${344 * scaleFactor}px`;
+                        outline.style.left = `${242 * scaleFactor}px`; 
                     });
                 // const barcodeElements = el.querySelectorAll('.barcode');
                 // barcodeElements.forEach(code => {
@@ -108,7 +109,7 @@ export default {
                 });
                 const recycledpaperElements = el.querySelectorAll('#card44-label7');
                 recycledpaperElements.forEach(text => {
-                    text.style.top = '372px'; 
+                    text.style.top = `${372 * scaleFactor}px`; 
                 });
             }
             // add de logo & qr code
@@ -116,15 +117,15 @@ export default {
                 // the logo should be on the right side to leave some space to barcode
                 const logoBigContainerElements = el.querySelectorAll('.logo-container-big');
                 logoBigContainerElements.forEach(logo => {
-                    logo.style.top = '280px';
-                    logo.style.left = '192px';
-                    logo.style.width = '224px'; 
-                    logo.style.height = '75.6px'; 
+                    logo.style.top = `${280 * scaleFactor}px`;
+                    logo.style.left = `${192 * scaleFactor}px`;
+                    logo.style.width = `${224 * scaleFactor}px`; 
+                    logo.style.height = `${75.6 * scaleFactor}px`; 
                 });
                 const outlineBackContainerElements = el.querySelectorAll('.outline-container-back');
                 outlineBackContainerElements.forEach(outline => {
-                    outline.style.top = '344px';
-                    outline.style.left = '251px'; 
+                    outline.style.top = `${344 * scaleFactor}px`;
+                    outline.style.left = `${251 * scaleFactor}px`; 
                 });
                 const barcodeElements = el.querySelectorAll('.barcode');
                 barcodeElements.forEach(code => {
@@ -136,7 +137,7 @@ export default {
                 });
                 const recycledpaperElements = el.querySelectorAll('#card44-label7');
                 recycledpaperElements.forEach(text => {
-                    text.style.top = '372px'; 
+                    text.style.top = `${372 * scaleFactor}px`; 
                 });
             } 
     }      

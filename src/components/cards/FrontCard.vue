@@ -65,60 +65,60 @@ export default {
 <!-- pour une résolution de 470x693 -->
 <style>
 .front-card-label0-position {
-    top: 61px; 
-    left: 82.5px;  /* B' = 580 * 693 / 4680 = 86.03 (arrondi à 96) */
-    width: 209px; /* C' = 1300 * 693 / 4680 = 192.64 (arrondi à 153) */
-    height: 44.7px; /* D' = 350 * 470 / 3180 = 51.77 (arrondi à 52) */
-    font-size: 34.4px;
+    top: calc(61px * var(--scale-factor)); 
+    left: calc(82.5px * var(--scale-factor));  /* B' = 580 * 693 / 4680 = 86.03 (arrondi à 96) */
+    width: calc(209px * var(--scale-factor)); /* C' = 1300 * 693 / 4680 = 192.64 (arrondi à 153) */
+    height: calc(44.7px * var(--scale-factor)); /* D' = 350 * 470 / 3180 = 51.77 (arrondi à 52) */
+    font-size: calc(34.4px * var(--scale-factor));
     text-align: left;
-    /* border : solid red 0.5px; */
+    /* border : solid red 0.5px * var(--scale-factor)); */
 }
 
 .front-card-label1-position {
-    top: 104px;
-    left: 82.5px;
-    height: 44.7px;
-    font-size: 25.8px;
+    top: calc(104px * var(--scale-factor));
+    left: calc(82.5px * var(--scale-factor));
+    height: calc(44.7px * var(--scale-factor));
+    font-size: calc(25.8px * var(--scale-factor));
     text-align: left;
-    /* border : solid red 0.5px; */
+    /* border : solid red 0.5px * var(--scale-factor)); */
 }
 
 .front-card-label2-position {
-    top: 196px;
-    left: 404px;
-    width: 333px;
-    height: 17px;
-    font-size: 12px;
-    font-size: 12px;
+    top: calc(196px * var(--scale-factor));
+    left: calc(404px * var(--scale-factor));
+    width: calc(333px * var(--scale-factor));
+    height: calc(17px * var(--scale-factor));
+    font-size: calc(12px * var(--scale-factor));
+    font-size: calc(12px * var(--scale-factor));
     transform: rotate(-90deg);
     font-weight: 500;
-    /* border : solid red 0.5px; */
+    /* border : solid red 0.5px * var(--scale-factor)); */
 }
 
 /* default is en logo */
 .logo-container-front {
-    top: 137.6px;
-    left: 62px;
-    width: 455px;
-    height: 180px;
-    /* border : solid red 0.5px; */
+    top: calc(137.6px * var(--scale-factor));
+    left: calc(62px * var(--scale-factor));
+    width: calc(455px * var(--scale-factor));
+    height: calc(180px * var(--scale-factor));
+    /* border : solid red 0.5px * var(--scale-factor)); */
 }
 
 .logo-container-front-small {
-    top: 1000px; /* appears if defined in logoDirective.js*/
-    left: 404px;
-    width: 123px;
-    height: 47.3px;
-    /* border : solid red 0.5px; */
+    top: calc(1000px * var(--scale-factor)); /* appears if defined in logoDirective.js*/
+    left: calc(404px * var(--scale-factor));
+    width: calc(123px * var(--scale-factor));
+    height: calc(47.3px * var(--scale-factor));
+    /* border : solid red 0.5px * var(--scale-factor)); */
 }
 
 /* default is en logo */
 .outline-container {
-    top: 299px;
-    left: 173.7px;
-    width: 369px;
-    font-size: 25.8px;
+    top: calc(299px * var(--scale-factor));
+    left: calc(173.7px * var(--scale-factor));
+    width: calc(369px * var(--scale-factor));
+    font-size: calc(25.8px * var(--scale-factor));
     text-align:left;
-    /* border : solid red 0.5px; */
+    /* border : solid red 0.5px * var(--scale-factor)); */
 }
 </style>

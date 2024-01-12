@@ -33,19 +33,19 @@ export default {
 <!-- pour une résolution de 470x693 -->
 <style>
 .card24-label1-position {
-    top: 182.3px;
-    left: -31.8px;
-    width: 210px;
-    height: 44.7px;
+    top: calc(182.3px * var(--scale-factor));
+    left: calc(-31.8px * var(--scale-factor));
+    width: calc(210px * var(--scale-factor));
+    height: calc(44.7px * var(--scale-factor));
     transform: rotate(-90deg);
     /* border: solid red; */
 }
 
 .card24-label2-position {
-    top: 108.3px;
-    left: 216.4px;
-    width: 191px;
-    height: 19px;
+    top: calc(108.3px * var(--scale-factor));
+    left: calc(216.4px * var(--scale-factor));
+    width: calc(191px * var(--scale-factor));
+    height: calc(19px * var(--scale-factor));
     color: grey;
     /* border: solid red; */
 }

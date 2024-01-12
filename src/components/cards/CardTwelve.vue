@@ -54,69 +54,69 @@ export default {
 <!-- pour une résolution de 470x693 -->
 <style>
 .card12-label1-position {
-    top: 191px;
-    left: 203px;
-    width: 165px;
-    height: 31.8px;
-    font-size: 18px;
+    top: calc(191px * var(--scale-factor));
+    left: calc(203px * var(--scale-factor));
+    width: calc(165px * var(--scale-factor));
+    height: calc(31.8px * var(--scale-factor));
+    font-size: calc(18px * var(--scale-factor));
     text-align: right;
 }
 
 .card12-label2-position {
-    top: 249.4px;
-    left: 203px;
-    width: 165px;
-    height: 31.8px;
-    font-size: 18px;
+    top: calc(249.4px * var(--scale-factor));
+    left: calc(203px * var(--scale-factor));
+    width: calc(165px * var(--scale-factor));
+    height: calc(31.8px * var(--scale-factor));
+    font-size: calc(18px * var(--scale-factor));
     text-align: right;
 }
 
 .card12-label3-position {
-    top: 308.7px;
-    left: 203px;
-    width: 165px;
-    height: 31.8px;
-    font-size: 18px;
+    top: calc(308.7px * var(--scale-factor));
+    left: calc(203px * var(--scale-factor));
+    width: calc(165px * var(--scale-factor));
+    height: calc(31.8px * var(--scale-factor));
+    font-size: calc(18px * var(--scale-factor));
     text-align: right;
 }
 
 .card12-label4-position {
-    top: 142.7px;
-    left: 77.4px;
-    width: 438.6px;
-    height: 30px;
+    top: calc(142.7px * var(--scale-factor));
+    left: calc(77.4px * var(--scale-factor));
+    width: calc(438.6px * var(--scale-factor));
+    height: calc(30px * var(--scale-factor));
     transform: rotate(-180deg);
 }
 
 .card12-label5-position {
-    top: 366px;
-    left: 359px;
-    width: 172px;
-    height: 17px;
+    top: calc(366px * var(--scale-factor));
+    left: calc(359px * var(--scale-factor));
+    width: calc(172px * var(--scale-factor));
+    height: calc(17px * var(--scale-factor));
     color: grey;
 }
 
 .card12-fixed-label1-position {
-    top: 184px;
-    left: 387px;
-    width: 93.7px;
-    height: 44.7px;
-    font-size: 25.8px;
+    top: calc(184px * var(--scale-factor));
+    left: calc(387px * var(--scale-factor));
+    width: calc(93.7px * var(--scale-factor));
+    height: calc(44.7px * var(--scale-factor));
+    font-size: calc(25.8px * var(--scale-factor));
 }
 
 .card12-fixed-label2-position {
-    top: 242px;
-    left: 387px;
-    width: 93.7px;
-    height: 44.7px;
-    font-size: 25.8px;
+    top: calc(242px * var(--scale-factor));
+    left: calc(387px * var(--scale-factor));
+    width: calc(93.7px * var(--scale-factor));
+    height: calc(44.7px * var(--scale-factor));
+    font-size: calc(25.8px * var(--scale-factor));
 }
 
 .card12-fixed-label3-position {
-    top: 298px;
-    left: 387px;
-    width: 93.7px;
-    height: 44.7px;
-    font-size: 25.8px;
+    top: calc(298px * var(--scale-factor));
+    left: calc(387px * var(--scale-factor));
+    width: calc(93.7px * var(--scale-factor));
+    height: calc(44.7px * var(--scale-factor));
+    font-size: calc(25.8px * var(--scale-factor));
 }
 </style>

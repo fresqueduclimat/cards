@@ -51,90 +51,90 @@ export default {
 <!-- pour une résolution de 470x693 -->
 <style>
 .card21-label1-position {
-    top: 103px;
-    left: 326.8px;
-    width: 221px;
-    height: 30px;
+    top: calc(103px * var(--scale-factor));
+    left: calc(326.8px * var(--scale-factor));
+    width: calc(221px * var(--scale-factor));
+    height: calc(30px * var(--scale-factor));
     text-align: right;
     justify-content: right;
 }
 
 .card21-label2-position {
-    top: 331.9px;
-    left: 496.2px;
-    width: 85px;
-    height: 36px;
+    top: calc(331.9px * var(--scale-factor));
+    left: calc(496.2px * var(--scale-factor));
+    width: calc(85px * var(--scale-factor));
+    height: calc(36px * var(--scale-factor));
     transform: rotate(-90deg);
-    /* border: solid red 0.2px; */
+    /* border: solid red 0.2px * var(--scale-factor)); */
     color:grey;
-    font-size:12px;
+    font-size: calc(12px * var(--scale-factor));
 }
 
 .card21-label3-position {
-    top: 146.2px;
-    left: 223.6px;
-    width: 31.8px;
-    height: 13.7px;
+    top: calc(146.2px * var(--scale-factor));
+    left: calc(223.6px * var(--scale-factor));
+    width: calc(31.8px * var(--scale-factor));
+    height: calc(13.7px * var(--scale-factor));
     background-color: white;
-    /* border: solid red 0.2px; */
+    /* border: solid red 0.2px * var(--scale-factor)); */
     text-align: left;
-    font-size: 5px;
+    font-size: calc(5px * var(--scale-factor));
 }
 
 .card21-label4-position {
-    top: 157.3px;
-    left: 223.6px;
-    width: 31.8px;
-    height: 33.5px;
+    top: calc(157.3px * var(--scale-factor));
+    left: calc(223.6px * var(--scale-factor));
+    width: calc(31.8px * var(--scale-factor));
+    height: calc(33.5px * var(--scale-factor));
     background-color: white;
-    /* border: solid red 0.2px; */
+    /* border: solid red 0.2px * var(--scale-factor)); */
     text-align: left;
     color : #936D22;
-    font-size: 5px;
+    font-size: calc(5px * var(--scale-factor));
 }
 
 .card21-label5-position {
-    top: 198.6px;
-    left: 223.6px;
-    width: 31.8px;
-    height: 33.5px;
+    top: calc(198.6px * var(--scale-factor));
+    left: calc(223.6px * var(--scale-factor));
+    width: calc(31.8px * var(--scale-factor));
+    height: calc(33.5px * var(--scale-factor));
     background-color: white;
-    /* border: solid red 0.2px; */
+    /* border: solid red 0.2px * var(--scale-factor)); */
     text-align: left;
     color : #3F635F;
-    font-size: 5px;
+    font-size: calc(5px * var(--scale-factor));
 }
 
 .card21-fixed-label1-position {
-    top: 130px;
-    left: 45.6px;
-    width: 107.5px;
-    height: 30px;
+    top: calc(130px * var(--scale-factor));
+    left: calc(45.6px * var(--scale-factor));
+    width: calc(107.5px * var(--scale-factor));
+    height: calc(30px * var(--scale-factor));
     border: solid black 3.5px;
     background-color: white;
     border-radius: 3.5px;
-    font-size: 21.5px;
+    font-size: calc(21.5px * var(--scale-factor));
 }
 
 .card21-fixed-label2-position {
-    top: 151px;
-    left: 335.4px;
-    width: 107.5px;
-    height: 30px;
+    top: calc(151px * var(--scale-factor));
+    left: calc(335.4px * var(--scale-factor));
+    width: calc(107.5px * var(--scale-factor));
+    height: calc(30px * var(--scale-factor));
     border: solid #980002 3.5px;
     background-color: white;
     border-radius: 3.5px;
-    font-size: 21.5px;
+    font-size: calc(21.5px * var(--scale-factor));
 }
 
 .card21-fixed-label3-position {
-    top: 294px;
-    left: 341px;
-    width: 107.5px;
-    height: 30px;
+    top: calc(294px * var(--scale-factor));
+    left: calc(341px * var(--scale-factor));
+    width: calc(107.5px * var(--scale-factor));
+    height: calc(30px * var(--scale-factor));
     border: solid #00A9CF 3.5px;
     background-color: white;
     border-radius: 3.5px;
-    font-size: 21.5px;
+    font-size: calc(21.5px * var(--scale-factor));
 }
 </style>
