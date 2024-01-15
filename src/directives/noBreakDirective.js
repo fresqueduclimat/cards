@@ -80,12 +80,20 @@ export default {
         replacement = '<nobr>20%</nobr>';
         el.innerHTML = el.innerHTML.replace(regex, replacement);
 
+        regex = /15%/g;
+        replacement = '<nobr>15%</nobr>';
+        el.innerHTML = el.innerHTML.replace(regex, replacement);
+
         regex = /40 %/g;
         replacement = '<nobr>40 %</nobr>';
         el.innerHTML = el.innerHTML.replace(regex, replacement);
 
         regex = /20 %/g;
         replacement = '<nobr>20 %</nobr>';
+        el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+        regex = /15 %/g;
+        replacement = '<nobr>15 %</nobr>';
         el.innerHTML = el.innerHTML.replace(regex, replacement);
 
         regex = /im Vergleich/g;

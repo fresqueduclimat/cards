@@ -61,7 +61,7 @@ export default {
     top: calc(364px * var(--scale-factor));
     left: calc(258px * var(--scale-factor));
     width: calc(296.7px * var(--scale-factor));
-    height: calc(20.8px * var(--scale-factor));
+    height: calc(20.7px * var(--scale-factor));
     text-align: right;
     color:grey;
     font-size: calc(13px * var(--scale-factor));

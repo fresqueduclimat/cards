@@ -1,6 +1,6 @@
 export default {
     beforeMount(el, binding) {
-        const scaleFactor = 0.720;
+        const scaleFactor = 0.721;
         const currentLocale = binding.instance?.$i18n?.locale;
         if (currentLocale === 'en') {
             const labeloneElements = el.querySelectorAll('#card0-label1');
@@ -180,8 +180,8 @@ export default {
         if (currentLocale === 'es') {
             const labeltwoElements = el.querySelectorAll('#card0-label2');
             labeltwoElements.forEach(text => {
-                text.style.top = `${276.6 * scaleFactor}px`;  
-                text.style.left = `${423.5 * scaleFactor}px`;  
+                text.style.top = `${273.6 * scaleFactor}px`;  
+                text.style.left = `${421.5 * scaleFactor}px`;  
             });
         }
         if (currentLocale === 'vi') {

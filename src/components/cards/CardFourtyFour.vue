@@ -1,5 +1,5 @@
 <template>
-    <section :data-background-image="backgroundFrontImageUrl" data-background-size="cover">
+    <section data-background-size="cover">
         <div class="container">
             <div id="card44-label0" v-text-align class="label black card44-label0-position" >
                 <p id="card44-text0">{{ $t('V1C999L2') }}</p>
@@ -46,6 +46,9 @@
             <div class="label outline-container-back">
                 <div class="outline">{{ $t('V1C0L15') }}</div>
             </div>
+            <div class="label frame-container">
+                <div class="frame"></div>
+            </div>
             <!-- <hr class="label border-white top-left-vertical">
             <hr class="label border-white top-left-horizontal">
             <hr class="label border-white top-right-vertical">
@@ -62,21 +65,10 @@
 <script>
 export default {
     name: "CardOne",
-    props: {
-        backgroundFrontImage: {
-            type: String,
-            required: true,
-        },
-    },
     data() {
         return {
             imageType: process.env.VUE_APP_IMAGE_TYPE || "png",
         };
-    },
-    computed: {
-        backgroundFrontImageUrl() {
-            return require(`@/assets/${this.imageType}/C0.${this.imageType}`);
-        },
     },
 };
 </script>
@@ -151,7 +143,7 @@ export default {
 .cc-container {
     top: calc(46px * var(--scale-factor));
     left: calc(431.7px * var(--scale-factor));
-    width: calc(119.5px * var(--scale-factor));
+    width: calc(117.5px * var(--scale-factor));
     height: calc(42px * var(--scale-factor));
 }
 

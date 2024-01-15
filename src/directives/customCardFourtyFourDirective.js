@@ -1,6 +1,6 @@
 export default {
     beforeMount(el, binding) {
-        const scaleFactor = 0.720;
+        const scaleFactor = 0.721;
         const currentLocale = binding.instance?.$i18n?.locale;
         if (currentLocale === 'en') {
             const corpusElements = el.querySelectorAll('#card44-label1');
@@ -48,8 +48,13 @@ export default {
                 text.style.height = `${168 * scaleFactor}px`;
                 text.style.top = `${86 * scaleFactor}px`;
             });
+            const addressElements = el.querySelectorAll('#card44-label2');
+            addressElements.forEach(text => {
+                text.style.top = `${235 * scaleFactor}px`;
+            });
             const addressngoElements = el.querySelectorAll('#card44-label3');
             addressngoElements.forEach(text => {
+                text.style.top = `${235 * scaleFactor}px`;
                 text.style.width = `${198 * scaleFactor}px`;
             });
         }

@@ -1,5 +1,5 @@
 <template>
-    <section :data-background-image="backgroundFrontImageUrl" data-background-size="cover">
+    <section data-background-size="cover">
         <div class="container">
             <div id="card0-label0" v-text-align class="horizontal-center label card0-label0-position">
                 <p id="card0-text0">{{ $t('V1C0L5') }}</p>
@@ -34,6 +34,12 @@
             <div id="card0-label9" class="label vertical-center card0-label9-position">
                 <p id="card0-text9">{{ $t('V1C0L14') }}</p>
             </div>
+            <div class="label frame-container">
+                <div class="frame"></div>
+            </div>
+            <div class="label icons-container">
+                <div class="icons"></div>
+            </div>
         </div>
     </section>
 </template>
@@ -41,21 +47,10 @@
 <script>
 export default {
     name: "CardOne",
-    props: {
-        backgroundFrontImage: {
-            type: String,
-            required: true,
-        },
-    },
     data() {
         return {
             imageType: process.env.VUE_APP_IMAGE_TYPE || "png",
         };
-    },
-    computed: {
-        backgroundFrontImageUrl() {
-            return require(`@/assets/${this.imageType}/C0-back.${this.imageType}`);
-        },
     },
 };
 </script>
@@ -85,12 +80,13 @@ export default {
 }
 
 .card0-label2-position {
-    top: calc(273.6px * var(--scale-factor));
-    left: calc(421.5px * var(--scale-factor));
+    top: calc(270.7px * var(--scale-factor));
+    left: calc(418.5px * var(--scale-factor));
     width: calc(116px * var(--scale-factor));
-    height: calc(58px * var(--scale-factor));
+    height: calc(61px * var(--scale-factor));
+    font-size: calc(11.8px * var(--scale-factor));
     transform: rotate(15deg);
-    /* border: red solid 0.5px * var(--scale-factor)); */
+    /* border: red solid 0.5px; */
 }
 .card0-label3-position {
     top: calc(127.2px * var(--scale-factor));
@@ -166,4 +162,18 @@ export default {
     font-size: calc(12.9px * var(--scale-factor));
 }
 
+.icons {
+    width: 100%;
+    height: 100%;
+    background-image: url('@/assets/png/C0-images.png');
+    background-size: contain;
+}
+
+.icons-container {
+    z-index: -1;
+    top: calc(242px * var(--scale-factor));
+    left: calc(44px * var(--scale-factor));
+    width: calc(506px * var(--scale-factor));
+    height: calc(121px * var(--scale-factor));
+}
 </style>

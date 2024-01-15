@@ -70,7 +70,7 @@
             <p id="card15-fixed-text5" class="font-big">SSP1-1.9</p>
         </div>
         <div id="card15-fixed-label6" class="horizontal-center vertical-center label black card15-fixed-label6-position">
-            <p id="card15-fixed-text6" class="font-small">2.8 W/m<sup>2</sup></p>
+            <p id="card15-fixed-text6" class="font-small">{{ $t('V1C15L5') }}</p>
         </div>
         <template v-slot:back-content>
             <div id="card15-back-label8" class="label white set-three">
@@ -99,7 +99,7 @@ export default {
 <!-- pour une résolution de 470x693 -->
 <style>
 .card15-label1-position {
-    top: calc(100.6px * var(--scale-factor));
+    top: calc(100.7px * var(--scale-factor));
     left: calc(50.7px * var(--scale-factor));
     width: calc(140px * var(--scale-factor));
     height: calc(12.9px * var(--scale-factor));

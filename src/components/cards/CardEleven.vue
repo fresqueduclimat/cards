@@ -60,8 +60,8 @@ export default {
 .card11-fixed-label2-position {
     top: calc(128.4px * var(--scale-factor));
     left: calc(378px * var(--scale-factor));
-    width: calc(96px * var(--scale-factor)); /* C' = 750 * 693 / 4680 = 111.18px, arrondi à 112px */
-    height: calc(28.3px * var(--scale-factor)); /* D' = 225 * 470 / 3180 = 33.21px, arrondi à 33px */
+    width: calc(96px * var(--scale-factor));
+    height: calc(28.3px * var(--scale-factor)); 
     /* border: solid red; */
     font-size: calc(17px * var(--scale-factor));
 }
