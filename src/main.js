@@ -15,6 +15,7 @@ import customCardZeroDirective from "./directives/customCardZeroDirective.js"
 import customCardFourtyFourDirective from "./directives/customCardFourtyFourDirective.js"
 import fontFamilyDirective from "./directives/fontFamilyDirective.js"
 import customSizesDirective from "./directives/customSizesDirective.js"
+import miniSizeDirective from "./directives/miniSizeDirective"
 
 import { createApp } from "vue";
 import { createI18n } from "vue-i18n";
@@ -66,7 +67,7 @@ const messages = {
 // const locale = process.env.VUE_APP_LOCALE || "en";
 
 const i18n = createI18n({
-  locale: "en", // Remplacer par locale si passée en parametre
+  locale: "lat", // Remplacer par locale si passée en parametre
   fallbackLocale: "fr",
   messages,
 });
@@ -87,4 +88,5 @@ app.directive('card-zero', customCardZeroDirective)
 app.directive('card-fourtyfour', customCardFourtyFourDirective)
 app.directive('font-family', fontFamilyDirective)
 app.directive('custom-size', customSizesDirective)
+app.directive('mini-size', miniSizeDirective)
 app.mount("#app");

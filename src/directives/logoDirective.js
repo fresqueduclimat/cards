@@ -1,6 +1,6 @@
 export default {
     beforeMount(el, binding) {
-        const scaleFactor = 0.721;
+        const scaleFactor = 1.00;
         const currentLocale = binding.instance?.$i18n?.locale;
         const print = process.env.VUE_APP_PRINT;
         console.log(print)
@@ -42,7 +42,7 @@ export default {
                 logoBigContainerElements.forEach(logo => {
                     logo.style.top = `${286 * scaleFactor}px`;
                     logo.style.left = `${106 * scaleFactor}px`;
-                    logo.style.width = `${219 * scaleFactor}px`; 
+                    logo.style.width = `${213 * scaleFactor}px`; 
                     logo.style.height = `${64 * scaleFactor}px`;
                 });
                 const outlineBackContainerElements = el.querySelectorAll('.outline-container-back');
@@ -55,7 +55,7 @@ export default {
             //small logos on each side of cards
             const logoContainerElements = el.querySelectorAll('.logo-container');
             logoContainerElements.forEach(logo => {
-                logo.style.top = `${25.8 * scaleFactor}px`; 
+                logo.style.top = `${33 * scaleFactor}px`; 
                 logo.style.left = `${434 * scaleFactor}px`; 
                 logo.style.width = `${125.6 * scaleFactor}px`; 
                 logo.style.height = `${34.4 * scaleFactor}px`; 
