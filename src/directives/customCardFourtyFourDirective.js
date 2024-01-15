@@ -59,5 +59,11 @@ export default {
                 text.style.width = `${198 * scaleFactor}px`;
             });
         }
+        if (currentLocale === 'pt') {
+            const corpusElements = el.querySelectorAll('#card44-label1');
+            corpusElements.forEach(text => {
+                text.style.top = `${93 * scaleFactor}px`;
+            });
+        }
     },
 };

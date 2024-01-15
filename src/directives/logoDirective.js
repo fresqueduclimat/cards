@@ -188,8 +188,122 @@ export default {
                 });
             }
         }
+
+        // PT-PT
+        if (currentLocale === 'pt') { 
+            const logoElements = el.querySelectorAll('.local-logo');
+            logoElements.forEach(logo => {
+                logo.style.backgroundImage = `url(${require('@/assets/logo-pt.png')})`;
+            });
+            //front page
+            const logoContainerElements = el.querySelectorAll('.logo-container-front');
+            logoContainerElements.forEach(logo => {
+                logo.style.top = `${145.6 * scaleFactor}px`;
+                logo.style.left = `${62 * scaleFactor}px`;
+                logo.style.width = `${455 * scaleFactor}px`;
+                logo.style.height = `${144 * scaleFactor}px`;
+            });
+            const outlineContainerElements = el.querySelectorAll('.outline-container');
+            outlineContainerElements.forEach(logo => {
+                logo.style.top = `${273 * scaleFactor}px`;
+                logo.style.left = `${181 * scaleFactor}px`;
+                logo.style.fontSize = `${21.5 * scaleFactor}px`;
+            });
+            if (print === 'false') { //if print is true, the position is defined in the logoDirective
+            //last page
+            const logoBigContainerElements = el.querySelectorAll('.logo-container-big');
+                logoBigContainerElements.forEach(logo => {
+                    logo.style.top = `${282 * scaleFactor}px`;
+                    logo.style.left = `${111 * scaleFactor}px`;
+                    logo.style.width = `${224 * scaleFactor}px`; 
+                    logo.style.height = `${71 * scaleFactor}px`; 
+                });
+                const outlineBackContainerElements = el.querySelectorAll('.outline-container-back');
+                outlineBackContainerElements.forEach(outline => {
+                    outline.style.top = `${344 * scaleFactor}px`;
+                    outline.style.left = `${170 * scaleFactor}px`; 
+                });
+            }
+        }
+        // FI-FI
+        if (currentLocale === 'fi') { 
+            const logoElements = el.querySelectorAll('.local-logo');
+            logoElements.forEach(logo => {
+                logo.style.backgroundImage = `url(${require('@/assets/logo-fi.png')})`;
+            });
+            //front page
+            const logoContainerElements = el.querySelectorAll('.logo-container-front');
+            logoContainerElements.forEach(logo => {
+                logo.style.top = `${167.6 * scaleFactor}px`;
+                logo.style.left = `${62 * scaleFactor}px`;
+                logo.style.width = `${470 * scaleFactor}px`;
+                logo.style.height = `${96 * scaleFactor}px`;
+            });
+            const outlineContainerElements = el.querySelectorAll('.outline-container');
+            outlineContainerElements.forEach(logo => {
+                logo.style.top = `${235 * scaleFactor}px`;
+                logo.style.left = `${141.7 * scaleFactor}px`;
+                logo.style.width = `${370 * scaleFactor}px`;
+                logo.style.fontSize = `${19 * scaleFactor}px`;
+            });
+            if (print === 'false') { //if print is true, the position is defined in the logoDirective
+            //last page
+            const logoBigContainerElements = el.querySelectorAll('.logo-container-big');
+                logoBigContainerElements.forEach(logo => {
+                    logo.style.top = `${292 * scaleFactor}px`;
+                    logo.style.left = `${111 * scaleFactor}px`;
+                    logo.style.width = `${242 * scaleFactor}px`; 
+                    logo.style.height = `${49 * scaleFactor}px`; 
+                });
+                const outlineBackContainerElements = el.querySelectorAll('.outline-container-back');
+                outlineBackContainerElements.forEach(outline => {
+                    outline.style.top = `${326 * scaleFactor}px`;
+                    outline.style.left = `${150 * scaleFactor}px`; 
+                });
+            }
+        }
+        // TR-TR
+        if (currentLocale === 'tr') { 
+            const logoElements = el.querySelectorAll('.local-logo');
+            logoElements.forEach(logo => {
+                logo.style.backgroundImage = `url(${require('@/assets/logo-tr.png')})`;
+            });
+            //front page
+            const logoContainerElements = el.querySelectorAll('.logo-container-front');
+            logoContainerElements.forEach(logo => {
+                logo.style.top = `${145.6 * scaleFactor}px`;
+                logo.style.left = `${62 * scaleFactor}px`;
+                logo.style.width = `${422 * scaleFactor}px`;
+                logo.style.height = `${144 * scaleFactor}px`;
+            });
+            const outlineContainerElements = el.querySelectorAll('.outline-container');
+            outlineContainerElements.forEach(logo => {
+                logo.style.top = `${256 * scaleFactor}px`;
+                logo.style.left = `${165 * scaleFactor}px`;
+                logo.style.fontSize = `${21.5 * scaleFactor}px`;
+            });
+            if (print === 'false') { //if print is true, the position is defined in the logoDirective
+            //last page
+            const logoBigContainerElements = el.querySelectorAll('.logo-container-big');
+                logoBigContainerElements.forEach(logo => {
+                    logo.style.top = `${282 * scaleFactor}px`;
+                    logo.style.left = `${121 * scaleFactor}px`;
+                    logo.style.width = `${209 * scaleFactor}px`; 
+                    logo.style.height = `${71 * scaleFactor}px`; 
+                });
+                const outlineBackContainerElements = el.querySelectorAll('.outline-container-back');
+                outlineBackContainerElements.forEach(outline => {
+                    outline.style.top = `${337 * scaleFactor}px`;
+                    outline.style.left = `${173 * scaleFactor}px`; 
+                });
+            }
+        }
         //when local logos are displayed, we add a small climatefresk logo on front page
-        if (currentLocale === 'de' || currentLocale === 'es') { 
+        if (currentLocale === 'de' || 
+            currentLocale === 'es' ||
+            currentLocale === 'fi' || 
+            currentLocale === 'tr' || 
+            currentLocale === 'pt') { 
             //small climatefresk logo should not appear on the front page
             const logoSmallContainerElements = el.querySelectorAll('.logo-container-small');
             logoSmallContainerElements.forEach(logo => {
