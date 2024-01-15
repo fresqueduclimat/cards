@@ -1,6 +1,6 @@
 export default {
     beforeMount(el, binding) {
-        const scaleFactor = 0.720;
+        const scaleFactor = 0.721;
         const currentLocale = binding.instance?.$i18n?.locale;
         const print = process.env.VUE_APP_PRINT;
         if (print === 'true') {

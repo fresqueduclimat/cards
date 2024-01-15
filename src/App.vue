@@ -243,7 +243,7 @@ export default {
   --original-width: 4680;
   --new-height: 470;
   --original-width: font-size: 693;
-  --scale-factor: 0.720; /*scale-factor=1 pour une résolution de 597 x 408 */
+  --scale-factor: 0.721; /*scale-factor=1 pour une résolution de 597 x 408 */
 }
 
 #app {
@@ -259,8 +259,8 @@ export default {
 }
 
 .container {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   display: flex;
   flex-direction: column;
   font-weight : 500;

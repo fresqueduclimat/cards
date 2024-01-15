@@ -254,44 +254,72 @@ export default {
     border: solid black 0.8px;
 }
 
+.border-white {
+    border: solid white 0.7px;
+}
+
+.border-black {
+    border: solid black 0.7px;
+}
+
+/* 2 */
 .top-left-vertical {
-    height: calc(10px * var(--scale-factor));
-    top: calc(-15px * var(--scale-factor));
-    left: calc(14px * var(--scale-factor));
+    /* height: calc(10px * var(--scale-factor)); */
+    height: 310px;
+    /* top: calc(-15px * var(--scale-factor));
+    left: calc(15px * var(--scale-factor)); */
+    top: -15px;
+    left:15px;
 }
+/* 1 */
 .top-left-horizontal {
-    width: calc(10px * var(--scale-factor));
-    top: calc(5px * var(--scale-factor));
-    left: calc(-5px * var(--scale-factor));
+    /* width: calc(10px * var(--scale-factor)); */
+    width: 450px;
+    /* top: calc(15px * var(--scale-factor));
+    left: calc(-15px * var(--scale-factor)); */
+    top: 7px;
+    left:-15px;
 }
+/* 4 */
 .top-right-vertical {
-    height: calc(5px * var(--scale-factor));
-    top: calc(-10px * var(--scale-factor));
-    left: calc(680px * var(--scale-factor));
+    /* height: calc(10px * var(--scale-factor)); */
+    height: 500px;
+    /* top: calc(-15px * var(--scale-factor));
+    left: calc(567px * var(--scale-factor)); */
+    top: -15px;
+    left: 411px;
 }
-.top-right-horizontal {
-    width: calc(5px * var(--scale-factor)); 
-    top: calc(-1px * var(--scale-factor));
-    left: calc(685px * var(--scale-factor));
+/* .top-right-horizontal {
+    width: calc(10px * var(--scale-factor)); 
+    width: 427px;
+    top: calc(4px * var(--scale-factor));
+    left: calc(581px * var(--scale-factor));
 }
-.bottom-left-vertical {
+ .bottom-left-vertical {
     height: calc(10px * var(--scale-factor));
+    height: 295px;
     top: calc(452px * var(--scale-factor));
     left: calc(14px * var(--scale-factor));
-}
+} */
+/* 3 */
 .bottom-left-horizontal {
-    width: calc(10px * var(--scale-factor));
-    top: calc(446px * var(--scale-factor));
-    left: calc(-5px * var(--scale-factor));
+    /* width: calc(10px * var(--scale-factor)); */
+    width: 427px;
+    /* top: calc(382px * var(--scale-factor));
+    left: calc(0px * var(--scale-factor)); */
+    top: 272px;
+    left: 0px
 }
-.bottom-right-vertical {
+/* .bottom-right-vertical {
     height: calc(10px * var(--scale-factor));
+    height: 295px;
     top: calc(453px * var(--scale-factor));
     left: calc(678px * var(--scale-factor));
 }
 .bottom-right-horizontal {
     width: calc(10px * var(--scale-factor));
+    width: 427px;
     top: calc(446px * var(--scale-factor));
     left: calc(684px * var(--scale-factor));
-}
+} */
 </style>

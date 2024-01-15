@@ -1,6 +1,6 @@
 export default {
     beforeMount(el, binding) {
-        const scaleFactor = 0.720;
+        const scaleFactor = 0.721;
         const currentLocale = binding.instance?.$i18n?.locale;
         if (currentLocale === 'my') {
             const titleElements = el.querySelectorAll('.title');
@@ -13,8 +13,8 @@ export default {
         }
         const titleElements = el.querySelectorAll('#card41-label0');
             titleElements.forEach(title => {
-                title.style.left = `${112 * scaleFactor}px`;   // Modifier la valeur de 'left'
-                title.style.width = `${484 * scaleFactor}px`; // Modifier la valeur de 'width'
+                title.style.left = `${88 * scaleFactor}px`;   // Modifier la valeur de 'left'
+                title.style.width = `${437 * scaleFactor}px`; // Modifier la valeur de 'width'
             });
     },
 };

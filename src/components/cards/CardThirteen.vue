@@ -106,7 +106,7 @@ export default {
     left: calc(513.4px * var(--scale-factor));
     width: calc(57.6px * var(--scale-factor));
     height: calc(18.9px * var(--scale-factor));
-    font-size: calc(20.6px * var(--scale-factor));
+    font-size: calc(20.7px * var(--scale-factor));
     color: white;
 }
 </style>

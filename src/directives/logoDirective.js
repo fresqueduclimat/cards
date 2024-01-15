@@ -1,6 +1,6 @@
 export default {
     beforeMount(el, binding) {
-        const scaleFactor = 0.720;
+        const scaleFactor = 0.721;
         const currentLocale = binding.instance?.$i18n?.locale;
         const print = process.env.VUE_APP_PRINT;
         console.log(print)
@@ -57,7 +57,7 @@ export default {
             logoContainerElements.forEach(logo => {
                 logo.style.top = `${25.8 * scaleFactor}px`; 
                 logo.style.left = `${434 * scaleFactor}px`; 
-                logo.style.width = `${127 * scaleFactor}px`; 
+                logo.style.width = `${125.6 * scaleFactor}px`; 
                 logo.style.height = `${34.4 * scaleFactor}px`; 
             });
             //small climatefresk logo should not appear on front page

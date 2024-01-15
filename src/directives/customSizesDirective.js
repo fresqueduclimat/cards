@@ -1,6 +1,6 @@
 export default {
     beforeMount(el, binding) {
-        const scaleFactor = 0.720;
+        const scaleFactor = 0.721;
         const currentLocale = binding.instance?.$i18n?.locale;
         if (currentLocale === 'fr') {
             const c9text = el.querySelectorAll('#card9-back-text0');
