@@ -1,5 +1,5 @@
 <template>
-  <div v-custom-size v-font-family v-card-fourtyfour v-card-zero v-no-break v-print v-logo v-customtitlediv v-linespacing v-linebreak v-text-direction v-co2-subscript id="app" class="reveal">
+  <div v-mini-size v-custom-size v-font-family v-card-fourtyfour v-card-zero v-no-break v-print v-logo v-customtitlediv v-linespacing v-linebreak v-text-direction v-co2-subscript id="app" class="reveal">
     <div class="slides">
       <FrontCard />
       <CardZero />
@@ -243,7 +243,7 @@ export default {
   --original-width: 4680;
   --new-height: 470;
   --original-width: font-size: 693;
-  --scale-factor: 0.721; /*scale-factor=1 pour une résolution de 597 x 408 */
+  --scale-factor: 1.00; /*scale-factor=1 pour une résolution de 597 x 408 */
 }
 
 #app {
@@ -256,14 +256,6 @@ export default {
 .slides>section {
   width: 100%;
   height: 100%;
-}
-
-.container {
-  width: 90%;
-  height: 90%;
-  display: flex;
-  flex-direction: column;
-  font-weight : 500;
 }
 
 .container h1 {

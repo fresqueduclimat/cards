@@ -1,5 +1,5 @@
 <template>
-    <section :data-background-image="backgroundFrontImageUrl" data-background-size="cover">
+    <section :style="backgroundStyles">
         <div class="container">
             <div :id="`card${cardNumber}-label0`" class="title">
                 <h1 :id="`card${cardNumber}-text0`">{{ title }}</h1>
@@ -74,11 +74,37 @@ export default {
     data() {
         return {
             imageType: process.env.VUE_APP_IMAGE_TYPE || "png",
+            mini: process.env.VUE_APP_MINI === 'true',
         };
     },
     computed: {
         backgroundFrontImageUrl() {
             return require(`@/assets/${this.imageType}/${this.backgroundFrontImage}`);
+        },
+        backgroundStyles() {
+            if (this.mini) { 
+                return {
+                    backgroundImage: `url(${this.backgroundFrontImageUrl})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'top left',
+                    position: 'absolute',
+                    top: '8px',
+                    left: '8px',
+                    width: '411px', // Pour occuper toute la largeur de la section parente
+                    height: '279px', // Pour occuper toute la hauteur de la section parente
+                };
+            } else {
+                return {
+                    backgroundImage: `url(${this.backgroundFrontImageUrl})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'top left',
+                    position: 'absolute',
+                    top: '0px',
+                    left: '0px',
+                    width: '100%',
+                    height: '100%',
+                };
+            } 
         },
     },
 };
@@ -86,6 +112,22 @@ export default {
 </script>
 
 <style>
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+}
+
+.background {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 423px;
+    height: 291px;
+}
+
 .title {
     position: absolute;
     /* border: solid red 0.5px * var(--scale-factor)); */
@@ -114,10 +156,10 @@ export default {
 
 /* default is en logo */
 .logo-container {
-    top: calc(16px * var(--scale-factor));
+    top: calc(18px * var(--scale-factor));
     left: calc(435px * var(--scale-factor));
     width: calc(123px * var(--scale-factor));
-    height: calc(47px * var(--scale-factor));
+    height: calc(48px * var(--scale-factor));
 }
 
 .logo {
@@ -134,7 +176,7 @@ export default {
 .back-set-container {
     /* border: solid red; */
     top: calc(25px * var(--scale-factor));
-    left: calc(23.2px * var(--scale-factor));
+    left: calc(30.2px * var(--scale-factor));
     width: calc(76.5px * var(--scale-factor));
     height: calc(82px * var(--scale-factor));
 }
@@ -254,11 +296,11 @@ export default {
 }
 
 .border-white {
-    border: solid white 0.7px;
+    border: solid red 0.7px;
 }
 
 .border-black {
-    border: solid black 0.7px;
+    border: solid red 0.7px;
 }
 
 /* 2 */
@@ -268,7 +310,7 @@ export default {
     /* top: calc(-15px * var(--scale-factor));
     left: calc(15px * var(--scale-factor)); */
     top: -15px;
-    left:15px;
+    left:0px;
 }
 /* 1 */
 .top-left-horizontal {
@@ -276,7 +318,7 @@ export default {
     width: 450px;
     /* top: calc(15px * var(--scale-factor));
     left: calc(-15px * var(--scale-factor)); */
-    top: 7px;
+    top: -8px;
     left:-15px;
 }
 /* 4 */

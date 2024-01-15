@@ -53,7 +53,7 @@ export default {
 .card22-label2-position {
     top: calc(150.5px * var(--scale-factor));
     left: calc(172px * var(--scale-factor));
-    width: calc(159px * var(--scale-factor));
+    width: calc(158px * var(--scale-factor));
     height: calc(60.2px * var(--scale-factor));
     /* border: solid red; */
 }

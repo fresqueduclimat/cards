@@ -1,8 +1,9 @@
 export default {
     beforeMount(el, binding) {
-        const scaleFactor = 0.721;
+        const scaleFactor = 1.00;
+        const mini = process.env.VUE_APP_MINI;
         const currentLocale = binding.instance?.$i18n?.locale;
-        if (currentLocale === 'en') {
+        if (currentLocale === 'en' && mini === 'false') {
             const labeloneElements = el.querySelectorAll('#card0-label1');
             labeloneElements.forEach(text => {
                 text.style.top = `${84 * scaleFactor}px`;    // Modifier la valeur de 'top'

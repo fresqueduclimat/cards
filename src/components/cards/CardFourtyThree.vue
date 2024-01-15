@@ -1,5 +1,5 @@
 <template>
-    <section :data-background-image="backgroundFrontImageUrl" data-background-size="cover">
+    <section :style="backgroundStyles">
         <div class="container">
             <div id="card43-label0" class="label card43-label0-position">
                 <p id="card43-text0">{{ $t('V1C99L1') }}</p>
@@ -31,11 +31,37 @@ export default {
     data() {
         return {
             imageType: process.env.VUE_APP_IMAGE_TYPE || "png",
+            mini: process.env.VUE_APP_MINI === 'true',
         };
     },
     computed: {
         backgroundFrontImageUrl() {
             return require(`@/assets/${this.imageType}/C99.${this.imageType}`);
+        },
+        backgroundStyles() {
+            if (this.mini) { 
+                return {
+                    backgroundImage: `url(${this.backgroundFrontImageUrl})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'top left',
+                    position: 'absolute',
+                    top: '8px',
+                    left: '8px',
+                    width: '411px', // Pour occuper toute la largeur de la section parente
+                    height: '279px', // Pour occuper toute la hauteur de la section parente
+                };
+            } else {
+                return {
+                    backgroundImage: `url(${this.backgroundFrontImageUrl})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'top left',
+                    position: 'absolute',
+                    top: '0px',
+                    left: '0px',
+                    width: '100%',
+                    height: '100%',
+                };
+            } 
         },
     },
 };

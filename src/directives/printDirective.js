@@ -1,9 +1,10 @@
 export default {
     beforeMount(el, binding) {
-        const scaleFactor = 0.721;
+        const scaleFactor = 1.00;
+        const mini = process.env.VUE_APP_MINI;
         const currentLocale = binding.instance?.$i18n?.locale;
         const print = process.env.VUE_APP_PRINT;
-        if (print === 'true') {
+        if (print === 'true' && mini =='false') {
             // change top variable to reveal the barcode container
             const barcodeElements = el.querySelectorAll('.barcode-container');
                 barcodeElements.forEach(code => {

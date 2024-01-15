@@ -1,8 +1,9 @@
 export default {
     beforeMount(el, binding) {
-        const scaleFactor = 0.721;
+        const scaleFactor = 1.00;
+        const mini = process.env.VUE_APP_MINI;
         const currentLocale = binding.instance?.$i18n?.locale;
-        if (currentLocale === 'en') {
+        if (currentLocale === 'en' && mini==='true') {
             const corpusElements = el.querySelectorAll('#card44-label1');
             corpusElements.forEach(text => {
                 text.style.top = `${96 * scaleFactor}px`;

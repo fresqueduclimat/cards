@@ -77,7 +77,7 @@ export default {
 
 .front-card-label2-position {
     top: calc(196px * var(--scale-factor));
-    left: calc(397px * var(--scale-factor));
+    left: calc(417px * var(--scale-factor));
     width: calc(333px * var(--scale-factor));
     height: calc(17px * var(--scale-factor));
     font-size: calc(12px * var(--scale-factor));

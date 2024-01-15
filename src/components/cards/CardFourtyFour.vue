@@ -122,7 +122,7 @@ export default {
 .barcode {
     width: 100%;
     height: 100%;
-    background-image: url('@/assets/barcode/adults-en-mini.png');
+    background-image: url('@/assets/barcode/adults-fr-mini.png');
     background-size: contain;
 }
 

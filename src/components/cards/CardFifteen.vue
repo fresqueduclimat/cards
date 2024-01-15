@@ -273,7 +273,7 @@ export default {
 }
 
 .card15-fixed-label1-position {
-    top: calc(234.34px * var(--scale-factor));
+    top: calc(232.34px * var(--scale-factor));
     left: calc(521px * var(--scale-factor));
     width: calc(47px * var(--scale-factor));
     height: calc(15.5px * var(--scale-factor));
@@ -282,7 +282,7 @@ export default {
     /* border: solid red 0.5px * var(--scale-factor)); */
 }
 .card15-fixed-label2-position {
-    top: calc(256.5px * var(--scale-factor));
+    top: calc(254.5px * var(--scale-factor));
     left: calc(521px * var(--scale-factor));
     width: calc(47px * var(--scale-factor));
     height: calc(15.5px * var(--scale-factor));
@@ -291,7 +291,7 @@ export default {
     /* border: solid red  0.5px * var(--scale-factor)); */
 }
 .card15-fixed-label3-position {
-    top: calc(276.5px * var(--scale-factor));
+    top: calc(274.5px * var(--scale-factor));
     left: calc(522px * var(--scale-factor));
     width: calc(47px * var(--scale-factor));
     height: calc(15.5px * var(--scale-factor));
@@ -309,7 +309,7 @@ export default {
     /* border: solid red  0.5px * var(--scale-factor)); */
 }
 .card15-fixed-label5-position {
-    top: calc(315.3px * var(--scale-factor));
+    top: calc(313.3px * var(--scale-factor));
     left: calc(521px * var(--scale-factor));
     width: calc(47px * var(--scale-factor));
     height: calc(15.5px * var(--scale-factor));

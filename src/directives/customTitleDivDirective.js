@@ -1,6 +1,6 @@
 export default {
     beforeMount(el, binding) {
-        const scaleFactor = 0.721;
+        const scaleFactor = 1.00;
         const currentLocale = binding.instance?.$i18n?.locale;
         if (currentLocale === 'my') {
             const titleElements = el.querySelectorAll('.title');

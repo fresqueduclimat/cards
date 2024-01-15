@@ -76,7 +76,7 @@ export default {
 }
 
 .card5-label2-position {
-    top: calc(196px * var(--scale-factor)); /* A' = 1517 * 470 / 3180 = 223.01px */
+    top: calc(195px * var(--scale-factor)); /* A' = 1517 * 470 / 3180 = 223.01px */
     left: calc(215px * var(--scale-factor)); /* B' = 1690 * 693 / 4680 = 249.93px */
     width: calc(84px * var(--scale-factor)); /* C' = 660 * 693 / 4680 = 97.71px */
     height: calc(16px * var(--scale-factor)); /* D' = 125 * 470 / 3180 = 18.49px */
