@@ -222,6 +222,7 @@ export default {
 
 /* default is en logo without barcode (website version) */
 .outline-container-back {
+    background-color: white;
     top: calc(351.7px * var(--scale-factor));
     left: calc(174.6px * var(--scale-factor));
     width: calc(206px * var(--scale-factor));

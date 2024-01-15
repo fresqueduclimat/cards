@@ -106,6 +106,7 @@ export default {
 
 /* default is en logo */
 .outline-container {
+    background-color: white;
     top: calc(299px * var(--scale-factor));
     left: calc(173.7px * var(--scale-factor));
     width: calc(369px * var(--scale-factor));

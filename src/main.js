@@ -2,6 +2,7 @@ import App from "./App.vue";
 import ar from "@/locales/ar-AR.json";
 import bg from "@/locales/bg-BG.json";
 import zh from "@/locales/zh-CN.json";
+import tpe from "@/locales/zh-TPE.json";
 import textDirectionDirective from "@/directives/textDirectionDirective.js";
 import textAlignDirective from "@/directives/textAlignDirective.js"; 
 import co2SubscriptDirective from "@/directives/co2SubscriptDirective.js"; 
@@ -37,6 +38,8 @@ import nl from "@/locales/nl-NL.json";
 import es from "@/locales/es-ES.json";
 import lat from "@/locales/es-LAT.json";
 import fa from "@/locales/fa-IR.json";
+import id from "@/locales/id-ID.json";
+import tr from "@/locales/tr-TR.json";
 
 const messages = {
   en: en,
@@ -60,6 +63,9 @@ const messages = {
   es : es,
   lat : lat,
   fa : fa,
+  id : id,
+  tr : tr,
+  tpe : tpe,
 };
 
 // if we want to have the language as a param when executing the command
@@ -67,7 +73,7 @@ const messages = {
 // const locale = process.env.VUE_APP_LOCALE || "en";
 
 const i18n = createI18n({
-  locale: "lat", // Remplacer par locale si passée en parametre
+  locale: "tpe", // Remplacer par locale si passée en parametre
   fallbackLocale: "fr",
   messages,
 });
