@@ -23,11 +23,11 @@ export default {
                 text.style.top = `${230 * scaleFactor}px`;
             });
         }
-        if (currentLocale === 'es') {
+        if (currentLocale === 'es' || currentLocale === 'lat'|| currentLocale === 'ca') {
             const corpusElements = el.querySelectorAll('#card44-label1');
             corpusElements.forEach(text => {
                 text.style.top = `${93 * scaleFactor}px`;
-                text.style.fontSize = `${12 * scaleFactor}px`;
+                text.style.fontSize = `${13 * scaleFactor}px`;
             });
             const addressElements = el.querySelectorAll('#card44-label2');
             addressElements.forEach(text => {
@@ -40,6 +40,13 @@ export default {
                 text.style.left = `${228 * scaleFactor}px`;
                 text.style.width = `${188 * scaleFactor}px`;
                 text.style.fontSize = `${12 * scaleFactor}px`;
+            });
+        }
+        if (currentLocale === 'ca') {
+            const corpusElements = el.querySelectorAll('#card44-label1');
+            corpusElements.forEach(text => {
+                text.style.top = `${85 * scaleFactor}px`;
+                text.style.fontSize = `${13 * scaleFactor}px`;
             });
         }
         if (currentLocale === 'nl') {

@@ -177,7 +177,7 @@ export default {
             const labeltwoElements = el.querySelectorAll('#card0-label2');
             labeltwoElements.forEach(text => {
                 text.style.top = `${274.3 * scaleFactor}px`;  
-                text.style.left = `${418 * scaleFactor}px`;  
+                text.style.left = `${415 * scaleFactor}px`;  
                 text.style.width = `${119 * scaleFactor}px`;  
                 text.style.height = `${60 * scaleFactor}px`;  
             });
@@ -203,11 +203,11 @@ export default {
                 text.style.fontSize = `${13 * scaleFactor}px`;
             });
         }
-        if (currentLocale === 'es') {
+        if (currentLocale === 'es' || currentLocale === 'lat'|| currentLocale === 'ca') {
             const labeltwoElements = el.querySelectorAll('#card0-label2');
             labeltwoElements.forEach(text => {
                 text.style.top = `${273.6 * scaleFactor}px`;  
-                text.style.left = `${421.5 * scaleFactor}px`;  
+                text.style.left = `${416.5 * scaleFactor}px`;  
             });
         }
         if (currentLocale === 'vi') {
