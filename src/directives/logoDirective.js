@@ -43,7 +43,7 @@ export default {
                     logo.style.top = `${286 * scaleFactor}px`;
                     logo.style.left = `${106 * scaleFactor}px`;
                     logo.style.width = `${213 * scaleFactor}px`; 
-                    logo.style.height = `${64 * scaleFactor}px`;
+                    logo.style.height = `${57 * scaleFactor}px`;
                 });
                 const outlineBackContainerElements = el.querySelectorAll('.outline-container-back');
                 outlineBackContainerElements.forEach(outline => {
@@ -100,6 +100,7 @@ export default {
             outlineContainerElements.forEach(logo => {
                 logo.style.left = `${196 * scaleFactor}px`;
                 logo.style.top = `${300 * scaleFactor}px`;
+                logo.style.width = `${350 * scaleFactor}px`;
             });
             if (print === 'false') { //if print is true, the position is defined in the logoDirective
             //last page
@@ -119,7 +120,7 @@ export default {
         }
 
         // SPANISH ES-ES
-        if (currentLocale === 'es') { 
+        if (currentLocale === 'es' || currentLocale === 'lat'|| currentLocale === 'ca') { 
             const logoElements = el.querySelectorAll('.local-logo');
             logoElements.forEach(logo => {
                 logo.style.backgroundImage = `url(${require('@/assets/logo-es.png')})`;
@@ -479,6 +480,8 @@ export default {
         //when local logos are displayed, we add a small climatefresk logo on front page
         if (currentLocale === 'de' || 
             currentLocale === 'es' ||
+            currentLocale === 'ca' ||
+            currentLocale === 'lat' ||
             currentLocale === 'fi' || 
             currentLocale === 'tr' || 
             currentLocale === 'tpe' || 
