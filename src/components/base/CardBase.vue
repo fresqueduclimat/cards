@@ -232,7 +232,7 @@ export default {
     top: calc(340px * var(--scale-factor));
     left: calc(28px * var(--scale-factor));
     width: calc(99px * var(--scale-factor));
-    height: calc(56px * var(--scale-factor));
+    height: calc(70px * var(--scale-factor));
     background-color: red;
     padding-top: calc(9.5px * var(--scale-factor));
     font-weight: 430;
@@ -243,7 +243,7 @@ export default {
     top: calc(340.5px * var(--scale-factor));
     left: calc(138.5px * var(--scale-factor));
     width: calc(100px * var(--scale-factor));
-    height: calc(56px * var(--scale-factor));
+    height: calc(70px * var(--scale-factor));
     background-color: red;
     padding-top: calc(9.5px * var(--scale-factor));
     font-weight: 430;
@@ -254,7 +254,7 @@ export default {
     top: calc(340.5px * var(--scale-factor));
     left: calc(248.5px * var(--scale-factor));
     width: calc(100px * var(--scale-factor));
-    height: calc(56px * var(--scale-factor));
+    height: calc(70px * var(--scale-factor));
     background-color: red;
     padding-top: calc(9.5px * var(--scale-factor));
     font-weight: 430;
@@ -265,7 +265,7 @@ export default {
     top: calc(340.5px * var(--scale-factor));
     left: calc(358.6px * var(--scale-factor));
     width: calc(100px * var(--scale-factor));
-    height: calc(56px * var(--scale-factor));
+    height: calc(70px * var(--scale-factor));
     background-color: red;
     padding-top: calc(9.5px * var(--scale-factor));
     font-weight: 430;
@@ -276,7 +276,7 @@ export default {
     top: calc(340.5px * var(--scale-factor));
     left: calc(469px * var(--scale-factor));
     width: calc(100px * var(--scale-factor));
-    height: calc(56px * var(--scale-factor));
+    height: calc(70px * var(--scale-factor));
     background-color: red;
     padding-top: calc(9.5px * var(--scale-factor));
     font-weight: 430;

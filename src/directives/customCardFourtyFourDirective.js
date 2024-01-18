@@ -59,10 +59,43 @@ export default {
                 text.style.width = `${198 * scaleFactor}px`;
             });
         }
-        if (currentLocale === 'pt') {
+        if (currentLocale === 'pt' || currentLocale === 'br') {
             const corpusElements = el.querySelectorAll('#card44-label1');
             corpusElements.forEach(text => {
                 text.style.top = `${93 * scaleFactor}px`;
+            });
+        }
+        if (currentLocale === 'tpe') {
+            const corpusElements = el.querySelectorAll('#card44-label1');
+            corpusElements.forEach(text => {
+                text.style.top = `${111 * scaleFactor}px`;
+            });
+        }
+        if (currentLocale === 'hu') {
+            const corpusElements = el.querySelectorAll('#card44-label1');
+            corpusElements.forEach(text => {
+                text.style.top = `${98 * scaleFactor}px`;
+            });
+        }
+        if (currentLocale === 'pl') {
+            const corpusElements = el.querySelectorAll('#card44-label1');
+            corpusElements.forEach(text => {
+                text.style.top = `${90 * scaleFactor}px`;
+            });
+            const addressElements = el.querySelectorAll('#card44-label2');
+            addressElements.forEach(text => {
+                text.style.width = `${206 * scaleFactor}px`;
+                text.style.height = `${60.6 * scaleFactor}px`;
+            });
+            const addressngoElements = el.querySelectorAll('#card44-label3');
+            addressngoElements.forEach(text => {
+                text.style.left = `${268 * scaleFactor}px`;
+            });
+        }
+        if (currentLocale === 'ar') {
+            const corpusElements = el.querySelectorAll('#card44-label1');
+            corpusElements.forEach(text => {
+                text.style.top = `${114 * scaleFactor}px`;
             });
         }
     },
