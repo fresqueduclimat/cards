@@ -101,7 +101,7 @@ export default {
 .card0-label4-position {
     top: calc(169.4px * var(--scale-factor));
     left: calc(50.7px * var(--scale-factor));
-    width: calc(584px * var(--scale-factor));
+    width: calc(484px * var(--scale-factor));
     height: calc(17px * var(--scale-factor));
     text-align: left;
     /* border: red solid 0.5px * var(--scale-factor)); */

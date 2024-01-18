@@ -205,6 +205,7 @@ export default {
                 outlineBackContainerElements.forEach(outline => {
                     outline.style.top = `${363.7 * scaleFactor}px`;
                     outline.style.left = `${260 * scaleFactor}px`;
+                    outline.style.width = `${185 * scaleFactor}px`;
                 });
                 const recycledpaperElements = el.querySelectorAll('#card44-label7');
                 recycledpaperElements.forEach(text => {
