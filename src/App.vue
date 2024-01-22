@@ -223,8 +223,28 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;400;700&display=swap');
+@font-face {
+    font-family: 'Urbanist';
+    font-weight: 700; /* bold */
+    font-style: normal;
+    src: url('http://localhost:8080/fonts/Urbanist/Urbanist-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    font-weight: 400; /* normal */
+    font-style: normal;
+    src: url('http://localhost:8080/fonts/Urbanist/Urbanist-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    font-weight:200; /* extra light */
+    font-style: normal;
+    src: url('http://localhost:8080/fonts/Urbanist/Urbanist-ExtraLight.otf');
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;400;700&display=swap'); */
 
 :root {
   --r-main-font: "Urbanist", sans-serif;
