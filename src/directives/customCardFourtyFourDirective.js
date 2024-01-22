@@ -105,5 +105,17 @@ export default {
                 text.style.top = `${114 * scaleFactor}px`;
             });
         }
+        if (currentLocale === 'it') {
+            const corpusElements = el.querySelectorAll('#card44-label1');
+            corpusElements.forEach(text => {
+                text.style.top = `${94 * scaleFactor}px`;
+            });
+        }
+        if (currentLocale === 'ru') {
+            const corpusElements = el.querySelectorAll('#card44-label1');
+            corpusElements.forEach(text => {
+                text.style.top = `${98 * scaleFactor}px`;
+            });
+        }
     },
 };

@@ -471,5 +471,40 @@ export default {
                 text.style.fontSize = `${12 * scaleFactor}px`;
             });
         }
+        if (currentLocale === 'ru') {
+            // const labeloneElements = el.querySelectorAll('#card0-label1');
+            // labeloneElements.forEach(text => {
+            //     text.style.fontSize = `${12 * scaleFactor}px`;
+            // });
+            // const labeltwoElements = el.querySelectorAll('#card0-label2');
+            // labeltwoElements.forEach(text => {
+            //     text.style.top = `${269.2 * scaleFactor}px`;  
+            // });
+            const labelthreeElements = el.querySelectorAll('#card0-label3');
+            labelthreeElements.forEach(text => {
+                text.style.top = `${122.2 * scaleFactor}px`; 
+                text.style.height = `${63 * scaleFactor}px`; 
+                text.style.fontSize = `${13 * scaleFactor}px`;
+            });
+            const labelfourElements = el.querySelectorAll('#card0-label4');
+            labelfourElements.forEach(text => {
+                text.style.top = `${173.4 * scaleFactor}px`;   
+                text.style.height = `${50 * scaleFactor}px`; 
+                text.style.fontSize = `${13 * scaleFactor}px`;
+            });
+            const labelfiveElements = el.querySelectorAll('#card0-label5');
+            labelfiveElements.forEach(text => {
+                text.style.top = `${209.5 * scaleFactor}px`;   
+                text.style.height = `${53 * scaleFactor}px`; 
+                text.style.fontSize = `${13 * scaleFactor}px`;
+            });
+        }
+        if (currentLocale === 'it') {
+            const labeltwoElements = el.querySelectorAll('#card0-label2');
+            labeltwoElements.forEach(text => {
+                text.style.top = `${274.7 * scaleFactor}px`; 
+                text.style.left = `${415.5 * scaleFactor}px`;  
+            });
+        }
     },
 };

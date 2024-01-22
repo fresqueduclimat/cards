@@ -49,14 +49,14 @@
             <div class="label frame-container">
                 <div class="frame"></div>
             </div>
-            <!-- <hr class="label border-white top-left-vertical">
-            <hr class="label border-white top-left-horizontal">
-            <hr class="label border-white top-right-vertical">
-            <hr class="label border-white top-right-horizontal">
-            <hr class="label border-white bottom-left-vertical">
-            <hr class="label border-white bottom-left-horizontal">
-            <hr class="label border-white bottom-right-vertical">
-            <hr class="label border-white bottom-right-horizontal"> -->
+            <hr class="label border-white border-vertical top-left-vertical">
+            <hr class="label border-white border-horizontal top-left-horizontal">
+            <hr class="label border-white border-vertical top-right-vertical">
+            <hr class="label border-white border-horizontal top-right-horizontal">
+            <hr class="label border-black border-vertical bottom-left-vertical">
+            <hr class="label border-black border-horizontal bottom-left-horizontal">
+            <hr class="label border-black border-vertical bottom-right-vertical">
+            <hr class="label border-black border-horizontal bottom-right-horizontal"> 
         </div>
     </section>
     

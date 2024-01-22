@@ -24,7 +24,6 @@ import de from "@/locales/de-DE.json";
 import en from "@/locales/en-GB.json";
 import fr from "@/locales/fr-FR.json";
 import ja from "@/locales/ja-JP.json";
-import ru from "@/locales/ru.json";
 import kh from "@/locales/kh.json";
 import lao from "@/locales/lao.json";
 import vi from "@/locales/vi-VN.json";
@@ -44,6 +43,8 @@ import hu from "@/locales/hu-HU.json";
 import br from "@/locales/pt-BR.json";
 import pl from "@/locales/pl-PL.json";
 import ca from "@/locales/ca-ES.json";
+import it from "@/locales/it-IT.json";
+import ru from "@/locales/ru-RU.json";
 
 const messages = {
   en: en,
@@ -53,7 +54,6 @@ const messages = {
   de: de,
   ja: ja,
   zh : zh,
-  ru: ru,
   kh: kh,
   lao : lao,
   vi : vi,
@@ -74,6 +74,8 @@ const messages = {
   br : br,
   pl : pl,
   ca : ca,
+  ru : ru,
+  it : it,
 };
 
 // if we want to have the language as a param when executing the command
@@ -81,7 +83,7 @@ const messages = {
 // const locale = process.env.VUE_APP_LOCALE || "en";
 
 const i18n = createI18n({
-  locale: "es", // Remplacer par locale si passée en parametre
+  locale: "pl", // Remplacer par locale si passée en parametre
   fallbackLocale: "fr",
   messages,
 });

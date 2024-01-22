@@ -287,80 +287,99 @@ export default {
     font-size: calc(134px * var(--scale-factor));
 }
 
-.border-white {
-    border: solid white 0.8px;
+section hr.label {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    border-style: none;
+    overflow: hidden;
+    unicode-bidi: normal;
+}
+hr.label.border-white.top-left-vertical {
+    border-top: 0.1px solid white;
+    border-left: 0.1px solid white;
 }
 
-.border-black {
-    border: solid black 0.8px;
+hr.label.border-white.top-left-horizontal {
+    border-top: 0.1px solid white;
+    border-left: 0.1px solid white;
 }
 
-.border-white {
-    border: solid red 0.7px;
+hr.label.border-white.top-right-vertical {
+    border-top: 0.1px solid white;
+    border-right: 0.1px solid white;
 }
 
-.border-black {
-    border: solid red 0.7px;
+hr.label.border-white.top-right-horizontal {
+    border-top: 0.1px solid white;
+    border-right: 0.1px solid white;
 }
 
-/* 2 */
-.top-left-vertical {
-    /* height: calc(10px * var(--scale-factor)); */
-    height: 310px;
-    /* top: calc(-15px * var(--scale-factor));
-    left: calc(15px * var(--scale-factor)); */
-    top: -15px;
-    left:0px;
+hr.label.border-black.bottom-left-vertical {
+    border-bottom: 0.1px solid black;
+    border-left: 0.1px solid black;
 }
+
+hr.label.border-black.bottom-left-horizontal {
+    border-bottom: 0.1px solid black;
+    border-left: 0.1px solid black;
+}
+
+hr.label.border-black.bottom-right-vertical {
+    border-bottom: 0.1px solid black;
+    border-right: 0.1px solid black;
+}
+
+hr.label.border-black.bottom-right-horizontal {
+    border-bottom: 0.1px solid black;
+    border-right: 0.1px solid black;
+}
+
 /* 1 */
 .top-left-horizontal {
-    /* width: calc(10px * var(--scale-factor)); */
-    width: 450px;
-    /* top: calc(15px * var(--scale-factor));
-    left: calc(-15px * var(--scale-factor)); */
-    top: -8px;
-    left:-15px;
+    /* width: calc(597px* var(--scale-factor)); */
+    width : 7px;
+    top: 14px;
+    left: 0px;
+}
+/* 2 */
+.top-left-vertical {
+    /* height: calc(408px * var(--scale-factor)); */
+    height: 7px;
+    top: 0px;
+    left: 15px;
+}
+/* 3 */
+.bottom-left-horizontal {
+    width : 7px;
+    top: calc(calc(408px * var(--scale-factor)) - 15px);
+    left: 0px
 }
 /* 4 */
 .top-right-vertical {
-    /* height: calc(10px * var(--scale-factor)); */
-    height: 500px;
-    /* top: calc(-15px * var(--scale-factor));
-    left: calc(567px * var(--scale-factor)); */
-    top: -15px;
-    left: 411px;
+    height: 7px;
+    top: 0px;
+    left: calc(calc(597px* var(--scale-factor)) - 14px);
 }
-/* .top-right-horizontal {
-    width: calc(10px * var(--scale-factor)); 
-    width: 427px;
-    top: calc(4px * var(--scale-factor));
-    left: calc(581px * var(--scale-factor));
+.top-right-horizontal {
+    width : 7px;
+    top: 14px;
+    left: calc(calc(597px* var(--scale-factor)) - 7px);
 }
  .bottom-left-vertical {
-    height: calc(10px * var(--scale-factor));
-    height: 295px;
-    top: calc(452px * var(--scale-factor));
-    left: calc(14px * var(--scale-factor));
-} */
-/* 3 */
-.bottom-left-horizontal {
-    /* width: calc(10px * var(--scale-factor)); */
-    width: 427px;
-    /* top: calc(382px * var(--scale-factor));
-    left: calc(0px * var(--scale-factor)); */
-    top: 272px;
-    left: 0px
+    height: 7px;
+    top: calc(calc(408px * var(--scale-factor)) - 7px);
+    left: 15px;
 }
-/* .bottom-right-vertical {
-    height: calc(10px * var(--scale-factor));
-    height: 295px;
-    top: calc(453px * var(--scale-factor));
-    left: calc(678px * var(--scale-factor));
+.bottom-right-vertical {
+    height: 7px;
+    top: calc(calc(408px * var(--scale-factor)) - 9px);
+    left: calc(calc(597px* var(--scale-factor)) - 14px);
 }
 .bottom-right-horizontal {
-    width: calc(10px * var(--scale-factor));
-    width: 427px;
-    top: calc(446px * var(--scale-factor));
-    left: calc(684px * var(--scale-factor));
-} */
+    width: 7px;
+    top: calc(calc(408px * var(--scale-factor)) - 15px);
+    left: calc(calc(597px* var(--scale-factor)) - 7px);
+}
 </style>
