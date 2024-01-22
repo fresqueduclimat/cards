@@ -22,14 +22,14 @@
             <div class="label frame-container">
                 <div class="frame"></div>
             </div>
-            <!-- <hr class="label border-white top-left-vertical">
-            <hr class="label border-white top-left-horizontal">
-            <hr class="label border-white top-right-vertical">
-            <hr class="label border-white top-right-horizontal">
-            <hr class="label border-white bottom-left-vertical">
-            <hr class="label border-white bottom-left-horizontal">
-            <hr class="label border-white bottom-right-vertical">
-            <hr class="label border-white bottom-right-horizontal">  -->
+            <hr class="label border-white border-vertical top-left-vertical">
+            <hr class="label border-white border-horizontal top-left-horizontal">
+            <hr class="label border-white border-vertical top-right-vertical">
+            <hr class="label border-white border-horizontal top-right-horizontal">
+            <hr class="label border-black border-vertical bottom-left-vertical">
+            <hr class="label border-black border-horizontal bottom-left-horizontal">
+            <hr class="label border-black border-vertical bottom-right-vertical">
+            <hr class="label border-black border-horizontal bottom-right-horizontal"> 
         </div>
     </section>
 </template>
@@ -124,5 +124,101 @@ export default {
     border-left: calc(39px * var(--scale-factor)) solid #00acb3;
     border-bottom: calc(39px * var(--scale-factor)) solid #e30613;
     border-right: calc(39px * var(--scale-factor)) solid #e30613;
+}
+
+section hr.label {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    border-style: none;
+    overflow: hidden;
+    unicode-bidi: normal;
+}
+hr.label.border-white.top-left-vertical {
+    border-top: 0.1px solid white;
+    border-left: 0.1px solid white;
+}
+
+hr.label.border-white.top-left-horizontal {
+    border-top: 0.1px solid white;
+    border-left: 0.1px solid white;
+}
+
+hr.label.border-white.top-right-vertical {
+    border-top: 0.1px solid white;
+    border-right: 0.1px solid white;
+}
+
+hr.label.border-white.top-right-horizontal {
+    border-top: 0.1px solid white;
+    border-right: 0.1px solid white;
+}
+
+hr.label.border-black.bottom-left-vertical {
+    border-bottom: 0.1px solid black;
+    border-left: 0.1px solid black;
+}
+
+hr.label.border-black.bottom-left-horizontal {
+    border-bottom: 0.1px solid black;
+    border-left: 0.1px solid black;
+}
+
+hr.label.border-black.bottom-right-vertical {
+    border-bottom: 0.1px solid black;
+    border-right: 0.1px solid black;
+}
+
+hr.label.border-black.bottom-right-horizontal {
+    border-bottom: 0.1px solid black;
+    border-right: 0.1px solid black;
+}
+
+/* 1 */
+.top-left-horizontal {
+    /* width: calc(597px* var(--scale-factor)); */
+    width : 7px;
+    top: 14px;
+    left: 0px;
+}
+/* 2 */
+.top-left-vertical {
+    /* height: calc(408px * var(--scale-factor)); */
+    height: 7px;
+    top: 0px;
+    left: 15px;
+}
+/* 3 */
+.bottom-left-horizontal {
+    width : 7px;
+    top: calc(calc(408px * var(--scale-factor)) - 15px);
+    left: 0px
+}
+/* 4 */
+.top-right-vertical {
+    height: 7px;
+    top: 0px;
+    left: calc(calc(597px* var(--scale-factor)) - 14px);
+}
+.top-right-horizontal {
+    width : 7px;
+    top: 14px;
+    left: calc(calc(597px* var(--scale-factor)) - 7px);
+}
+ .bottom-left-vertical {
+    height: 7px;
+    top: calc(calc(408px * var(--scale-factor)) - 7px);
+    left: 15px;
+}
+.bottom-right-vertical {
+    height: 7px;
+    top: calc(calc(408px * var(--scale-factor)) - 9px);
+    left: calc(calc(597px* var(--scale-factor)) - 14px);
+}
+.bottom-right-horizontal {
+    width: 7px;
+    top: calc(calc(408px * var(--scale-factor)) - 15px);
+    left: calc(calc(597px* var(--scale-factor)) - 7px);
 }
 </style>
