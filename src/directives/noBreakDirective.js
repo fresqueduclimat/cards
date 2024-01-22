@@ -100,6 +100,23 @@ export default {
         replacement = '<nobr>im Vergleich</nobr>';
         el.innerHTML = el.innerHTML.replace(regex, replacement);
 
+        
+        let content = el.innerHTML;
+
+        const regexStart = /nbstart/g;
+        const regexEnd = /nbend/g;
+        const replacementStart = '<nobr>';
+        const replacementEnd = '</nobr>';
+
+        // Appliquer les remplacements pour nbstart
+        content = content.replace(regexStart, replacementStart);
+
+        // Appliquer les remplacements pour nbend
+        content = content.replace(regexEnd, replacementEnd);
+
+        // Affectez le contenu modifié à innerText
+        el.innerHTML = content;
+        
     },
 };
 
