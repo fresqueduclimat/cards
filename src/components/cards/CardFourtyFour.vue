@@ -108,7 +108,7 @@ export default {
 .qr-code-siteweb {
     width: 100%;
     height: 100%;
-    background-image: url('@/assets/qr-code/qr-siteweb-fr.png');
+    background-image: url('@/assets/qr-code/qr-siteweb-en.png');
     background-size: contain;
 }
 
@@ -122,7 +122,7 @@ export default {
 .barcode {
     width: 100%;
     height: 100%;
-    background-image: url('@/assets/barcode/adults-en-mini.png');
+    background-image: url('@/assets/barcode/adults-fr.png');
     background-size: contain;
 }
 
@@ -158,7 +158,7 @@ export default {
 }
 
 .card44-label1-position {
-    top: calc(86px * var(--scale-factor));
+    top: calc(97px * var(--scale-factor));
     left: calc(44.7px * var(--scale-factor));
     width: calc(383.5px * var(--scale-factor));
     height: calc(135px * var(--scale-factor));

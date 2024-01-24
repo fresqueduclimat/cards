@@ -41,6 +41,10 @@ export default {
                 recycledpaperElements.forEach(text => {
                     text.style.top = `${374 * scaleFactor}px`;
                 });
+                const qrcodeElements = el.querySelectorAll('.qr-code-siteweb');
+                qrcodeElements.forEach(code => {
+                    code.style.backgroundImage = `url(${require('@/assets/qr-code/qr-siteweb-fr.png')})`;
+                });
             }
         
             // add en logo & qr code 

@@ -104,7 +104,7 @@ export default {
 
 .card5-fixed-label1-position {
     top: calc(108.3px * var(--scale-factor)); /* A' = 840 * 470 / 3180 = 123.88px */
-    left: calc(363px * var(--scale-factor)); /* B' = 2850 * 693 / 4680 = 423.09px */
+    left: calc(365px * var(--scale-factor)); /* B' = 2850 * 693 / 4680 = 423.09px */
     width: calc(58px * var(--scale-factor)); 
     height: calc(19px * var(--scale-factor)); 
     font-size: calc(10.3px * var(--scale-factor));
@@ -114,7 +114,7 @@ export default {
 
 .card5-fixed-label2-position {
     top: calc(142px * var(--scale-factor)); /* A' = 1100 * 470 / 3180 = 161.94px */
-    left: calc(408.5px * var(--scale-factor)); /* B' = 3200 * 693 / 4680 = 472.23px */
+    left: calc(410.5px * var(--scale-factor)); /* B' = 3200 * 693 / 4680 = 472.23px */
     width: calc(58px * var(--scale-factor)); 
     height: calc(19px * var(--scale-factor)); 
     font-size: calc(10.3px * var(--scale-factor));
@@ -124,7 +124,7 @@ export default {
 
 .card5-fixed-label3-position {
     top: calc(206.4px * var(--scale-factor)); /* A' = 1610 * 470 / 3180 = 236.05px */
-    left: calc(406.8px * var(--scale-factor)); /* B' = 3190 * 693 / 4680 = 468.98px */
+    left: calc(410.8px * var(--scale-factor)); /* B' = 3190 * 693 / 4680 = 468.98px */
     width: calc(58px * var(--scale-factor)); 
     height: calc(19px * var(--scale-factor)); 
     font-size: calc(10.3px * var(--scale-factor));
@@ -134,7 +134,7 @@ export default {
 
 .card5-fixed-label4-position {
     top: calc(250px * var(--scale-factor)); /* A' = 1950 * 470 / 3180 = 286.76px */
-    left: calc(387px * var(--scale-factor)); /* B' = 3033 * 693 / 4680 = 449.87px */
+    left: calc(388px * var(--scale-factor)); /* B' = 3033 * 693 / 4680 = 449.87px */
     width: calc(58px * var(--scale-factor)); 
     height: calc(19px * var(--scale-factor)); 
     font-size: calc(10.3px * var(--scale-factor));
