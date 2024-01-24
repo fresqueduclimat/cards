@@ -1,5 +1,5 @@
 <template>
-  <div v-mini-size v-custom-size v-font-family v-card-fourtyfour v-card-zero v-no-break v-print v-logo v-customtitlediv v-linespacing v-linebreak v-text-direction v-co2-subscript id="app" class="reveal">
+  <div v-qr-code v-mini-size v-custom-size v-font-family v-card-fourtyfour v-card-zero v-no-break v-print v-logo v-customtitlediv v-linespacing v-linebreak v-text-direction v-co2-subscript id="app" class="reveal">
     <div class="slides">
       <FrontCard />
       <CardZero />
@@ -225,7 +225,7 @@ export default {
 <style>
 @font-face {
     font-family: 'Urbanist';
-    font-weight: 700; /* bold */
+    font-weight: 700;  /* bold */
     font-style: normal;
     src: url('http://localhost:8080/fonts/Urbanist/Urbanist-Bold.ttf');
 }
@@ -244,7 +244,15 @@ export default {
     src: url('http://localhost:8080/fonts/Urbanist/Urbanist-ExtraLight.otf');
 }
 
-/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;400;700&display=swap'); */
+@font-face {
+    font-family: 'Urbanist';
+    font-weight:500; /* extra light */
+    font-style: normal;
+    src: url('http://localhost:8080/fonts/Urbanist/Urbanist-Medium.ttf');
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;400;700&display=swap'); */
 
 :root {
   --r-main-font: "Urbanist", sans-serif;
