@@ -246,9 +246,30 @@ export default {
 
 @font-face {
     font-family: 'Urbanist';
-    font-weight:500; /* extra light */
+    font-weight:500; /* medium */
     font-style: normal;
     src: url('http://localhost:8080/fonts/Urbanist/Urbanist-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Noto Sans TC';
+    font-weight: 700;  /* bold */
+    font-style: normal;
+    src: url('http://localhost:8080/fonts/NotoSansTC/NotoSansTC-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Noto Sans TC';
+    font-weight: 400; /* normal */
+    font-style: normal;
+    src: url('http://localhost:8080/fonts/NotoSansTC/NotoSansTC-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Noto Sans TC';
+    font-weight:500; /* medium */
+    font-style: normal;
+    src: url('http://localhost:8080/fonts/NotoSansTC/NotoSansTC-Medium.ttf');
 }
 
 /* @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;400;500;700&display=swap');

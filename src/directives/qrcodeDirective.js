@@ -16,7 +16,7 @@ export default {
                 });
             }
             // ES-ES
-            if (currentLocale === 'es') {
+            if (currentLocale === 'es' || currentLocale === 'lat') {
                 const qrcodeElements = el.querySelectorAll('.qr-code-siteweb');
                 qrcodeElements.forEach(code => {
                     code.style.backgroundImage = `url(${require('@/assets/qr-code/qr-siteweb-es.png')})`;

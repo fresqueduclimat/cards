@@ -3,7 +3,7 @@ export default {
         const scaleFactor = 1.00;
         const currentLocale = binding.instance?.$i18n?.locale;
         const print = process.env.VUE_APP_PRINT;
-        console.log("print is" + print)
+        console.log("print is " + print)
 
         // FRENCH FR-FR
         if (currentLocale === 'fr') { 
@@ -603,6 +603,41 @@ export default {
                 });
             }
         }
+        // NB-NO
+        if (currentLocale === 'nb') { 
+            const logoElements = el.querySelectorAll('.local-logo');
+            logoElements.forEach(logo => {
+                logo.style.backgroundImage = `url(${require('@/assets/logo-nb.png')})`;
+            });
+            //front page
+            const logoContainerElements = el.querySelectorAll('.logo-container-front');
+            logoContainerElements.forEach(logo => {
+                logo.style.top = `${151 * scaleFactor}px`;
+                logo.style.left = `${62 * scaleFactor}px`;
+                logo.style.width = `${399 * scaleFactor}px`;
+                logo.style.height = `${140 * scaleFactor}px`;
+            });
+            const outlineContainerElements = el.querySelectorAll('.outline-container');
+            outlineContainerElements.forEach(logo => {
+                logo.style.top = `${273 * scaleFactor}px`;
+                logo.style.left = `${181 * scaleFactor}px`;
+                logo.style.fontSize = `${24 * scaleFactor}px`;
+            });
+            if (print === 'false') { //if print is true, the position is defined in the logoDirective
+                //last page
+                const logoBigContainerElements = el.querySelectorAll('.logo-container-big');
+                logoBigContainerElements.forEach(logo => {
+                    logo.style.top = `${282 * scaleFactor}px`;
+                    logo.style.height = `${77 * scaleFactor}px`;
+                    logo.style.width = `${219 * scaleFactor}px`;
+                });
+                const outlineBackContainerElements = el.querySelectorAll('.outline-container-back');
+                outlineBackContainerElements.forEach(outline => {
+                    outline.style.top = `${349 * scaleFactor}px`;
+                    outline.style.left = `${199 * scaleFactor}px`; 
+                });
+            }
+        }
         //when local logos are displayed, we add a small climatefresk logo on front page
         if (currentLocale === 'de' || 
             currentLocale === 'es' ||
@@ -618,6 +653,7 @@ export default {
             currentLocale === 'it' || 
             currentLocale === 'ru' || 
             currentLocale === 'lt' || 
+            currentLocale === 'nb' || 
             currentLocale === 'pt') { 
             //small climatefresk logo should not appear on the front page
             const logoSmallContainerElements = el.querySelectorAll('.logo-container-small');

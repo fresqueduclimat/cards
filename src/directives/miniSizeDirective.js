@@ -3,7 +3,7 @@ export default {
         const scaleFactor = 1.00;
         const mini = process.env.VUE_APP_MINI;
         const currentLocale = binding.instance?.$i18n?.locale;
-        console.log(mini);
+        console.log("mini is " + mini);
         if (mini === 'true') {
             const contentElements = el.querySelectorAll('.content');
             contentElements.forEach(content => {

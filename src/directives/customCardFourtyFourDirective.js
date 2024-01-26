@@ -138,5 +138,25 @@ export default {
                 text.style.top = `${217 * scaleFactor}px`;
             });
         }
+        if (currentLocale === 'id') {
+            const corpusElements = el.querySelectorAll('#card44-label1');
+            corpusElements.forEach(text => {
+                text.style.fontSize = `${12 * scaleFactor}px`;
+            });
+            const addressElements = el.querySelectorAll('#card44-label2');
+            addressElements.forEach(text => {
+                text.style.fontSize = `${12 * scaleFactor}px`;
+            });
+            const addressngoElements = el.querySelectorAll('#card44-label3');
+            addressngoElements.forEach(text => {
+                text.style.fontSize = `${12 * scaleFactor}px`;
+            });
+        }
+        if (currentLocale === 'nb') {
+            const corpusElements = el.querySelectorAll('#card44-label1');
+            corpusElements.forEach(text => {
+                text.style.fontSize = `${12 * scaleFactor}px`;
+            });
+        }
     },
 };
