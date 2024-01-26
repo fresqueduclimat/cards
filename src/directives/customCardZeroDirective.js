@@ -528,7 +528,35 @@ export default {
             });
             const labelsevenElements = el.querySelectorAll('#card0-label7');
             labelsevenElements.forEach(text => {
-                text.style.top = `${343 * scaleFactor}px`;   
+                text.style.top = `${336 * scaleFactor}px`;   
+            });
+        }
+        if (currentLocale === 'nb') {
+            const labeloneElements = el.querySelectorAll('#card0-label1');
+            labeloneElements.forEach(text => {
+                text.style.fontSize = `${12 * scaleFactor}px`;
+            });
+            const labeltwoElements = el.querySelectorAll('#card0-label2');
+            labeltwoElements.forEach(text => {
+                text.style.top = `${276 * scaleFactor}px`;  
+                text.style.left = `${417 * scaleFactor}px`;  
+            });
+            const labelthreeElements = el.querySelectorAll('#card0-label3');
+            labelthreeElements.forEach(text => {
+                text.style.top = `${122 * scaleFactor}px`; 
+                text.style.height = `${50 * scaleFactor}px`; 
+                text.style.fontSize = `${12 * scaleFactor}px`;
+            });
+            const labelfourElements = el.querySelectorAll('#card0-label4');
+            labelfourElements.forEach(text => {
+                text.style.top = `${159 * scaleFactor}px`;   
+                text.style.height = `${50 * scaleFactor}px`; 
+                text.style.fontSize = `${12 * scaleFactor}px`;
+            });
+            const labelfiveElements = el.querySelectorAll('#card0-label5');
+            labelfiveElements.forEach(text => {
+                text.style.top = `${195 * scaleFactor}px`;   
+                text.style.fontSize = `${12 * scaleFactor}px`;
             });
         }
     },

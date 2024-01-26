@@ -47,6 +47,7 @@ import ca from "@/locales/ca-ES.json";
 import it from "@/locales/it-IT.json";
 import ru from "@/locales/ru-RU.json";
 import lt from "@/locales/lt-LT.json";
+import nb from "@/locales/nb-NO.json";
 
 const messages = {
   en: en,
@@ -79,6 +80,7 @@ const messages = {
   ru : ru,
   it : it,
   lt : lt,
+  nb : nb,
 };
 
 // if we want to have the language as a param when executing the command
@@ -86,8 +88,8 @@ const messages = {
 // const locale = process.env.VUE_APP_LOCALE || "en";
 
 const i18n = createI18n({
-  locale: "sv", // Remplacer par locale si passée en parametre
-  fallbackLocale: "fr",
+  locale: "fa", // Remplacer par locale si passée en parametre
+  fallbackLocale: "en",
   messages,
 });
 
