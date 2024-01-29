@@ -1,5 +1,6 @@
 <template>
-  <div v-qr-code v-mini-size v-custom-size v-font-family v-card-fourtyfour v-card-zero v-no-break v-print v-logo v-customtitlediv v-linespacing v-linebreak v-text-direction v-co2-subscript id="app" class="reveal">
+  <div v-qr-code v-mini-size v-custom-size v-font-family v-card-fourtyfour v-card-zero v-no-break v-print v-logo
+    v-customtitlediv v-linespacing v-linebreak v-text-direction v-co2-subscript id="app" class="reveal">
     <div class="slides">
       <FrontCard />
       <CardZero />
@@ -36,7 +37,7 @@
       <CardThirtyThree />
       <CardTwentyEight />
       <CardThirtyOne />
-      <CardThirtyTwo /> 
+      <CardThirtyTwo />
       <CardThirtyFive />
       <CardThirtySix />
       <CardThirtySeven />
@@ -174,7 +175,7 @@ export default {
     adjustFontSize() {
       const labels_max = [10, 0, 0, 0, 0, 5, 0, 4, 0, 0, 0, 2, 6, 5, 7, 19, 0, 0, 0, 0, 7, 6, 3, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 5]
       const labels = [];
-      for (let card_id = 0; card_id <= labels_max.length-1; card_id++) {
+      for (let card_id = 0; card_id <= labels_max.length - 1; card_id++) {
         let titleValue = {
           container: "card" + card_id + "-label0",
           text: "card" + card_id + "-text0",
@@ -224,52 +225,59 @@ export default {
 
 <style>
 @font-face {
-    font-family: 'Urbanist';
-    font-weight: 700;  /* bold */
-    font-style: normal;
-    src: url('http://localhost:8080/fonts/Urbanist/Urbanist-Bold.ttf');
+  font-family: 'Urbanist';
+  font-weight: 700;
+  /* bold */
+  font-style: normal;
+  src: url('http://localhost:8080/fonts/Urbanist/Urbanist-Bold.ttf');
 }
 
 @font-face {
-    font-family: 'Urbanist';
-    font-weight: 400; /* normal */
-    font-style: normal;
-    src: url('http://localhost:8080/fonts/Urbanist/Urbanist-Regular.ttf');
+  font-family: 'Urbanist';
+  font-weight: 400;
+  /* normal */
+  font-style: normal;
+  src: url('http://localhost:8080/fonts/Urbanist/Urbanist-Regular.ttf');
 }
 
 @font-face {
-    font-family: 'Urbanist';
-    font-weight:200; /* extra light */
-    font-style: normal;
-    src: url('http://localhost:8080/fonts/Urbanist/Urbanist-ExtraLight.otf');
+  font-family: 'Urbanist';
+  font-weight: 200;
+  /* extra light */
+  font-style: normal;
+  src: url('http://localhost:8080/fonts/Urbanist/Urbanist-ExtraLight.otf');
 }
 
 @font-face {
-    font-family: 'Urbanist';
-    font-weight:500; /* medium */
-    font-style: normal;
-    src: url('http://localhost:8080/fonts/Urbanist/Urbanist-Medium.ttf');
+  font-family: 'Urbanist';
+  font-weight: 500;
+  /* medium */
+  font-style: normal;
+  src: url('http://localhost:8080/fonts/Urbanist/Urbanist-Medium.ttf');
 }
 
 @font-face {
-    font-family: 'Noto Sans TC';
-    font-weight: 700;  /* bold */
-    font-style: normal;
-    src: url('http://localhost:8080/fonts/NotoSansTC/NotoSansTC-Bold.ttf');
+  font-family: 'Noto Sans TC';
+  font-weight: 700;
+  /* bold */
+  font-style: normal;
+  src: url('http://localhost:8080/fonts/NotoSansTC/NotoSansTC-Bold.ttf');
 }
 
 @font-face {
-    font-family: 'Noto Sans TC';
-    font-weight: 400; /* normal */
-    font-style: normal;
-    src: url('http://localhost:8080/fonts/NotoSansTC/NotoSansTC-Regular.ttf');
+  font-family: 'Noto Sans TC';
+  font-weight: 400;
+  /* normal */
+  font-style: normal;
+  src: url('http://localhost:8080/fonts/NotoSansTC/NotoSansTC-Regular.ttf');
 }
 
 @font-face {
-    font-family: 'Noto Sans TC';
-    font-weight:500; /* medium */
-    font-style: normal;
-    src: url('http://localhost:8080/fonts/NotoSansTC/NotoSansTC-Medium.ttf');
+  font-family: 'Noto Sans TC';
+  font-weight: 500;
+  /* medium */
+  font-style: normal;
+  src: url('http://localhost:8080/fonts/NotoSansTC/NotoSansTC-Medium.ttf');
 }
 
 /* @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;400;500;700&display=swap');
@@ -292,7 +300,8 @@ export default {
   --original-width: 4680;
   --new-height: 470;
   --original-width: font-size: 693;
-  --scale-factor: 1.00; /*scale-factor=1 pour une résolution de 597 x 408 */
+  --scale-factor: 1.00;
+  /*scale-factor=1 pour une résolution de 597 x 408 */
 }
 
 #app {
@@ -308,7 +317,7 @@ export default {
 }
 
 .container h1 {
-  font-weight : 700;
+  font-weight: 700;
 }
 
 .horizontal-center {
@@ -350,14 +359,13 @@ export default {
 }
 
 .font-big {
-    font-weight: 900;
+  font-weight: 900;
 }
 
 .font-medium {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .font-small {
-    font-weight: 500;
-}
-</style>
+  font-weight: 500;
+}</style>
