@@ -1,5 +1,5 @@
 <template>
-  <div v-qr-code v-mini-size v-custom-size v-font-family v-card-fourtyfour v-card-zero v-no-break v-print v-logo
+  <div v-custom-font v-qr-code v-mini-size v-custom-size v-font-family v-card-fourtyfour v-card-zero v-no-break v-print v-logo
     v-customtitlediv v-linespacing v-linebreak v-text-direction v-co2-subscript id="app" class="reveal">
     <div class="slides">
       <FrontCard />
@@ -278,6 +278,48 @@ export default {
   /* medium */
   font-style: normal;
   src: url('http://localhost:8080/fonts/NotoSansTC/NotoSansTC-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Vazirmatn';
+    font-weight: 700;  /* bold */
+    font-style: normal;
+    src: url('http://localhost:8080/fonts/Vazirmatn/Vazirmatn-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Vazirmatn';
+    font-weight: 400; /* normal */
+    font-style: normal;
+    src: url('http://localhost:8080/fonts/Vazirmatn/Vazirmatn-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Vazirmatn';
+    font-weight:500; /* medium */
+    font-style: normal;
+    src: url('http://localhost:8080/fonts/Vazirmatn/Vazirmatn-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Noto Sans Arabic';
+    font-weight: 700;  /* bold */
+    font-style: normal;
+    src: url('http://localhost:8080/fonts/NotoSansArabic/NotoSansArabic-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Noto Sans Arabic';
+    font-weight: 400; /* normal */
+    font-style: normal;
+    src: url('http://localhost:8080/fonts/NotoSansArabic/NotoSansArabic-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Noto Sans Arabic';
+    font-weight:500; /* medium */
+    font-style: normal;
+    src: url('http://localhost:8080/fonts/NotoSansArabic/NotoSansArabic-Medium.ttf');
 }
 
 /* @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;400;500;700&display=swap');
