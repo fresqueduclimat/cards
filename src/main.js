@@ -16,6 +16,7 @@ import printDirective from "./directives/printDirective.js";
 import qrcodeDirective from "./directives/qrcodeDirective";
 import textAlignDirective from "@/directives/textAlignDirective.js";
 import textDirectionDirective from "@/directives/textDirectionDirective.js";
+import customFont from "@/directives/customFontDirective";
 
 // Function to fetch JSON data
 async function fetchData(url) {
@@ -108,6 +109,7 @@ Promise.all(fetchPromises)
     app.directive('font-family', fontFamilyDirective);
     app.directive('custom-size', customSizesDirective);
     app.directive('mini-size', miniSizeDirective);
+    app.directive('custom-font', customFont);
     app.mount("#app");
   })
   .catch((error) => {
