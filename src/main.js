@@ -4,6 +4,7 @@ import { createApp } from "vue";
 import { createI18n } from "vue-i18n";
 import customCardFourtyFourDirective from "./directives/customCardFourtyFourDirective.js";
 import customCardZeroDirective from "./directives/customCardZeroDirective.js";
+import customFont from "@/directives/customFontDirective";
 import customSizesDirective from "./directives/customSizesDirective.js";
 import customTitleDivDirective from "./directives/customTitleDivDirective.js";
 import fontFamilyDirective from "./directives/fontFamilyDirective.js";
@@ -16,7 +17,6 @@ import printDirective from "./directives/printDirective.js";
 import qrcodeDirective from "./directives/qrcodeDirective";
 import textAlignDirective from "@/directives/textAlignDirective.js";
 import textDirectionDirective from "@/directives/textDirectionDirective.js";
-import customFont from "@/directives/customFontDirective";
 
 // Function to fetch JSON data
 async function fetchData(url) {
