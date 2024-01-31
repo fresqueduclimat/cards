@@ -1,6 +1,6 @@
 <template>
-  <div v-custom-font v-qr-code v-mini-size v-custom-size v-font-family v-card-fourtyfour v-card-zero v-no-break v-print v-logo
-    v-customtitlediv v-linespacing v-linebreak v-text-direction v-co2-subscript id="app" class="reveal">
+  <div v-custom-font v-qr-code v-mini-size v-custom-size v-font-family v-card-fourtyfour v-card-zero v-no-break v-print
+    v-logo v-customtitlediv v-linespacing v-linebreak v-text-direction v-co2-subscript id="app" class="reveal">
     <div class="slides">
       <FrontCard />
       <CardZero />
@@ -229,7 +229,7 @@ export default {
   font-weight: 700;
   /* bold */
   font-style: normal;
-  src: url('http://localhost:8080/fonts/Urbanist/Urbanist-Bold.ttf');
+  src: url('./fonts/Urbanist/Urbanist-Bold.ttf') format('truetype');
 }
 
 @font-face {
@@ -237,7 +237,7 @@ export default {
   font-weight: 400;
   /* normal */
   font-style: normal;
-  src: url('http://localhost:8080/fonts/Urbanist/Urbanist-Regular.ttf');
+  src: url('./fonts/Urbanist/Urbanist-Regular.ttf') format('truetype');
 }
 
 @font-face {
@@ -245,7 +245,7 @@ export default {
   font-weight: 500;
   /* medium */
   font-style: normal;
-  src: url('http://localhost:8080/fonts/Urbanist/Urbanist-Medium.ttf');
+  src: url('./fonts/Urbanist/Urbanist-Medium.ttf') format('truetype');
 }
 
 @font-face {
@@ -253,7 +253,7 @@ export default {
   font-weight: 700;
   /* bold */
   font-style: normal;
-  src: url('http://localhost:8080/fonts/NotoSansTC/NotoSansTC-Bold.ttf');
+  src: url('./fonts/NotoSansTC/NotoSansTC-Bold.ttf') format('truetype');
 }
 
 @font-face {
@@ -261,7 +261,7 @@ export default {
   font-weight: 400;
   /* normal */
   font-style: normal;
-  src: url('http://localhost:8080/fonts/NotoSansTC/NotoSansTC-Regular.ttf');
+  src: url('./fonts/NotoSansTC/NotoSansTC-Regular.ttf') format('truetype');
 }
 
 @font-face {
@@ -269,49 +269,55 @@ export default {
   font-weight: 500;
   /* medium */
   font-style: normal;
-  src: url('http://localhost:8080/fonts/NotoSansTC/NotoSansTC-Medium.ttf');
+  src: url('./fonts/NotoSansTC/NotoSansTC-Medium.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Vazirmatn';
-    font-weight: 700;  /* bold */
+    font-weight: 700;
+  /* bold */
     font-style: normal;
-    src: url('http://localhost:8080/fonts/Vazirmatn/Vazirmatn-Bold.ttf');
+    src: url('./fonts/Vazirmatn/Vazirmatn-Bold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Vazirmatn';
-    font-weight: 400; /* normal */
+    font-weight: 400;
+  /* normal */
     font-style: normal;
-    src: url('http://localhost:8080/fonts/Vazirmatn/Vazirmatn-Regular.ttf');
+    src: url('./fonts/Vazirmatn/Vazirmatn-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Vazirmatn';
-    font-weight:500; /* medium */
+    font-weight: 500;
+  /* medium */
     font-style: normal;
-    src: url('http://localhost:8080/fonts/Vazirmatn/Vazirmatn-Medium.ttf');
+    src: url('./fonts/Vazirmatn/Vazirmatn-Medium.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Noto Sans Arabic';
-    font-weight: 700;  /* bold */
+    font-weight: 700;
+  /* bold */
     font-style: normal;
-    src: url('http://localhost:8080/fonts/NotoSansArabic/NotoSansArabic-Bold.ttf');
+    src: url('./fonts/NotoSansArabic/NotoSansArabic-Bold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Noto Sans Arabic';
-    font-weight: 400; /* normal */
+    font-weight: 400;
+  /* normal */
     font-style: normal;
-    src: url('http://localhost:8080/fonts/NotoSansArabic/NotoSansArabic-Regular.ttf');
+    src: url('./fonts/NotoSansArabic/NotoSansArabic-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Noto Sans Arabic';
-    font-weight:500; /* medium */
+    font-weight: 500;
+  /* medium */
     font-style: normal;
-    src: url('http://localhost:8080/fonts/NotoSansArabic/NotoSansArabic-Medium.ttf');
+    src: url('./fonts/NotoSansArabic/NotoSansArabic-Medium.ttf') format('truetype');
 }
 
 /* @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;400;500;700&display=swap');
@@ -402,4 +408,5 @@ export default {
 
 .font-small {
   font-weight: 500;
-}</style>
+}
+</style>
