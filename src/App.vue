@@ -1,5 +1,5 @@
 <template>
-  <div v-custom-font v-qr-code v-mini-size v-custom-size v-font-family v-card-fourtyfour v-card-zero v-no-break v-print
+  <div v-custom-font v-qr-code v-mini-size v-custom-size v-card-fourtyfour v-card-zero v-no-break v-print
     v-logo v-customtitlediv v-linespacing v-linebreak v-text-direction v-co2-subscript id="app" class="reveal">
     <div class="slides">
       <FrontCard />
@@ -318,6 +318,44 @@ export default {
   /* medium */
   font-style: normal;
   src: url('./fonts/NotoSansArabic/NotoSansArabic-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Noto Sans JP';
+    font-weight: 700;
+  /* bold */
+    font-style: normal;
+    src: url('./fonts/NotoSansJP/NotoSansJP-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto Sans JP';
+    font-weight: 400;
+  /* normal */
+    font-style: normal;
+    src: url('./fonts/NotoSansJP/NotoSansJP-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto Sans JP';
+    font-weight: 500;
+  /* medium */
+    font-style: normal;
+    src: url('./fonts/NotoSansJP/NotoSansJP-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Padauk';
+    font-weight: 700;
+  /* bold */
+    font-style: normal;
+    src: url('./fonts/Padauk/Padauk-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Padauk';
+    font-weight: 400;
+  /* normal */
+    font-style: normal;
+    src: url('./fonts/Padauk/Padauk-Regular.ttf') format('truetype');
 }
 
 /* @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;400;500;700&display=swap');

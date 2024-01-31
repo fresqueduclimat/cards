@@ -19,7 +19,16 @@ export default {
             document.documentElement.style.setProperty('--r-main-font', fontFamily);
             document.documentElement.style.setProperty('--r-heading-font', fontFamily);
         }
-
+        if (currentLocale === 'ja') {
+            fontFamily = "'Noto Sans JP', sans-serif";
+            document.documentElement.style.setProperty('--r-main-font', fontFamily);
+            document.documentElement.style.setProperty('--r-heading-font', fontFamily);
+        }
+        if (currentLocale === 'my') {
+            fontFamily = "'Padauk', sans-serif";
+            document.documentElement.style.setProperty('--r-main-font', fontFamily);
+            document.documentElement.style.setProperty('--r-heading-font', fontFamily);
+        }
         
     },
 };
