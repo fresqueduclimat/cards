@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+</head>
+
+<body>
+
+    <h1>Cards</h1>
+
+    <div id="subpageLinks"></div>
+
+    <script>
+        // Define an array of subpages
+        const subpages = "toreplace";
+
+        // Access the container div
+        const subpageLinksContainer = document.getElementById('subpageLinks');
+
+        // Generate and insert links for each subpage
+        subpages.forEach(subpage => {
+            const link = document.createElement('a');
+            link.href = subpage.url;
+            link.textContent = subpage.name;
+            link.style.display = 'block'; // Add some spacing between links
+            subpageLinksContainer.appendChild(link);
+        });
+    </script>
+
+</body>
+
+</html>

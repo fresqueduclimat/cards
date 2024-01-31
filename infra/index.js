@@ -2,7 +2,7 @@
 const pulumi = require("@pulumi/pulumi");
 const scaleway = require("@lbrlabs/pulumi-scaleway");
 
-const bucket = new scaleway.ObjectBucket("fresquecards");
+const bucket = new scaleway.ObjectBucket("fresqueduclimatcards");
 const acl = new scaleway.ObjectBucketAcl("mainAcl", {
     bucket: bucket.name,
     acl: "private",
