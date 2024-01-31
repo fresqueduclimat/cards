@@ -15,6 +15,30 @@ export default {
           card7label3Elements.forEach(text => {
             text.style.width = `${112 * scaleFactor}px`;
           });
+          const card15label14Elements = el.querySelectorAll('#card15-label14');
+          card15label14Elements.forEach(text => {
+            text.setAttribute('dir','ltr')
+          });
+          const card14label1Elements = el.querySelectorAll('#card14-label1');
+          card14label1Elements.forEach(text => {
+            text.setAttribute('dir','ltr')
+          });
+          const card14label2Elements = el.querySelectorAll('#card14-label2');
+          card14label2Elements.forEach(text => {
+            text.setAttribute('dir','ltr')
+          });
+          const card14label3Elements = el.querySelectorAll('#card14-label3');
+          card14label3Elements.forEach(text => {
+            text.setAttribute('dir','ltr')
+          });
+          const card14label4Elements = el.querySelectorAll('#card14-label4');
+          card14label4Elements.forEach(text => {
+            text.setAttribute('dir','ltr')
+          });
+          const card15label15Elements = el.querySelectorAll('#card15-label15');
+          card15label15Elements.forEach(text => {
+            text.setAttribute('dir','ltr')
+          });
           const card15label6Elements = el.querySelectorAll('#card15-fixed-text6');
           card15label6Elements.forEach(text => {
             text.setAttribute('dir','ltr')
@@ -99,6 +123,22 @@ export default {
 
           regex = /1\/4/g;
           replacement = '<nobr>۱/۴</nobr>';
+          el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+          regex = /91%/g;
+          replacement = '<nobr>۹۱٪</nobr>';
+          el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+          regex = /3%/g;
+          replacement = '<nobr>۵٪</nobr>';
+          el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+          regex = /5%/g;
+          replacement = '<nobr>۳٪</nobr>';
+          el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+          regex = /1%/g;
+          replacement = '<nobr>۱٪</nobr>';
           el.innerHTML = el.innerHTML.replace(regex, replacement);
         }
     },

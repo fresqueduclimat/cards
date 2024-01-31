@@ -59,40 +59,40 @@ export default {
 
 <style>
 .card14-label1-position {
-    top: calc(123.2px * var(--scale-factor));
+    top: calc(126.2px * var(--scale-factor));
     left: calc(427.5px * var(--scale-factor));
     width: calc(102.3px * var(--scale-factor));
-    height: calc(44.7px * var(--scale-factor));
+    height: calc(30px * var(--scale-factor));
     text-align: left;
     font-size: calc(17px * var(--scale-factor));
     /* border: solid red; */
 }
 
 .card14-label2-position {
-    top: calc(179px * var(--scale-factor));
+    top: calc(182px * var(--scale-factor));
     left: calc(427.5px * var(--scale-factor));
     width: calc(102.3px * var(--scale-factor));
-    height: calc(44.7px * var(--scale-factor));
+    height: calc(30px * var(--scale-factor));
     text-align: left;
     font-size: calc(17px * var(--scale-factor));
     /* border: solid red; */
 }
 
 .card14-label3-position {
-    top: calc(237.6px * var(--scale-factor));
+    top: calc(240.6px * var(--scale-factor));
     left: calc(427.5px * var(--scale-factor));
     width: calc(102.3px * var(--scale-factor));
-    height: calc(44.7px * var(--scale-factor));
+    height: calc(30px * var(--scale-factor));
     text-align: left;
     font-size: calc(20px * var(--scale-factor));
     /* border: solid red; */
 }
 
 .card14-label4-position {
-    top: calc(292px * var(--scale-factor));
+    top: calc(296px * var(--scale-factor));
     left: calc(427.5px * var(--scale-factor));
     width: calc(98.3px * var(--scale-factor));
-    height: calc(44.7px * var(--scale-factor));
+    height: calc(30px * var(--scale-factor));
     text-align: left;
     font-size: calc(20px * var(--scale-factor));
     /* border: solid red 1px * var(--scale-factor)); */
