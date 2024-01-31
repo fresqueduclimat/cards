@@ -1,15 +1,25 @@
 export default {
-    beforeMount(el, binding) {
+    mounted(el, binding) {
         const currentLocale = binding.instance?.$i18n?.locale;
+        let fontFamily;
+
         if (currentLocale === 'tpe') {
-            el.style.fontFamily = "'Noto Sans TC', sans-serif";
+            fontFamily = "'Noto Sans TC', sans-serif";
+            // Update the global CSS variables for font
+            document.documentElement.style.setProperty('--r-main-font', fontFamily);
+            document.documentElement.style.setProperty('--r-heading-font', fontFamily);
         }
         if (currentLocale === 'fa') {
-            el.style.fontFamily = "'Vazirmatn', sans-serif";
+            fontFamily = "'Vazirmatn', sans-serif";
+            document.documentElement.style.setProperty('--r-main-font', fontFamily);
+            document.documentElement.style.setProperty('--r-heading-font', fontFamily);
         }
         if (currentLocale === 'ar') {
-            el.style.fontFamily = "'Noto Sans Arabic', sans-serif";
-            el.style.fontWeight = "400";
+            fontFamily = "'Noto Sans Arabic', sans-serif";
+            document.documentElement.style.setProperty('--r-main-font', fontFamily);
+            document.documentElement.style.setProperty('--r-heading-font', fontFamily);
         }
+
+        
     },
 };

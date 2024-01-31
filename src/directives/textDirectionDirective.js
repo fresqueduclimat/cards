@@ -4,10 +4,6 @@ export default {
         const currentLocale = binding.instance?.$i18n?.locale;
         if (currentLocale === 'ar' || currentLocale === 'he' || currentLocale === 'fa') {
           el.setAttribute('dir', 'rtl');
-          const elements = el.querySelectorAll('.label');
-            elements.forEach((element) => {
-                element.style.textAlign = 'right';
-            });
         }
         //adapt some div to rtl direction
         if (currentLocale === 'ar' || currentLocale === 'fa') {
@@ -37,7 +33,7 @@ export default {
           });
           const card0label1Elements = el.querySelectorAll('.front-card-label0-position');
           card0label1Elements.forEach(text => {
-            text.style.width = `${165 * scaleFactor}px`;
+            text.style.width = `${220 * scaleFactor}px`;
           });
           const card19label1FixedElements = el.querySelectorAll('.card19-label1-position');
           card19label1FixedElements.forEach(text => {
@@ -52,6 +48,14 @@ export default {
           const card19label2Elements = el.querySelectorAll('.card19-fixed-label2-position');
           card19label2Elements.forEach(text => {
             text.style.fontSize = `${22 * scaleFactor}px`;
+          });
+          const card5label8Elements = el.querySelectorAll('.card5-fixed-label8-position');
+          card5label8Elements.forEach(text => {
+            text.style.left = `${418 * scaleFactor}px`;
+          });
+          const card5label9Elements = el.querySelectorAll('.card5-fixed-label9-position');
+          card5label9Elements.forEach(text => {
+            text.style.left = `${451.5 * scaleFactor}px`;
           });
           const setOne = el.querySelectorAll('.set-one');
           setOne.forEach(text => {

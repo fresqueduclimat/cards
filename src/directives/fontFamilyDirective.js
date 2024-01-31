@@ -11,7 +11,7 @@ export default {
         document.head.appendChild(fontLink);
 
         const currentLocale = binding.instance?.$i18n?.locale;
-        if (currentLocale === 'bg' || currentLocale === 'ru' || currentLocale === 'vi') {
+        if (currentLocale === 'bg' || currentLocale === 'ru') {
                 el.querySelectorAll('p').forEach(paragraph => {
                 paragraph.style.fontFamily = 'Noto Sans';
                 });
