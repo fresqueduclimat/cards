@@ -217,17 +217,17 @@ export default {
             });
             const labelthreeElements = el.querySelectorAll('#card0-label3');
             labelthreeElements.forEach(text => {
-                text.style.top = `${141 * scaleFactor}px`; 
+                text.style.top = `${120 * scaleFactor}px`; 
                 text.style.height = `${53 * scaleFactor}px`; 
             });
             const labelfourElements = el.querySelectorAll('#card0-label4');
             labelfourElements.forEach(text => {
-                text.style.top = `${201 * scaleFactor}px`;  
+                text.style.top = `${179 * scaleFactor}px`;  
                 text.style.height = `${18 * scaleFactor}px`; 
             });
             const labelfiveElements = el.querySelectorAll('#card0-label5');
             labelfiveElements.forEach(text => {
-                text.style.top = `${227 * scaleFactor}px`;   
+                text.style.top = `${199 * scaleFactor}px`;   
                 text.style.height = `${53 * scaleFactor}px`; 
             });
         }

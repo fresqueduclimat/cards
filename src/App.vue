@@ -242,14 +242,6 @@ export default {
 
 @font-face {
   font-family: 'Urbanist';
-  font-weight: 200;
-  /* extra light */
-  font-style: normal;
-  src: url('http://localhost:8080/fonts/Urbanist/Urbanist-ExtraLight.otf');
-}
-
-@font-face {
-  font-family: 'Urbanist';
   font-weight: 500;
   /* medium */
   font-style: normal;
@@ -327,7 +319,7 @@ export default {
 
 :root {
   --r-main-font: "Urbanist", sans-serif;
-  --r-heading-font: var(--r-main-font);
+  --r-heading-font: "Urbanist", sans-serif;
   --r-heading-color: white;
   --r-heading-margin: 0 0 0 0;
   --r-heading3-color: black;

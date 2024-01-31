@@ -436,11 +436,12 @@ export default {
                 logo.style.top = `${164.6 * scaleFactor}px`;
                 logo.style.left = `${62 * scaleFactor}px`;
                 logo.style.width = `${474 * scaleFactor}px`;
-                logo.style.height = `${144 * scaleFactor}px`;
+                logo.style.height = `${124 * scaleFactor}px`;
             });
             const outlineContainerElements = el.querySelectorAll('.outline-container');
-            outlineContainerElements.forEach(logo => {
-                logo.style.display = 'none';
+            outlineContainerElements.forEach(outline => {
+                outline.style.top = `${269 * scaleFactor}px`;
+                outline.style.fontSize = `${24 * scaleFactor}px`;
             });
             if (print === 'false') { //if print is true, the position is defined in the logoDirective
             //last page
@@ -449,11 +450,13 @@ export default {
                     logo.style.top = `${293 * scaleFactor}px`;
                     logo.style.left = `${111 * scaleFactor}px`;
                     logo.style.width = `${224 * scaleFactor}px`; 
-                    logo.style.height = `${71 * scaleFactor}px`; 
+                    logo.style.height = `${58 * scaleFactor}px`; 
                 });
                 const outlineBackContainerElements = el.querySelectorAll('.outline-container-back');
                 outlineBackContainerElements.forEach(outline => {
-                    outline.style.display = 'none';
+                    outline.style.top = `${340 * scaleFactor}px`;
+                    outline.style.padding = `${5 * scaleFactor}px`;
+                    outline.style.fontSize = `${12 * scaleFactor}px`;
                 });
             }
         }
