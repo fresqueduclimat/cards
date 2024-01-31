@@ -7,7 +7,6 @@ import customCardZeroDirective from "./directives/customCardZeroDirective.js";
 import customFont from "@/directives/customFontDirective";
 import customSizesDirective from "./directives/customSizesDirective.js";
 import customTitleDivDirective from "./directives/customTitleDivDirective.js";
-import fontFamilyDirective from "./directives/fontFamilyDirective.js";
 import lineBreakDirective from "@/directives/lineBreakDirective.js";
 import lineSpacingDirective from "@/directives/lineSpacingDirective.js";
 import logoDirective from "./directives/logoDirective.js";
@@ -86,7 +85,7 @@ Promise.all(fetchPromises)
     });
     // Create the i18n instance only after fetching data
     const i18n = createI18n({
-      locale: "tr", // Replace with the desired default locale
+      locale: "ja", // Replace with the desired default locale
       fallbackLocale: "fr",
       messages: messages,
     });
@@ -106,7 +105,6 @@ Promise.all(fetchPromises)
     app.directive('no-break', noBreakDirective);
     app.directive('card-zero', customCardZeroDirective);
     app.directive('card-fourtyfour', customCardFourtyFourDirective);
-    app.directive('font-family', fontFamilyDirective);
     app.directive('custom-size', customSizesDirective);
     app.directive('mini-size', miniSizeDirective);
     app.directive('custom-font', customFont);
