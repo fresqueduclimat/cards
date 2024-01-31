@@ -5,28 +5,30 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "afterBuild": "node scripts/afterBuild.js",
     "lint": "vue-cli-service lint",
     "export": "decktape http://localhost:8080 build/\"Adults $EXPORT_LANG V9.0 - pdf (1).pdf\" -s '597x408' --slides 1-88",
     "export-mini": "decktape http://localhost:8080 build/\"Adults $EXPORT_LANG V9.0 - pdf 1.pdf\" -s '427x295' --slides 1-88",
     "capture": "decktape http://localhost:8080 output.pdf --screenshots --screenshots-size=693x471 --screenshots-format=jpg --slides 1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41,43,45,47,49,51,53,55,57,59,61,63,65,67,69,71,73,75,77,79,81,83,85",
     "lat": "decktape http://localhost:8080 output.pdf --screenshots --screenshots-size=693x471 --screenshots-format=png --slides 53"
-    },
+  },
   "dependencies": {
-    "core-js": "^3.8.3",
-    
-    "decktape": "^3.7.0",
-    "reveal.js": "^4.4.0",
-    "vue": "^3.2.13",
-    "vue-i18n": "^9.2.2"
+    "core-js": "^3.35.1",
+    "decktape": "^3.11.0",
+    "reveal.js": "^5.0.4",
+    "vue": "^3.4.15",
+    "vue-i18n": "^9.9.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.16",
-    "@babel/eslint-parser": "^7.12.16",
-    "@vue/cli-plugin-babel": "~5.0.0",
-    "@vue/cli-plugin-eslint": "~5.0.0",
-    "@vue/cli-service": "~5.0.0",
-    "eslint": "^7.32.0",
-    "eslint-plugin-vue": "^8.0.3",
+    "@babel/core": "^7.23.9",
+    "@babel/eslint-parser": "^7.23.9",
+    "@dagger.io/dagger": "^0.9.7",
+    "@vue/cli-plugin-babel": "~5.0.8",
+    "@vue/cli-plugin-eslint": "~5.0.8",
+    "@vue/cli-service": "^5.0.8",
+    "eslint": "^8.56.0",
+    "eslint-plugin-vue": "^9.21.0",
+    "typescript": "^5.3.3",
     "url-loader": "^4.1.1"
   },
   "eslintConfig": {

@@ -30,7 +30,7 @@ async function fetchData(url) {
 }
 
 async function fetchLanguageData(languageCode) {
-  const url = `/locales/${languageCode}.json`;
+  const url = `./locales/${languageCode}.json`;
   return fetchData(url);
 }
 
