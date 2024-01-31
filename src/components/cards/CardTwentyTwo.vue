@@ -69,7 +69,7 @@ export default {
 }
 .card22-fixed-label1-position {
     top: calc(265px * var(--scale-factor));
-    left: calc(113.5px * var(--scale-factor));
+    left: calc(115.5px * var(--scale-factor));
     width: calc(93.7px * var(--scale-factor));
     height: calc(37.8px * var(--scale-factor));
     /* border: solid red; */
@@ -78,7 +78,7 @@ export default {
 
 .card22-fixed-label2-position {
     top: calc(197px * var(--scale-factor));
-    left: calc(455px * var(--scale-factor));
+    left: calc(458px * var(--scale-factor));
     width: calc(94px * var(--scale-factor));
     height: calc(37px * var(--scale-factor));
     /* border: solid red; */
@@ -87,7 +87,7 @@ export default {
 
 .card22-fixed-label3-position {
     top: calc(309.7px * var(--scale-factor));
-    left: calc(456.2px * var(--scale-factor));
+    left: calc(458px * var(--scale-factor));
     width: calc(93.7px * var(--scale-factor));
     height: calc(25.8px * var(--scale-factor));
     /* border: solid red; */

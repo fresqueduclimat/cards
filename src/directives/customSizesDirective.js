@@ -68,5 +68,47 @@ export default {
                 text.style.fontSize = `${24 * scaleFactor}px`;
             });
         }
+        if (currentLocale === 'fa') {
+            const c11text1 = el.querySelectorAll('#card11-fixed-text1');
+            c11text1.forEach(text => {
+                text.style.fontSize = `${14 * scaleFactor}px`;
+            });
+            const c11text2 = el.querySelectorAll('#card11-fixed-text2');
+            c11text2.forEach(text => {
+                text.style.fontSize = `${14 * scaleFactor}px`;
+            });
+            const c11text3 = el.querySelectorAll('#card11-fixed-text3');
+            c11text3.forEach(text => {
+                text.style.fontSize = `${14 * scaleFactor}px`;
+            });
+            const c11text4 = el.querySelectorAll('#card11-fixed-text4');
+            c11text4.forEach(text => {
+                text.style.fontSize = `${14 * scaleFactor}px`;
+            });
+            const c22text1 = el.querySelectorAll('#card22-fixed-text1');
+            c22text1.forEach(text => {
+                text.style.fontSize = `${16 * scaleFactor}px`;
+            });
+            const c22text2 = el.querySelectorAll('#card22-fixed-text2');
+            c22text2.forEach(text => {
+                text.style.fontSize = `${16 * scaleFactor}px`;
+            });
+            const c22text3 = el.querySelectorAll('#card22-fixed-text3');
+            c22text3.forEach(text => {
+                text.style.fontSize = `${16 * scaleFactor}px`;
+            });
+            const c21text1 = el.querySelectorAll('#card21-fixed-text1');
+            c21text1.forEach(text => {
+                text.style.fontSize = `${16 * scaleFactor}px`;
+            });
+            const c21text2 = el.querySelectorAll('#card21-fixed-text2');
+            c21text2.forEach(text => {
+                text.style.fontSize = `${16 * scaleFactor}px`;
+            });
+            const c21text3 = el.querySelectorAll('#card21-fixed-text3');
+            c21text3.forEach(text => {
+                text.style.fontSize = `${16 * scaleFactor}px`;
+            }); 
+        }
     },
 };
