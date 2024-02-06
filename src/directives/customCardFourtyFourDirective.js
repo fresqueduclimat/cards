@@ -164,5 +164,13 @@ export default {
                 text.style.fontSize = `${12 * scaleFactor}px`;
             });
         }
+        if (currentLocale === 'us') {
+            const corpusElements = el.querySelectorAll('#card44-label1');
+            corpusElements.forEach(text => {
+                text.style.top = `${82 * scaleFactor}px`;
+                text.style.height = `${145 * scaleFactor}px`;
+                text.style.fontSize = `${12 * scaleFactor}px`;
+            });
+        }
     },
 };

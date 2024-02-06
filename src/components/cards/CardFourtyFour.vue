@@ -41,7 +41,7 @@
                 <div class="cc"></div>
             </div>
             <div class="label white front-card-label2-position">
-                <p>{{ "Climate Fresk - " + $t('V0C0L0') + " - " + $t('V1C0L0') + " - V9.0 - 08/01/2024"}}</p>
+                <p>{{ "Climate Fresk - " + $t('V0C0L0') + " - " + $t('V1C0L0') + " - V9.0 - 05/02/2024"}}</p>
             </div>
             <div class="label outline-container-back">
                 <div class="outline">{{ $t('V1C0L15') }}</div>

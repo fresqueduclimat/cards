@@ -85,6 +85,14 @@ export default {
             c11text4.forEach(text => {
                 text.style.fontSize = `${14 * scaleFactor}px`;
             });
+            const c19text2 = el.querySelectorAll('#card19-text2');
+            c19text2.forEach(text => {
+                text.style.fontSize = `${25 * scaleFactor}px`;
+            });
+            const c19text3 = el.querySelectorAll('#card19-text3');
+            c19text3.forEach(text => {
+                text.style.fontSize = `${25 * scaleFactor}px`;
+            });
             const c22text1 = el.querySelectorAll('#card22-fixed-text1');
             c22text1.forEach(text => {
                 text.style.fontSize = `${16 * scaleFactor}px`;
@@ -97,17 +105,23 @@ export default {
             c22text3.forEach(text => {
                 text.style.fontSize = `${16 * scaleFactor}px`;
             });
-            const c21text1 = el.querySelectorAll('#card21-fixed-text1');
+            const c21text1 = el.querySelectorAll('#card21-text6');
             c21text1.forEach(text => {
-                text.style.fontSize = `${16 * scaleFactor}px`;
+                text.style.fontSize = `${16.5 * scaleFactor}px`;
             });
-            const c21text2 = el.querySelectorAll('#card21-fixed-text2');
+            const c21text2 = el.querySelectorAll('#card21-text7');
             c21text2.forEach(text => {
-                text.style.fontSize = `${16 * scaleFactor}px`;
+                text.style.fontSize = `${16.5 * scaleFactor}px`;
             });
-            const c21text3 = el.querySelectorAll('#card21-fixed-text3');
+            const c21text3 = el.querySelectorAll('#card21-text8');
             c21text3.forEach(text => {
-                text.style.fontSize = `${16 * scaleFactor}px`;
+                text.style.fontSize = `${16.5 * scaleFactor}px`;
+            }); 
+        }
+        if (currentLocale === 'us') {
+            const c21text7 = el.querySelectorAll('#card21-text7');
+            c21text7.forEach(text => {
+                text.style.fontSize = `${15.5 * scaleFactor}px`;
             }); 
         }
     },

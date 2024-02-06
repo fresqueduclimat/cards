@@ -81,31 +81,6 @@ export default {
           card5label9Elements.forEach(text => {
             text.style.left = `${451.5 * scaleFactor}px`;
           });
-          const setOne = el.querySelectorAll('.set-one');
-          setOne.forEach(text => {
-            text.style.width = `${89 * scaleFactor}px`;
-            text.style.paddingRight = `${10 * scaleFactor}px`;
-          });
-          const setTwo = el.querySelectorAll('.set-two');
-          setTwo.forEach(text => {
-            text.style.width = `${89 * scaleFactor}px`;
-            text.style.paddingRight = `${10 * scaleFactor}px`;
-          });
-          const setThree = el.querySelectorAll('.set-three');
-          setThree.forEach(text => {
-            text.style.width = `${89 * scaleFactor}px`;
-            text.style.paddingRight = `${10 * scaleFactor}px`;
-          });
-          const setFour = el.querySelectorAll('.set-four');
-          setFour.forEach(text => {
-            text.style.width = `${89 * scaleFactor}px`;
-            text.style.paddingRight = `${10 * scaleFactor}px`;
-          });
-          const setFive = el.querySelectorAll('.set-five');
-          setFive.forEach(text => {
-            text.style.width = `${89 * scaleFactor}px`;
-            text.style.paddingRight = `${10 * scaleFactor}px`;
-          });
         }
 
         if (currentLocale === 'fa') {

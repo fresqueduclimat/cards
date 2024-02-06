@@ -19,7 +19,7 @@ export default {
             document.documentElement.style.setProperty('--r-main-font', fontFamily);
             document.documentElement.style.setProperty('--r-heading-font', fontFamily);
         }
-        if (currentLocale === 'ja') {
+        if (currentLocale === 'ja' || currentLocale === 'vi') {
             fontFamily = "'Noto Sans JP', sans-serif";
             document.documentElement.style.setProperty('--r-main-font', fontFamily);
             document.documentElement.style.setProperty('--r-heading-font', fontFamily);

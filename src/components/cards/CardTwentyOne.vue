@@ -15,14 +15,14 @@
         <div id="card21-label5" class="label card21-label5-position">
             <p id="card21-text5" class="font-small">{{ $t('V1C21L9') }}</p>
         </div>
-        <div id="card21-fixed-label1" class="horizontal-center vertical-center label black card21-fixed-label1-position">
-            <p id="card21-fixed-text1" class="font-small">{{$t('V1C21L3')}}</p>
+        <div id="card21-label6" class="horizontal-center vertical-center label black card21-label6-position">
+            <p id="card21-text6" class="font-small">{{$t('V1C21L3')}}</p>
         </div>
-        <div id="card21-fixed-label2" class="horizontal-center vertical-center label black card21-fixed-label2-position">
-            <p id="card21-fixed-text2" class="font-small">{{$t('V1C21L5')}}</p>
+        <div id="card21-label7" class="horizontal-center vertical-center label black card21-label7-position">
+            <p id="card21-text7" class="font-small">{{$t('V1C21L5')}}</p>
         </div>
-        <div id="card21-fixed-label3" class="horizontal-center vertical-center label black card21-fixed-label3-position">
-            <p id="card21-fixed-text3" class="font-small">{{$t('V1C21L4')}}</p>
+        <div id="card21-label8" class="horizontal-center vertical-center label black card21-label8-position">
+            <p id="card21-text8" class="font-small">{{$t('V1C21L4')}}</p>
         </div>
         <template v-slot:back-content>
             <div id="card21-back-label2" class="label white set-one">
@@ -105,7 +105,7 @@ export default {
     font-size: calc(5px * var(--scale-factor));
 }
 
-.card21-fixed-label1-position {
+.card21-label6-position {
     top: calc(130px * var(--scale-factor));
     left: calc(45.6px * var(--scale-factor));
     width: calc(107.5px * var(--scale-factor));
@@ -116,7 +116,7 @@ export default {
     font-size: calc(21.5px * var(--scale-factor));
 }
 
-.card21-fixed-label2-position {
+.card21-label7-position {
     top: calc(151px * var(--scale-factor));
     left: calc(335.4px * var(--scale-factor));
     width: calc(107.5px * var(--scale-factor));
@@ -127,7 +127,7 @@ export default {
     font-size: calc(21.5px * var(--scale-factor));
 }
 
-.card21-fixed-label3-position {
+.card21-label8-position {
     top: calc(294px * var(--scale-factor));
     left: calc(341px * var(--scale-factor));
     width: calc(107.5px * var(--scale-factor));
