@@ -3,11 +3,11 @@
         <div id="card19-label1" class="horizontal-center vertical-center label card19-label1-position">
             <p id="card19-text1" class="font-small">{{ $t('V1C999L90') }}</p>
         </div>
-        <div id="card19-fixed-label1" class="horizontal-center vertical-center label card19-fixed-label1-position">
-            <p id="card19-fixed-text1" class="font-small">{{'+' + $t('V1C19L3')}}</p>
+        <div id="card19-label2" class="horizontal-center vertical-center label card19-label2-position">
+            <p id="card19-text2" class="font-small">{{'+' + $t('V1C19L3')}}</p>
         </div>
-        <div id="card19-fixed-label2" class="horizontal-center vertical-center label card19-fixed-label2-position">
-            <p id="card19-fixed-text2" class="font-small">{{'+' + $t('V1C19L4')}}</p>
+        <div id="card19-label3" class="horizontal-center vertical-center label card19-label3-position">
+            <p id="card19-text3" class="font-small">{{'+' + $t('V1C19L4')}}</p>
         </div>
         <template v-slot:back-content>
             <div id="card19-back-label1" class="label white set-three">
@@ -45,7 +45,7 @@ export default {
     /* border: solid red; */
 }
 
-.card19-fixed-label1-position {
+.card19-label2-position {
     top: calc(228px * var(--scale-factor));
     left: calc(149.6px * var(--scale-factor));
     width: calc(86px * var(--scale-factor));
@@ -54,7 +54,7 @@ export default {
     /* border: solid red; */
 }
 
-.card19-fixed-label2-position {
+.card19-label3-position {
     top: calc(307px * var(--scale-factor));
     left: calc(238.2px * var(--scale-factor));
     width: calc(86px * var(--scale-factor));
