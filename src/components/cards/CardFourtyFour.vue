@@ -41,7 +41,7 @@
                 <div class="cc"></div>
             </div>
             <div class="label white front-card-label2-position">
-                <p>{{ "Climate Fresk - " + $t('V0C0L0') + " - " + $t('V1C0L0') + " - V9.0 - 05/02/2024"}}</p>
+                <p>{{ "Climate Fresk - " + $t('V0C0L0') + " - " + $t('V1C0L0') + " - V9.0 - 12/02/2024"}}</p>
             </div>
             <div class="label outline-container-back">
                 <div class="outline">{{ $t('V1C0L15') }}</div>
@@ -122,7 +122,7 @@ export default {
 .barcode {
     width: 100%;
     height: 100%;
-    background-image: url('@/assets/barcode/adults-fr.png');
+    background-image: url('@/assets/barcode/adults-en.png');
     background-size: contain;
 }
 

@@ -172,5 +172,21 @@ export default {
                 text.style.fontSize = `${12 * scaleFactor}px`;
             });
         }
+        if (currentLocale === 'bg') {
+            const corpusElements = el.querySelectorAll('#card44-label1');
+            corpusElements.forEach(text => {
+                text.style.top = `${87 * scaleFactor}px`;
+                text.style.height = `${145 * scaleFactor}px`;
+                text.style.fontSize = `${12 * scaleFactor}px`;
+            });
+        }
+        if (currentLocale === 'hr') {
+            const corpusElements = el.querySelectorAll('#card44-label1');
+            corpusElements.forEach(text => {
+                text.style.top = `${92 * scaleFactor}px`;
+                text.style.height = `${135 * scaleFactor}px`;
+                text.style.fontSize = `${12 * scaleFactor}px`;
+            });
+        }
     },
 };

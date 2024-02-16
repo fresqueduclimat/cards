@@ -131,6 +131,7 @@ export default {
                 outlineBackContainerElements.forEach(outline => {
                     outline.style.top = `${344 * scaleFactor}px`;
                     outline.style.left = `${251 * scaleFactor}px`; 
+                    outline.style.width = `${181 * scaleFactor}px`; 
                 });
                 const barcodeElements = el.querySelectorAll('.barcode');
                 barcodeElements.forEach(code => {
