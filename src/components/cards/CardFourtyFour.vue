@@ -77,17 +77,17 @@ export default {
 <style>
 /* default is en logo, without barcode (website format) */
 .logo-container-big {
-    top: calc(270px * var(--scale-factor));
-    left: calc(133px * var(--scale-factor));
-    width: calc(230px * var(--scale-factor));
-    height: calc(87px * var(--scale-factor));
+    top: calc(270px * var(--scale-factor-height));
+    left: calc(133px * var(--scale-factor-width));
+    width: calc(230px * var(--scale-factor-width));
+    height: calc(87px * var(--scale-factor-height));
 }
 
 .logo-container-small {
-    top: calc(1000px * var(--scale-factor)); /* appears if defined in logoDirective.js*/
-    left: calc(432.5px * var(--scale-factor));
-    width: calc(116px * var(--scale-factor));
-    height: calc(47px * var(--scale-factor));
+    top: calc(1000px * var(--scale-factor-height)); /* appears if defined in logoDirective.js*/
+    left: calc(432.5px * var(--scale-factor-width));
+    width: calc(116px * var(--scale-factor-width));
+    height: calc(47px * var(--scale-factor-height));
 }
 
 .logo {
@@ -113,10 +113,10 @@ export default {
 }
 
 .qr-code-siteweb-container {
-    top: calc(209px * var(--scale-factor));
-    left: calc(435px * var(--scale-factor));
-    width: calc(111px * var(--scale-factor));
-    height: calc(111px * var(--scale-factor));
+    top: calc(209px * var(--scale-factor-height));
+    left: calc(435px * var(--scale-factor-width));
+    width: calc(111px * var(--scale-factor-width));
+    height: calc(111px * var(--scale-factor-height));
 }
 
 .barcode {
@@ -127,10 +127,10 @@ export default {
 }
 
 .barcode-container {
-    top: calc(500px * var(--scale-factor)); /*does not show unless print is true and element position are modified in printDirective.js*/
-    left: calc(53px * var(--scale-factor));
-    width: calc(138.4px * var(--scale-factor));
-    height: calc(61px * var(--scale-factor));
+    top: calc(500px * var(--scale-factor-height)); /*does not show unless print is true and element position are modified in printDirective.js*/
+    left: calc(53px * var(--scale-factor-width));
+    width: calc(138.4px * var(--scale-factor-width));
+    height: calc(61px * var(--scale-factor-height));
 } 
 
 .cc {
@@ -141,92 +141,92 @@ export default {
 }
 
 .cc-container {
-    top: calc(46px * var(--scale-factor));
-    left: calc(431.7px * var(--scale-factor));
-    width: calc(117.5px * var(--scale-factor));
-    height: calc(42px * var(--scale-factor));
+    top: calc(46px * var(--scale-factor-height));
+    left: calc(431.7px * var(--scale-factor-width));
+    width: calc(117.5px * var(--scale-factor-width));
+    height: calc(42px * var(--scale-factor-height));
 }
 
 .card44-label0-position {
-    top: calc(46px * var(--scale-factor));
-    left: calc(44.7px * var(--scale-factor));
-    width: calc(378px * var(--scale-factor));
-    height: calc(44.7px * var(--scale-factor));
+    top: calc(46px * var(--scale-factor-height));
+    left: calc(44.7px * var(--scale-factor-width));
+    width: calc(378px * var(--scale-factor-width));
+    height: calc(44.7px * var(--scale-factor-height));
     font-weight: 900;
     text-align: left;
     /* border: red solid; */
 }
 
 .card44-label1-position {
-    top: calc(97px * var(--scale-factor));
-    left: calc(44.7px * var(--scale-factor));
-    width: calc(383.5px * var(--scale-factor));
-    height: calc(135px * var(--scale-factor));
+    top: calc(97px * var(--scale-factor-height));
+    left: calc(44.7px * var(--scale-factor-width));
+    width: calc(383.5px * var(--scale-factor-width));
+    height: calc(135px * var(--scale-factor-height));
     text-align: left;
     font-size: calc(11px * var(--scale-factor));
     /* border: red solid 0.2px * var(--scale-factor)); */
 }
 
 .card44-label2-position {
-    top: calc(229px * var(--scale-factor));
-    left: calc(44.7px * var(--scale-factor));
-    width: calc(165px * var(--scale-factor));
-    height: calc(51.6px * var(--scale-factor));
+    top: calc(229px * var(--scale-factor-height));
+    left: calc(44.7px * var(--scale-factor-width));
+    width: calc(165px * var(--scale-factor-width));
+    height: calc(51.6px * var(--scale-factor-height));
     text-align: left;
     font-size: calc(11px * var(--scale-factor));
     /* border: red solid 0.2px * var(--scale-factor)); */
 }
 
 .card44-label3-position {
-    top: calc(229px * var(--scale-factor));
-    left: calc(228px * var(--scale-factor));
-    width: calc(172px * var(--scale-factor));
-    height: calc(43px * var(--scale-factor));
+    top: calc(229px * var(--scale-factor-height));
+    left: calc(228px * var(--scale-factor-width));
+    width: calc(172px * var(--scale-factor-width));
+    height: calc(43px * var(--scale-factor-height));
     text-align: left;
     font-size: calc(11px * var(--scale-factor));
     /* border: red solid 0.2px * var(--scale-factor)); */
 }
 
 .card44-label4-position {
-    top: calc(325px * var(--scale-factor));
-    left: calc(432px * var(--scale-factor));
-    width: calc(119.5px * var(--scale-factor));
-    height: calc(37.8px * var(--scale-factor));
+    top: calc(325px * var(--scale-factor-height));
+    left: calc(432px * var(--scale-factor-width));
+    width: calc(119.5px * var(--scale-factor-width));
+    height: calc(37.8px * var(--scale-factor-height));
     font-size: calc(13px * var(--scale-factor));
     /* border: red solid; */
 }
 
 /* .card44-label5-position {
     top : 174px * var(--scale-factor));
-    left: calc(502px * var(--scale-factor));
-    width: calc(139px * var(--scale-factor));
-    height: calc(34px * var(--scale-factor));
+    left: calc(502px * var(--scale-factor-width));
+    width: calc(139px * var(--scale-factor-width));
+    height: calc(34px * var(--scale-factor-height));
     border: red solid;
 }
 
 .card44-label6-position {
     top : 209px * var(--scale-factor));
-    left: calc(502px * var(--scale-factor));
-    width: calc(139px * var(--scale-factor));
-    height: calc(34px * var(--scale-factor));
+    left: calc(502px * var(--scale-factor-width));
+    width: calc(139px * var(--scale-factor-width));
+    height: calc(34px * var(--scale-factor-height));
     border: red solid;
 }  */
 
 .card44-label7-position {
-    top: calc(516px * var(--scale-factor)); /* print=true, cf.printDirective */
-    left: calc(37px * var(--scale-factor));
-    width: calc(520px * var(--scale-factor));
-    height: calc(17px * var(--scale-factor));
+    top: calc(516px * var(--scale-factor-height)); /* print=true, cf.printDirective */
+    left: calc(37px * var(--scale-factor-width));
+    width: calc(520px * var(--scale-factor-width));
+    height: calc(17px * var(--scale-factor-height));
     font-size: calc(11px * var(--scale-factor));
 }
 
 /* default is en logo without barcode (website version) */
 .outline-container-back {
     background-color: white;
-    top: calc(351.7px * var(--scale-factor));
-    left: calc(174.6px * var(--scale-factor));
-    width: calc(206px * var(--scale-factor));
-    height: calc(17px * var(--scale-factor));
+    top: calc(351.7px * var(--scale-factor-height));
+    left: calc(174.6px * var(--scale-factor-width));
+    width: calc(206px * var(--scale-factor-width));
+    height: calc(17px * var(--scale-factor-height));
     font-size: calc(11px * var(--scale-factor));
     text-align: left;
     /* border: red solid 0.5px * var(--scale-factor)); */

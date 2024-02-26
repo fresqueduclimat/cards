@@ -374,12 +374,18 @@ export default {
   --r-heading4-size: 240px;
   --r-main-font-size: calc(20px * var(--scale-factor));
   --r-block-margin: 0;
-  --original-height: 3180;
-  --original-width: 4680;
+  /* --original-height: 408;
+  --original-width: 597; */
+  --original-height: 420;
+  --original-width: 5;
   --new-height: 470;
-  --original-width: font-size: 693;
-  --scale-factor: 1.00;
-  /*scale-factor=1 pour une résolution de 597 x 408 */
+  /* for us printing
+  --scale-factor: 1.03;
+  --scale-factor-width: 0.974;
+  --scale-factor-height: 1.03; */
+  --scale-factor-width: 1.000;
+  --scale-factor-height: 1.000;
+  --scale-factor : 1.000; /*pour une résolution de 597 x 408 */
 }
 
 #app {
