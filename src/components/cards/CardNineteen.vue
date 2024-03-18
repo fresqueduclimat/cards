@@ -38,7 +38,7 @@ export default {
 <style>
 .card19-label1-position {
     top: calc(356px * var(--scale-factor));
-    left: calc(57.6px * var(--scale-factor));
+    left: calc(102.6px * var(--scale-factor));
     width: calc(217px * var(--scale-factor));
     height: calc(25.8px * var(--scale-factor));
     color : grey;

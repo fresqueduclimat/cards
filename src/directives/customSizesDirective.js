@@ -124,5 +124,33 @@ export default {
                 text.style.fontSize = `${15.5 * scaleFactor}px`;
             }); 
         }
+        if (currentLocale === 'bg') {
+            const c32text0 = el.querySelectorAll('#card32-back-text0');
+            c32text0.forEach(text => {
+                text.style.fontSize = `${28 * scaleFactor}px`;
+            }); 
+            const c11text0 = el.querySelectorAll('#card11-back-text0');
+            c11text0.forEach(text => {
+                text.style.fontSize = `${23 * scaleFactor}px`;
+            }); 
+            const c24text0 = el.querySelectorAll('#card24-back-text0');
+            c24text0.forEach(text => {
+                text.style.fontSize = `${31 * scaleFactor}px`;
+            });    
+        }
+        if (currentLocale === 'vi') {
+            const c21text0 = el.querySelectorAll('#card21-back-text0');
+            c21text0.forEach(text => {
+                text.style.fontSize = `${19 * scaleFactor}px`;
+            }); 
+            const c19text0 = el.querySelectorAll('#card19-back-text0');
+            c19text0.forEach(text => {
+                text.style.fontSize = `${20 * scaleFactor}px`;
+            }); 
+            const c27text0 = el.querySelectorAll('#card27-back-text0');
+            c27text0.forEach(text => {
+                text.style.fontSize = `${23 * scaleFactor}px`;
+            });    
+        }
     },
 };

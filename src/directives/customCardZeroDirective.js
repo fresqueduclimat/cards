@@ -1,8 +1,10 @@
 export default {
     beforeMount(el, binding) {
         const scaleFactor = 1.00;
-        const scaleFactorHeight = 1.029;
-        const scaleFactorWidth = 0.974;
+        // const scaleFactorHeight = 1.029;
+        // const scaleFactorWidth = 0.974;
+        const scaleFactorHeight = 1.000;
+        const scaleFactorWidth = 1.000;
         const mini = process.env.VUE_APP_MINI;
         const currentLocale = binding.instance?.$i18n?.locale;
         if (currentLocale === 'en' && mini === 'false') {
@@ -59,7 +61,8 @@ export default {
             });
             const labeltwoElements = el.querySelectorAll('#card0-label2');
             labeltwoElements.forEach(text => {
-                text.style.top = `${277 * scaleFactorHeight}px`;     
+                text.style.top = `${282 * scaleFactorHeight}px`; 
+                text.style.left = `${416 * scaleFactorHeight}px`;     
                 text.style.height = `${51 * scaleFactorHeight}px`;  
             });
             const labelthreeElements = el.querySelectorAll('#card0-label3');
@@ -276,6 +279,10 @@ export default {
             labelfiveElements.forEach(text => {
                 text.style.top = `${199 * scaleFactorHeight}px`;   
                 text.style.height = `${53 * scaleFactorHeight}px`; 
+            });
+            const verticalElements = el.querySelectorAll('.front-card-label2-position');
+            verticalElements.forEach(text => {
+                text.style.fontSize = `${11 * scaleFactorHeight}px`; 
             });
         }
         if (currentLocale === 'id') {
@@ -707,6 +714,59 @@ export default {
                 text.style.top = `${204 * scaleFactorHeight}px`;   
                 text.style.height = `${75 * scaleFactorHeight}px`; 
                 text.style.fontSize = `${12 * scaleFactor}px`;
+            });
+        }
+
+        if (currentLocale === 'co') {
+            const labelfiveElements = el.querySelectorAll('#card0-label5');
+            labelfiveElements.forEach(text => {
+                text.style.fontSize = `${12.7 * scaleFactor}px`;
+            });
+            const labelsevenElements = el.querySelectorAll('#card0-label7');
+            labelsevenElements.forEach(text => {
+                text.style.top = `${343 * scaleFactor}px`; 
+            });
+        }
+
+        if (currentLocale === 'sr') {
+            const labelthreeElements = el.querySelectorAll('#card0-label3');
+            labelthreeElements.forEach(text => {
+                text.style.top = `${119 * scaleFactorHeight}px`; 
+                text.style.height = `${55 * scaleFactorHeight}px`; 
+            });
+            const labelfourElements = el.querySelectorAll('#card0-label4');
+            labelfourElements.forEach(text => {
+                text.style.top = `${170 * scaleFactorHeight}px`;   
+                text.style.height = `${40 * scaleFactorHeight}px`; 
+            });
+            const labelfiveElements = el.querySelectorAll('#card0-label5');
+            labelfiveElements.forEach(text => {
+                text.style.top = `${204 * scaleFactorHeight}px`;   
+            });
+        }
+
+        if (currentLocale === 'ne') {
+            const labeltwoElements = el.querySelectorAll('#card0-label2');
+            labeltwoElements.forEach(text => {
+                text.style.top = `${275 * scaleFactorHeight}px`;  
+                text.style.left = `${416 * scaleFactorWidth}px`;  
+            });
+            const labelthreeElements = el.querySelectorAll('#card0-label3');
+            labelthreeElements.forEach(text => {
+                // text.style.top = `${119 * scaleFactorHeight}px`; 
+                text.style.height = `${55 * scaleFactorHeight}px`; 
+                text.style.fontSize = `${12.7 * scaleFactor}px`;
+            });
+            const labelfourElements = el.querySelectorAll('#card0-label4');
+            labelfourElements.forEach(text => {
+                text.style.top = `${184 * scaleFactorHeight}px`;   
+                text.style.height = `${40 * scaleFactorHeight}px`;
+                text.style.fontSize = `${12.7 * scaleFactor}px`; 
+            });
+            const labelfiveElements = el.querySelectorAll('#card0-label5');
+            labelfiveElements.forEach(text => {
+                text.style.top = `${224 * scaleFactorHeight}px`;   
+                text.style.fontSize = `${12.7 * scaleFactor}px`; 
             });
         }
     },

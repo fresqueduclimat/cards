@@ -99,6 +99,10 @@ export default {
         regex = /im Vergleich/g;
         replacement = '<nobr>im Vergleich</nobr>';
         el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+        // regex = /(например делтата на Нил)./g;
+        // replacement = '<nobr>(например делтата на Нил).</nobr>';
+        // el.innerHTML = el.innerHTML.replace(regex, replacement);
         
         let content = el.innerHTML;
 

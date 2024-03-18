@@ -29,6 +29,11 @@ export default {
             document.documentElement.style.setProperty('--r-main-font', fontFamily);
             document.documentElement.style.setProperty('--r-heading-font', fontFamily);
         }
+        if (currentLocale === 'ne' || currentLocale === 'vi') {
+            fontFamily = "'Noto Sans', sans-serif";
+            document.documentElement.style.setProperty('--r-main-font', fontFamily);
+            document.documentElement.style.setProperty('--r-heading-font', fontFamily);
+        }
         
     },
 };
