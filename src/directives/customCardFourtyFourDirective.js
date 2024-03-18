@@ -97,7 +97,9 @@ export default {
             });
             const addressngoElements = el.querySelectorAll('#card44-label3');
             addressngoElements.forEach(text => {
-                text.style.left = `${268 * scaleFactor}px`;
+                text.style.left = `${251 * scaleFactor}px`;
+                text.style.width = `${185 * scaleFactor}px`;
+                text.style.height = `${46 * scaleFactor}px`;
             });
         }
         if (currentLocale === 'ar') {
@@ -167,18 +169,18 @@ export default {
         if (currentLocale === 'us') {
             const corpusElements = el.querySelectorAll('#card44-label1');
             corpusElements.forEach(text => {
-                text.style.top = `${103 * scaleFactor}px`;
+                text.style.top = `${79 * scaleFactor}px`;
                 text.style.height = `${145 * scaleFactor}px`;
                 text.style.fontSize = `${12 * scaleFactor}px`;
             });
-            const ccElements = el.querySelectorAll('.cc-container');
-            ccElements.forEach(text => {
-                text.style.height = `${40 * scaleFactor}px`;
-            });
-            const qrElements = el.querySelectorAll('.qr-code-siteweb-container');
-            qrElements.forEach(text => {
-                text.style.height = `${106 * scaleFactor}px`;
-            });
+            // const ccElements = el.querySelectorAll('.cc-container');
+            // ccElements.forEach(text => {
+            //     text.style.height = `${40 * scaleFactor}px`;
+            // });
+            // const qrElements = el.querySelectorAll('.qr-code-siteweb-container');
+            // qrElements.forEach(text => {
+            //     text.style.height = `${106 * scaleFactor}px`;
+            // });
             const adressNgoElements = el.querySelectorAll('#card44-label3');
             adressNgoElements.forEach(text => {
                 text.style.top = `${223 * scaleFactor}px`;
@@ -205,6 +207,39 @@ export default {
                 text.style.top = `${92 * scaleFactor}px`;
                 text.style.height = `${135 * scaleFactor}px`;
                 text.style.fontSize = `${12 * scaleFactor}px`;
+            });
+        }
+        if (currentLocale === 'co') {
+            const corpusElements = el.querySelectorAll('#card44-label1');
+            corpusElements.forEach(text => {
+                text.style.top = `${83 * scaleFactor}px`;
+                text.style.height = `${155 * scaleFactor}px`;
+                // text.style.fontSize = `${12 * scaleFactor}px`;
+            });
+            const adressNgoElements = el.querySelectorAll('#card44-label3');
+            adressNgoElements.forEach(text => {
+                text.style.top = `${233 * scaleFactor}px`;
+            });
+            const adressElements = el.querySelectorAll('#card44-label2');
+            adressElements.forEach(text => {
+                text.style.top = `${233 * scaleFactor}px`;
+            });
+        }
+        if (currentLocale === 'sr') {
+            const corpusElements = el.querySelectorAll('#card44-label1');
+            corpusElements.forEach(text => {
+                text.style.top = `${83 * scaleFactor}px`;
+                text.style.height = `${155 * scaleFactor}px`;
+                text.style.fontSize = `${13 * scaleFactor}px`;
+            });
+        }
+
+        if (currentLocale === 'ne') {
+            const corpusElements = el.querySelectorAll('#card44-label1');
+            corpusElements.forEach(text => {
+                text.style.top = `${91 * scaleFactor}px`;
+                text.style.height = `${135 * scaleFactor}px`;
+                text.style.fontSize = `${13 * scaleFactor}px`;
             });
         }
     },

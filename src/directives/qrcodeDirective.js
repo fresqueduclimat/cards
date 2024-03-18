@@ -9,7 +9,7 @@ export default {
                     code.style.backgroundImage = `url(${require('@/assets/qr-code/qr-siteweb-en.png')})`;
                 });
             }
-            if (currentLocale === 'fr') {
+            if (currentLocale === 'fr' || currentLocale === 'co') {
                 const qrcodeElements = el.querySelectorAll('.qr-code-siteweb');
                 qrcodeElements.forEach(code => {
                     code.style.backgroundImage = `url(${require('@/assets/qr-code/qr-siteweb-fr.png')})`;

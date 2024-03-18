@@ -224,10 +224,10 @@ export default {
 </script>
 
 <style>
+/*
 @font-face {
   font-family: 'Urbanist';
   font-weight: 700;
-  /* bold */
   font-style: normal;
   src: url('./fonts/Urbanist/Urbanist-Bold.ttf') format('truetype');
 }
@@ -235,7 +235,6 @@ export default {
 @font-face {
   font-family: 'Urbanist';
   font-weight: 400;
-  /* normal */
   font-style: normal;
   src: url('./fonts/Urbanist/Urbanist-Regular.ttf') format('truetype');
 }
@@ -243,11 +242,10 @@ export default {
 @font-face {
   font-family: 'Urbanist';
   font-weight: 500;
-  /* medium */
   font-style: normal;
   src: url('./fonts/Urbanist/Urbanist-Medium.ttf') format('truetype');
 }
-
+*/
 @font-face {
   font-family: 'Noto Sans TC';
   font-weight: 700;
@@ -319,6 +317,7 @@ export default {
   font-style: normal;
   src: url('./fonts/NotoSansArabic/NotoSansArabic-Medium.ttf') format('truetype');
 }
+
 @font-face {
     font-family: 'Noto Sans JP';
     font-weight: 700;
@@ -342,6 +341,7 @@ export default {
     font-style: normal;
     src: url('./fonts/NotoSansJP/NotoSansJP-Medium.ttf') format('truetype');
 }
+
 @font-face {
     font-family: 'Padauk';
     font-weight: 700;
@@ -358,8 +358,32 @@ export default {
     src: url('./fonts/Padauk/Padauk-Regular.ttf') format('truetype');
 }
 
-/* @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;400;700&display=swap'); */
+@font-face {
+    font-family: 'Noto Sans';
+    font-weight: 700;
+  /* bold */
+    font-style: normal;
+    src: url('./fonts/NotoSans/NotoSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    font-weight: 400;
+  /* normal */
+    font-style: normal;
+    src: url('./fonts/NotoSans/NotoSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    font-weight: 500;
+  /* medium */
+    font-style: normal;
+    src: url('./fonts/NotoSans/NotoSans-Medium.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;400;700&display=swap');
 
 :root {
   --r-main-font: "Urbanist", sans-serif;
