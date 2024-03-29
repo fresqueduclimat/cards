@@ -29,8 +29,13 @@ export default {
             document.documentElement.style.setProperty('--r-main-font', fontFamily);
             document.documentElement.style.setProperty('--r-heading-font', fontFamily);
         }
-        if (currentLocale === 'ne' || currentLocale === 'vi') {
+        if (currentLocale === 'ne' || currentLocale === 'mk') {
             fontFamily = "'Noto Sans', sans-serif";
+            document.documentElement.style.setProperty('--r-main-font', fontFamily);
+            document.documentElement.style.setProperty('--r-heading-font', fontFamily);
+        }
+        if (currentLocale === 'zh') {
+            fontFamily = "'Noto Sans SC', sans-serif";
             document.documentElement.style.setProperty('--r-main-font', fontFamily);
             document.documentElement.style.setProperty('--r-heading-font', fontFamily);
         }

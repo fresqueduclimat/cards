@@ -61,8 +61,8 @@ export default {
 
 .card21-label2-position {
     top: calc(331.9px * var(--scale-factor));
-    left: calc(496.2px * var(--scale-factor));
-    width: calc(85px * var(--scale-factor));
+    left: calc(500px * var(--scale-factor));
+    width: calc(76px * var(--scale-factor));
     height: calc(36px * var(--scale-factor));
     transform: rotate(-90deg);
     /* border: solid red 0.2px * var(--scale-factor)); */

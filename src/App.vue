@@ -173,7 +173,7 @@ export default {
   },
   methods: {
     adjustFontSize() {
-      const labels_max = [10, 0, 0, 0, 0, 5, 0, 4, 0, 0, 0, 2, 6, 5, 7, 19, 0, 0, 0, 4, 7, 9, 3, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 5]
+      const labels_max = [10, 0, 0, 0, 0, 5, 0, 4, 0, 0, 0, 2, 6, 5, 7, 20, 0, 0, 0, 4, 7, 9, 3, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 5]
       const labels = [];
       for (let card_id = 0; card_id <= labels_max.length - 1; card_id++) {
         let titleValue = {
@@ -224,7 +224,7 @@ export default {
 </script>
 
 <style>
-/*
+
 @font-face {
   font-family: 'Urbanist';
   font-weight: 700;
@@ -245,7 +245,7 @@ export default {
   font-style: normal;
   src: url('./fonts/Urbanist/Urbanist-Medium.ttf') format('truetype');
 }
-*/
+
 @font-face {
   font-family: 'Noto Sans TC';
   font-weight: 700;
@@ -382,8 +382,32 @@ export default {
     src: url('./fonts/NotoSans/NotoSans-Medium.ttf') format('truetype');
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;400;700&display=swap');
+@font-face {
+  font-family: 'Noto Sans SC';
+  font-weight: 700;
+  /* bold */
+  font-style: normal;
+  src: url('./fonts/NotoSansSC/NotoSansSC-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans SC';
+  font-weight: 400;
+  /* normal */
+  font-style: normal;
+  src: url('./fonts/NotoSansSC/NotoSansSC-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans SC';
+  font-weight: 500;
+  /* medium */
+  font-style: normal;
+  src: url('./fonts/NotoSansSC/NotoSansSC-Medium.ttf') format('truetype');
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;400;700&display=swap'); */
 
 :root {
   --r-main-font: "Urbanist", sans-serif;

@@ -152,5 +152,33 @@ export default {
                 text.style.fontSize = `${23 * scaleFactor}px`;
             });    
         }
+        if (currentLocale === 'cs') {
+            const c21text0 = el.querySelectorAll('#card21-back-text0');
+            c21text0.forEach(text => {
+                text.style.fontSize = `${24 * scaleFactor}px`;
+            });  
+        }
+        if (currentLocale === 'zh') {
+            const c21text2 = el.querySelectorAll('#card21-label2');
+            c21text2.forEach(text => {
+                text.style.fontSize = `${10.2 * scaleFactor}px`;
+            });  
+            const c15text4 = el.querySelectorAll('#card15-label4');
+            c15text4.forEach(text => {
+                text.style.fontSize = `${9 * scaleFactor}px`;
+            });  
+            const c15text5 = el.querySelectorAll('#card15-label5');
+            c15text5.forEach(text => {
+                text.style.fontSize = `${9 * scaleFactor}px`;
+            });  
+            const c15text9 = el.querySelectorAll('#card15-label9');
+            c15text9.forEach(text => {
+                text.style.fontSize = `${9 * scaleFactor}px`;
+            });  
+            const c15text12 = el.querySelectorAll('#card15-label12');
+            c15text12.forEach(text => {
+                text.style.fontSize = `${11 * scaleFactor}px`;
+            });  
+        }
     },
 };
