@@ -242,5 +242,26 @@ export default {
                 text.style.fontSize = `${13 * scaleFactor}px`;
             });
         }
+
+        if (currentLocale === 'mk') {
+            const headerElements = el.querySelectorAll('#card44-label0');
+            headerElements.forEach(text => {
+                text.style.fontSize = `${10 * scaleFactor}px`;
+            });
+            const corpusElements = el.querySelectorAll('#card44-label1');
+            corpusElements.forEach(text => {
+                text.style.top = `${90 * scaleFactor}px`;
+                text.style.width = `${387 * scaleFactor}px`;
+                text.style.height = `${135 * scaleFactor}px`;
+                text.style.fontSize = `${11 * scaleFactor}px`;
+            });
+        }
+
+        if (currentLocale === 'zh') {
+            const corpusElements = el.querySelectorAll('#card44-label1');
+            corpusElements.forEach(text => {
+                text.style.top = `${102 * scaleFactor}px`;
+            });
+        }
     },
 };

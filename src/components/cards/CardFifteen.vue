@@ -54,6 +54,9 @@
         <div id="card15-label18" class="horizontal-center vertical-center label card15-label18-position">
             <p id="card15-text18" class="font-small">{{ $t('V1C999L90') }}</p>
         </div>
+        <div id="card15-label19" class="horizontal-center vertical-center label black card15-label19-position">
+            <p id="card15-text19" class="font-small">{{ $t('V1C15L5') }}</p>
+        </div>
         <div id="card15-fixed-label1" class="horizontal-center vertical-center label card15-fixed-label1-position">
             <p id="card15-fixed-text1" class="font-big">SSP5-8.5</p>
         </div>
@@ -68,9 +71,6 @@
         </div>
         <div id="card15-fixed-label5" class="horizontal-center vertical-center label card15-fixed-label5-position">
             <p id="card15-fixed-text5" class="font-big">SSP1-1.9</p>
-        </div>
-        <div id="card15-fixed-label6" class="horizontal-center vertical-center label black card15-fixed-label6-position">
-            <p id="card15-fixed-text6" class="font-small">{{ $t('V1C15L5') }}</p>
         </div>
         <template v-slot:back-content>
             <div id="card15-back-label8" class="label white set-three">
@@ -272,6 +272,16 @@ export default {
     /* border : solid red 1px * var(--scale-factor)); */
 }
 
+.card15-label19-position {
+    top: calc(161px * var(--scale-factor));
+    left: calc(447px * var(--scale-factor));
+    width: calc(98px * var(--scale-factor));
+    height: calc(31.8px * var(--scale-factor));
+    font-size: calc(17px * var(--scale-factor));
+    /* border: solid red; */
+}
+
+
 .card15-fixed-label1-position {
     top: calc(232.34px * var(--scale-factor));
     left: calc(521px * var(--scale-factor));
@@ -316,14 +326,6 @@ export default {
     font-size: calc(8.6px * var(--scale-factor));
     color :#00A9CF;
     /* border: solid red  0.5px * var(--scale-factor)); */
-}
-.card15-fixed-label6-position {
-    top: calc(161px * var(--scale-factor));
-    left: calc(446px * var(--scale-factor));
-    width: calc(98px * var(--scale-factor));
-    height: calc(31.8px * var(--scale-factor));
-    font-size: calc(17px * var(--scale-factor));
-    /* border: solid red; */
 }
 
 
