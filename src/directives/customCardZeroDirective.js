@@ -865,5 +865,21 @@ export default {
                 text.style.fontSize = `${12.7 * scaleFactor}px`; 
             });
         }
+
+        if (currentLocale === 'ro') {
+            const labelthreeElements = el.querySelectorAll('#card0-label3');
+            labelthreeElements.forEach(text => {
+                text.style.top = `${121 * scaleFactorHeight}px`; 
+                text.style.height = `${55 * scaleFactorHeight}px`; 
+            });
+            const labelfourElements = el.querySelectorAll('#card0-label4');
+            labelfourElements.forEach(text => {
+                text.style.top = `${174 * scaleFactorHeight}px`;   
+            });
+            const labelsevenElements = el.querySelectorAll('#card0-label7');
+            labelsevenElements.forEach(text => {
+                text.style.top = `${343 * scaleFactor}px`; 
+            });
+        }
     },
 };
