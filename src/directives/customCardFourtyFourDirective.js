@@ -263,5 +263,12 @@ export default {
                 text.style.top = `${102 * scaleFactor}px`;
             });
         }
+
+        if (currentLocale === 'ro') {
+            const corpusElements = el.querySelectorAll('#card44-label1');
+            corpusElements.forEach(text => {
+                text.style.fontSize = `${13 * scaleFactor}px`;
+            });
+        }
     },
 };

@@ -957,6 +957,16 @@ export default {
                 });
             }
         }
+
+        // HI-IN
+        if (currentLocale === 'hi') { 
+            const outlineContainerElements = el.querySelectorAll('.outline-container');
+            outlineContainerElements.forEach(logo => {
+                // logo.style.top = `${271 * scaleFactor}px`;
+                logo.style.left = `${202 * scaleFactor}px`;
+                logo.style.width = `${300 * scaleFactor}px`;
+            });
+        }
         
     
         //when local logos are displayed, we add a small climatefresk logo on front page
