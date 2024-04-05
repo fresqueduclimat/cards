@@ -270,5 +270,14 @@ export default {
                 text.style.fontSize = `${13 * scaleFactor}px`;
             });
         }
+
+        if (currentLocale === 'el') {
+            const corpusElements = el.querySelectorAll('#card44-label1');
+            corpusElements.forEach(text => {
+                text.style.top = `${82 * scaleFactor}px`;
+                text.style.height = `${155 * scaleFactor}px`;
+                text.style.fontSize = `${10 * scaleFactor}px`;
+            });
+        }
     },
 };
