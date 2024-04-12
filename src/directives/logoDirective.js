@@ -1020,6 +1020,41 @@ export default {
                 });
             }
         }
+
+        if (currentLocale === 'th') { 
+            const logoElements = el.querySelectorAll('.local-logo');
+            logoElements.forEach(logo => {
+                logo.style.backgroundImage = `url(${require('@/assets/logo-th.png')})`;
+            });
+            //front page
+            const logoContainerElements = el.querySelectorAll('.logo-container-front');
+            logoContainerElements.forEach(logo => {
+                logo.style.top = `${151 * scaleFactor}px`;
+                logo.style.left = `${67 * scaleFactor}px`;
+                logo.style.width = `${455 * scaleFactor}px`;
+                logo.style.height = `${185 * scaleFactor}px`;
+            });
+            const outlineContainerElements = el.querySelectorAll('.outline-container');
+            outlineContainerElements.forEach(logo => {
+                logo.style.top = `${296 * scaleFactor}px`;
+                logo.style.left = `${197 * scaleFactor}px`;
+                logo.style.width = `${325 * scaleFactor}px`;
+                logo.style.fontSize = `${24 * scaleFactor}px`;
+            });
+            if (print === 'false') { //if print is true, the position is defined in the logoDirective
+                //last page
+                const logoBigContainerElements = el.querySelectorAll('.logo-container-big');
+                logoBigContainerElements.forEach(logo => {
+                    logo.style.top = `${282 * scaleFactor}px`;
+                    logo.style.height = `${77 * scaleFactor}px`;
+                });
+                const outlineBackContainerElements = el.querySelectorAll('.outline-container-back');
+                outlineBackContainerElements.forEach(outline => {
+                    outline.style.top = `${352 * scaleFactor}px`;
+                    outline.style.left = `${199 * scaleFactor}px`; 
+                });
+            }
+        }
         
         
     
@@ -1046,6 +1081,7 @@ export default {
             currentLocale === 'zh' || 
             currentLocale === 'et' || 
             currentLocale === 'el' || 
+            currentLocale === 'th' || 
             currentLocale === 'pt') { 
             //small climatefresk logo should not appear on the front page
             const logoSmallContainerElements = el.querySelectorAll('.logo-container-small');
