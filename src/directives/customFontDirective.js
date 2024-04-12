@@ -29,7 +29,7 @@ export default {
             document.documentElement.style.setProperty('--r-main-font', fontFamily);
             document.documentElement.style.setProperty('--r-heading-font', fontFamily);
         }
-        if (currentLocale === 'ne' || currentLocale === 'mk' || currentLocale === 'it') {
+        if (currentLocale === 'ne' || currentLocale === 'mk') {
             fontFamily = "'Noto Sans', sans-serif";
             document.documentElement.style.setProperty('--r-main-font', fontFamily);
             document.documentElement.style.setProperty('--r-heading-font', fontFamily);
