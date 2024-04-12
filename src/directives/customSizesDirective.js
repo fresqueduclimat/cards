@@ -161,6 +161,8 @@ export default {
         if (currentLocale === 'zh') {
             const c21text2 = el.querySelectorAll('#card21-label2');
             c21text2.forEach(text => {
+                text.style.left = `${504 * scaleFactor}px`;
+                text.style.height = `${47 * scaleFactor}px`;
                 text.style.fontSize = `${10.2 * scaleFactor}px`;
             });  
             const c15text4 = el.querySelectorAll('#card15-label4');
@@ -179,6 +181,10 @@ export default {
             c15text12.forEach(text => {
                 text.style.fontSize = `${11 * scaleFactor}px`;
             });  
+            const c24text1 = el.querySelectorAll('#card24-label1');
+            c24text1.forEach(text => {
+                text.style.fontSize = `${12 * scaleFactor}px`;
+            }); 
         }
     },
 };
