@@ -917,5 +917,31 @@ export default {
                 text.style.fontSize = `${12.9 * scaleFactor}px`; 
             });
         }
+
+        if (currentLocale === 'ml') {
+            // const labeloneElements = el.querySelectorAll('#card0-label1');
+            // labeloneElements.forEach(text => {
+            //     // text.style.top = `${87 * scaleFactorHeight}px`; 
+            //     text.style.fontSize = `${12 * scaleFactor}px`;
+            // });
+            const labelthreeElements = el.querySelectorAll('#card0-label3');
+            labelthreeElements.forEach(text => {
+                text.style.top = `${117 * scaleFactorHeight}px`; 
+                text.style.height = `${55 * scaleFactorHeight}px`; 
+                text.style.fontSize = `${13 * scaleFactor}px`;
+            });
+            const labelfourElements = el.querySelectorAll('#card0-label4');
+            labelfourElements.forEach(text => {
+                // text.style.top = `${154 * scaleFactorHeight}px`;   
+                text.style.height = `${40 * scaleFactorHeight}px`;
+                text.style.fontSize = `${13 * scaleFactor}px`; 
+            });
+            const labelfiveElements = el.querySelectorAll('#card0-label5');
+            labelfiveElements.forEach(text => {
+                text.style.top = `${202 * scaleFactorHeight}px`;   
+                // text.style.height = `${70 * scaleFactorHeight}px`;
+                text.style.fontSize = `${13 * scaleFactor}px`; 
+            });
+        }
     },
 };

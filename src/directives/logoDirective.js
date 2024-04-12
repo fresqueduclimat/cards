@@ -1003,6 +1003,23 @@ export default {
                 });
             }
         }
+
+        if (currentLocale === 'ml') { 
+            const outlineContainerElements = el.querySelectorAll('.outline-container');
+            outlineContainerElements.forEach(logo => {
+                logo.style.top = `${299 * scaleFactor}px`;
+                logo.style.left = `${183 * scaleFactor}px`;
+                logo.style.fontSize = `${20 * scaleFactor}px`;
+            });
+            if (print === 'false') { //if print is true, the position is defined in the logoDirective
+                //last page
+                const outlineBackContainerElements = el.querySelectorAll('.outline-container-back');
+                outlineBackContainerElements.forEach(outline => {
+                    outline.style.top = `${350 * scaleFactor}px`;
+                    outline.style.left = `${172 * scaleFactor}px`; 
+                });
+            }
+        }
         
         
     
