@@ -998,8 +998,8 @@ export default {
                 });
                 const outlineBackContainerElements = el.querySelectorAll('.outline-container-back');
                 outlineBackContainerElements.forEach(outline => {
-                    outline.style.top = `${335 * scaleFactor}px`;
-                    outline.style.left = `${162 * scaleFactor}px`; 
+                    outline.style.top = `${340 * scaleFactor}px`;
+                    outline.style.left = `${172 * scaleFactor}px`; 
                 });
             }
         }
