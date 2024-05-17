@@ -41,7 +41,7 @@
                 <div class="cc"></div>
             </div>
             <div class="label white front-card-label2-position">
-                <p>{{ "Climate Fresk - " + $t('V0C0L0') + " - " + $t('V1C0L0') + " - V9.0 - 12/04/2024"}}</p>
+                <p>{{ "Climate Fresk - " + $t('V0C0L0') + " - " + $t('V1C0L0') + " - V9.0 - 16/05/2024"}}</p>
             </div>
             <div class="label outline-container-back">
                 <div class="outline">{{ $t('V1C0L15') }}</div>
@@ -225,7 +225,7 @@ export default {
     background-color: white;
     top: calc(351.7px * var(--scale-factor-height));
     left: calc(174.6px * var(--scale-factor-width));
-    width: calc(206px * var(--scale-factor-width));
+    width: calc(200px * var(--scale-factor-width));
     height: calc(17px * var(--scale-factor-height));
     font-size: calc(11px * var(--scale-factor));
     text-align: left;

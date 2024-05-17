@@ -410,8 +410,8 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;400;700&display=swap'); */
 
 :root {
-  --r-main-font: "Arial", sans-serif;
-  --r-heading-font: "Arial", sans-serif;
+  --r-main-font: "Urbanist", sans-serif;
+  --r-heading-font: "Urbanist", sans-serif;
   --r-heading-color: white;
   --r-heading-margin: 0 0 0 0;
   --r-heading3-color: black;

@@ -713,18 +713,18 @@ export default {
             // }
         }
         if (currentLocale === 'ja') { 
-            const logoElements = el.querySelectorAll('.local-logo');
-            logoElements.forEach(logo => {
-                logo.style.backgroundImage = `url(${require('@/assets/logo-ja.png')})`;
-            });
+            // const logoElements = el.querySelectorAll('.local-logo');
+            // logoElements.forEach(logo => {
+            //     logo.style.backgroundImage = `url(${require('@/assets/logo-ja.png')})`;
+            // });
             //front page
-            const logoContainerElements = el.querySelectorAll('.logo-container-front');
-            logoContainerElements.forEach(logo => {
-                logo.style.top = `${145.6 * scaleFactor}px`;
-                logo.style.left = `${62 * scaleFactor}px`;
-                logo.style.width = `${453 * scaleFactor}px`;
-                logo.style.height = `${192 * scaleFactor}px`;
-            });
+            // const logoContainerElements = el.querySelectorAll('.logo-container-front');
+            // logoContainerElements.forEach(logo => {
+            //     logo.style.top = `${145.6 * scaleFactor}px`;
+            //     logo.style.left = `${62 * scaleFactor}px`;
+            //     logo.style.width = `${453 * scaleFactor}px`;
+            //     logo.style.height = `${192 * scaleFactor}px`;
+            // });
             const outlineContainerElements = el.querySelectorAll('.outline-container');
             outlineContainerElements.forEach(logo => {
                 logo.style.top = `${293 * scaleFactor}px`;
@@ -733,17 +733,17 @@ export default {
             });
             if (print === 'false') { //if print is true, the position is defined in the logoDirective
             //last page
-            const logoBigContainerElements = el.querySelectorAll('.logo-container-big');
-                logoBigContainerElements.forEach(logo => {
-                    logo.style.top = `${277 * scaleFactor}px`;
-                    logo.style.left = `${122 * scaleFactor}px`;
-                    logo.style.width = `${190 * scaleFactor}px`; 
-                    logo.style.height = `${79 * scaleFactor}px`; 
-                });
+            // const logoBigContainerElements = el.querySelectorAll('.logo-container-big');
+            //     logoBigContainerElements.forEach(logo => {
+            //         logo.style.top = `${277 * scaleFactor}px`;
+            //         logo.style.left = `${122 * scaleFactor}px`;
+            //         logo.style.width = `${190 * scaleFactor}px`; 
+            //         logo.style.height = `${79 * scaleFactor}px`; 
+            //     });
                 const outlineBackContainerElements = el.querySelectorAll('.outline-container-back');
                 outlineBackContainerElements.forEach(outline => {
-                    outline.style.top = `${340 * scaleFactor}px`;
-                    outline.style.left = `${174 * scaleFactor}px`; 
+                    outline.style.top = `${349 * scaleFactor}px`;
+                    outline.style.left = `${196 * scaleFactor}px`; 
                 });
             }
         }
@@ -1075,7 +1075,6 @@ export default {
             currentLocale === 'lt' || 
             currentLocale === 'nb' || 
             currentLocale === 'cs' || 
-            currentLocale === 'ja' || 
             currentLocale === 'hr' || 
             currentLocale === 'sr' || 
             currentLocale === 'zh' || 
