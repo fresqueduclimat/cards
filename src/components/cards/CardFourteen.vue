@@ -69,20 +69,20 @@ export default {
 }
 
 .card14-label2-position {
-    top: calc(182px * var(--scale-factor));
+    top: calc(176px * var(--scale-factor));
     left: calc(427.5px * var(--scale-factor));
     width: calc(102.3px * var(--scale-factor));
-    height: calc(30px * var(--scale-factor));
+    height: calc(45px * var(--scale-factor));
     text-align: left;
     font-size: calc(17px * var(--scale-factor));
     /* border: solid red; */
 }
 
 .card14-label3-position {
-    top: calc(240.6px * var(--scale-factor));
+    top: calc(236px * var(--scale-factor));
     left: calc(427.5px * var(--scale-factor));
     width: calc(102.3px * var(--scale-factor));
-    height: calc(30px * var(--scale-factor));
+    height: calc(45px * var(--scale-factor));
     text-align: left;
     font-size: calc(20px * var(--scale-factor));
     /* border: solid red; */
