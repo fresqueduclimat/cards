@@ -173,7 +173,7 @@ export default {
   },
   methods: {
     adjustFontSize() {
-      const labels_max = [10, 0, 0, 0, 0, 5, 0, 4, 0, 0, 0, 2, 6, 5, 7, 20, 0, 0, 0, 4, 7, 9, 3, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 5]
+      const labels_max = [10, 0, 0, 0, 0, 5, 0, 4, 0, 0, 0, 2, 6, 5, 7, 20, 0, 0, 0, 4, 7, 9, 7, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 5]
       const labels = [];
       for (let card_id = 0; card_id <= labels_max.length - 1; card_id++) {
         let titleValue = {
@@ -197,7 +197,7 @@ export default {
         }
       }
 
-      // console.log(labels);
+      //console.log(labels);
 
       labels.forEach(function (label) {
         const div = document.getElementById(label.container);

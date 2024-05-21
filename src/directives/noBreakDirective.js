@@ -1,5 +1,6 @@
 export default {
-    beforeMount(el) {
+    beforeMount(el, binding) {
+        const currentLocale = binding.instance?.$i18n?.locale;
         var regex = /မသင့်တော်သောနေရာများအဖြစ/g;
         var replacement = '<nobr>မသင့်တော်သောနေရာများအဖြစ</nobr>';
         el.innerHTML = el.innerHTML.replace(regex, replacement);
@@ -99,6 +100,70 @@ export default {
         regex = /im Vergleich/g;
         replacement = '<nobr>im Vergleich</nobr>';
         el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+
+        if (currentLocale === 'fa') {
+            regex = /0 /g;
+            replacement = '۰';
+            el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+            // regex = /1 /g;
+            // replacement = '۱';
+            // el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+            regex = /2 /g;
+            replacement = '۲';
+            el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+            regex = /3 /g;
+            replacement = '۳';
+            el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+            regex = /4 /g;
+            replacement = '۴';
+            el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+            regex = /5 /g;
+            replacement = '۵';
+            el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+            regex = /1.5 /g;
+            replacement = '۱٫۵';
+            el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+            regex = /0.5 /g;
+            replacement = '۰٫۵';
+            el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+            regex = /20 /g;
+            replacement = '۲۰';
+            el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+            regex = /80 /g;
+            replacement = '۸۰';
+            el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+            regex = /50 /g;
+            replacement = '۵۰';
+            el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+            regex = /1200 /g;
+            replacement = '۱۲۰۰';
+            el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+            regex = /1000 /g;
+            replacement = '۱۰۰۰';
+            el.innerHTML = el.innerHTML.replace(regex, replacement);
+            
+            regex = /15°C /g;
+            replacement = '۱۵°C';
+            el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+            regex = /18°C /g;
+            replacement = '-۱۸°C';
+            el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+        }
 
         // regex = /(например делтата на Нил)./g;
         // replacement = '<nobr>(например делтата на Нил).</nobr>';

@@ -8,7 +8,7 @@
                 <p>{{ $t('V1C0L0') }}</p>
             </div>
             <div class="label white front-card-label2-position">
-                <p>{{ "Climate Fresk - " + $t('V0C0L0') + " - " + $t('V1C0L0') + " - V9.0 - 16/05/2024"}}</p>
+                <p>{{ "Climate Fresk - " + $t('V0C0L0') + " - " + $t('V1C0L0') + " - V9.0 - 12/11/2024"}}</p>
             </div>
             <div class="label logo-container-front">
                 <div class="local-logo"></div>
@@ -59,7 +59,7 @@ export default {
 .front-card-label0-position {
     top: calc(61px * var(--scale-factor)); 
     left: calc(82.5px * var(--scale-factor));  /* B' = 580 * 693 / 4680 = 86.03 (arrondi à 96) */
-    width: calc(209px * var(--scale-factor)); /* C' = 1300 * 693 / 4680 = 192.64 (arrondi à 153) */
+    width: calc(350px * var(--scale-factor)); /* C' = 1300 * 693 / 4680 = 192.64 (arrondi à 153) */
     height: calc(44.7px * var(--scale-factor)); /* D' = 350 * 470 / 3180 = 51.77 (arrondi à 52) */
     font-size: calc(34.4px * var(--scale-factor));
     text-align: left;
@@ -110,7 +110,7 @@ export default {
     top: calc(299px * var(--scale-factor));
     left: calc(173.7px * var(--scale-factor));
     width: calc(369px * var(--scale-factor));
-    font-size: calc(25.8px * var(--scale-factor));
+    font-size: calc(20px * var(--scale-factor));
     text-align:left;
     /* border : solid red 0.5px * var(--scale-factor)); */
 }

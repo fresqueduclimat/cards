@@ -46,7 +46,7 @@ export default {
 .card7-label2-position {
     top: calc(261.4px * var(--scale-factor));
     left: calc(216.7px * var(--scale-factor));
-    width: calc(187.5px * var(--scale-factor));
+    width: calc(168px * var(--scale-factor));
     height: calc(31.8px * var(--scale-factor));
     text-align: left;
     font-size: calc(17px * var(--scale-factor));

@@ -14,10 +14,11 @@
     "lat": "decktape http://localhost:8080 output.pdf --screenshots --screenshots-size=693x471 --screenshots-format=png --slides 53"
   },
   "dependencies": {
+    
     "core-js": "^3.35.1",
     "decktape": "^3.11.0",
     "reveal.js": "^5.0.4",
-    "vue": "^3.4.15",
+    "vue": "^3.2.26",
     "vue-i18n": "^9.9.0"
   },
   "devDependencies": {
