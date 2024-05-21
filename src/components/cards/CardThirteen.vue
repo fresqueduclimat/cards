@@ -12,11 +12,11 @@
         <div id="card13-label4" class="horizontal-center vertical-center label red card13-label4-position">
             <p id="card13-text4" class="font-medium">{{ $t('V1C13L6') }}</p>
         </div>
-        <div id="card13-fixed-label1" class="horizontal-center vertical-center label card13-fixed-label1-position">
-            <p id="card13-fixed-text1" class="font-big">15°C</p>
+        <div id="card13-label5" class="horizontal-center vertical-center label card13-label5-position">
+            <p id="card13-text5" class="font-big">{{ $t('V1C13L7') }}</p>
         </div>
-        <div id="card13-fixed-label2" class="horizontal-center vertical-center label card13-fixed-label2-position">
-            <p id="card13-fixed-text2" class="font-big">-18°C</p>
+        <div id="card13-label6" class="horizontal-center vertical-center label card13-label6-position">
+            <p id="card13-text6" class="font-big">{{ $t('V1C13L8') }}</p>
         </div>
         <div id="card13-fixed-label3" class="horizontal-center vertical-center label card13-fixed-label3-position">
             <p id="card13-fixed-text3" class="font-big">°C</p>
@@ -83,7 +83,7 @@ export default {
     /* border : solid red 0.5px * var(--scale-factor)); */
 }
 
-.card13-fixed-label1-position {
+.card13-label5-position {
     top: calc(157.4px * var(--scale-factor));
     left: calc(473px * var(--scale-factor));
     width: calc(57.6px * var(--scale-factor));
@@ -92,7 +92,7 @@ export default {
     color: white;
 }
 
-.card13-fixed-label2-position {
+.card13-label6-position {
     top: calc(289.9px * var(--scale-factor));
     left: calc(473px * var(--scale-factor));
     width: calc(57.6px * var(--scale-factor));

@@ -34,7 +34,7 @@ export default {
             document.documentElement.style.setProperty('--r-main-font', fontFamily);
             document.documentElement.style.setProperty('--r-heading-font', fontFamily);
         }
-        if (currentLocale === 'zh') {
+        if (currentLocale === 'zh' || currentLocale === 'hk' || currentLocale === 'tw') {
             fontFamily = "'Noto Sans SC', sans-serif";
             document.documentElement.style.setProperty('--r-main-font', fontFamily);
             document.documentElement.style.setProperty('--r-heading-font', fontFamily);

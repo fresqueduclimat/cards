@@ -186,5 +186,12 @@ export default {
                 text.style.fontSize = `${12 * scaleFactor}px`;
             }); 
         }
+
+        if (currentLocale === 'hk') {
+            const c21text2 = el.querySelectorAll('#card22-label3');
+            c21text2.forEach(text => {
+                text.style.fontSize = `${9 * scaleFactor}px`;
+            });  
+        }
     },
 };

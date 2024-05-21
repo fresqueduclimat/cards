@@ -47,7 +47,7 @@ export default {
 
 .card19-label2-position {
     top: calc(228px * var(--scale-factor));
-    left: calc(149.6px * var(--scale-factor));
+    left: calc(164px * var(--scale-factor));
     width: calc(86px * var(--scale-factor));
     height: calc(43px * var(--scale-factor));
     font-size: calc(34.4px * var(--scale-factor));
