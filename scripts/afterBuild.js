@@ -1,7 +1,53 @@
 const fs = require('fs');
 const path = require('path');
 
-const locales = ['de', 'en', 'fr', 'ja', 'kh', 'lao', 'vi', 'my', 'he', 'pt', 'ro', 'sv', 'fi', 'nl', 'es', 'lat', 'fa', 'id', 'tr', 'hu', 'br', 'pl', 'ca', 'it', 'ru', 'lt', 'nb', 'ar', 'bg', 'zh', 'tpe']
+const locales = [
+    'de-DE',
+    'en-GB',
+    'fr-FR',
+    'ja-JP',
+    'vi-VN',
+    'my-MM',
+    'pt-PT',
+    'ro-RO',
+    'sv-SE',
+    'fi-FI',
+    'nl-NL',
+    'es-ES',
+    'es-LAT',
+    'fa-IR',
+    'id-ID',
+    'tr-TR',
+    'hu-HU',
+    'pt-BR',
+    'pl-PL',
+    'ca-ES',
+    'it-IT',
+    'ru-RU',
+    'lt-LT',
+    'nb-NO',
+    'ar-AR',
+    'bg-BG',
+    'zh-CN',
+    'zh-TPE',
+    'cs-CZ',
+    'en-US',
+    'hy-AM',
+    'mf-MU',
+    'hr-HR',
+    'co-FR',
+    'sr-SB',
+    'ne-NP',
+    'mk-MK',
+    "et-EE",
+    "hi-IN",
+    "el-GR",
+    "ml-IN",
+    "th-TH",
+    "eo-EO",
+    "km-kh",
+]
+
 const indexFilePath = './dist/index.html';
 const jsFilePath = './dist/js/';
 
@@ -19,7 +65,7 @@ locales.forEach(locale => {
         fs.copyFileSync(jsFilePath + file, path.join(localDirJs, file));
         replaceStringInFile(path.join(localDirJs, file), `{l.p="/"}`, `{l.p="../"}`)
         replaceStringInFile(path.join(localDirJs, file), `./locales/`, `../locales/`)
-        replaceStringInFile(path.join(localDirJs, file), `{locale:"fr`, `{locale:"` + locale)
+        replaceStringInFile(path.join(localDirJs, file), `{locale:"fr-FR`, `{locale:"` + locale)
     });
 
 });

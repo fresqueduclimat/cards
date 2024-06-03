@@ -5,31 +5,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cards</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+            background-color: #A4E0E7;
+            font-family: Arial, sans-serif;
+        }
+
+        iframe {
+            width: 597px;
+            height: 408px;
+            border: 2px solid #007580;
+            border-radius: 8px;
+        }
+
+        .controls {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin-top: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007580;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #00626b;
+        }
+
+        input[list] {
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #007580;
+            border-radius: 5px;
+        }
+
+        .iframe-container {
+            margin-right: 20px;
+        }
+    </style>
 </head>
 
 <body>
-
-    <h1>Cards</h1>
-
-    <div id="subpageLinks"></div>
+    <div class="iframe-container">
+        <iframe id="subpage-iframe" src=""></iframe>
+    </div>
+    <div class="controls">
+        <input list="subpages" id="subpage-list" name="subpage-list">
+        <datalist id="subpages"></datalist>
+        <button onclick="updateIframe()">Set language</button>
+        <button onclick="updateData()">Update content</button>
+    </div>
 
     <script>
         // Define an array of subpages
         const subpages = "toreplace";
 
-        // Access the container div
-        const subpageLinksContainer = document.getElementById('subpageLinks');
-
-        // Generate and insert links for each subpage
+        const datalist = document.getElementById('subpages');
         subpages.forEach(subpage => {
-            const link = document.createElement('a');
-            link.href = subpage.url;
-            link.textContent = subpage.name;
-            link.style.display = 'block'; // Add some spacing between links
-            subpageLinksContainer.appendChild(link);
+            const option = document.createElement('option');
+            option.value = subpage.name;
+            datalist.appendChild(option);
         });
-    </script>
 
+        function updateIframe() {
+            const selectedValue = document.getElementById('subpage-list').value;
+            const subpage = subpages.find(page => page.name === selectedValue);
+            if (subpage) {
+                document.getElementById('subpage-iframe').src = subpage.url;
+            } else {
+                alert('Invalid subpage selected.');
+            }
+        }
+
+        function updateData() {
+            const selectedValue = document.getElementById('subpage-list').value;
+            const subpage = subpages.find(page => page.name === selectedValue);
+            if (subpage) {
+                fetch('UPDATE_DATA_ENDPOINT', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ language: subpage.name })
+                })
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Network response was not ok');
+                        }
+                        const contentType = response.headers.get('content-type');
+                        if (contentType && contentType.includes('application/json')) {
+                            return response.json();
+                        } else {
+                            throw new Error('Response was not JSON');
+                        }
+                    })
+                    .then(data => console.log(data))
+                    .catch(error => {
+                        console.error('Error - Subpage name:', subpage.name, ' - Details:', error);
+                    });
+            } else {
+                alert('Invalid subpage selected.');
+            }
+        }
+    </script>
 </body>
 
 </html>
