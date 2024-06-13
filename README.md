@@ -11,19 +11,26 @@ git clone https://github.com/fresqueduclimat/cards
 ```
 
 Initialize the project
-
 ```
 npm install
 ```
 
-Compiles and hot-reloads for development
+Install decktape to export cards in pdf file
+```
+npm install -g decktape
+```
 
+Install vue cli service
+```
+npm install @vue/cli-service --save-dev
+```
+
+Compiles and hot-reloads for development
 ```
 npm run serve
 ```
 
 Export cards in pdf file
-
 ```
 EXPORT_LANG=FR_FR npm run export
 ```
