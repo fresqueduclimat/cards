@@ -1,0 +1,20 @@
+{
+  "name": "locales",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "code for serverless function to update locales in bucket",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.577.0",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@scaleway/serverless-functions": "^1.0.1",
+    "serverless-scaleway-functions": "^0.4.4"
+  }
+}

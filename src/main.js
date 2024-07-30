@@ -34,56 +34,54 @@ async function fetchLanguageData(languageCode) {
   return fetchData(url);
 }
 
-const lang2locale = {
-  'de-DE': 'de',
-  'en-GB': 'en',
-  'fr-FR': 'fr',
-  'ja-JP': 'ja',
-  'vi-VN': 'vi',
-  'my-MM': 'my',
-  'pt-PT': 'pt',
-  'ro-RO': 'ro',
-  'sv-SE': 'sv',
-  'fi-FI': 'fi',
-  'nl-NL': 'nl',
-  'es-ES': 'es',
-  'es-LAT': 'lat',
-  'fa-IR': 'fa',
-  'id-ID': 'id',
-  'tr-TR': 'tr',
-  'hu-HU': 'hu',
-  'pt-BR': 'br',
-  'pl-PL': 'pl',
-  'ca-ES': 'ca',
-  'it-IT': 'it',
-  'ru-RU': 'ru',
-  'lt-LT': 'lt',
-  'nb-NO': 'nb',
-  'ar-AR': 'ar',
-  'bg-BG': 'bg',
-  'zh-CN': 'zh',
-  'zh-TPE': 'tpe',
-  'cs-CZ': 'cs',
-  'en-US': 'us',
-  'hy-AM': 'hy',
-  'mf-MU': 'mf',
-  'hr-HR': 'hr',
-  'co-FR': 'co',
-  'sr-SB' : 'sr',
-  'ne-NP' : 'ne',
-  'mk-MK' : 'mk',
-  "et-EE" : 'et',
-  "hi-IN" : 'hi',
-  "el-GR" : 'el',
-  "ml-IN" : 'ml',
-  "th-TH" : 'th',
-  "eo-EO" : 'eo',
-  "km-kh" : 'kh',
-}
+const locales = [
+  'de-DE',
+  'en-GB',
+  'fr-FR',
+  'ja-JP',
+  'vi-VN',
+  'my-MM',
+  'pt-PT',
+  'ro-RO',
+  'sv-SE',
+  'fi-FI',
+  'nl-NL',
+  'es-ES',
+  'es-LAT',
+  'fa-IR',
+  'id-ID',
+  'tr-TR',
+  'hu-HU',
+  'pt-BR',
+  'pl-PL',
+  'ca-ES',
+  'it-IT',
+  'ru-RU',
+  'lt-LT',
+  'nb-NO',
+  'ar-AR',
+  'bg-BG',
+  'zh-CN',
+  'zh-TPE',
+  'cs-CZ',
+  'en-US',
+  'hy-AM',
+  'mf-MU',
+  'hr-HR',
+  'co-FR',
+  'sr-SB',
+  'ne-NP',
+  'mk-MK',
+  "et-EE",
+  "hi-IN",
+  "el-GR",
+  "ml-IN",
+  "th-TH",
+  "eo-EO",
+  "km-kh",
+]
 
-const languagesToFetch = Object.keys(lang2locale);
-
-const fetchPromises = languagesToFetch.map((lang) => {
+const fetchPromises = locales.map((lang) => {
   return fetchLanguageData(lang);
 });
 
@@ -93,13 +91,13 @@ Promise.all(fetchPromises)
   .then((languageDataArray) => {
     const messages = {};
 
-    languagesToFetch.forEach((lang, index) => {
-      messages[lang2locale[lang]] = languageDataArray[index] || {};
+    locales.forEach((lang, index) => {
+      messages[lang] = languageDataArray[index] || {};
     });
     // Create the i18n instance only after fetching data
     const i18n = createI18n({
-      locale: "en", // Replace with the desired default locale
-      fallbackLocale: "fr",
+      locale: "fr-FR", // Replace with the desired default locale
+      fallbackLocale: "fr-Fr",
       messages: messages,
     });
 
