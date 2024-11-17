@@ -271,51 +271,51 @@ export default {
 }
 
 @font-face {
-  font-family: 'Vazirmatn';
-  font-weight: 700;
+    font-family: 'Vazirmatn';
+    font-weight: 700;
   /* bold */
-  font-style: normal;
-  src: url('./fonts/Vazirmatn/Vazirmatn-Bold.ttf') format('truetype');
+    font-style: normal;
+    src: url('./fonts/Vazirmatn/Vazirmatn-Bold.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Vazirmatn';
-  font-weight: 400;
+    font-family: 'Vazirmatn';
+    font-weight: 400;
   /* normal */
-  font-style: normal;
-  src: url('./fonts/Vazirmatn/Vazirmatn-Regular.ttf') format('truetype');
+    font-style: normal;
+    src: url('./fonts/Vazirmatn/Vazirmatn-Regular.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Vazirmatn';
-  font-weight: 500;
+    font-family: 'Vazirmatn';
+    font-weight: 500;
   /* medium */
-  font-style: normal;
-  src: url('./fonts/Vazirmatn/Vazirmatn-Medium.ttf') format('truetype');
+    font-style: normal;
+    src: url('./fonts/Vazirmatn/Vazirmatn-Medium.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Noto Sans Arabic';
-  font-weight: 700;
+    font-family: 'Noto Sans Arabic';
+    font-weight: 700;
   /* bold */
-  font-style: normal;
-  src: url('./fonts/NotoSansArabic/NotoSansArabic-Bold.ttf') format('truetype');
+    font-style: normal;
+    src: url('./fonts/NotoSansArabic/NotoSansArabic-Bold.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Noto Sans Arabic';
-  font-weight: 400;
+    font-family: 'Noto Sans Arabic';
+    font-weight: 400;
   /* normal */
-  font-style: normal;
-  src: url('./fonts/NotoSansArabic/NotoSansArabic-Regular.ttf') format('truetype');
+    font-style: normal;
+    src: url('./fonts/NotoSansArabic/NotoSansArabic-Regular.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Noto Sans Arabic';
-  font-weight: 500;
+    font-family: 'Noto Sans Arabic';
+    font-weight: 500;
   /* medium */
-  font-style: normal;
-  src: url('./fonts/NotoSansArabic/NotoSansArabic-Medium.ttf') format('truetype');
+    font-style: normal;
+    src: url('./fonts/NotoSansArabic/NotoSansArabic-Medium.ttf') format('truetype');
 }
 
 @font-face {

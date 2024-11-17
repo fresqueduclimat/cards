@@ -6,7 +6,7 @@
         <div id="card22-label2" class="horizontal-center vertical-center label black card22-label2-position">
             <p id="card22-text2" class="font-small">{{ $t('V1C22L7') }}</p>
         </div>
-        <div id="card22-label3" class="horizontal-center vertical-center label black card22-label3-position">
+        <div id="card22-label3" class="label card22-label3-position">
             <p id="card22-text3" class="font-small">{{ $t('V1C999L90') }}</p>
         </div>
         <div id="card22-label4" class="horizontal-center vertical-center label black card22-label4-position">
