@@ -1,5 +1,5 @@
 <template>
-    <section :data-background-image="backgroundFrontImageUrl" data-background-size="cover">
+    <section data-background-size="cover">
         <div class="container">
             <div id="card44-label0" v-text-align class="label black card44-label0-position" >
                 <p id="card44-text0">{{ $t('V1C999L2') }}</p>
@@ -16,21 +16,47 @@
             <div id="card44-label4" class="label black card44-label4-position">
                 <p id="card44-text4">{{ $t('V1C999L7') }}</p>
             </div>
-            <div id="card44-label5" class="label black card44-label5-position">
+            <!-- <div id="card44-label5" class="label black card44-label5-position">
                 <p id="card44-text5">{{ $t('V1C999L8') }}</p>
             </div>
             <div id="card44-label6" class="label black card44-label6-position">
                 <p id="card44-text6">{{ $t('V1C999L9') }}</p>
+            </div> -->
+            <div id="card44-label7" class="label white card44-label7-position">
+                <p id="card44-label7">{{ $t('V1C999L91') }}</p>
             </div>
             <div class="label logo-container-big">
+                <div class="local-logo"></div>
+            </div>
+            <div class="label logo-container-small">
                 <div class="logo"></div>
             </div>
+            <div class="label qr-code-siteweb-container">
+                <div class="qr-code-siteweb"></div>
+            </div>
+            <div class="label barcode-container">
+                <div class="barcode"></div>
+            </div>
+            <div class="label cc-container">
+                <div class="cc"></div>
+            </div>
             <div class="label white front-card-label2-position">
-                <p>{{ "Climate Fresk - " + $t('V0C0L0') + " - Adults - V8.4- 09/09/2024"}}</p>
+                <p>{{ "Climate Fresk - " + $t('V0C0L0') + " - " + $t('V1C0L0') + " - V9.0 - 12/11/2024"}}</p>
             </div>
             <div class="label outline-container-back">
-                <div class="outline">All the cards are in your hands!</div>
+                <div class="outline">{{ $t('V1C0L15') }}</div>
             </div>
+            <div class="label frame-container">
+                <div class="frame"></div>
+            </div>
+            <hr class="label border-white border-vertical top-left-vertical">
+            <hr class="label border-white border-horizontal top-left-horizontal">
+            <hr class="label border-white border-vertical top-right-vertical">
+            <hr class="label border-white border-horizontal top-right-horizontal">
+            <hr class="label border-black border-vertical bottom-left-vertical">
+            <hr class="label border-black border-horizontal bottom-left-horizontal">
+            <hr class="label border-black border-vertical bottom-right-vertical">
+            <hr class="label border-black border-horizontal bottom-right-horizontal"> 
         </div>
     </section>
     
@@ -39,27 +65,29 @@
 <script>
 export default {
     name: "CardOne",
-    props: {
-        backgroundFrontImage: {
-            type: String,
-            required: true,
-        },
-    },
-    computed: {
-        backgroundFrontImageUrl() {
-            return require("@/assets/png/C99-back.png");
-        },
+    data() {
+        return {
+            imageType: process.env.VUE_APP_IMAGE_TYPE || "png",
+        };
     },
 };
 </script>
 
 <!-- pour une résolution de 470x693 -->
 <style>
+/* default is en logo, without barcode (website format) */
 .logo-container-big {
-    top: 304px;
-    left: 91px;
-    width: 296px;
-    height: 111px;
+    top: calc(270px * var(--scale-factor-height));
+    left: calc(133px * var(--scale-factor-width));
+    width: calc(230px * var(--scale-factor-width));
+    height: calc(87px * var(--scale-factor-height));
+}
+
+.logo-container-small {
+    top: calc(1000px * var(--scale-factor-height)); /* appears if defined in logoDirective.js*/
+    left: calc(432.5px * var(--scale-factor-width));
+    width: calc(116px * var(--scale-factor-width));
+    height: calc(47px * var(--scale-factor-height));
 }
 
 .logo {
@@ -69,225 +97,138 @@ export default {
     background-size: contain;
 }
 
+
+.local-logo {
+    width: 100%;
+    height: 100%;
+    background-image: url('@/assets/logo-en.png');
+    background-size: contain;
+}
+
+.qr-code-siteweb {
+    width: 100%;
+    height: 100%;
+    background-image: url('@/assets/qr-code/qr-siteweb-en.png');
+    background-size: contain;
+}
+
+.qr-code-siteweb-container {
+    top: calc(209px * var(--scale-factor-height));
+    left: calc(435px * var(--scale-factor-width));
+    width: calc(111px * var(--scale-factor-width));
+    height: calc(111px * var(--scale-factor-height));
+}
+
+.barcode {
+    width: 100%;
+    height: 100%;
+    background-image: url('@/assets/barcode/adults-en.png');
+    background-size: contain;
+}
+
+.barcode-container {
+    top: calc(500px * var(--scale-factor-height)); /*does not show unless print is true and element position are modified in printDirective.js*/
+    left: calc(53px * var(--scale-factor-width));
+    width: calc(138.4px * var(--scale-factor-width));
+    height: calc(61px * var(--scale-factor-height));
+} 
+
+.cc {
+    width: 100%;
+    height: 100%;
+    background-image: url('@/assets/creative-commons.png');
+    background-size: contain;
+}
+
+.cc-container {
+    top: calc(46px * var(--scale-factor-height));
+    left: calc(431.7px * var(--scale-factor-width));
+    width: calc(117.5px * var(--scale-factor-width));
+    height: calc(42px * var(--scale-factor-height));
+}
+
 .card44-label0-position {
-    top: 59px;
-    left: 52px;
-    width: 430px;
-    height: 44px;
+    top: calc(46px * var(--scale-factor-height));
+    left: calc(44.7px * var(--scale-factor-width));
+    width: calc(378px * var(--scale-factor-width));
+    height: calc(44.7px * var(--scale-factor-height));
     font-weight: 900;
     text-align: left;
     /* border: red solid; */
 }
 
 .card44-label1-position {
-    top: 103px;
-    left: 52px;
-    width: 440px;
-    height: 146px;
+    top: calc(97px * var(--scale-factor-height));
+    left: calc(44.7px * var(--scale-factor-width));
+    width: calc(383.5px * var(--scale-factor-width));
+    height: calc(135px * var(--scale-factor-height));
     text-align: left;
-    font-size: 15px;
-    /* border: red solid 0.2px; */
+    font-size: calc(11px * var(--scale-factor));
+    /* border: red solid 0.2px * var(--scale-factor)); */
 }
 
 .card44-label2-position {
-    top: 260px;
-    left: 52px;
-    width: 192px;
-    height: 50px;
+    top: calc(229px * var(--scale-factor-height));
+    left: calc(44.7px * var(--scale-factor-width));
+    width: calc(165px * var(--scale-factor-width));
+    height: calc(51.6px * var(--scale-factor-height));
     text-align: left;
-    font-size: 12px;
-    /* border: red solid 0.2px; */
+    font-size: calc(11px * var(--scale-factor));
+    /* border: red solid 0.2px * var(--scale-factor)); */
 }
 
 .card44-label3-position {
-    top: 260px;
-    left: 259px;
-    width: 200px;
-    height: 50px;
+    top: calc(229px * var(--scale-factor-height));
+    left: calc(228px * var(--scale-factor-width));
+    width: calc(172px * var(--scale-factor-width));
+    height: calc(43px * var(--scale-factor-height));
     text-align: left;
-    font-size: 12px;
-    /* border: red solid 0.2px; */
+    font-size: calc(11px * var(--scale-factor));
+    /* border: red solid 0.2px * var(--scale-factor)); */
 }
 
 .card44-label4-position {
-    top: 378px;
-    left: 493px;
-    width: 141px;
-    height: 44px;
-    font-size: 15px;
+    top: calc(325px * var(--scale-factor-height));
+    left: calc(432px * var(--scale-factor-width));
+    width: calc(119.5px * var(--scale-factor-width));
+    height: calc(37.8px * var(--scale-factor-height));
+    font-size: calc(13px * var(--scale-factor));
     /* border: red solid; */
 }
 
-.card44-label5-position {
-    top: 126px;
-    left: 507px;
-    width: 126px;
-    height: 34px;
-    /* border: red solid; */
+/* .card44-label5-position {
+    top : 174px * var(--scale-factor));
+    left: calc(502px * var(--scale-factor-width));
+    width: calc(139px * var(--scale-factor-width));
+    height: calc(34px * var(--scale-factor-height));
+    border: red solid;
 }
 
 .card44-label6-position {
-    top: 186px;
-    left: 507px;
-    width: 126px;
-    height: 34px;
-    /* border: red solid; */
-}
+    top : 209px * var(--scale-factor));
+    left: calc(502px * var(--scale-factor-width));
+    width: calc(139px * var(--scale-factor-width));
+    height: calc(34px * var(--scale-factor-height));
+    border: red solid;
+}  */
 
 .card44-label7-position {
-    top: 399px;
-    left: 178px;
-    width: 74px;
-    height: 30px;
-    color: red;
-    font-weight: 900;
-    /* border: red solid; */
+    top: calc(516px * var(--scale-factor-height)); /* print=true, cf.printDirective */
+    left: calc(37px * var(--scale-factor-width));
+    width: calc(520px * var(--scale-factor-width));
+    height: calc(17px * var(--scale-factor-height));
+    font-size: calc(11px * var(--scale-factor));
 }
 
-.card44-label8-position {
-    top: 399px;
-    left: 275px;
-    width: 74px;
-    height: 30px;
-    color: red;
-    font-weight: 900;
-    /* border: red solid; */
-}
-
-.card44-label9-position {
-    top: 399px;
-    left: 385px;
-    width: 74px;
-    height: 30px;
-    color: red;
-    font-weight: 900;
-    /* border: red solid; */
-}
+/* default is en logo without barcode (website version) */
 .outline-container-back {
-    top: 404px;
-    left: 157px;
-    width: 240px;
-    height: 20px;
-    font-size: 14px;
-    /* border: red solid 0.5px; */
+    background-color: white;
+    top: calc(351.7px * var(--scale-factor-height));
+    left: calc(174.6px * var(--scale-factor-width));
+    width: calc(200px * var(--scale-factor-width));
+    height: calc(17px * var(--scale-factor-height));
+    font-size: calc(11px * var(--scale-factor));
+    text-align: left;
+    /* border: red solid 0.5px * var(--scale-factor)); */
 }
-
 </style>
-
-<!-- pour une résolution de 3180x4680 -->
-<!-- <style>
-.logo-container-big {
-    top: 2050px;
-    left: 615px;
-    width: 2000px;
-    height: 750px;
-}
-
-.logo {
-    width: 100%;
-    height: 100%;
-    background-image: url('@/assets/logo-en.png');
-    background-size: contain;
-}
-
-.card44-label0-position {
-    top: 400px;
-    left: 350px;
-    width: 2900px;
-    height: 300px;
-    font-weight: 900;
-    text-align : left;
-    /* border : red solid; */
-}
-
-.card44-label1-position {
-    top: 740px;
-    left: 350px;
-    width: 2970px;
-    height: 910px;
-    text-align: left;
-    font-size: 100px;
-    /* border : red solid; */
-}
-
-.card44-label2-position {
-    top: 1670px;
-    left: 350px;
-    width: 1300px;
-    height: 340px;
-    text-align: left;
-    font-size: 100px;
-    /* border : red solid; */
-}
-
-.card44-label3-position {
-    top: 1670px;
-    left: 1900px;
-    width: 1300px;
-    height: 250px;
-    text-align: left;
-    font-size: 100px;
-    /* border : red solid; */
-}
-
-.card44-label4-position {
-    top: 2550px;
-    left: 3320px;
-    width: 950px;
-    height: 300px;
-    font-size: 100px;
-    /* border : red solid; */
-}
-
-.card44-label5-position {
-    top: 850px;
-    left: 3420px;
-    width: 850px;
-    height: 230px;
-    /* border : red solid; */
-    
-}
-
-.card44-label6-position {
-    top: 1250px;
-    left: 3420px;
-    width: 850px;
-    height: 230px;
-    /* border : red solid; */
-    
-}
-
-.card44-label7-position {
-    top: 2700px;
-    left: 1200px;
-    width: 500px;
-    height: 200px;
-    color : red;
-    font-weight: 900;
-    /* border : red solid; */
-    
-}
-
-.card44-label8-position {
-    top: 2700px;
-    left: 1850px;
-    width: 500px;
-    height: 200px;
-    color : red;
-    font-weight: 900;
-    /* border : red solid; */
-    
-}
-
-.card44-label9-position {
-    top: 2700px;
-    left: 2600px;
-    width: 500px;
-    height: 200px;
-    color : red;
-    font-weight: 900;
-    /* border : red solid; */
-    
-}
-
-</style>-->

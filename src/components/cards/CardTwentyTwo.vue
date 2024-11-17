@@ -1,22 +1,22 @@
 <template>
-    <CardBase :title="$t('V1C22L1')" :content="$t('V1C22L2')" :card-number="22" :background-front-image="'C22.png'">
+    <CardBase :title="$t('V1C22L1')" :content="$t('V1C22L2')" :card-number="22" :background-front-image="`C22.${imageType}`">
         <div id="card22-label1" class="horizontal-center vertical-center label black card22-label1-position">
             <p id="card22-text1" class="font-small">{{ $t('V1C22L3') }}</p>
         </div>
         <div id="card22-label2" class="horizontal-center vertical-center label black card22-label2-position">
             <p id="card22-text2" class="font-small">{{ $t('V1C22L7') }}</p>
         </div>
-        <div id="card22-label3" class="horizontal-center vertical-center label black card22-label3-position">
+        <div id="card22-label3" class="label card22-label3-position">
             <p id="card22-text3" class="font-small">{{ $t('V1C999L90') }}</p>
         </div>
-        <div id="card22-fixed-label1" class="horizontal-center vertical-center label black card22-fixed-label1-position">
-            <p id="card22-fixed-text1" class="font-small">20 cm</p>
+        <div id="card22-label4" class="horizontal-center vertical-center label black card22-label4-position">
+            <p id="card22-text4" class="font-small">{{ $t('V1C22L4') }}</p>
         </div>
-        <div id="card22-fixed-label2" class="horizontal-center vertical-center label black card22-fixed-label2-position">
-            <p id="card22-fixed-text2" class="font-small">80 cm</p>
+        <div id="card22-label5" class="horizontal-center vertical-center label black card22-label5-position">
+            <p id="card22-text5" class="font-small">{{ $t('V1C22L5') }}</p>
         </div>
-        <div id="card22-fixed-label3" class="horizontal-center vertical-center label black card22-fixed-label3-position">
-            <p id="card22-fixed-text3" class="font-small">50 cm</p>
+        <div id="card22-label6" class="horizontal-center vertical-center label black card22-label6-position">
+            <p id="card22-text6" class="font-small">{{ $t('V1C22L6') }}</p>
         </div>
         <template v-slot:back-content>
             <div id="card22-back-label3" class="label white set-one">
@@ -34,102 +34,63 @@ export default {
     components: {
         CardBase,
     },
+    data() {
+        return {
+            imageType: process.env.VUE_APP_IMAGE_TYPE || 'png',
+        };
+    },
 };
 </script>
 
 <style>
 .card22-label1-position {
-    top: 118px;
-    left: 44px;
-    width: 603px;
-    height: 44px;
+    top: calc(101.4px * var(--scale-factor));
+    left: calc(37.8px * var(--scale-factor));
+    width: calc(518.5px * var(--scale-factor));
+    height: calc(37.8px * var(--scale-factor));
     /* border: solid red; */
 }
 .card22-label2-position {
-    top: 175px;
-    left: 200px;
-    width: 185px;
-    height: 70px;
+    top: calc(150.5px * var(--scale-factor));
+    left: calc(172px * var(--scale-factor));
+    width: calc(158px * var(--scale-factor));
+    height: calc(60.2px * var(--scale-factor));
     /* border: solid red; */
 }
 .card22-label3-position {
-    top: 420px;
-    left: 300px;
-    width: 345px;
-    height: 30px;
+    top: calc(364px * var(--scale-factor));
+    left: calc(258px * var(--scale-factor));
+    width: calc(296.7px * var(--scale-factor));
+    height: calc(20.7px * var(--scale-factor));
     text-align: right;
     color:grey;
-    /* border: solid red 0.5px; */
+    font-size: calc(13px * var(--scale-factor));
+    /* border: solid red 0.5px * var(--scale-factor)); */
+}
+.card22-label4-position {
+    top: calc(272px * var(--scale-factor));
+    left: calc(120.5px * var(--scale-factor));
+    width: calc(87px * var(--scale-factor));
+    height: calc(26px * var(--scale-factor));
+    /* border: solid red; */
+    font-size: calc(23.2px * var(--scale-factor));
 }
 
-.card22-fixed-label1-position {
-    top: 306px;
-    left: 132px;
-    width: 109px;
-    height: 44px;
+.card22-label5-position {
+    top: calc(203px * var(--scale-factor));
+    left: calc(458px * var(--scale-factor));
+    width: calc(94px * var(--scale-factor));
+    height: calc(26px * var(--scale-factor));
     /* border: solid red; */
-    font-size : 27px;
+    font-size: calc(23.2px * var(--scale-factor));
 }
 
-.card22-fixed-label2-position {
-    top: 226px;
-    left: 527px;
-    width: 109px;
-    height: 43px;
+.card22-label6-position {
+    top: calc(309.7px * var(--scale-factor));
+    left: calc(458px * var(--scale-factor));
+    width: calc(94px * var(--scale-factor));
+    height: calc(26px * var(--scale-factor));
     /* border: solid red; */
-    font-size : 27px;
-}
-
-.card22-fixed-label3-position {
-    top: 352px;
-    left: 527px;
-    width: 109px;
-    height: 43px;
-    /* border: solid red; */
-    font-size: 27px;
+    font-size: calc(23.2px * var(--scale-factor));
 }
 </style>
-
-<!-- <style>
-.card22-label1-position {
-    top: 800px;
-    left: 300px;
-    width: 4070px;
-    height: 300px;
-    /* border: solid red; */
-}
-.card22-label2-position {
-    top: 1170px;
-    left: 1300px;
-    width: 1357.2px;
-    height: 500px;
-    /* border: solid red; */
-}
-
-.card22-fixed-label1-position {
-    top: 2070px;
-    left: 895px;
-    width: 736px;
-    height: 300px;
-    /* border: solid red; */
-    font-size : 200px;
-}
-
-.card22-fixed-label2-position {
-    top: 1530px;
-    left: 3560px;
-    width: 735px;
-    height: 290px;
-    /* border: solid red; */
-    font-size : 200px;
-}
-
-.card22-fixed-label3-position {
-    top: 2380px;
-    left: 3560px;
-    width: 735px;
-    height: 290px;
-    /* border: solid red; */
-    font-size: 200px;
-}
-</style> -->

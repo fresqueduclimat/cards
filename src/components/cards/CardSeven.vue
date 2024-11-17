@@ -1,5 +1,5 @@
 <template>
-    <CardBase :title="$t('V1C7L1')" :content="$t('V1C7L2')" :card-number="7" :background-front-image="'C7.png'">
+    <CardBase :title="$t('V1C7L1')" :content="$t('V1C7L2')" :card-number="7" :background-front-image="`C7.${imageType}`">
         <div id="card7-label1" class="horizontal-center vertical-center label black card7-label1-position">
             <p id="card7-text1">{{ $t('V1C7L5') }}</p>
         </div>
@@ -25,73 +25,41 @@ export default {
     components: {
         CardBase,
     },
+    data() {
+        return {
+            imageType: process.env.VUE_APP_IMAGE_TYPE || 'png',
+        };
+    },
 };
 </script>
 
 <!-- pour une résolution de 470x693 -->
 <style>
 .card7-label1-position {
-    top: 24vh;
-    left: 9vw;
-    width: 87vw;
-    height: 8vh;
+    top: 24.6vh;
+    left: 12.7vw;
+    width: 74.8vw;
+    height: 6.88vh;
     /* border: solid red; */
 }
 
 .card7-label2-position {
-    top: 304px;
-    left: 252px;
-    width: 218px;
-    height: 37px;
+    top: calc(261.4px * var(--scale-factor));
+    left: calc(216.7px * var(--scale-factor));
+    width: calc(168px * var(--scale-factor));
+    height: calc(31.8px * var(--scale-factor));
     text-align: left;
-    font-size: 20px;
+    font-size: calc(17px * var(--scale-factor));
     /* border: solid red; */
 }
 
 .card7-label3-position {
-    top: 378px;
-    left: 251px;
-    width: 148px;
-    height: 37px;
+    top: calc(325px * var(--scale-factor));
+    left: calc(215.8px * var(--scale-factor));
+    width: calc(127.3px * var(--scale-factor));
+    height: calc(31.8px * var(--scale-factor));
     text-align: left;
-    font-size: 20px;
+    font-size: calc(17px * var(--scale-factor));
     /* border: solid red; */
 }
 </style>
-
-<!-- pour une résolution de 3180x4680 -->
-<!-- <style>
-.card7-label1-position {
-    top: 24vh;
-    left: 9vw;
-    width: 87vw;
-    height: 8vh;
-    /* border: solid red; */
-}
-
-.card7-label2-position {
-    top: 2055px;
-    left: 1700px;
-    width: 1000px;
-    height: 250px;
-    text-align: left;
-    /* border: solid red; */
-}
-
-.card7-label3-position {
-    top: 2555px;
-    left: 1700px;
-    width: 1000px;
-    height: 250px;
-    text-align: left;
-    /* border: solid red; */
-}
-
-.card7-label2-position p {
-    font-size: 135px;
-}
-
-.card7-label3-position p {
-    font-size: 135px;
-}
-</style> -->

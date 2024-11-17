@@ -4,6 +4,10 @@ export default {
         var replacement = 'CO<sub>2</sub>';
         el.innerHTML = el.innerHTML.replace(regex, replacement);
 
+        regex = /CO2,/g;
+        replacement = 'CO<sub>2</sub>,';
+        el.innerHTML = el.innerHTML.replace(regex, replacement);
+
         regex = /H2CO3/g;
         replacement = 'H<sub>2</sub>CO<sub>3</sub>';
         el.innerHTML = el.innerHTML.replace(regex, replacement);
@@ -25,7 +29,11 @@ export default {
         el.innerHTML = el.innerHTML.replace(regex, replacement);
 
         regex = /O3/g;
-        replacement = 'O<sub>3</sub>O';
+        replacement = 'O<sub>3</sub>';
+        el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+        regex = /m2/g;
+        replacement = 'm<sup>2</sup>';
         el.innerHTML = el.innerHTML.replace(regex, replacement);
     },
 };

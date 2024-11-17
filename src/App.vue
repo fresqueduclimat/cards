@@ -1,5 +1,6 @@
 <template>
-  <div v-no-break v-logo v-customtitlediv v-linespacing v-linebreak v-text-direction v-co2-subscript id="app" class="reveal">
+  <div v-custom-font v-qr-code v-mini-size v-custom-size v-card-fourtyfour v-card-zero v-no-break v-print
+    v-logo v-customtitlediv v-linespacing v-linebreak v-text-direction v-co2-subscript id="app" class="reveal">
     <div class="slides">
       <FrontCard />
       <CardZero />
@@ -36,7 +37,7 @@
       <CardThirtyThree />
       <CardTwentyEight />
       <CardThirtyOne />
-      <CardThirtyTwo /> 
+      <CardThirtyTwo />
       <CardThirtyFive />
       <CardThirtySix />
       <CardThirtySeven />
@@ -172,9 +173,9 @@ export default {
   },
   methods: {
     adjustFontSize() {
-      const labels_max = [7, 0, 0, 0, 0, 5, 0, 4, 0, 0, 0, 2, 6, 5, 7, 18, 0, 0, 0, 2, 7, 3, 4, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
+      const labels_max = [10, 0, 0, 0, 0, 5, 0, 4, 0, 0, 0, 2, 6, 5, 7, 20, 0, 0, 0, 4, 7, 9, 7, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 5]
       const labels = [];
-      for (let card_id = 0; card_id <= labels_max.length-1; card_id++) {
+      for (let card_id = 0; card_id <= labels_max.length - 1; card_id++) {
         let titleValue = {
           container: "card" + card_id + "-label0",
           text: "card" + card_id + "-text0",
@@ -196,7 +197,7 @@ export default {
         }
       }
 
-      // console.log(labels);
+      //console.log(labels);
 
       labels.forEach(function (label) {
         const div = document.getElementById(label.container);
@@ -223,9 +224,194 @@ export default {
 </script>
 
 <style>
+
+@font-face {
+  font-family: 'Urbanist';
+  font-weight: 700;
+  font-style: normal;
+  src: url('./fonts/Urbanist/Urbanist-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Urbanist';
+  font-weight: 400;
+  font-style: normal;
+  src: url('./fonts/Urbanist/Urbanist-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Urbanist';
+  font-weight: 500;
+  font-style: normal;
+  src: url('./fonts/Urbanist/Urbanist-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-weight: 700;
+  /* bold */
+  font-style: normal;
+  src: url('./fonts/NotoSansTC/NotoSansTC-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-weight: 400;
+  /* normal */
+  font-style: normal;
+  src: url('./fonts/NotoSansTC/NotoSansTC-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-weight: 500;
+  /* medium */
+  font-style: normal;
+  src: url('./fonts/NotoSansTC/NotoSansTC-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Vazirmatn';
+    font-weight: 700;
+  /* bold */
+    font-style: normal;
+    src: url('./fonts/Vazirmatn/Vazirmatn-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Vazirmatn';
+    font-weight: 400;
+  /* normal */
+    font-style: normal;
+    src: url('./fonts/Vazirmatn/Vazirmatn-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Vazirmatn';
+    font-weight: 500;
+  /* medium */
+    font-style: normal;
+    src: url('./fonts/Vazirmatn/Vazirmatn-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto Sans Arabic';
+    font-weight: 700;
+  /* bold */
+    font-style: normal;
+    src: url('./fonts/NotoSansArabic/NotoSansArabic-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto Sans Arabic';
+    font-weight: 400;
+  /* normal */
+    font-style: normal;
+    src: url('./fonts/NotoSansArabic/NotoSansArabic-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto Sans Arabic';
+    font-weight: 500;
+  /* medium */
+    font-style: normal;
+    src: url('./fonts/NotoSansArabic/NotoSansArabic-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto Sans JP';
+    font-weight: 700;
+  /* bold */
+    font-style: normal;
+    src: url('./fonts/NotoSansJP/NotoSansJP-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto Sans JP';
+    font-weight: 400;
+  /* normal */
+    font-style: normal;
+    src: url('./fonts/NotoSansJP/NotoSansJP-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto Sans JP';
+    font-weight: 500;
+  /* medium */
+    font-style: normal;
+    src: url('./fonts/NotoSansJP/NotoSansJP-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Padauk';
+    font-weight: 700;
+  /* bold */
+    font-style: normal;
+    src: url('./fonts/Padauk/Padauk-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Padauk';
+    font-weight: 400;
+  /* normal */
+    font-style: normal;
+    src: url('./fonts/Padauk/Padauk-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    font-weight: 700;
+  /* bold */
+    font-style: normal;
+    src: url('./fonts/NotoSans/NotoSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    font-weight: 400;
+  /* normal */
+    font-style: normal;
+    src: url('./fonts/NotoSans/NotoSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    font-weight: 500;
+  /* medium */
+    font-style: normal;
+    src: url('./fonts/NotoSans/NotoSans-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans SC';
+  font-weight: 700;
+  /* bold */
+  font-style: normal;
+  src: url('./fonts/NotoSansSC/NotoSansSC-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans SC';
+  font-weight: 400;
+  /* normal */
+  font-style: normal;
+  src: url('./fonts/NotoSansSC/NotoSansSC-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans SC';
+  font-weight: 500;
+  /* medium */
+  font-style: normal;
+  src: url('./fonts/NotoSansSC/NotoSansSC-Medium.ttf') format('truetype');
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;400;700&display=swap'); */
+
 :root {
-  --r-main-font: "Arial", sans-serif;
-  --r-heading-font: var(--r-main-font);
+  --r-main-font: "Urbanist", sans-serif;
+  --r-heading-font: "Urbanist", sans-serif;
   --r-heading-color: white;
   --r-heading-margin: 0 0 0 0;
   --r-heading3-color: black;
@@ -234,12 +420,20 @@ export default {
   --r-heading2-size: 300px;
   --r-heading3-size: 250px;
   --r-heading4-size: 240px;
-  --r-main-font-size: 20px;
+  --r-main-font-size: calc(20px * var(--scale-factor));
   --r-block-margin: 0;
-  --original-height : 3180;
-  --original-width : 4680;
-  --new-height : 470;
-  --original-width : 693;
+  /* --original-height: 408;
+  --original-width: 597; */
+  --original-height: 420;
+  --original-width: 5;
+  --new-height: 470;
+  /* for us printing
+  --scale-factor: 1.03;
+  --scale-factor-width: 0.974;
+  --scale-factor-height: 1.03; */
+  --scale-factor-width: 1.000;
+  --scale-factor-height: 1.000;
+  --scale-factor : 1.000; /*pour une résolution de 597 x 408 */
 }
 
 #app {
@@ -254,11 +448,8 @@ export default {
   height: 100%;
 }
 
-.container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+.container h1 {
+  font-weight: 700;
 }
 
 .horizontal-center {
@@ -300,14 +491,14 @@ export default {
 }
 
 .font-big {
-    font-weight: 900;
+  font-weight: 900;
 }
 
 .font-medium {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .font-small {
-    font-weight: 500;
+  font-weight: 500;
 }
 </style>

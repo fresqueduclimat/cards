@@ -1,5 +1,5 @@
 <template>
-    <section :data-background-image="backgroundFrontImageUrl" data-background-size="cover">
+    <section :style="backgroundStyles">
         <div class="container">
             <div :id="`card${cardNumber}-label0`" class="title">
                 <h1 :id="`card${cardNumber}-text0`">{{ title }}</h1>
@@ -10,14 +10,14 @@
                 <div class="label third-rectangle"></div>
                 <p class="label font-medium card-number white">{{ cardNumber }}</p>
             </div>
-            <hr class="label border-white top-left-vertical">
+            <!-- <hr class="label border-white top-left-vertical">
             <hr class="label border-white top-left-horizontal">
             <hr class="label border-white top-right-vertical">
             <hr class="label border-white top-right-horizontal">
             <hr class="label border-white bottom-left-vertical">
             <hr class="label border-white bottom-left-horizontal">
             <hr class="label border-white bottom-right-vertical">
-            <hr class="label border-white bottom-right-horizontal">
+            <hr class="label border-white bottom-right-horizontal"> -->
             <slot></slot>
         </div>
     </section>
@@ -36,14 +36,14 @@
                 <div class="label third-rectangle"></div>
                 <p class="label font-medium card-number white">{{ cardNumber }}</p>
             </div>
-            <hr class="label border-black top-left-vertical">
+            <!-- <hr class="label border-black top-left-vertical">
             <hr class="label border-black top-left-horizontal">
             <hr class="label border-black top-right-vertical">
             <hr class="label border-black top-right-horizontal">
             <hr class="label border-black bottom-left-vertical">
             <hr class="label border-black bottom-left-horizontal">
             <hr class="label border-black bottom-right-vertical">
-            <hr class="label border-black bottom-right-horizontal">
+            <hr class="label border-black bottom-right-horizontal"> -->
             <slot name="back-content"></slot>
         </div>
     </section>
@@ -71,9 +71,40 @@ export default {
             required: true,
         },
     },
+    data() {
+        return {
+            imageType: process.env.VUE_APP_IMAGE_TYPE || "png",
+            mini: process.env.VUE_APP_MINI === 'true',
+        };
+    },
     computed: {
         backgroundFrontImageUrl() {
-            return require("@/assets/png/" + this.backgroundFrontImage);
+            return require(`@/assets/${this.imageType}/${this.backgroundFrontImage}`);
+        },
+        backgroundStyles() {
+            if (this.mini) { 
+                return {
+                    backgroundImage: `url(${this.backgroundFrontImageUrl})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'top left',
+                    position: 'absolute',
+                    top: '8px',
+                    left: '8px',
+                    width: '411px', // Pour occuper toute la largeur de la section parente
+                    height: '279px', // Pour occuper toute la hauteur de la section parente
+                };
+            } else {
+                return {
+                    backgroundImage: `url(${this.backgroundFrontImageUrl})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'top left',
+                    position: 'absolute',
+                    top: '0px',
+                    left: '0px',
+                    width: '100%',
+                    height: '100%',
+                };
+            } 
         },
     },
 };
@@ -81,17 +112,29 @@ export default {
 </script>
 
 <style>
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+}
+
+.background {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 423px;
+    height: 291px;
+}
+
 .title {
     position: absolute;
-    /* top: 178px;
-    left: 240px;
-    width: 4200px;
-    height: 570px; */
-    /* border: solid red; */
-    top: 26px;
-    left: 35px;
-    width: 622px;
-    height: 84px;
+    /* border: solid red 0.5px * var(--scale-factor)); */
+    top: calc(21.5px * var(--scale-factor-height));
+    left: calc(30.1px * var(--scale-factor-width));
+    width: calc(535px * var(--scale-factor-width));
+    height: calc(72.2px * var(--scale-factor-height));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -99,264 +142,148 @@ export default {
 }
 
 .content {
-    /* top: 900px;
-    left: 350px;
-    width: 4000px;
-    height: 1600px; */
-    /* border: solid red; */
-    top: 123px;
-    left: 40px;
-    width: 620px;
-    height: 265px;
+    /* border: solid red 0.5px * var(--scale-factor)); */
+    top: calc(105.8px * var(--scale-factor-height));
+    left: calc(34.4px * var(--scale-factor-width));
+    width: calc(533.2px * var(--scale-factor-width));
+    height: calc(228px * var(--scale-factor-height));
 }
 
 .content p {
-    /* font-size: 256px; */
-    font-size: 38px;
+    /* font-size: calc(256px * var(--scale-factor)); */
+    font-size: calc(33px * var(--scale-factor));
 }
 
+/* default is en logo */
 .logo-container {
-    /* top: 120px;
-    left: 3415px;
-    width: 970px;
-    height: 375px; */
-    top: 18px;
-    left: 506px;
-    width: 143px;
-    height: 55px;
+    top: calc(18px * var(--scale-factor-height));
+    left: calc(435px * var(--scale-factor-width));
+    width: calc(123px * var(--scale-factor-width));
+    height: calc(48px * var(--scale-factor-height));
 }
 
 .logo {
     width: 100%;
     height: 100%;
-    background-image: url('@/assets/logo-en.png');
+    background-image: url('@/assets/logo-fr.png');
     background-size: contain;
 }
 
 .url {
-    font-size: 19px;
+    font-size: calc(16.3px * var(--scale-factor));
 }
 
 .back-set-container {
-    /* top: 195px;
-    left: 180px;
-    width: 600px;
-    height: 620px; */
     /* border: solid red; */
-    top: 29px;
-    left: 27px;
-    width: 89px;
-    height: 92px;
+    top: calc(25px * var(--scale-factor-height));
+    left: calc(30.2px * var(--scale-factor-width));
+    width: calc(76.5px * var(--scale-factor-width));
+    height: calc(82px * var(--scale-factor-height));
 }
 
 .front-set-container {
-    /* top: 2410px;
-    left: 180px;
-    width: 600px;
-    height: 620px; */
     /* border: solid red; */
-    top: 350px;
-    left: 27px;
-    width: 85px;
-    height: 92px;
+    top: calc(306px * var(--scale-factor-height));
+    left: calc(23.2px * var(--scale-factor-width));
+    width: calc(73.1px * var(--scale-factor-width));
+    height: calc(79px * var(--scale-factor-height));
 }
 
 .first-rectangle {
     background-color: #A4E0E7;
     /* background-color: red; */
-    /* top: 50px;
-    left: 100px;
-    width: 380px;
-    height: 507px; */
-    top: 7px;
-    left: 15px;
-    width: 56px;
-    height: 75px;
-    border-radius: 10%;
+    top: calc(6px * var(--scale-factor-height));
+    left: calc(13px * var(--scale-factor-width));
+    width: calc(48.1px * var(--scale-factor-width));
+    height: calc(64.5px * var(--scale-factor-height));
+    border-radius: 8.6%;
     transform: rotate(10deg);
     z-index: 1; /* au fond */
 }
 
 .second-rectangle {
     background-color: #71CED0;
-    /* top: 50px;
-    left: 100px;
-    width: 380px;
-    height: 507px; */
-    top: 7px;
-    left: 15px;
-    width: 56px;
-    height: 75px;
-    border-radius: 10%;
+    top: calc(6px * var(--scale-factor-height));
+    left: calc(13px * var(--scale-factor-width));
+    width: calc(48.1px * var(--scale-factor-width));
+    height: calc(64.5px * var(--scale-factor-height));
+    border-radius: 8.6%;
     transform: rotate(-15deg);
     z-index: 2; /* milieu */
 }
 
 .third-rectangle {
     background-color: #00C6C1;
-    /* top: 65px;
-    left: 105px;
-    width: 380px;
-    height: 507px; */
-    top: 10px;
-    left: 16px;
-    width: 56px;
-    height: 75px;
-    border-radius: 10%;
+    top: calc(8.6px * var(--scale-factor-height));
+    left: calc(13.8px * var(--scale-factor-width));
+    width: calc(48px * var(--scale-factor-width));
+    height: calc(64.5px * var(--scale-factor-height));
+    border-radius: 8.6%;
     transform: rotate(-40deg);
     z-index: 3; /* devant */
 }
 
 .card-number {
     z-index: 4;
-    font-size: 40px;
+    font-size: calc(34px * var(--scale-factor));
 }
 
 .set-one {
-    /* top: 2670px;
-    left: 225px;
-    width: 772px;
-    height: 560px; */
-    top: 395px;
-    left: 33px;
-    width: 115px;
-    height: 65px;
+    top: calc(340px * var(--scale-factor-height));
+    left: calc(28px * var(--scale-factor-width));
+    width: calc(99px * var(--scale-factor-width));
+    height: calc(70px * var(--scale-factor-height));
     background-color: red;
-    padding-top: 11px;
-    font-size : 22px;
+    padding-top: calc(9.5px * var(--scale-factor));
+    font-weight: 430;
+    font-size: calc(19px * var(--scale-factor));
 }
 
 .set-two {
-    /* top: 2670px;
-    left: 1090px;
-    width: 772px;
-    height: 560px; */
-    top: 395px;
-    left: 161px;
-    width: 115px;
-    height: 65px;
+    top: calc(340.5px * var(--scale-factor-height));
+    left: calc(138.5px * var(--scale-factor-width));
+    width: calc(100px * var(--scale-factor-width));
+    height: calc(70px * var(--scale-factor-height));
     background-color: red;
-    padding-top: 11px;
-    font-size : 22px;
+    padding-top: calc(9.5px * var(--scale-factor));
+    font-weight: 430;
+    font-size: calc(19px * var(--scale-factor));
 }
 
 .set-three {
-    /* top: 2670px;
-    left: 1690px;
-    width: 772px;
-    height: 560px; */
-    top: 396px;
-    left: 289px;
-    width: 115px;
-    height: 65px;
+    top: calc(340.5px * var(--scale-factor-height));
+    left: calc(248.5px * var(--scale-factor-width));
+    width: calc(100px * var(--scale-factor-width));
+    height: calc(70px * var(--scale-factor-height));
     background-color: red;
-    padding-top: 11px;
-    font-size : 22px;
+    padding-top: calc(9.5px * var(--scale-factor));
+    font-weight: 430;
+    font-size: calc(19px * var(--scale-factor));
 }
 
 .set-four {
-    /* top: 2670px;
-    left: 2490px;
-    width: 772px;
-    height: 560px; */
-    top: 396px;
-    left: 417px;
-    width: 115px;
-    height: 65px;
+    top: calc(340.5px * var(--scale-factor-height));
+    left: calc(358.6px * var(--scale-factor-width));
+    width: calc(100px * var(--scale-factor-width));
+    height: calc(70px * var(--scale-factor-height));
     background-color: red;
-    padding-top: 11px;
-    font-size : 22px;
+    padding-top: calc(9.5px * var(--scale-factor));
+    font-weight: 430;
+    font-size: calc(19px * var(--scale-factor));
 }
 
 .set-five {
-    /* top: 2670px;
-    left: 3090px;
-    width: 772px;
-    height: 560px; */
-    top: 396px;
-    left: 545px;
-    width: 115px;
-    height: 65px;
+    top: calc(340.5px * var(--scale-factor-height));
+    left: calc(469px * var(--scale-factor-width));
+    width: calc(100px * var(--scale-factor-width));
+    height: calc(70px * var(--scale-factor-height));
     background-color: red;
-    padding-top: 11px;
-    font-size : 22px;
+    padding-top: calc(9.5px * var(--scale-factor));
+    font-weight: 430;
+    font-size: calc(19px * var(--scale-factor));
 }
 
 .set p {
-    /* font-size: 256px; */
-    font-size : 156px;
-}
-
-.border-white {
-    border: solid white 1px;
-}
-
-.border-black {
-    border: solid black 1px;
-}
-
-.top-left-vertical {
-    /* height : 90px;
-    top: -100px;
-    left: 95px; */
-    height : 13px;
-    top: -15px;
-    left: 14px;
-}
-.top-left-horizontal {
-    /* width : 90px;
-    top: 35px;
-    left: -35px; */
-    width : 13px;
-    top: 5px;
-    left: -5px;
-}
-.top-right-vertical {
-    /* height : 90px;
-    top: -100px;
-    left: 4580px; */
-    height : 13px;
-    top: -15px;
-    left: 679px;
-}
-.top-right-horizontal {
-    /* width : 90px;
-    top: 35px;
-    left: 4620px; */
-    width : 13px;
-    top: 5px;
-    left: 683px;
-}
-.bottom-left-vertical {
-    /* height : 90px;
-    top: 3060px;
-    left: 95px; */
-    height : 13px;
-    top: 452px;
-    left: 14px;
-}
-.bottom-left-horizontal {
-    /* width : 90px;
-    top: 3025px;
-    left: -35px; */
-    width : 13px;
-    top: 446px;
-    left: -5px;
-}
-.bottom-right-vertical {
-    /* height : 90px;
-    top: 3060px;
-    left: 4580px; */
-    height : 13px;
-    top: 453px;
-    left: 678px;
-}
-.bottom-right-horizontal {
-    /* width : 90px;
-    top: 3025px;
-    left: 4620px; */
-    width : 13px;
-    top: 446px;
-    left: 684px;
+    font-size: calc(134px * var(--scale-factor));
 }
 </style>

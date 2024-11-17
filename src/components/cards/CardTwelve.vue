@@ -1,5 +1,5 @@
 <template>
-    <CardBase :title="$t('V1C12L1')" :content="$t('V1C12L2')" :card-number="12" :background-front-image="'C12.png'">
+    <CardBase :title="$t('V1C12L1')" :content="$t('V1C12L2')" :card-number="12" :background-front-image="`C12.${imageType}`">
         <div id="card12-label1" class="label black card12-label1-position">
             <p id="card12-text1" class="font-medium">{{ $t('V1C12L3') }}</p>
         </div>
@@ -15,7 +15,7 @@
             <p id="card12-text4" class="font-small">{{ $t('V1C12L9') }}</p>
         </div>
         <div id="card12-label5"
-            class="horizontal-center vertical-center label black card12-label5-position">
+            class="horizontal-center vertical-center label card12-label5-position">
             <p id="card12-text5" class="font-small">{{ $t('V1C999L90') }}</p>
         </div>
         <div id="card12-fixed-label1" class="horizontal-center vertical-center label white card12-fixed-label1-position">
@@ -43,154 +43,80 @@ export default {
     components: {
         CardBase,
     },
+    data() {
+        return {
+            imageType: process.env.VUE_APP_IMAGE_TYPE || 'png',
+        };
+    },
 };
 </script>
 
 <!-- pour une résolution de 470x693 -->
 <style>
 .card12-label1-position {
-    top: 222px;
-    left: 236px;
-    width: 192px;
-    height: 37px;
-    font-size: 21px;
+    top: calc(191px * var(--scale-factor));
+    left: calc(203px * var(--scale-factor));
+    width: calc(165px * var(--scale-factor));
+    height: calc(31.8px * var(--scale-factor));
+    font-size: calc(18px * var(--scale-factor));
     text-align: right;
 }
 
 .card12-label2-position {
-    top: 290px;
-    left: 238px;
-    width: 182px;
-    height: 35px;
-    font-size: 21px;
+    top: calc(249.4px * var(--scale-factor));
+    left: calc(203px * var(--scale-factor));
+    width: calc(165px * var(--scale-factor));
+    height: calc(31.8px * var(--scale-factor));
+    font-size: calc(18px * var(--scale-factor));
     text-align: right;
 }
 
 .card12-label3-position {
-    top: 359px;
-    left: 238px;
-    width: 182px;
-    height: 35px;
-    font-size: 21px;
+    top: calc(308.7px * var(--scale-factor));
+    left: calc(203px * var(--scale-factor));
+    width: calc(165px * var(--scale-factor));
+    height: calc(31.8px * var(--scale-factor));
+    font-size: calc(18px * var(--scale-factor));
     text-align: right;
 }
 
 .card12-label4-position {
-    top: 166px;
-    left: 90px;
-    width: 510px;
-    height: 35px;
+    top: calc(142.7px * var(--scale-factor));
+    left: calc(77.4px * var(--scale-factor));
+    width: calc(438.6px * var(--scale-factor));
+    height: calc(30px * var(--scale-factor));
     transform: rotate(-180deg);
 }
 
 .card12-label5-position {
-    top: 407px;
-    left: 272px;
-    width: 200px;
-    height: 20px;
-    transform: rotate(7deg);
+    top: calc(366px * var(--scale-factor));
+    left: calc(359px * var(--scale-factor));
+    width: calc(172px * var(--scale-factor));
+    height: calc(17px * var(--scale-factor));
     color: grey;
 }
 
 .card12-fixed-label1-position {
-    top: 213px;
-    left: 450px;
-    width: 109px;
-    height: 52px;
-    font-size: 30px;
+    top: calc(184px * var(--scale-factor));
+    left: calc(387px * var(--scale-factor));
+    width: calc(93.7px * var(--scale-factor));
+    height: calc(44.7px * var(--scale-factor));
+    font-size: calc(25.8px * var(--scale-factor));
 }
 
 .card12-fixed-label2-position {
-    top: 280px;
-    left: 450px;
-    width: 109px;
-    height: 52px;
-    font-size: 30px;
+    top: calc(242px * var(--scale-factor));
+    left: calc(387px * var(--scale-factor));
+    width: calc(93.7px * var(--scale-factor));
+    height: calc(44.7px * var(--scale-factor));
+    font-size: calc(25.8px * var(--scale-factor));
 }
 
 .card12-fixed-label3-position {
-    top: 345px;
-    left: 450px;
-    width: 109px;
-    height: 52px;
-    font-size: 30px;
+    top: calc(298px * var(--scale-factor));
+    left: calc(387px * var(--scale-factor));
+    width: calc(93.7px * var(--scale-factor));
+    height: calc(44.7px * var(--scale-factor));
+    font-size: calc(25.8px * var(--scale-factor));
 }
 </style>
-
-<!-- <style>
-.card12-label1-position {
-    top: 1500px;
-    left: 1600px;
-    width: 1300px;
-    height: 250px;
-    font-size: 150px;
-    text-align : right;
-    /* border: solid red; */
-}
-
-.card12-label2-position {
-    top: 1950px;
-    left: 1600px;
-    width: 1300px;
-    height: 250px;
-    font-size: 150px;
-    text-align: right;
-    /* border: solid red; */
-}
-
-.card12-label3-position {
-    top: 2400px;
-    left: 1600px;
-    width: 1300px;
-    height: 250px;
-    font-size: 150px;
-    text-align: right;
-    /* border: solid red; */
-}
-
-.card12-label4-position {
-    top: 1100px;
-    left: 600px;
-    width: 3500px;
-    height: 250px;
-    transform : rotate(-180deg);
-    /* border: solid red; */
-}
-
-.card12-label5-position {
-    top: 2780px;
-    left: 2000px;
-    width: 1700px;
-    height: 200px;
-    transform: rotate(7deg);
-    color: grey;
-    /* border: red solid; */
-}
-
-.card12-fixed-label1-position {
-    top: 1440px;
-    left: 3033px;
-    width: 736px;
-    height: 350px;
-    font-size : 200px;
-}
-
-.card12-fixed-label2-position {
-    top: 1890px;
-    left: 3033px;
-    width: 736px;
-    height: 350px;
-    font-size : 200px;
-    /* border: red solid; */
-}
-
-.card12-fixed-label3-position {
-    top: 2330px;
-    left: 3033px;
-    width: 736px;
-    height: 350px;
-    font-size: 200px;
-    /* border: red solid; */
-}
-
-</style> -->

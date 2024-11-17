@@ -1,19 +1,28 @@
 <template>
-    <CardBase :title="$t('V1C21L1')" :content="$t('V1C21L2')" :card-number="21" :background-front-image="'C21.png'"> 
+    <CardBase :title="$t('V1C21L1')" :content="$t('V1C21L2')" :card-number="21" :background-front-image="`C21.${imageType}`"> 
         <div id="card21-label1" class="horizontal-center label black card21-label1-position">
             <p id="card21-text1" class="font-medium">{{ $t('V1C21L6') }}</p>
         </div>
-        <div id="card21-label2" class="horizontal-center label black card21-label2-position">
-            <p id="card21-text2">{{ $t('V1C999L90') }}</p>
+        <div id="card21-label2" class="label card21-label2-position">
+            <p id="card21-text2" class="font-small">{{ $t('V1C999L90') }}</p>
         </div>
-        <div id="card21-fixed-label1" class="horizontal-center vertical-center label black card21-fixed-label1-position">
-            <p id="card21-fixed-text1" class="font-small">+ 1,2°C</p>
+        <div id="card21-label3" class="label black card21-label3-position">
+            <p id="card21-text3" class="font-small">{{ $t('V1C21L7') }}</p>
         </div>
-        <div id="card21-fixed-label2" class="horizontal-center vertical-center label black card21-fixed-label2-position">
-            <p id="card21-fixed-text2" class="font-small">+ 5°C</p>
+        <div id="card21-label4" class="label card21-label4-position">
+            <p id="card21-text4" class="font-small">{{ $t('V1C21L8') }}</p>
         </div>
-        <div id="card21-fixed-label3" class="horizontal-center vertical-center label black card21-fixed-label3-position">
-            <p id="card21-fixed-text3" class="font-small">+ 1,5°C</p>
+        <div id="card21-label5" class="label card21-label5-position">
+            <p id="card21-text5" class="font-small">{{ $t('V1C21L9') }}</p>
+        </div>
+        <div id="card21-label6" class="horizontal-center vertical-center label black card21-label6-position">
+            <p id="card21-text6" class="font-small">{{$t('V1C21L3')}}</p>
+        </div>
+        <div id="card21-label7" class="horizontal-center vertical-center label black card21-label7-position">
+            <p id="card21-text7" class="font-small">{{$t('V1C21L5')}}</p>
+        </div>
+        <div id="card21-label8" class="horizontal-center vertical-center label black card21-label8-position">
+            <p id="card21-text8" class="font-small">{{$t('V1C21L4')}}</p>
         </div>
         <template v-slot:back-content>
             <div id="card21-back-label2" class="label white set-one">
@@ -31,105 +40,101 @@ export default {
     components: {
         CardBase,
     },
+    data() {
+        return {
+            imageType: process.env.VUE_APP_IMAGE_TYPE || 'png',
+        };
+    },
 };
 </script>
 
 <!-- pour une résolution de 470x693 -->
 <style>
 .card21-label1-position {
-    top: 120px;
-    left: 380px;
-    width: 257px;
-    height: 35px;
+    top: calc(103px * var(--scale-factor));
+    left: calc(326.8px * var(--scale-factor));
+    width: calc(221px * var(--scale-factor));
+    height: calc(30px * var(--scale-factor));
     text-align: right;
     justify-content: right;
 }
 
 .card21-label2-position {
-    top: 380px;
-    left: 570px;
-    width: 100px;
-    height: 40px;
-    /* border: red solid 0.5px; */
+    top: calc(331.9px * var(--scale-factor));
+    left: calc(500px * var(--scale-factor));
+    width: calc(76px * var(--scale-factor));
+    height: calc(36px * var(--scale-factor));
     transform: rotate(-90deg);
+    /* border: solid red 0.2px * var(--scale-factor)); */
+    color:grey;
+    font-size: calc(12px * var(--scale-factor));
 }
 
-.card21-fixed-label1-position {
-    top: 151px;
-    left: 53px;
-    width: 125px;
-    height: 35px;
-    border: solid black 4px;
+.card21-label3-position {
+    top: calc(146.2px * var(--scale-factor));
+    left: calc(223.6px * var(--scale-factor));
+    width: calc(31.8px * var(--scale-factor));
+    height: calc(13.7px * var(--scale-factor));
     background-color: white;
-    border-radius: 4px;
-    font-size: 25px;
+    /* border: solid red 0.2px * var(--scale-factor)); */
+    text-align: left;
+    font-size: calc(5px * var(--scale-factor));
 }
 
-.card21-fixed-label2-position {
-    top: 174px;
-    left: 390px;
-    width: 125px;
-    height: 35px;
-    border: solid #980002 4px;
+.card21-label4-position {
+    top: calc(157.3px * var(--scale-factor));
+    left: calc(223.6px * var(--scale-factor));
+    width: calc(31.8px * var(--scale-factor));
+    height: calc(33.5px * var(--scale-factor));
     background-color: white;
-    border-radius: 4px;
-    font-size: 25px;
+    /* border: solid red 0.2px * var(--scale-factor)); */
+    text-align: left;
+    color : #936D22;
+    font-size: calc(5px * var(--scale-factor));
 }
 
-.card21-fixed-label3-position {
-    top: 340px;
-    left: 395px;
-    width: 125px;
-    height: 35px;
-    border: solid #00A9CF 4px;
+.card21-label5-position {
+    top: calc(198.6px * var(--scale-factor));
+    left: calc(223.6px * var(--scale-factor));
+    width: calc(31.8px * var(--scale-factor));
+    height: calc(33.5px * var(--scale-factor));
     background-color: white;
-    border-radius: 4px;
-    font-size: 25px;
+    /* border: solid red 0.2px * var(--scale-factor)); */
+    text-align: left;
+    color : #3F635F;
+    font-size: calc(5px * var(--scale-factor));
+}
+
+.card21-label6-position {
+    top: calc(130px * var(--scale-factor));
+    left: calc(45.6px * var(--scale-factor));
+    width: calc(107.5px * var(--scale-factor));
+    height: calc(30px * var(--scale-factor));
+    border: solid black 3.5px;
+    background-color: white;
+    border-radius: 3.5px;
+    font-size: calc(21.5px * var(--scale-factor));
+}
+
+.card21-label7-position {
+    top: calc(151px * var(--scale-factor));
+    left: calc(335.4px * var(--scale-factor));
+    width: calc(107.5px * var(--scale-factor));
+    height: calc(30px * var(--scale-factor));
+    border: solid #980002 3.5px;
+    background-color: white;
+    border-radius: 3.5px;
+    font-size: calc(21.5px * var(--scale-factor));
+}
+
+.card21-label8-position {
+    top: calc(294px * var(--scale-factor));
+    left: calc(341px * var(--scale-factor));
+    width: calc(107.5px * var(--scale-factor));
+    height: calc(30px * var(--scale-factor));
+    border: solid #00A9CF 3.5px;
+    background-color: white;
+    border-radius: 3.5px;
+    font-size: calc(21.5px * var(--scale-factor));
 }
 </style>
-
-<!-- pour une résolution de 3180x4680 -->
-<!-- <style>
-.card21-label1-position {
-    top: 790px;
-    left: 2100px;
-    width: 2200px;
-    height: 300px;
-    text-align : right;
-    justify-content: right;
-    /* border: solid red; */
-}
-
-.card21-fixed-label1-position {
-    top: 1030px;
-    left: 365px;
-    width: 890px;
-    height: 300px;
-    border: solid black 20px;
-    background-color: white;
-    border-radius: 15px;
-    font-size : 200px;
-}
-
-.card21-fixed-label2-position {
-    top: 1215px;
-    left: 2630px;
-    width: 830px;
-    height: 290px;
-    border: solid red 20px;
-    background-color: white;
-    border-radius: 15px;
-    font-size : 200px;
-}
-
-.card21-fixed-label3-position {
-    top: 2290px;
-    left: 2620px;
-    width: 850px;
-    height: 300px;
-    border: solid lightblue 20px;
-    background-color: white;
-    border-radius: 15px;
-    font-size: 200px;
-}
-</style> -->

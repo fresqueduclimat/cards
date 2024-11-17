@@ -1,5 +1,5 @@
 <template>
-    <CardBase :title="$t('V1C24L1')" :content="$t('V1C24L2')" :card-number="24" :background-front-image="'C24.png'">
+    <CardBase :title="$t('V1C24L1')" :content="$t('V1C24L2')" :card-number="24" :background-front-image="`C24.${imageType}`">
         <div id="card24-label1" class="horizontal-center vertical-center label black card24-label1-position">
             <p id="card24-text1" class="font-small">{{ $t('V1C24L3') }}</p>
         </div>
@@ -22,47 +22,31 @@ export default {
     components: {
         CardBase,
     },
+    data() {
+        return {
+            imageType: process.env.VUE_APP_IMAGE_TYPE || 'png',
+        };
+    },
 };
 </script>
 
 <!-- pour une résolution de 470x693 -->
 <style>
 .card24-label1-position {
-    top: 208px;
-    left: -37px;
-    width: 242px;
-    height: 52px;
+    top: calc(182.3px * var(--scale-factor));
+    left: calc(-31.8px * var(--scale-factor));
+    width: calc(210px * var(--scale-factor));
+    height: calc(44.7px * var(--scale-factor));
     transform: rotate(-90deg);
     /* border: solid red; */
 }
 
 .card24-label2-position {
-    top: 126px;
-    left: 414px;
-    width: 222px;
-    height: 22px;
+    top: calc(108.3px * var(--scale-factor));
+    left: calc(216.4px * var(--scale-factor));
+    width: calc(191px * var(--scale-factor));
+    height: calc(19px * var(--scale-factor));
     color: grey;
     /* border: solid red; */
 }
 </style>
-
-<!-- pour une résolution de 3180x4680 -->
-<!-- <style>
-.card24-label1-position {
-    top: 1430px;
-    left: -250px;
-    width: 1650px;
-    height: 350px;
-    transform: rotate(-90deg);
-    /* border: solid red; */
-}
-
-.card24-label2-position {
-    top: 850px;
-    left: 2800px;
-    width: 1500px;
-    height: 150px;
-    color: grey;
-    /* border: solid red; */
-}
-</style> -->

@@ -11,31 +11,30 @@ git clone https://github.com/fresqueduclimat/cards
 ```
 
 Initialize the project
-
 ```
 npm install
 ```
 
-Compiles and hot-reloads for development
+Install decktape to export cards in pdf file
+```
+npm install -g decktape
+```
 
+Install vue cli service
+```
+npm install @vue/cli-service --save-dev
+```
+
+Compiles and hot-reloads for development
 ```
 npm run serve
 ```
 
 Export cards in pdf file
-
 ```
 EXPORT_LANG=FR_FR npm run export
 ```
 Le paramètre "EXPORT_LANG" permet de nommer automatiquement le fichier (par exemple, avec la commande ci-dessous le fichier exporté sera `Adults-FR_FR-v8.4.pdf`). Attention cependant, la langue du pdf exporté dépend de la locale choisie dans le fichier `main.js` (cf. Choix de la langue ci-dessous)
-
-Export cards in png (for online mural facilitation)
-
-```
-npm run capture
-```
-La commande est configurée pour exporter en png uniquement les recto de chaque carte. Ceci peut être adapté via package.json pour adapter la commande au besoin, ou en créer une nouvelle.
-Il faut qu'un dossier /screenshots existe à la racine, les pngs sont directement téléchargés dans le dossier.
 
 ## Project details
 
@@ -100,8 +99,8 @@ Chaque composant spécifique `CardOne`, `CardTwo`, `CardThree`, `CardFour` ... e
 Par exemple pour le composant `CardFive` :
 
 ```
-<CardBase :title="$t('V1C5L1')" :content="$t('V1C5L2')" :card-number="5" :background-front-image="'C5.png'"
-        :background-back-image="'C5-back.png'">
+<CardBase :title="$t('V1C5L1')" :content="$t('V1C5L2')" :card-number="5" :background-front-image="`C5.png'"
+        :background-back-image="`C5-back.png'">
 ```
 Pour les cartes avec du texte supplémentaire, il faut ajouter dans le composant spécifique les `div` et `p` correspondant à chaque texte.
 Par exemple pour le composant `CardFive` :
@@ -128,10 +127,10 @@ Il faut positionner et déterminer une taille pour chacune de ces divs selon la 
 Par exemple pour le premier texte de la carte 5 :
 ```
 .card5-label1-position {
-    top: 954px;
-    left: 1216.8px;
-    width: 1357.2px;
-    height: 254.4px;
+    top: calc(954px * var(--scale-factor));
+    left: calc(1216.8px * var(--scale-factor));
+    width: calc(1357.2px * var(--scale-factor));
+    height: calc(254.4px * var(--scale-factor));
 }
 ```
 
