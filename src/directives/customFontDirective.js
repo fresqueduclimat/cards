@@ -39,6 +39,11 @@ export default {
             document.documentElement.style.setProperty('--r-main-font', fontFamily);
             document.documentElement.style.setProperty('--r-heading-font', fontFamily);
         }
+        if (currentLocale === 'ko') {
+            fontFamily = "'Noto Sans KR', sans-serif";
+            document.documentElement.style.setProperty('--r-main-font', fontFamily);
+            document.documentElement.style.setProperty('--r-heading-font', fontFamily);
+        }
         
     },
 };
