@@ -193,5 +193,17 @@ export default {
                 text.style.fontSize = `${9 * scaleFactor}px`;
             });  
         }
+
+        if (currentLocale === 'ko') {
+            const c7label0 = el.querySelectorAll('#card7-back-text0');
+            c7label0.forEach(text => {
+                text.style.fontSize = `${31 * scaleFactor}px`;
+            }); 
+            
+            const c28label0 = el.querySelectorAll('#card28-back-text0');
+            c28label0.forEach(text => {
+                text.style.fontSize = `${31 * scaleFactor}px`;
+            }); 
+        }
     },
 };

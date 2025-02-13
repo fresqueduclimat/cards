@@ -987,6 +987,36 @@ export default {
             });
         }
 
+        if (currentLocale === 'tg') {
+            const labeloneElements = el.querySelectorAll('#card0-label1');
+            labeloneElements.forEach(text => {
+                // text.style.top = `${87 * scaleFactorHeight}px`; 
+                text.style.fontSize = `${13 * scaleFactor}px`;
+            });
+            const labelthreeElements = el.querySelectorAll('#card0-label3');
+            labelthreeElements.forEach(text => {
+                text.style.top = `${119 * scaleFactorHeight}px`; 
+                text.style.height = `${55 * scaleFactorHeight}px`; 
+                text.style.fontSize = `${13 * scaleFactor}px`;
+            });
+            const labelfourElements = el.querySelectorAll('#card0-label4');
+            labelfourElements.forEach(text => {
+                text.style.top = `${171 * scaleFactorHeight}px`;   
+                text.style.height = `${40 * scaleFactorHeight}px`;
+                text.style.fontSize = `${13 * scaleFactor}px`; 
+            });
+            const labelfiveElements = el.querySelectorAll('#card0-label5');
+            labelfiveElements.forEach(text => {
+                text.style.top = `${206 * scaleFactorHeight}px`;   
+                // text.style.height = `${70 * scaleFactorHeight}px`;
+                text.style.fontSize = `${13 * scaleFactor}px`; 
+            });
+            const labelsevenElements = el.querySelectorAll('#card0-label7');
+            labelsevenElements.forEach(text => {
+                text.style.top = `${343 * scaleFactorHeight}px`;   
+            });
+        }
+
 
     },
 };
