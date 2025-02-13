@@ -87,7 +87,8 @@ const lang2locale = {
   "mn-MN" : "mn",
   "da-DK" : "da",
   "zh-TW" : "tw",
-  "ko-KR" : "ko"
+  "ko-KR" : "ko",
+  "tg-TJ" : "tg"
 }
 
 const languagesToFetch = Object.keys(lang2locale);
@@ -107,7 +108,7 @@ Promise.all(fetchPromises)
     });
     // Create the i18n instance only after fetching data
     const i18n = createI18n({
-      locale: "ko", // Replace with the desired default locale
+      locale: "ne", // Replace with the desired default locale
       fallbackLocale: "fr",
       messages: messages,
     });
