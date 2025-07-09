@@ -44,6 +44,11 @@ export default {
             document.documentElement.style.setProperty('--r-main-font', fontFamily);
             document.documentElement.style.setProperty('--r-heading-font', fontFamily);
         }
+        if (currentLocale === 'th') {
+            fontFamily = "'Kanit', sans-serif";
+            document.documentElement.style.setProperty('--r-main-font', fontFamily);
+            document.documentElement.style.setProperty('--r-heading-font', fontFamily);
+        }
         
     },
 };

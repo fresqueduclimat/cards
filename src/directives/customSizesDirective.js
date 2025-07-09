@@ -205,5 +205,74 @@ export default {
                 text.style.fontSize = `${31 * scaleFactor}px`;
             }); 
         }
+
+        if (currentLocale === 'th') {
+            const c7label0 = el.querySelectorAll('#card7-back-text0');
+            c7label0.forEach(text => {
+                text.style.fontSize = `${26 * scaleFactor}px`;
+            }); 
+            
+            const c29label0 = el.querySelectorAll('#card29-back-text0');
+            c29label0.forEach(text => {
+                text.style.fontSize = `${31 * scaleFactor}px`;
+            }); 
+            
+            const c30label0 = el.querySelectorAll('#card30-back-text0');
+            c30label0.forEach(text => {
+                text.style.fontSize = `${27 * scaleFactor}px`;
+            }); 
+
+            const c18label0 = el.querySelectorAll('#card18-back-text0');
+            c18label0.forEach(text => {
+                text.style.fontSize = `${30 * scaleFactor}px`;
+            }); 
+
+            const c22label0 = el.querySelectorAll('#card22-back-text0');
+            c22label0.forEach(text => {
+                text.style.fontSize = `${30 * scaleFactor}px`;
+            }); 
+            
+            const c3label0 = el.querySelectorAll('#card3-back-text0');
+            c3label0.forEach(text => {
+                text.style.fontSize = `${32 * scaleFactor}px`;
+            }); 
+
+            const c24label0 = el.querySelectorAll('#card24-back-text0');
+            c24label0.forEach(text => {
+                text.style.fontSize = `${25 * scaleFactor}px`;
+            }); 
+
+            const c14label0 = el.querySelectorAll('#card14-back-text0');
+            c14label0.forEach(text => {
+                text.style.fontSize = `${20 * scaleFactor}px`;
+            }); 
+
+            const c16label0 = el.querySelectorAll('#card16-back-text0');
+            c16label0.forEach(text => {
+                text.style.fontSize = `${19  * scaleFactor}px`;
+            }); 
+
+            const c17label0 = el.querySelectorAll('#card17-back-text0');
+            c17label0.forEach(text => {
+                text.style.fontSize = `${32  * scaleFactor}px`;
+            }); 
+
+            const c27label0 = el.querySelectorAll('#card27-back-text0');
+            c27label0.forEach(text => {
+                text.style.fontSize = `${24  * scaleFactor}px`;
+            }); 
+
+            const c38label0 = el.querySelectorAll('#card38-back-text0');
+            c38label0.forEach(text => {
+                text.style.fontSize = `${32  * scaleFactor}px`;
+            }); 
+
+            const c41label0 = el.querySelectorAll('#card41-back-text0');
+            c41label0.forEach(text => {
+                text.style.fontSize = `${20  * scaleFactor}px`;
+            }); 
+            
+            
+        }
     },
 };
