@@ -429,6 +429,30 @@ export default {
   src: url('./fonts/NotoSansKR/NotoSansKR-Medium.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Kanit';
+  font-weight: 700;
+  /* bold */
+  font-style: normal;
+  src: url('./fonts/Kanit/Kanit-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Kanit';
+  font-weight: 400;
+  /* normal */
+  font-style: normal;
+  src: url('./fonts/Kanit/Kanit-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Kanit';
+  font-weight: 500;
+  /* medium */
+  font-style: normal;
+  src: url('./fonts/Kanit/Kanit-Medium.ttf') format('truetype');
+}
+
 /* @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;400;700&display=swap'); */
 
