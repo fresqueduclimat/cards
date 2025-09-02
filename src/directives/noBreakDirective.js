@@ -102,6 +102,17 @@ export default {
         el.innerHTML = el.innerHTML.replace(regex, replacement);
 
 
+        if (currentLocale === 'nlb') {
+            regex = /Een kwart/g;
+            replacement = '<strong>Een kwart</strong>';
+            el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+            regex = /De overgebleven helft/g;
+            replacement = '<strong>De overgebleven helft</strong>';
+            el.innerHTML = el.innerHTML.replace(regex, replacement);
+        }
+
+
         if (currentLocale === 'fa') {
             regex = /0 /g;
             replacement = '۰';
