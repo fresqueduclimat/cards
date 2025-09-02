@@ -8,7 +8,7 @@
                 <p>{{ $t('V1C0L0') }}</p>
             </div>
             <div class="label white front-card-label2-position">
-                <p>{{ "Climate Fresk - " + $t('V0C0L0') + " - " + $t('V1C0L0') + " - V9.0 - 20/08/2025"}}</p>
+                <p>{{ "Climate Fresk - " + $t('V0C0L0') + " - " + $t('V1C0L0') + " - V9.0 - 02/09/2025"}}</p>
             </div>
             <div class="label logo-container-front">
                 <div class="local-logo"></div>
