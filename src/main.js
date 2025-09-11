@@ -93,7 +93,8 @@ const lang2locale = {
   "kn-IN" : "kn",
   "oc-ES" : "oc",
   "ka-GE" : "ka",
-  "nl-NLB1" : "nlb"
+  "nl-NLB1" : "nlb",
+  "bs-BA" : "bs"
 }
 
 const languagesToFetch = Object.keys(lang2locale);
