@@ -17,7 +17,7 @@
                 <div class="cc"></div>
             </div>
             <div class="label black front-card-label2-position">
-                <p>{{ "Climate Fresk - " + $t('V3C0L1') + " - " + $t('V3C0L2') + " - " + $t('V3C0L4') + " - 16/02/2026"}}</p>
+                <p>{{ "Climate Fresk - " + $t('V3C0L1') + " - " + $t('V3C0L2') + " - " + $t('V3C0L4') + " - 24/02/2026"}}</p>
             </div>
 
             <div class="label frame-container">
@@ -51,10 +51,10 @@ export default {
 <style>
 /* default is en logo, without barcode (website format) */
 .logo-container-back {
-    top: calc(265px * var(--scale-factor-height));
-    left: calc(93px * var(--scale-factor-width));
-    width: calc(203px * var(--scale-factor-width));
-    height: calc(77px * var(--scale-factor-height));
+    top: calc(287px * var(--scale-factor-height));
+    left: calc(121px * var(--scale-factor-width));
+    width: calc(146px * var(--scale-factor-width));
+    height: calc(55px * var(--scale-factor-height));
 }
 
 
@@ -98,8 +98,8 @@ export default {
 .card29-label0-position {
     top: calc(37px * var(--scale-factor-height));
     left: calc(37px * var(--scale-factor-width));
-    width: calc(235px * var(--scale-factor-width));
-    height: calc(228px * var(--scale-factor-height));
+    width: calc(236px * var(--scale-factor-width));
+    height: calc(260px * var(--scale-factor-height));
     text-align: justify;
     line-height: 12px; 
     /* border: red solid; */
@@ -107,9 +107,8 @@ export default {
 
 /* default is en logo without barcode (website version) */
 .outline-container-back {
-    background-color: white;
-    top: calc(338px * var(--scale-factor-height));
-    left: calc(152.6px * var(--scale-factor-width));
+    top: calc(339px * var(--scale-factor-height));
+    left: calc(123px * var(--scale-factor-width));
     width: calc(200px * var(--scale-factor-width));
     height: calc(17px * var(--scale-factor-height));
     font-size: calc(11px * var(--scale-factor));

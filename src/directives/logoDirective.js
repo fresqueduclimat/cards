@@ -19,6 +19,11 @@ export default {
                 logo.style.width = `${109 * scaleFactor}px`;
                 logo.style.height = `${29 * scaleFactor}px`;
             });
+            const urlElements = el.querySelectorAll('.url');
+            urlElements.forEach(url => {
+                url.textContent = "fresqueduclimat.org";
+                url.style.fontSize = `${12 * scaleFactor}px`;
+            });
             // front card logo
             const cardFrontElements = el.querySelectorAll('.logo-container-front');
             cardFrontElements.forEach(logo => {
@@ -38,17 +43,17 @@ export default {
             //last card logo
             const cardBackElements = el.querySelectorAll('.logo-container-back');
             cardBackElements.forEach(logo => {
-                logo.style.top = `${277 * scaleFactor}px`;
-                logo.style.left = `${93 * scaleFactor}px`;
-                logo.style.width = `${203 * scaleFactor}px`;
-                logo.style.height = `${55 * scaleFactor}px`;
+                logo.style.top = `${297 * scaleFactor}px`;
+                logo.style.left = `${102 * scaleFactor}px`;
+                logo.style.width = `${184 * scaleFactor}px`;
+                logo.style.height = `${49 * scaleFactor}px`;
             });
             const cardBackOutlineElements = el.querySelectorAll('.outline-container-back');
             cardBackOutlineElements.forEach(logo => {
-                logo.style.top = `${330 * scaleFactor}px`;
-                logo.style.left = `${122 * scaleFactor}px`;
+                logo.style.top = `${342 * scaleFactor}px`;
+                logo.style.left = `${130 * scaleFactor}px`;
                 logo.style.width = `${200 * scaleFactor}px`;
-                logo.style.height = `${17 * scaleFactor}px`;
+                logo.style.height = `${11 * scaleFactor}px`;
             });
         }
 

@@ -17,6 +17,7 @@
             </div>
             <div class="label logo-container">
                 <div class="logo"></div>
+                <p class="url">climatefresk.org</p>
             </div>
             <div class="label logo-icon-container">
                 <div class="logo-icon"></div>
@@ -165,7 +166,7 @@ export default {
 }
 
 .url {
-    font-size: calc(16.3px * var(--scale-factor));
+    font-size: calc(11px * var(--scale-factor));
 }
 
 .back-set-container-one {
