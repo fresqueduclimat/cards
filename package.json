@@ -7,7 +7,7 @@
     "build": "vue-cli-service build",
     "afterBuild": "node scripts/afterBuild.js",
     "lint": "vue-cli-service lint",
-    "export": "decktape http://localhost:8080 build/\"Simplified and Illustrated $EXPORT_LANG V1.1 - pdf (1).pdf\" -s '389x389' --slides 1-58"
+    "export": "decktape http://localhost:8080 build/\"Essential Concepts $EXPORT_LANG V1.1 - pdf (1).pdf\" -s '389x389' --slides 1-58"
     },
   "dependencies": {
     

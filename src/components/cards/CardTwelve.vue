@@ -1,5 +1,5 @@
 <template>
-    <CardBase :title="$t('V3C12L0')" :content="$t('V3C12L1')" :card-number="12" :background-front-image="`C12.${imageType}`">
+    <CardBase :title="$t('V3C12L0')" :content="$t('V3C12L1')" :card-number="12" :card-number-front="2" :background-front-image="`C12.${imageType}`">
         <div id="card12-label1" class="horizontal-center label black card12-label1-position">
             <p id="card12-text1" class="font-small">{{ $t('V3C12L2') }}</p>
         </div>
@@ -13,11 +13,14 @@
             <p id="card12-text4" class="font-small">{{ $t('V3C12L5') }}</p>
         </div>
         <template v-slot:back-content>
-            <div class="label black number">
-                <p>2</p>
-            </div> 
             <div id="card12-back-label1" class="label set-one">
-                <p id="card12-back-text1">{{ $t('V3C0L0') + ' ' + "1"}}</p>
+                <p id="card12-back-text1" class="font-medium">{{ $t('V3C0L0') + ' ' + "1"}}</p>
+            </div>
+            <div class="horizontal-center vertical-center label back-set-container-one">
+                <p class="label font-medium card-number black">2</p>
+            </div>
+            <div class="label logo-icon-container-one">
+                <div class="logo-icon"></div>
             </div>
         </template>
     </CardBase>
@@ -53,7 +56,7 @@ export default {
 
 .card12-label1-position p {
     font-weight: 600;
-    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-family: "Urbanist", sans-serif;
     color : #3573ba;
 }
 
@@ -68,7 +71,7 @@ export default {
 
 .card12-label2-position p {
     font-weight: 600;
-    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-family: "Urbanist", sans-serif;
     color : white;
 }
 
@@ -83,7 +86,7 @@ export default {
 
 .card12-label3-position p {
     font-weight: 600;
-    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-family: "Urbanist", sans-serif;
     color : #3573ba;
 ;
 }
@@ -98,7 +101,7 @@ export default {
 
 .card12-label4-position p {
     font-weight: 600;
-    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-family: "Urbanist", sans-serif;
     color : #3573ba;
 ;
 }

@@ -1,5 +1,5 @@
 <template>
-    <CardBase :title="$t('V3C13L0')" :content="$t('V3C13L1')" :card-number="13" :background-front-image="`C13.${imageType}`">
+    <CardBase :title="$t('V3C13L0')" :content="$t('V3C13L1')" :card-number="13" :card-number-front="18" :background-front-image="`C13.${imageType}`">
         <div id="card13-label1" class="horizontal-center label black card13-label1-position">
             <p id="card13-text1" class="font-small">{{ $t('V3C13L2') }}</p>
         </div>
@@ -16,11 +16,15 @@
             <p id="card13-text5" class="font-small">{{ $t('V3C13L6') }}</p>
         </div>
         <template v-slot:back-content>
-            <div class="label black number">
-                <p>18</p>
-            </div> 
-            <div id="card13-back-label1" class="label set-one">
-                <p id="card13-back-text1">{{ $t('V3C0L0') + ' ' + "3"}}</p>
+            <div id="card13-back-label1" class="label set-three">
+                <p id="card13-back-text1" class="font-medium">{{ $t('V3C0L0') + ' ' + "3"}}</p>
+            </div>
+            <div class="horizontal-center vertical-center label back-set-container-three">
+
+                <p class="label font-medium card-number black">18</p>
+            </div>
+            <div class="label logo-icon-container-three">
+                <div class="logo-icon"></div>
             </div>
         </template>
     </CardBase>
@@ -56,7 +60,7 @@ export default {
 
 .card13-label1-position p {
     font-weight: 600;
-    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-family: "Urbanist", sans-serif;
 }
 
 .card13-label2-position {
@@ -70,7 +74,7 @@ export default {
 
 .card13-label2-position p {
     font-weight: 600;
-    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-family: "Urbanist", sans-serif;
 }
 
 .card13-label3-position {
@@ -84,7 +88,7 @@ export default {
 
 .card13-label3-position p {
     font-weight: 600;
-    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-family: "Urbanist", sans-serif;
 ;
 }
 
@@ -98,7 +102,7 @@ export default {
 
 .card13-label4-position p {
     font-weight: 600;
-    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-family: "Urbanist", sans-serif;
 ;
 }
 
@@ -112,7 +116,7 @@ export default {
 
 .card13-label5-position p {
     font-weight: 600;
-    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-family: "Urbanist", sans-serif;
 ;
 }
 </style>

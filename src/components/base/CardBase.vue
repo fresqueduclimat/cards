@@ -17,6 +17,10 @@
             </div>
             <div class="label logo-container">
                 <div class="logo"></div>
+                <p class="url">climatefresk.org</p>
+            </div>
+            <div class="label logo-icon-container">
+                <div class="logo-icon"></div>
             </div>
             <slot name="back-content"></slot>
         </div>
@@ -33,6 +37,10 @@ export default {
             required: true,
         },
         cardNumber: {
+            type: Number,
+            required: true,
+        },
+        cardNumberFront: {
             type: Number,
             required: true,
         },
@@ -105,7 +113,7 @@ export default {
 .title {
     /* border: solid red 0.5px; */
     top: calc(40px * var(--scale-factor-height));
-    left: calc(40px * var(--scale-factor-width));
+    left: calc(35.5px * var(--scale-factor-width));
     width: calc(318px * var(--scale-factor-width));
     height: calc(60px * var(--scale-factor-height));
     text-align: left;
@@ -126,7 +134,7 @@ export default {
 .content {
     /* border: solid red 0.5px; */
     top: calc(100px * var(--scale-factor-height));
-    left: calc(40px * var(--scale-factor-width));
+    left: calc(35.5px * var(--scale-factor-width));
     width: calc(318px * var(--scale-factor-width));
     height: calc(190px * var(--scale-factor-height));
     text-align: left;
@@ -158,15 +166,39 @@ export default {
 }
 
 .url {
-    font-size: calc(16.3px * var(--scale-factor));
+    font-size: calc(11px * var(--scale-factor));
 }
 
-.back-set-container {
+.back-set-container-one {
     /* border: solid red; */
-    top: calc(25px * var(--scale-factor-height));
-    left: calc(30.2px * var(--scale-factor-width));
-    width: calc(76.5px * var(--scale-factor-width));
-    height: calc(82px * var(--scale-factor-height));
+    top: calc(332px * var(--scale-factor-height));
+    left: calc(33px * var(--scale-factor-width));
+    width: calc(24px * var(--scale-factor-width));
+    height: calc(22px * var(--scale-factor-height));
+}
+
+.back-set-container-two {
+    /* border: solid red; */
+    top: calc(332px * var(--scale-factor-height));
+    left: calc(92px * var(--scale-factor-width));
+    width: calc(24px * var(--scale-factor-width));
+    height: calc(22px * var(--scale-factor-height));
+}
+
+.back-set-container-three {
+    /* border: solid red; */
+    top: calc(332px * var(--scale-factor-height));
+    left: calc(150px * var(--scale-factor-width));
+    width: calc(24px * var(--scale-factor-width));
+    height: calc(22px * var(--scale-factor-height));
+}
+
+.back-set-container-four {
+    /* border: solid red; */
+    top: calc(332px * var(--scale-factor-height));
+    left: calc(207px * var(--scale-factor-width));
+    width: calc(24px * var(--scale-factor-width));
+    height: calc(22px * var(--scale-factor-height));
 }
 
 .front-set-container {
@@ -177,73 +209,132 @@ export default {
     height: calc(79px * var(--scale-factor-height));
 }
 
+/*
+.first-rectangle {
+    background-color: #A4E0E7;
+    top: calc(10px * var(--scale-factor-height));
+    left: calc(13px * var(--scale-factor-width));
+    width: calc(28px * var(--scale-factor-width));
+    height: calc(38px * var(--scale-factor-height));
+    border-radius: 8.6%;
+    transform: rotate(10deg);
+    z-index: 1; */ /* au fond */ /*
+}
+
+.second-rectangle {
+    background-color: #71CED0;
+    top: calc(10px * var(--scale-factor-height));
+    left: calc(13px * var(--scale-factor-width));
+    width: calc(28px * var(--scale-factor-width));
+    height: calc(38px * var(--scale-factor-height));
+    border-radius: 8.6%;
+    transform: rotate(-15deg);
+    z-index: 2; */ /* milieu */ /*
+}
+
+.third-rectangle {
+    background-color: #00C6C1;
+    top: calc(11px * var(--scale-factor-height));
+    left: calc(13.8px * var(--scale-factor-width));
+    width: calc(28px * var(--scale-factor-width));
+    height: calc(38px * var(--scale-factor-height));
+    border-radius: 8.6%;
+    transform: rotate(-40deg);
+    z-index: 3; */ /* devant */ /*
+} */
+
+.logo-icon-container-one {
+    top: calc(326px * var(--scale-factor));
+    left: calc(21px * var(--scale-factor));
+    width: calc(54px * var(--scale-factor));
+    height: calc(54px * var(--scale-factor));
+    /* border : solid red 0.5px * var(--scale-factor)); */
+}
+
+.logo-icon-container-two {
+    top: calc(326px * var(--scale-factor));
+    left: calc(79px * var(--scale-factor));
+    width: calc(54px * var(--scale-factor));
+    height: calc(54px * var(--scale-factor));
+    /* border : solid red 0.5px * var(--scale-factor)); */
+}
+
+.logo-icon-container-three {
+    top: calc(326px * var(--scale-factor));
+    left: calc(137px * var(--scale-factor));
+    width: calc(54px * var(--scale-factor));
+    height: calc(54px * var(--scale-factor));
+    /* border : solid red 0.5px * var(--scale-factor)); */
+}
+
+.logo-icon-container-four {
+    top: calc(326px * var(--scale-factor));
+    left: calc(195px * var(--scale-factor));
+    width: calc(54px * var(--scale-factor));
+    height: calc(54px * var(--scale-factor));
+    /* border : solid red 0.5px * var(--scale-factor)); */
+}
+
+.logo-icon {
+    width: 100%;
+    height: 100%;
+    background-image: url('@/assets/logo-icon.png');
+    background-size: contain;
+}
+
 .card-number {
     z-index: 4;
-    font-size: calc(34px * var(--scale-factor));
+    font-size: calc(17px * var(--scale-factor));
 }
 
 
 .set-one {
-    top: calc(327px * var(--scale-factor-height));
-    left: calc(40px * var(--scale-factor-width));
-    width: calc(120px * var(--scale-factor-width));
-    height: calc(32px * var(--scale-factor-height));
-    font-weight: 500;
-    font-size: calc(30px * var(--scale-factor));
-    /* border: red solid 1px; */
-    display: flex;
-    align-items: center;
+    top: calc(355px * var(--scale-factor-height));
+    left: calc(21px * var(--scale-factor-width));
+    width: calc(54px * var(--scale-factor-width));
+    height: calc(50px * var(--scale-factor-height));
+    padding-top: 3px;
+    background-color: #ffc629;
+    border-radius: 3px;
+    z-index: 5;
+    font-size: 14px;
 }
 
-.set-one p {
-    font-family: "IBM Plex Sans Condensed", sans-serif;
-    font-weight: 600;
-    color : black;
-    text-align: left;
-}
 
 .set-two {
-    top: calc(340.5px * var(--scale-factor-height));
-    left: calc(138.5px * var(--scale-factor-width));
-    width: calc(100px * var(--scale-factor-width));
-    height: calc(70px * var(--scale-factor-height));
-    background-color: red;
-    padding-top: calc(9.5px * var(--scale-factor));
-    font-weight: 430;
-    font-size: calc(19px * var(--scale-factor));
+    top: calc(355px * var(--scale-factor-height));
+    left: calc(79px * var(--scale-factor-width));
+    width: calc(54px * var(--scale-factor-width));
+    height: calc(50px * var(--scale-factor-height));
+    padding-top: 3px;
+    background-color: #ffc629;
+    border-radius: 3px;
+    z-index: 5;
+    font-size: 14px;
 }
 
 .set-three {
-    top: calc(340.5px * var(--scale-factor-height));
-    left: calc(248.5px * var(--scale-factor-width));
-    width: calc(100px * var(--scale-factor-width));
-    height: calc(70px * var(--scale-factor-height));
-    background-color: red;
-    padding-top: calc(9.5px * var(--scale-factor));
-    font-weight: 430;
-    font-size: calc(19px * var(--scale-factor));
+    top: calc(355px * var(--scale-factor-height));
+    left: calc(137px * var(--scale-factor-width));
+    width: calc(54px * var(--scale-factor-width));
+    height: calc(50px * var(--scale-factor-height));
+    padding-top: 3px;
+    background-color: #ffc629;
+    border-radius: 3px;
+    z-index: 5;
+    font-size: 14px;
 }
 
 .set-four {
-    top: calc(340.5px * var(--scale-factor-height));
-    left: calc(358.6px * var(--scale-factor-width));
-    width: calc(100px * var(--scale-factor-width));
-    height: calc(70px * var(--scale-factor-height));
-    background-color: red;
-    padding-top: calc(9.5px * var(--scale-factor));
-    font-weight: 430;
-    font-size: calc(19px * var(--scale-factor));
-}
-
-.set-five {
-    top: calc(340.5px * var(--scale-factor-height));
-    left: calc(469px * var(--scale-factor-width));
-    width: calc(100px * var(--scale-factor-width));
-    height: calc(70px * var(--scale-factor-height));
-    background-color: red;
-    padding-top: calc(9.5px * var(--scale-factor));
-    font-weight: 430;
-    font-size: calc(19px * var(--scale-factor));
+    top: calc(355px * var(--scale-factor-height));
+    left: calc(195px * var(--scale-factor-width));
+    width: calc(54px * var(--scale-factor-width));
+    height: calc(50px * var(--scale-factor-height));
+    padding-top: 3px;
+    background-color: #ffc629;
+    border-radius: 3px;
+    z-index: 5;
+    font-size: 14px;
 }
 
 .set p {

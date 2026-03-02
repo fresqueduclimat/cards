@@ -7,11 +7,11 @@
             <div class="label black front-card-label1-position">
                 <p>{{ $t('V3C0L2') }}</p>
             </div>
-            <div class="label white front-card-label2-position">
-               <p>{{ "Climate Fresk - " + $t('V3C0L1') + " - " + $t('V3C0L2') + " - " + $t('V3C0L4') + " - 20/01/2026"}}</p>
+            <div class="label black front-card-label2-position">
+               <p>{{ "Climate Fresk - " + $t('V3C0L1') + " - " + $t('V3C0L2') + " - " + $t('V3C0L4') + " - 24/02/2026"}}</p>
             </div>
             <div class="label logo-container-front">
-                <div class="logo-compact"></div>
+                <div class="logo"></div>
             </div>
             <div class="label outline-container">
                 <div class="outline">{{ $t('V3C0L5') }}</div>
@@ -62,21 +62,22 @@ export default {
 }
 
 .front-card-label0-position {
-    top: calc(290px * var(--scale-factor)); 
-    left: calc(82.5px * var(--scale-factor));  
-    width: calc(350px * var(--scale-factor)); 
-    height: calc(44.7px * var(--scale-factor)); 
-    font-size: calc(12px * var(--scale-factor));
+    top: calc(75px * var(--scale-factor));
+    left: calc(55px * var(--scale-factor));
+    width: calc(60px * var(--scale-factor));
+    height: calc(40px * var(--scale-factor));
+    font-size: calc(19px * var(--scale-factor));
     text-align: left;
     /* border : solid red 0.5px * var(--scale-factor)); */
 }
 
 .front-card-label1-position {
-    top: calc(305px * var(--scale-factor));
-    left: calc(82.5px * var(--scale-factor));
-    height: calc(44.7px * var(--scale-factor));
-    font-size: calc(12px * var(--scale-factor));
-    text-align: left;
+    top: calc(75px * var(--scale-factor));
+    left: calc(125px * var(--scale-factor));
+    width: calc(215px * var(--scale-factor));
+    height: calc(40px * var(--scale-factor));
+    font-size: calc(17px * var(--scale-factor));
+    text-align: right;
     /* border : solid red 0.5px * var(--scale-factor)); */
 }
 
@@ -91,19 +92,12 @@ export default {
     /* border : solid red 0.5px * var(--scale-factor)); */
 }
 
-.logo-compact {
-    width: 100%;
-    height: 100%;
-    background-image: url('@/assets/logo-en-compact.png');
-    background-size: contain;
-}
-
 /* default is en logo */
 .logo-container-front {
-    top: calc(65px * var(--scale-factor));
-    left: calc(105px * var(--scale-factor));
-    width: calc(184px * var(--scale-factor));
-    height: calc(184px * var(--scale-factor));
+    top: calc(155px * var(--scale-factor));
+    left: calc(64px * var(--scale-factor));
+    width: calc(260px * var(--scale-factor));
+    height: calc(100px * var(--scale-factor));
     /* border : solid red 0.5px * var(--scale-factor)); */
     /* display: flex;
     justify-content: center;
@@ -115,11 +109,10 @@ export default {
 /* default is en logo */
 .outline-container {
     background-color: white;
-    top: calc(244px * var(--scale-factor));
-    left: calc(114px * var(--scale-factor));
-    width: calc(170px * var(--scale-factor));
-    font-size: calc(12px * var(--scale-factor));
-    border : solid red 0.5px * var(--scale-factor);
+    top: calc(252px * var(--scale-factor));
+    left: calc(105px * var(--scale-factor));
+    width: calc(234px * var(--scale-factor));
+    font-size: calc(14px * var(--scale-factor));
 }
 
 .frame-container {
@@ -129,8 +122,8 @@ export default {
     box-sizing: border-box;
     border-top: calc(31px * var(--scale-factor)) solid #00acb3;
     border-left: calc(31px * var(--scale-factor)) solid #00acb3;
-    border-bottom: calc(31px * var(--scale-factor)) solid #e30613;
-    border-right: calc(31px * var(--scale-factor)) solid #e30613;
+    border-bottom: calc(31px * var(--scale-factor)) solid #ffc629;
+    border-right: calc(31px * var(--scale-factor)) solid #ffc629;
 }
 
 section hr.label {

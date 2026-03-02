@@ -15,69 +15,45 @@ export default {
             const cardAllElements = el.querySelectorAll('.logo-container');
             cardAllElements.forEach(logo => {
                 logo.style.top = `${334 * scaleFactor}px`;
-                logo.style.left = `${253 * scaleFactor}px`;
+                logo.style.left = `${260 * scaleFactor}px`;
                 logo.style.width = `${109 * scaleFactor}px`;
                 logo.style.height = `${29 * scaleFactor}px`;
             });
-
-            //front page compact logo
-            const compactlogoElements = el.querySelectorAll('.logo-compact');
-            compactlogoElements.forEach(logo => {
-                logo.style.backgroundImage = `url(${require('@/assets/logo-fr-compact.png')})`;
+            const urlElements = el.querySelectorAll('.url');
+            urlElements.forEach(url => {
+                url.textContent = "fresqueduclimat.org";
+                url.style.fontSize = `${12 * scaleFactor}px`;
+            });
+            // front card logo
+            const cardFrontElements = el.querySelectorAll('.logo-container-front');
+            cardFrontElements.forEach(logo => {
+                logo.style.top = `${155 * scaleFactor}px`;
+                logo.style.left = `${48 * scaleFactor}px`;
+                logo.style.width = `${289 * scaleFactor}px`;
+                logo.style.height = `${78 * scaleFactor}px`;
+            });
+            const cardFrontOUtlineElements = el.querySelectorAll('.outline-container');
+            cardFrontOUtlineElements.forEach(logo => {
+                logo.style.top = `${232 * scaleFactor}px`;
+                logo.style.left = `${105 * scaleFactor}px`;
+                logo.style.width = `${234 * scaleFactor}px`;
+                logo.style.height = `${14 * scaleFactor}px`;
             });
 
             //last card logo
             const cardBackElements = el.querySelectorAll('.logo-container-back');
             cardBackElements.forEach(logo => {
-                logo.style.top = `${277 * scaleFactor}px`;
-                logo.style.left = `${93 * scaleFactor}px`;
-                logo.style.width = `${203 * scaleFactor}px`;
-                logo.style.height = `${55 * scaleFactor}px`;
+                logo.style.top = `${297 * scaleFactor}px`;
+                logo.style.left = `${102 * scaleFactor}px`;
+                logo.style.width = `${184 * scaleFactor}px`;
+                logo.style.height = `${49 * scaleFactor}px`;
             });
             const cardBackOutlineElements = el.querySelectorAll('.outline-container-back');
             cardBackOutlineElements.forEach(logo => {
-                logo.style.top = `${330 * scaleFactor}px`;
-                logo.style.left = `${122 * scaleFactor}px`;
+                logo.style.top = `${342 * scaleFactor}px`;
+                logo.style.left = `${130 * scaleFactor}px`;
                 logo.style.width = `${200 * scaleFactor}px`;
-                logo.style.height = `${17 * scaleFactor}px`;
-            });
-        }
-
-        // DUTCH NL-NL
-        if (currentLocale === 'nl') { 
-            //normal bottom right logo
-            const logoElements = el.querySelectorAll('.logo');
-            logoElements.forEach(logo => {
-                logo.style.backgroundImage = `url(${require('@/assets/logo-nl.png')})`;
-            });
-            const cardAllElements = el.querySelectorAll('.logo-container');
-            cardAllElements.forEach(logo => {
-                logo.style.top = `${327 * scaleFactor}px`;
-                logo.style.left = `${245 * scaleFactor}px`;
-                logo.style.width = `${110 * scaleFactor}px`;
-                logo.style.height = `${37 * scaleFactor}px`;
-            });
-
-            //front page compact logo
-            const compactlogoElements = el.querySelectorAll('.logo-compact');
-            compactlogoElements.forEach(logo => {
-                logo.style.backgroundImage = `url(${require('@/assets/logo-nl-compact.png')})`;
-            });
-
-            //last card logo
-            const cardBackElements = el.querySelectorAll('.logo-container-back');
-            cardBackElements.forEach(logo => {
-                logo.style.top = `${277 * scaleFactor}px`;
-                logo.style.left = `${125 * scaleFactor}px`;
-                logo.style.width = `${164 * scaleFactor}px`;
-                logo.style.height = `${55 * scaleFactor}px`;
-            });
-            const cardBackOutlineElements = el.querySelectorAll('.outline-container-back');
-            cardBackOutlineElements.forEach(logo => {
-                logo.style.top = `${330 * scaleFactor}px`;
-                logo.style.left = `${112 * scaleFactor}px`;
-                logo.style.width = `${200 * scaleFactor}px`;
-                logo.style.height = `${17 * scaleFactor}px`;
+                logo.style.height = `${11 * scaleFactor}px`;
             });
         }
 

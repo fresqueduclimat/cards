@@ -26,8 +26,8 @@
       <CardTwentySeven />
       <CardTwenty />
       <CardEighteen />
-      <CardTwentySix />
       <CardTwentyTwo />
+      <CardTwentySix />
       <CardTwentyFive />
       <CardTwentyThree /> 
       <CardTwentyFour />

@@ -1,11 +1,15 @@
 <template>
-    <CardBase :title="$t('V3C7L0')" :content="$t('V3C7L1')" :card-number="7" :background-front-image="`C7.${imageType}`">
+    <CardBase :title="$t('V3C7L0')" :content="$t('V3C7L1')" :card-number="7" :card-number-front="10" :background-front-image="`C7.${imageType}`">
         <template v-slot:back-content>
-            <div class="label black number">
-                <p>10</p>
-            </div> 
-            <div id="card7-back-label1" class="label set-one">
-                <p id="card7-back-text1">{{ $t('V3C0L0') + ' ' + "2"}}</p>
+            <div id="card7-back-label1" class="label set-two">
+                <p id="card7-back-text1" class="font-medium">{{ $t('V3C0L0') + ' ' + "2"}}</p>
+            </div>
+            <div class="horizontal-center vertical-center label back-set-container-two">
+
+                <p class="label font-medium card-number black">10</p>
+            </div>
+            <div class="label logo-icon-container-two">
+                <div class="logo-icon"></div>
             </div>
         </template>
     </CardBase>
@@ -37,23 +41,4 @@ export default {
     /* border: solid red; */
 }
 
-.card7-label2-position {
-    top: calc(261.4px * var(--scale-factor));
-    left: calc(216.7px * var(--scale-factor));
-    width: calc(168px * var(--scale-factor));
-    height: calc(31.8px * var(--scale-factor));
-    text-align: left;
-    font-size: calc(17px * var(--scale-factor));
-    /* border: solid red; */
-}
-
-.card7-label3-position {
-    top: calc(325px * var(--scale-factor));
-    left: calc(215.8px * var(--scale-factor));
-    width: calc(127.3px * var(--scale-factor));
-    height: calc(31.8px * var(--scale-factor));
-    text-align: left;
-    font-size: calc(17px * var(--scale-factor));
-    /* border: solid red; */
-}
 </style>
