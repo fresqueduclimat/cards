@@ -119,7 +119,7 @@ export default {
 }
 
 .card10-label5-position {
-    top: calc(140px * var(--scale-factor));
+    top: calc(131px * var(--scale-factor));
     left: calc(307px * var(--scale-factor));
     width: calc(66px * var(--scale-factor));
     height: calc(35px * var(--scale-factor));

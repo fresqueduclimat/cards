@@ -17,7 +17,7 @@
                 <div class="cc"></div>
             </div>
             <div class="label black front-card-label2-position">
-                <p>{{ "Climate Fresk - " + $t('V3C0L1') + " - " + $t('V3C0L2') + " - " + $t('V3C0L4') + " - 24/02/2026"}}</p>
+                <p>{{ "Climate Fresk - " + $t('V3C0L1') + " - " + $t('V3C0L2') + " - " + $t('V3C0L4') + " - 02/03/2026"}}</p>
             </div>
 
             <div class="label frame-container">
@@ -100,7 +100,7 @@ export default {
     left: calc(37px * var(--scale-factor-width));
     width: calc(236px * var(--scale-factor-width));
     height: calc(260px * var(--scale-factor-height));
-    text-align: justify;
+    text-align: left;
     line-height: 12px; 
     /* border: red solid; */
 }
