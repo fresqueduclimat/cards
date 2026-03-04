@@ -57,15 +57,12 @@ export default {
     width: calc(100px * var(--scale-factor));
     height: calc(50px * var(--scale-factor));
     justify-content: right;
-    font-weight: 900;
     font-size: 35px;
     /* border: solid red; */
 }
 
 .card9-label1-position p {
     font-weight: 600;
-    font-family: "Urbanist", sans-serif;
-    /* border: solid red; */
 }
 
 .card9-label2-position {
@@ -77,11 +74,6 @@ export default {
     /* border: solid red; */
 }
 
-.card9-label2-position p {
-    font-weight: 500;
-    font-family: "Urbanist", sans-serif;
-    /* border: solid red; */
-}
 
 .card9-label3-position {
     top: calc(160px * var(--scale-factor));
@@ -95,7 +87,6 @@ export default {
 
 .card9-label3-position p {
     font-weight: 600;
-    font-family: "Urbanist", sans-serif;
     /* border: solid red; */
 }
 
@@ -109,11 +100,6 @@ export default {
     font-size: 16px;
 }
 
-.card9-label4-position p {
-    font-weight: 400;
-    font-family: "Urbanist", sans-serif;
-    /* border: solid red; */
-}
 
 .card9-label5-position {
     top: calc(245px * var(--scale-factor));
@@ -127,7 +113,6 @@ export default {
 
 .card9-label5-position p {
     font-weight: 600;
-    font-family: "Urbanist", sans-serif;
     /* border: solid red; */
 }
 
@@ -141,11 +126,6 @@ export default {
     font-size: 16px;
 }
 
-.card9-label6-position p {
-    font-weight: 400;
-    font-family: "Urbanist", sans-serif;
-    /* border: solid red; */
-}
 
 
 </style>
