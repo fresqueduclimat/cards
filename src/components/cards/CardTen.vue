@@ -119,9 +119,9 @@ export default {
 }
 
 .card10-label5-position {
-    top: calc(131px * var(--scale-factor));
-    left: calc(307px * var(--scale-factor));
-    width: calc(66px * var(--scale-factor));
+    top: calc(140px * var(--scale-factor));
+    left: calc(315px * var(--scale-factor));
+    width: calc(59px * var(--scale-factor));
     height: calc(35px * var(--scale-factor));
     justify-content: center;
     font-size: 13px;
@@ -135,9 +135,9 @@ export default {
 }
 
 .card10-label6-position {
-    top: calc(76px * var(--scale-factor));
-    left: calc(267px * var(--scale-factor));
-    width: calc(97px * var(--scale-factor));
+    top: calc(73px * var(--scale-factor));
+    left: calc(269px * var(--scale-factor));
+    width: calc(76px * var(--scale-factor));
     height: calc(47px * var(--scale-factor));
     justify-content: left;
     /* border: solid red; */

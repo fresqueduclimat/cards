@@ -14,7 +14,7 @@ export default {
             });
             const cardAllElements = el.querySelectorAll('.logo-container');
             cardAllElements.forEach(logo => {
-                logo.style.top = `${334 * scaleFactor}px`;
+                logo.style.top = `${328 * scaleFactor}px`;
                 logo.style.left = `${260 * scaleFactor}px`;
                 logo.style.width = `${109 * scaleFactor}px`;
                 logo.style.height = `${29 * scaleFactor}px`;

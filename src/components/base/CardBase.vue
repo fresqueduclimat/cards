@@ -152,7 +152,7 @@ export default {
 
 /* default is en logo */
 .logo-container {
-    top: calc(330px * var(--scale-factor-height));
+    top: calc(327px * var(--scale-factor-height));
     left: calc(281px * var(--scale-factor-width));
     width: calc(80px * var(--scale-factor-width));
     height: calc(31px * var(--scale-factor-height));
@@ -289,11 +289,11 @@ export default {
 
 
 .set-one {
-    top: calc(355px * var(--scale-factor-height));
+    top: calc(354px * var(--scale-factor-height));
     left: calc(21px * var(--scale-factor-width));
     width: calc(54px * var(--scale-factor-width));
     height: calc(50px * var(--scale-factor-height));
-    padding-top: 3px;
+    padding-top: 1px;
     background-color: #ffc629;
     border-radius: 3px;
     z-index: 5;
@@ -302,11 +302,11 @@ export default {
 
 
 .set-two {
-    top: calc(355px * var(--scale-factor-height));
+    top: calc(354px * var(--scale-factor-height));
     left: calc(79px * var(--scale-factor-width));
     width: calc(54px * var(--scale-factor-width));
     height: calc(50px * var(--scale-factor-height));
-    padding-top: 3px;
+    padding-top: 1px;
     background-color: #ffc629;
     border-radius: 3px;
     z-index: 5;
@@ -314,11 +314,11 @@ export default {
 }
 
 .set-three {
-    top: calc(355px * var(--scale-factor-height));
+    top: calc(354px * var(--scale-factor-height));
     left: calc(137px * var(--scale-factor-width));
     width: calc(54px * var(--scale-factor-width));
     height: calc(50px * var(--scale-factor-height));
-    padding-top: 3px;
+    padding-top: 1px;
     background-color: #ffc629;
     border-radius: 3px;
     z-index: 5;
@@ -326,11 +326,11 @@ export default {
 }
 
 .set-four {
-    top: calc(355px * var(--scale-factor-height));
+    top: calc(354px * var(--scale-factor-height));
     left: calc(195px * var(--scale-factor-width));
     width: calc(54px * var(--scale-factor-width));
     height: calc(50px * var(--scale-factor-height));
-    padding-top: 3px;
+    padding-top: 1px;
     background-color: #ffc629;
     border-radius: 3px;
     z-index: 5;

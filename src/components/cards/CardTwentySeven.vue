@@ -1,5 +1,5 @@
 <template>
-    <CardBase :title="$t('V3C27L0')" :content="$t('V3C27L1')" :card-number="27" :card-number-front="28" :background-front-image="`C27.${imageType}`">
+    <CardBase :title="$t('V3C27L0')" :content="$t('V3C27L1')" :card-number="27" :card-number-front="20" :background-front-image="`C27.${imageType}`">
         <div id="card27-label1" class="horizontal-center label card27-label1-position">
         <p id="card27-text1" class="font-small">{{ $t('V3C27L2') }}</p>
         </div>
@@ -15,7 +15,7 @@
             </div>
             <div class="horizontal-center vertical-center label back-set-container-three">
 
-                <p class="label font-medium card-number black">28</p>
+                <p class="label font-medium card-number black">20</p>
             </div>
             <div class="label logo-icon-container-three">
                 <div class="logo-icon"></div>
