@@ -96,38 +96,37 @@ export default {
         }
 
         // GERMAN DE-DE
-        if (currentLocale === 'de') { 
-            //normal bottom right logo
-            const logoElements = el.querySelectorAll('.logo');
+         if (currentLocale === 'de') { 
+            // //normal bottom right logo
+            const logoElements = el.querySelectorAll('.logo-container-front .logo');
             logoElements.forEach(logo => {
                 logo.style.backgroundImage = `url(${require('@/assets/logo-de.png')})`;
+                logo.style.width = `${266 * scaleFactor}px`;
+                logo.style.height = `${90 * scaleFactor}px`;
             });
-            const cardAllElements = el.querySelectorAll('.logo-container');
-            cardAllElements.forEach(logo => {
-                logo.style.top = `${328 * scaleFactor}px`;
-                logo.style.left = `${253 * scaleFactor}px`;
-                logo.style.width = `${95 * scaleFactor}px`;
-                logo.style.height = `${32 * scaleFactor}px`;
+            const cardFrontOUtlineElements = el.querySelectorAll('.outline-container');
+            cardFrontOUtlineElements.forEach(logo => {
+                logo.style.top = `${234 * scaleFactor}px`;
             });
+            // const cardAllElements = el.querySelectorAll('.logo-container');
+            // cardAllElements.forEach(logo => {
+            //     logo.style.top = `${328 * scaleFactor}px`;
+            //     logo.style.left = `${253 * scaleFactor}px`;
+            //     logo.style.width = `${95 * scaleFactor}px`;
+            //     logo.style.height = `${32 * scaleFactor}px`;
+            // });
 
-            //front page compact logo
-            const compactlogoElements = el.querySelectorAll('.logo-compact');
-            compactlogoElements.forEach(logo => {
-                logo.style.backgroundImage = `url(${require('@/assets/logo-de-compact.png')})`;
-            });
 
-            //last card logo
-            const cardBackElements = el.querySelectorAll('.logo-container-back');
-            cardBackElements.forEach(logo => {
-                logo.style.top = `${277 * scaleFactor}px`;
-                logo.style.left = `${117 * scaleFactor}px`;
-                logo.style.width = `${167 * scaleFactor}px`;
-                logo.style.height = `${56 * scaleFactor}px`;
-            });
             const cardBackOutlineElements = el.querySelectorAll('.outline-container-back');
+            cardBackOutlineElements.forEach(container => {
+                container.innerHTML = `
+                    <p>climatefresk.org</p>
+                `;
+            });
             cardBackOutlineElements.forEach(logo => {
-                logo.style.top = `${330 * scaleFactor}px`;
-                logo.style.left = `${122 * scaleFactor}px`;
+                logo.style.fontSize = `${13 * scaleFactor}px`;
+                logo.style.top = `${320 * scaleFactor}px`;
+                logo.style.left = `${165 * scaleFactor}px`;
                 logo.style.width = `${200 * scaleFactor}px`;
                 logo.style.height = `${17 * scaleFactor}px`;
             });

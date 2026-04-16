@@ -20,6 +20,14 @@ export default {
             titleSevenBackElements.forEach(title => {
                 title.style.fontSize = `${21 * scaleFactor}px`;  
             });
+            const titleFourElements = el.querySelectorAll('#card14-text0');
+            titleFourElements.forEach(title => {
+                title.style.fontSize = `${19 * scaleFactor}px`;  
+            });
+            const titleFourBackElements = el.querySelectorAll('#card14-titleback-text0');
+            titleFourBackElements.forEach(title => {
+                title.style.fontSize = `${19 * scaleFactor}px`;  
+            });
         }
         
     },

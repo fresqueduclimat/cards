@@ -9,8 +9,20 @@ export default {
         replacement = '<nobr>1.5°C</nobr>';
         el.innerHTML = el.innerHTML.replace(regex, replacement);
 
-         regex = /5°C/g;
+        regex = /5°C/g;
         replacement = '<nobr>5°C</nobr>';
+        el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+        regex = /1,2 °C/g;
+        replacement = '<nobr>1,2 °C</nobr>';
+        el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+        regex = /1,5 °C/g;
+        replacement = '<nobr>1,5 °C</nobr>';
+        el.innerHTML = el.innerHTML.replace(regex, replacement);
+
+        regex = /5 °C/g;
+        replacement = '<nobr>5 °C</nobr>';
         el.innerHTML = el.innerHTML.replace(regex, replacement);
 
 

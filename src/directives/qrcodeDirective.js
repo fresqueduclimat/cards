@@ -40,10 +40,10 @@ export default {
                     code.style.backgroundImage = `url(${require('@/assets/qr-code/qr-siteweb-de.png')})`;
                 });
 
-                const qrcodeKeyElements = el.querySelectorAll('.qr-code-key');
-                qrcodeKeyElements.forEach(code => {
-                    code.style.backgroundImage = `url(${require('@/assets/qr-code/qr-code-key-en.png')})`;
-                });
+                // const qrcodeKeyElements = el.querySelectorAll('.qr-code-key');
+                // qrcodeKeyElements.forEach(code => {
+                //     code.style.backgroundImage = `url(${require('@/assets/qr-code/qr-code-key-en.png')})`;
+                // });
             } 
             // NL-NL
             if (currentLocale === 'nl') {
